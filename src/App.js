@@ -12,7 +12,7 @@ export default class App extends Component {
           <Nav />
         </section>
         <section className="projects">
-          <h1 className="projects__title">projects</h1>
+          <h1 className="projects__title subheading">projects</h1>
           <ul className="projects__nav">
             <li className="projects__nav__item">
               web development
@@ -20,6 +20,9 @@ export default class App extends Component {
             <li className="projects__nav__item">publicity / pr</li>
           </ul>
           <Projects />
+        </section>
+        <section className="about">
+        <h1 className="about__title">about</h1>
         </section>
       </section>
     );
