@@ -14,31 +14,3 @@
     margin: 3vh;
   }
 }
-
-.projects {
-  font-weight: 300;
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-
-  .projects__title {
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-underline-position: under;
-    font-weight: 400;
-    font-size: 2em;
-    padding-top: 3vh;
-    margin-bottom: 2vh;
-  }
-
-  .projects__nav {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-
-    .projects__nav__item {
-      width: 10vw;
-      margin-bottom: 2vh;
-    }
-  }
-}
