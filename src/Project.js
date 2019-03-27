@@ -4,7 +4,7 @@ import nats from "./images/night-at-the-savoy.jpg";
 import scj from "./images/sail-city-jump.jpg";
 import "./Project.scss";
 
-export default function Projects() {
+export default function ProjectSection() {
   return (
     <React.Fragment>
       <Project img={splore} title='Splore'/>
