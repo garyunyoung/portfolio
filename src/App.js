@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
-import Project from "./Project";
+import Projects from "./Project";
 import "./App.scss";
 
 export default class App extends Component {
@@ -13,9 +13,13 @@ export default class App extends Component {
         </section>
         <section className="projects">
           <h1 className="projects__title">projects</h1>
-          <Project />
-          <Project />
-          <Project />
+          <ul className="projects__nav">
+            <li className="projects__nav__item">
+              web development
+            </li>
+            <li className="projects__nav__item">publicity / pr</li>
+          </ul>
+          <Projects />
         </section>
       </section>
     );
