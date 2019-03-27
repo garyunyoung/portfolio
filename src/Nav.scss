@@ -1,4 +1,25 @@
-.nav {
-    height: 20vh;
-    background-color: blue;
+.header {
+  display: flex;
+  flex-flow: column;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  border-bottom: 3px solid black;
+
+  .header__title {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 3vh;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 2vh;
+
+    .nav__item {
+      width: 15vw;
+      font-weight: 300;
+    }
+  }
 }
