@@ -1,25 +1,14 @@
-.header {
+.nav {
+  width: 100vw;
   display: flex;
-  flex-flow: column;
-  font-family: "Oswald", sans-serif;
-  text-align: center;
+  justify-content: center;
+  padding-bottom: 3vh;
   border-bottom: 3px solid black;
-
-  .header__title {
-    font-size: 3em;
-    text-transform: uppercase;
-    margin: 3vh;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: center;
+  
+  .nav__item {
+    width: 10vw;
     list-style: none;
-    margin-bottom: 2vh;
-
-    .nav__item {
-      width: 15vw;
-      font-weight: 300;
-    }
+    text-align: center;
+    font-weight: 300;  
   }
 }

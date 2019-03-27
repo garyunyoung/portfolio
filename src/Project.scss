@@ -1,0 +1,14 @@
+.project {
+    margin-bottom: 1vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    
+    .project__image {
+        height: 32.5vh;
+        width: 40vw;
+        background-color: grey;
+    }
+}
