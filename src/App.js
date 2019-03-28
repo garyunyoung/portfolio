@@ -11,18 +11,22 @@ export default class App extends Component {
       <Router>
         <section className="App">
           <div className="sticky">
-            <section className="header">
+            <header className="header">
               <NavLink className="header__title" to="/projects">
                 garyun young
               </NavLink>
-              <Nav />
-            </section>
+            </header>
           </div>
+              <Nav />
           <section className="main" />
           <Route path="/projects" />
           <Route path="/projects" component={Projects} />
           <Route path="/about" component={About} />
         </section>
+        <footer className='footer'>  
+          <i className="footer__social fab fa-github"></i>
+          <i className="footer__social far fa-envelope"></i>
+        </footer>
       </Router>
     );
   }

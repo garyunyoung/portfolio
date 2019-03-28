@@ -22,3 +22,13 @@
     text-decoration: none;
   }
 }
+
+.footer {
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+
+  .footer__social {
+    font-size: 1.5em;
+  }
+}
