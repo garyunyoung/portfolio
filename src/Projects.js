@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import ProjectSection from './ProjectSection';
 import splore from "./images/splore-c.jpg";
 import nats from "./images/night-at-the-savoy.jpg";
 import scj from "./images/sail-city-jump.jpg";
@@ -40,23 +41,4 @@ export default class Project extends React.Component {
       </section>
     );
   }
-}
-
-function ProjectSection(props) {
-  return (
-    <React.Fragment>
-      {props.list.map(project => (
-        <ProjectItem img={project.img} title={project.title} />
-      ))}
-    </React.Fragment>
-  );
-}
-
-function ProjectItem(props) {
-  return (
-    <section className="project">
-      <img className="project__image" src={props.img} />
-      <h1 className="project__title">{props.title}</h1>
-    </section>
-  );
 }

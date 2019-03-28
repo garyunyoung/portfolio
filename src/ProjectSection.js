@@ -1,20 +1,18 @@
 import React from "react";
-import splore from "./images/splore-2018.jpg";
-import nats from "./images/night-at-the-savoy.jpg";
-import scj from "./images/sail-city-jump.jpg";
 import "./ProjectSection.scss";
 
-export default function ProjectSection() {
+
+export default function ProjectSection(props) {
   return (
     <React.Fragment>
-      <Project img={splore} title="Splore" />
-      <Project img={nats} title="Night at the Savoy" />
-      <Project img={scj} title="Sail City Jump" />
+      {props.list.map(project => (
+        <ProjectItem img={project.img} title={project.title} />
+      ))}
     </React.Fragment>
   );
 }
 
-function Project(props) {
+function ProjectItem(props) {
   return (
     <section className="project">
       <img className="project__image" src={props.img} />
