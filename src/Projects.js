@@ -12,13 +12,13 @@ export default class Project extends React.Component {
     super(props);
     this.state = {
       projects: [
+        { img: beths, title: "the beths", category: "web" },
+        { img: skilaa, title: "skilaa", category: "web" },
         { img: splore, title: "splore 2018", category: "pr" },
         { img: nats, title: "night at the savoy", category: "pr" },
         { img: scj, title: "sail city jump", category: "pr" },
-        { img: beths, title: "the beths", category: "web" },
-        { img: skilaa, title: "skilaa", category: "web" }
       ],
-      filter: "all"
+      filter: "web"
     };
   }
 
