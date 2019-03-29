@@ -12,10 +12,11 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-
+  
   .header__title {
-    font-size: 3em;
-    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 800;
     text-transform: uppercase;
     margin: 1vh;
     color: black;

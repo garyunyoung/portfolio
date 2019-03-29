@@ -13,7 +13,7 @@ export default class App extends Component {
           <div className="sticky">
             <header className="header">
               <NavLink className="header__title" to="/projects">
-                garyun young
+                garyun
               </NavLink>
             </header>
           </div>
