@@ -25,7 +25,8 @@ export default class App extends Component {
             </header>
           </div>
           <section className="main" />
-          <Route path="/about" component={About} /> 
+          <Route path="/projects" component={Projects}/>
+          <Route path="/about" component={About} />
         </section>
         <footer className="footer">
           <i className="footer__social fab fa-github" />
@@ -35,5 +36,7 @@ export default class App extends Component {
   }
 }
 
-{/* <Route path="/projects" />
-<Route path="/projects" component={Projects} /> */}
+{
+  /* <Route path="/projects" />
+<Route path="/projects" component={Projects} /> */
+}
