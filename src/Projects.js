@@ -13,9 +13,9 @@ export default class Project extends React.Component {
     this.state = {
       projects: [
         { img: beths, info: "html css js react fluid design", category: "web" },
-        { img: splore, info: "splore 2018", category: "pr" },
-        { img: nats, info: "night at the savoy", category: "pr" },
-        { img: scj, info: "sail city jump", category: "pr" },
+        { img: splore, info: '', category: "pr" },
+        { img: nats, info: '', category: "pr" },
+        { img: scj, info:'', category: "pr" },
       ],
       filter: "web"
     };

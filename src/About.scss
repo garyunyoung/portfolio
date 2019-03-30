@@ -1,12 +1,12 @@
 .about {
-  background-image: url("./images/about-background.png");
+  background-image: url("./images/about-background.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
 
   .about__container {
-    height: 80vh;
+    height: 85%;
     padding: 10vw;
     padding-bottom: 2vw;
     background-color: white;
@@ -16,7 +16,7 @@
     justify-content: center;
 
     .about__photo {
-      width: 70vw;
+      width: 70%;
       box-shadow: 15px 15px black;
       margin: 0 auto 7vh auto;
     }
