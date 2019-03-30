@@ -12,7 +12,7 @@ export default class App extends Component {
         <section className="App">
           <div className="sticky">
             <header className="header">
-              <div className="header__wrapper">
+              <section className="header__wrapper">
                 <NavLink className="header__title" to="/projects">
                   garyun
                 </NavLink>
@@ -21,7 +21,7 @@ export default class App extends Component {
                   <div className="hamburger__line hamburger__line--2" />
                   <div className="hamburger__line hamburger__line--3" />
                 </div>
-              </div>
+              </section>
             </header>
           </div>
           <section className="main" />
@@ -29,7 +29,6 @@ export default class App extends Component {
         </section>
         <footer className="footer">
           <i className="footer__social fab fa-github" />
-          <i className="footer__social far fa-envelope" />
         </footer>
       </Router>
     );

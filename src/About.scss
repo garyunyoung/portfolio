@@ -1,4 +1,14 @@
-.about__photo {
-    width: 70vw;
-    box-shadow: 15px 15px black;
+.about {
+  background-color: plum;
+  min-height: 90vh;
+
+  .about__wrapper {
+      height: 80vh;
+    background-color: white;
+
+    .about__photo {
+      width: 70vw;
+      box-shadow: 15px 15px black;
+    }
+  }
 }
