@@ -16,7 +16,7 @@ export default class App extends Component {
       <Router>
         <section className="App">
           <Switch>
-            <Route path="/" exact component={Nav} />
+            <Route path="/" exact component={Home} />
             <Route render={() => 
             (
                 <React.Fragment>

@@ -12,10 +12,10 @@ export default class Project extends React.Component {
     super(props);
     this.state = {
       projects: [
-        { img: beths, title: "the beths", category: "web" },
-        { img: splore, title: "splore 2018", category: "pr" },
-        { img: nats, title: "night at the savoy", category: "pr" },
-        { img: scj, title: "sail city jump", category: "pr" },
+        { img: beths, info: "html css js react fluid design", category: "web" },
+        { img: splore, info: "splore 2018", category: "pr" },
+        { img: nats, info: "night at the savoy", category: "pr" },
+        { img: scj, info: "sail city jump", category: "pr" },
       ],
       filter: "web"
     };
@@ -33,9 +33,9 @@ export default class Project extends React.Component {
         <Header title='projects'/>
         <section className='projects__container'>
         <ul className="projects__nav">
-          <li className="projects__nav__item" onClick={() => {this.setFilter('web')}}>web</li>
-          <li className="projects__nav__item" onClick={() => {this.setFilter('pr')}}>pr</li>
-          <li className="projects__nav__item" onClick={() => {this.setFilter('all')}}>all</li>
+          <li className="projects__nav__item projects__nav__item--web" onClick={() => {this.setFilter('web')}}>web</li>
+          <li className="projects__nav__item projects__nav__item--pr" onClick={() => {this.setFilter('pr')}}>pr</li>
+          {/* <li className="projects__nav__item projects__nav__item--all" onClick={() => {this.setFilter('all')}}>all</li> */}
         </ul>
         <ProjectSection list={this.state.projects.filter(project=> project.category === this.state.filter || this.state.filter === 'all')} />
         </section>

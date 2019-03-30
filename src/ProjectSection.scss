@@ -7,14 +7,16 @@
     
     .project__image {
         width: 40vw;
-        margin-bottom: 1vh;
+        margin-bottom: 2vh;
     }
 
-    .project__title {
-        font-size: 1em;
+    .project__info {
+        font-family: 'Open Sans', sans-serif;
+        font-size: .6em;
+        word-spacing: .5em;
         font-weight: 200;
+        text-transform: uppercase;
         margin-bottom: 2vh;
-        text-transform: capitalize;
     }
 }
 

@@ -1,6 +1,5 @@
 .projects {
   height: 100vh;
-  background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +26,10 @@
   .projects__nav__item {
     width: 3em;
     height: 1.6em;
-    margin: 0 7vw 2vh 0;
     box-shadow: 5px 5px black;
+  }
+
+  .projects__nav__item--pr {
+    margin: 0 7vw;
   }
 }

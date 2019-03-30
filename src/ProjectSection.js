@@ -6,7 +6,7 @@ export default function ProjectSection(props) {
   return (
     <React.Fragment>
       {props.list.map(project => (
-        <ProjectItem img={project.img} title={project.title} />
+        <ProjectItem img={project.img} info={project.info} />
       ))}
     </React.Fragment>
   );
@@ -16,7 +16,7 @@ function ProjectItem(props) {
   return (
     <section className="project">
       <img className="project__image" src={props.img} />
-      <h1 className="project__title">{props.title}</h1>
+      <h1 className="project__info">{props.info}</h1>
     </section>
   );
 }
