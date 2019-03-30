@@ -1,26 +1,34 @@
 .projects {
-  font-weight: 300;
+  height: 100vh;
+  background-color: lightblue;
   display: flex;
-  flex-flow: column;
-  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10vh;
 
-  .projects__title {
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.5em;
-    padding-top: 3vh;
-    margin-bottom: 2vh;
-  }
-
-  .projects__nav {
+  .projects__container {
+    background-color: white;
+    width: 80vw;
+    height: 75vh;
     display: flex;
-    list-style: none;
-    justify-content: center;
-
-    .projects__nav__item {
-      width: 5em;
-      margin-bottom: 2vh;
-    }
+    flex-flow: column; 
   }
 }
 
+.projects__nav {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+
+  .projects__nav__item {
+    width: 3em;
+    height: 1.6em;
+    margin: 0 7vw 2vh 0;
+    box-shadow: 5px 5px black;
+  }
+}

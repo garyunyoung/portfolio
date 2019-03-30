@@ -11,7 +11,6 @@ export default class App extends Component {
     return (
       <Router>
         <section className="App">
-          <Route path="/" component={Home}/>
           <div className="sticky">
             <header className="header">
               <section className="header__wrapper">
@@ -28,14 +27,8 @@ export default class App extends Component {
           </div>
           <section className="main" />
           <Route path="/projects" component={Projects}/>
-          <Route path="/about" component={About} />
         </section>
       </Router>
     );
   }
-}
-
-{
-  /* <Route path="/projects" />
-<Route path="/projects" component={Projects} /> */
 }
