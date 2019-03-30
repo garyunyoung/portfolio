@@ -1,4 +1,7 @@
 import React from "react";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import Projects from "./Projects";
+import About from "./About";
 import "./Home.scss";
 
 export default function Home() {
@@ -20,9 +23,15 @@ export default function Home() {
         <h1 className="home__london">london,uk</h1>
       </section>
       <section className="home__bottom">
-        <h1 className="home__projects">projects</h1>
-        <h1 className="home__about">about</h1>
-        <h1 className="home__cv">cv</h1>
+        <NavLink className="home__nav home__nav--projects" to="/projects">
+          projects
+        </NavLink>
+        <NavLink className="home__nav home__nav--about" to="/about">
+          about
+        </NavLink>
+        <NavLink className="home__nav home__nav--cv" to="/projects">
+          cv
+        </NavLink>
       </section>
     </section>
   );
