@@ -1,8 +1,13 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  NavLink,
+  Switch
+} from "react-router-dom";
 import Projects from "./Projects";
 import About from "./About";
-import Home from './Home';
+import Home from "./Home";
 import Nav from "./Nav";
 import "./App.scss";
 
@@ -11,22 +16,32 @@ export default class App extends Component {
     return (
       <Router>
         <section className="App">
-          <div className="sticky">
-            <header className="header">
-              <section className="header__wrapper">
-                <NavLink className="header__title" to="/projects">
-                  garyun
-                </NavLink>
-                <div className="hamburger">
-                  <div className="hamburger__line hamburger__line--1" />
-                  <div className="hamburger__line hamburger__line--2" />
-                  <div className="hamburger__line hamburger__line--3" />
-                </div>
-              </section>
-            </header>
-          </div>
-          <section className="main" />
-          <Route path="/projects" component={Projects}/>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route render={() => 
+            (
+                <React.Fragment>
+                  <div className="sticky">
+                    <header className="header">
+                      <section className="header__wrapper">
+                        <NavLink className="header__title" to="/">
+                          garyun
+                        </NavLink>
+                        <div className="hamburger">
+                          <div className="hamburger__line hamburger__line--1" />
+                          <div className="hamburger__line hamburger__line--2" />
+                          <div className="hamburger__line hamburger__line--3" />
+                        </div>
+                      </section>
+                    </header>
+                  </div>
+                  <section className="main" />
+                  <Route path="/projects" component={Projects} />
+                  <Route path="/about" component={About} />
+                </React.Fragment>
+            )}
+            />
+          </Switch>
         </section>
       </Router>
     );
