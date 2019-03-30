@@ -2,13 +2,28 @@
   background-color: plum;
   min-height: 90vh;
 
-  .about__wrapper {
-      height: 80vh;
+  .about__container {
+    height: 80vh;
+    padding: 10vw;
+    padding-bottom: 2vw;
     background-color: white;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
 
     .about__photo {
       width: 70vw;
       box-shadow: 15px 15px black;
+      margin: 0 auto 7vh auto;
+    }
+
+    .about__text {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.6em;
+      font-weight: 300;
+      margin-bottom: 3vh;
+      padding: 0 5vw;
     }
   }
 }
