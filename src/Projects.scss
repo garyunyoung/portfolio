@@ -3,27 +3,26 @@
   background-color: lightblue;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 10vh;
+  align-items: center;
 
   .projects__container {
     background-color: white;
     width: 80vw;
-    height: 75vh;
+    height: 80vh;
     display: flex;
-    flex-flow: column; 
+    flex-flow: column;
   }
 }
 
 .projects__nav {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-bottom: 5vh;
+  margin: 8vh 0 5vh 0;
 
   .projects__nav__item {
     width: 3em;

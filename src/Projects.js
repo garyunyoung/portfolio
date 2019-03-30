@@ -1,4 +1,5 @@
 import React from "react";
+import Header from './Header';
 import ProjectSection from './ProjectSection';
 import splore from "./images/splore-c.jpg";
 import nats from "./images/night-at-the-savoy.jpg";
@@ -29,6 +30,7 @@ export default class Project extends React.Component {
   render() {
     return (
       <section className="projects">
+        <Header title='projects'/>
         <section className='projects__container'>
         <ul className="projects__nav">
           <li className="projects__nav__item" onClick={() => {this.setFilter('web')}}>web</li>

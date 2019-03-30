@@ -1,16 +1,13 @@
 .header {
-  height: 13vh;
-  background-color: lightpink;
   position: absolute;
-
+  top: 0;
+  
   .header__wrapper {
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightblue;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
+    margin-top: 8vh;
 
     .header__title {
       font-family: "Open Sans", sans-serif;
@@ -18,11 +15,10 @@
       letter-spacing: 0.6rem;
       font-weight: 800;
       text-transform: uppercase;
-      margin: 1vh;
+      margin: 4vh 0;
       line-height: 0.8em;
       color: black;
       text-decoration: none;
-      background-color: lightcoral;
     }
   }
 }
@@ -31,7 +27,6 @@
   position: absolute;
   direction: rtl;
   right: 10vw;
-  background-color: lightgreen;
 }
 .hamburger__line {
   background-color: black;

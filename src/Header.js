@@ -8,7 +8,7 @@ export default class Nav extends React.Component {
       <header className="header">
         <section className="header__wrapper">
           <NavLink className="header__title" to="/">
-            garyun
+            {this.props.title}
           </NavLink>
           <div className="hamburger">
             <div className="hamburger__line hamburger__line--1" />
