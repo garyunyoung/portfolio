@@ -4,7 +4,7 @@ import ProjectSection from './ProjectSection';
 import splore from "./images/splore-c.jpg";
 import nats from "./images/night-at-the-savoy.jpg";
 import scj from "./images/sail-city-jump.jpg";
-import beths from './images/beths-logo.png';
+import beths from './images/beths-project.jpg';
 import "./Projects.scss";
 
 export default class Project extends React.Component {
