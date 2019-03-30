@@ -12,16 +12,20 @@ export default class App extends Component {
         <section className="App">
           <div className="sticky">
             <header className="header">
-              <NavLink className="header__title" to="/projects">
-                garyun
-              </NavLink>
+              <div className="header__wrapper">
+                <NavLink className="header__title" to="/projects">
+                  garyun
+                </NavLink>
+                <div className="hamburger">
+                  <div className="hamburger__line hamburger__line--1" />
+                  <div className="hamburger__line hamburger__line--2" />
+                  <div className="hamburger__line hamburger__line--3" />
+                </div>
+              </div>
             </header>
           </div>
-          <Nav />
           <section className="main" />
-          <Route path="/projects" />
-          <Route path="/projects" component={Projects} />
-          <Route path="/about" component={About} />
+          <Route path="/about" component={About} /> 
         </section>
         <footer className="footer">
           <i className="footer__social fab fa-github" />
@@ -31,3 +35,6 @@ export default class App extends Component {
     );
   }
 }
+
+{/* <Route path="/projects" />
+<Route path="/projects" component={Projects} /> */}
