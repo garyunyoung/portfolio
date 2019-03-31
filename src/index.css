@@ -25,6 +25,8 @@ body {
 
 a:-webkit-any-link {
   text-decoration: none;
+  color: black;
+
 }
 
 code {

@@ -10,9 +10,6 @@
     flex-flow: column;
     align-items: center;
     width: 90%; 
-    // height: 80vh;
-    // overflow: auto;
-    // -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -25,7 +22,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 5vh;
-
+  
   .projects__filter__button {
     width: 3em;
     height: 1.6em;
@@ -33,3 +30,7 @@
     margin: 0 5vw;
   }
 }
+
+// height: 80vh;
+// overflow: auto;
+// -webkit-overflow-scrolling: touch;
