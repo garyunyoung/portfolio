@@ -1,5 +1,5 @@
 .projects {
-  background-image: url('./images/projects-background.svg');
+  // background-image: url('./images/projects-background.svg');
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -29,7 +29,7 @@
   .projects__filter__button {
     width: 3em;
     height: 1.6em;
-    box-shadow: 3px 3px black;
+    box-shadow: 3px 3px #72c5f9;
     margin: 0 5vw;
   }
 }

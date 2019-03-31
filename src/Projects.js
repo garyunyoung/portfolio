@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Hamburger from './Hamburger';
-import { BethsPage } from './ProjectPage';
+import { BethsPage, Splore } from './ProjectPage';
 import ProjectSection from './ProjectSection';
 import Header from './Header';
 import splore from "./images/splore-c.jpg";
@@ -46,6 +46,8 @@ export default class Project extends React.Component {
           </section>
         </section>)}/>
         <Route path="/projects/the-beths" component={BethsPage} />
+        <Route path="/projects/splore-2018" component={Splore} />
+
       </Switch>
     );
   }

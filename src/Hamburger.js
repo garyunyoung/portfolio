@@ -31,10 +31,3 @@ export default class Hamburger extends React.Component {
   }
 }
 
-// function Title(props) {
-//   return (
-//     <NavLink className="header__title" to="/">
-//       {this.state.isOpen ? "garyun" : this.props.title}
-//     </NavLink>
-//   );
-// }
