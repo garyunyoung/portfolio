@@ -22,9 +22,6 @@ export default class Header extends React.Component {
       <React.Fragment>
         <header className="header">
           <section className="header__wrapper">
-            {/* <NavLink className='header__title' to="/">
-              {this.state.isOpen ? 'garyun' : this.props.title}
-            </NavLink> */}
             <div className="hamburger" onClick={() => this.toggleNav()}>
               <div className="hamburger__line hamburger__line--1" />
               <div className="hamburger__line hamburger__line--2" />
@@ -38,4 +35,10 @@ export default class Header extends React.Component {
   }
 }
 
-
+// function Title(props) {
+//   return (
+//     <NavLink className="header__title" to="/">
+//       {this.state.isOpen ? "garyun" : this.props.title}
+//     </NavLink>
+//   );
+// }
