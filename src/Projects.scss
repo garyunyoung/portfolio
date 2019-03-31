@@ -3,14 +3,13 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 100%;
+  min-height: 100%;
 
   .projects__container {
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 90%;
-    margin-top: 10vh;  
+    width: 90%; 
     // height: 80vh;
     // overflow: auto;
     // -webkit-overflow-scrolling: touch;
@@ -19,14 +18,13 @@
 
 .projects__filter {
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
   text-transform: uppercase;
   font-style: italic;
   text-align: center;
-  list-style: none;
+  font-weight: 600;
   display: flex;
   justify-content: center;
-  margin: 5vh 0 5vh 0;
+  margin-bottom: 5vh;
 
   .projects__filter__button {
     width: 3em;

@@ -1,12 +1,10 @@
 .project__section {
   font-family: "Open Sans", sans-serif;
-  min-height: 100%;
   display: flex; 
   flex-flow: column;
   align-items: center;
 
   .project__section__container {
-    margin-top: 10vh;    
     width: 90%;
     display: flex;
     flex-flow: column;
@@ -15,7 +13,7 @@
     .project__section__description {
       padding: 0 1em;
       margin-bottom: 3vh;
-      font-size: 1em;
+      font-size: .8em;
       text-align: center;
     }
 
@@ -48,7 +46,7 @@
     }
 
     .carousel__image__description {
-      font-size: 1em;
+      font-size: .8em;
       font-style: italic;
 
     }

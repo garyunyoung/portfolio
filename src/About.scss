@@ -1,27 +1,24 @@
 .about {
   font-family: "Open Sans", sans-serif;
-  // background-image: url("./images/about-background.jpg");
+  background-image: url("./images/about-background.jpg");
   background-size: cover;
   max-height: 100%;
   display: flex;
   flex-flow: column;
-  align-items: center;
 
   .about__container {
     width: 100%;
-    padding-bottom: 2vw;
     background-color: white;
     display: flex;
     flex-flow: column;
     text-align: center;
-    justify-content: center;
-    padding-top: 5vh;
     margin-bottom: 5vh;
 
     .about__photo {
       width: 60vw;
       box-shadow: 15px 15px black;
-      margin: 0 auto 7vh auto;
+      margin: 0 auto;
+      margin-bottom: 5vh;
     }
 
     .about__text {
@@ -32,6 +29,7 @@
     }
 
     .about__envelope {
+      font-size: 1.2em;
       color: black;
     }
   }
