@@ -7,7 +7,6 @@ import {
 import Projects from "./Projects";
 import About from "./About";
 import Home from "./Home";
-import Nav from "./Nav";
 import "./App.scss";
 
 export default class App extends Component {

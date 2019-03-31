@@ -1,8 +1,14 @@
 .nav {
-  height: 100vh;
+  height: 100%;
+  width: 100% ;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  transform: translateX(-200vw);
+  transition: transform 0.5s;
 
   .nav__container {
     height: 80vh;
@@ -43,4 +49,9 @@
       width: 5vw;
     }
   }
+}
+
+.nav--open {
+  transform: translateX(0);
+
 }

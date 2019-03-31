@@ -1,13 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Header from "./Header";
 import codeWars from "./images/codewars-logo.svg";
 import "./Nav.scss";
 
-export default function Nav() {
+export default function Nav(props) {
   return (
-    <section className="nav">
-      <Header title="garyun" />
+    <section className={`nav ${props.open ? "nav--open" : ""} `}>
       <section className="nav__container">
         <div className="nav__wrapper">
           <NavLink className="nav__link nav__link--projects" to="/projects">
