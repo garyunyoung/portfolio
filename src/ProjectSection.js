@@ -15,9 +15,9 @@ export default function ProjectSection(props) {
 
 function ProjectItem(props) {
   return (
-    <section className="project">
-      <img className="project__image" src={props.img} />
-      <h1 className="project__info">{props.info}</h1>
+    <section className="project__item">
+      <img className="project__item__image" src={props.img} />
+      <h1 className="project__item__info">{props.info}</h1>
     </section>
   );
 }

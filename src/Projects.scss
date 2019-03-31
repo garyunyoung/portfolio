@@ -26,10 +26,11 @@
   justify-content: center;
   margin: 12vh 0 5vh 0;
 
-  .projects__filter__item {
+  .projects__filter__button {
     width: 3em;
     height: 1.6em;
-    box-shadow: 2px 2px black;
+    // padding: 1vh 2vh;
+    box-shadow: 3px 3px black;
     margin: 0 5vw;
   }
 }

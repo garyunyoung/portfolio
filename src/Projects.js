@@ -36,8 +36,8 @@ export default class Project extends React.Component {
           <Header title='projects'/>
           <section className='projects__container'>
           <ul className="projects__filter">
-            <li className="projects__filter__item projects__filter__item--web" onClick={() => {this.setFilter('web')}}>web</li>
-            <li className="projects__filter__item projects__filter__item--pr" onClick={() => {this.setFilter('pr')}}>pr</li>
+            <li className="projects__filter__button" onClick={() => {this.setFilter('web')}}>web</li>
+            <li className="projects__filter__button" onClick={() => {this.setFilter('pr')}}>pr</li>
           </ul>
           <ProjectSection list={this.state.projects.filter(project=> project.category === this.state.filter || this.state.filter === 'all')} />
           </section>

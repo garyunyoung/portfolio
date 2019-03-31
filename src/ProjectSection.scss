@@ -1,22 +1,23 @@
-.project {
+.project__item {
     margin-bottom: 1vh;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     
-    .project__image {
+    .project__item__image {
         width: 55vw;
         margin-bottom: 1vh;
     }
 
-    .project__info {
+    .project__item__info {
         font-family: 'Open Sans', sans-serif;
         font-size: .6em;
         word-spacing: .5em;
         font-weight: 200;
         text-transform: uppercase;
         margin-bottom: 2vh;
+        color: black;        
     }
 }
 
