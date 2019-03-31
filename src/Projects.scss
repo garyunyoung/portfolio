@@ -1,17 +1,19 @@
 .projects {
-  // background-image: url('./images/projects-background.svg');
-  // background: linear-gradient(to right, #72C5F9 50vw, white 50vw);
+  background-image: url('./images/projects-background.svg');
   display: flex;
-  justify-content: center;
-  min-height: 100%;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
 
   .projects__container {
-    background-color: white;
     display: flex;
     flex-flow: column;
-    align-content: center;
-    margin: 7vh 10vw 5vh;
+    align-items: center;
     width: 90%;
+    margin-top: 10vh;  
+    height: 80vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -24,12 +26,11 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 12vh 0 5vh 0;
+  margin: 5vh 0 5vh 0;
 
   .projects__filter__button {
     width: 3em;
     height: 1.6em;
-    // padding: 1vh 2vh;
     box-shadow: 3px 3px black;
     margin: 0 5vw;
   }

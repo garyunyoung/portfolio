@@ -1,28 +1,25 @@
 .project__section {
   font-family: "Open Sans", sans-serif;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+  min-height: 100%;
+  display: flex; 
+  flex-flow: column;
   align-items: center;
 
   .project__section__container {
-    height: 85%;
-    width: 80%;
-    padding-top: 10vh;
+    margin-top: 10vh;    
+    width: 90%;
     display: flex;
     flex-flow: column;
     align-items: center;
 
     .project__section__description {
       padding: 0 1em;
-      margin-bottom: 2vh;
-      font-size: 0.7em;
+      margin-bottom: 3vh;
+      font-size: 1em;
       text-align: center;
     }
 
     .project__section__button {
-      position: absolute;
-      bottom: 5vh;
       text-transform: uppercase;
       padding: 0 0.5em 0.3em 0;
       box-shadow: 3px 3px black;
@@ -51,7 +48,7 @@
     }
 
     .carousel__image__description {
-      font-size: 0.7em;
+      font-size: 1em;
       font-style: italic;
 
     }
