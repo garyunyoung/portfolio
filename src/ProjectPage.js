@@ -1,6 +1,7 @@
 import React from "react";
 import Hamburger from "./Hamburger";
 import Header from "./Header";
+import Carousel from './Carousel';
 import beths1 from "./images/project-1-a.jpg";
 import beths2 from "./images/project-1-b.jpg";
 import beths3 from "./images/project-1-c.jpg";
@@ -12,14 +13,7 @@ export default function ProjectPage(props) {
       <Hamburger />
       <Header title="project #1" />
       <section className="project__section__container">
-        <section className="carousel">
-          <h1 className="carousel__button">{`<`}</h1>
-          <div className="carousel__wrapper">
-            <img className="carousel__image" src={props.images[0].img} />
-            <p className="carousel__image__info">{props.images[0].imgInfo}</p>
-          </div>
-          <h1 className="carousel__button">{`>`}</h1>
-        </section>
+        <Carousel images={props.images}/>
         <p className="project__section__info">{props.info}</p>
         <a href={props.link}>
           <h1 className="project__section__button">visit site</h1>

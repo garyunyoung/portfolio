@@ -1,0 +1,26 @@
+.carousel {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+
+  .carousel__button {
+    padding: 2vw;
+  }
+
+  .carousel__wrapper {
+    text-align: center;
+    margin: 0 10vw;
+
+    .carousel__image {
+      width: 40vw;
+      box-shadow: 5px 5px #72c5f9;
+      margin-bottom: 1vh;
+    }
+
+    .carousel__image__info {
+      font-size: 0.8em;
+      font-style: italic;
+    }
+  }
+}
