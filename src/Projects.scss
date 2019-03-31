@@ -1,13 +1,12 @@
 .projects {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .projects__container {
     background-color: white;
-    height: 80%;
     width: 80vw;
+    min-height: 100vh;
     display: flex;
     flex-flow: column;
   }
@@ -21,7 +20,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 8vh 0 5vh 0;
+  margin: 18vh 0 5vh 0;
 
   .projects__nav__item {
     width: 3em;
