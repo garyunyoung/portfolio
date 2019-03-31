@@ -1,5 +1,7 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
 import Header from './Header';
+import { BethsPage } from './ProjectPage';
 import ProjectSection from './ProjectSection';
 import splore from "./images/splore-c.jpg";
 import nats from "./images/night-at-the-savoy.jpg";
@@ -12,10 +14,10 @@ export default class Project extends React.Component {
     super(props);
     this.state = {
       projects: [
-        { img: beths, info: "html css js react fluid design", category: "web" },
-        { img: splore, info: 'press intern', category: "pr" },
-        { img: nats, info: 'event manager', category: "pr" },
-        { img: scj, info:'event coordinator', category: "pr" },
+        { img: beths, title: 'the-beths', info: "html css js react fluid design", category: "web" },
+        { img: splore, title: 'splore-2018', info: 'press intern', category: "pr" },
+        { img: nats, title: 'night-at-the-savoy', info: 'event manager', category: "pr" },
+        { img: scj, title: 'sail-city-jump', info:'event coordinator', category: "pr" },
       ],
       filter: "web"
     };
@@ -29,17 +31,19 @@ export default class Project extends React.Component {
 
   render() {
     return (
-      <section className="projects">
-        <Header title='projects'/>
-        <section className='projects__container'>
-        <ul className="projects__nav">
-          <li className="projects__nav__item projects__nav__item--web" onClick={() => {this.setFilter('web')}}>web</li>
-          <li className="projects__nav__item projects__nav__item--pr" onClick={() => {this.setFilter('pr')}}>pr</li>
-          {/* <li className="projects__nav__item projects__nav__item--all" onClick={() => {this.setFilter('all')}}>all</li> */}
-        </ul>
-        <ProjectSection list={this.state.projects.filter(project=> project.category === this.state.filter || this.state.filter === 'all')} />
-        </section>
-      </section>
+      <Switch>
+        <Route exact path="/projects" render={() => (<section className="projects">
+          <Header title='projects'/>
+          <section className='projects__container'>
+          <ul className="projects__filter">
+            <li className="projects__filter__item projects__filter__item--web" onClick={() => {this.setFilter('web')}}>web</li>
+            <li className="projects__filter__item projects__filter__item--pr" onClick={() => {this.setFilter('pr')}}>pr</li>
+          </ul>
+          <ProjectSection list={this.state.projects.filter(project=> project.category === this.state.filter || this.state.filter === 'all')} />
+          </section>
+        </section>)}/>
+        <Route path="/projects/the-beths" component={BethsPage} />
+      </Switch>
     );
   }
 }
