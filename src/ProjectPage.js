@@ -12,7 +12,7 @@ export default function ProjectPage(props) {
           <h1 className="carousel__button">{`<`}</h1>
           <div className="carousel__wrapper">
             <img className="carousel__image" src={beths1} />
-            <p className="carousel__image__description">descriptive text</p>
+            <p className="carousel__image__description">mobile first</p>
           </div>
           <h1 className="carousel__button">{`>`}</h1>
         </section>

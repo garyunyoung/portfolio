@@ -10,6 +10,7 @@
   background-color: white;
   transform: translateX(-200vw);
   transition: transform 0.5s;
+  z-index: 1;
 
   .nav__container {
     height: 80vh;
