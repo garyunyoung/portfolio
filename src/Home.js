@@ -1,7 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Projects from "./Projects";
-import About from "./About";
 import "./Home.scss";
 
 export default function Home() {

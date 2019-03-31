@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "./Nav";
-import { NavLink } from "react-router-dom";
 import "./Hamburger.scss";
 
 export default class Hamburger extends React.Component {
