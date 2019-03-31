@@ -1,31 +1,34 @@
 .projects {
+  // background-image: url('./images/projects-background.svg');
+  background: linear-gradient(to right, #72C5F9 50vw, white 50vw);
   display: flex;
   justify-content: center;
-  align-items: center;
+  min-height: 100%;
 
   .projects__container {
     background-color: white;
-    width: 80vw;
-    min-height: 100vh;
     display: flex;
     flex-flow: column;
+    align-content: center;
+    margin: 7vh 10vw 5vh;
+    width: 90%;
   }
 }
 
 .projects__nav {
   font-family: "Open Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 18vh 0 5vh 0;
+  margin: 12vh 0 5vh 0;
 
   .projects__nav__item {
     width: 3em;
     height: 1.6em;
-    box-shadow: 5px 5px black;
+    box-shadow: 5px 5px #F9DA72;
     margin: 0 4vw;
   }
 }
