@@ -1,12 +1,14 @@
 import React from "react";
 import Hamburger from "./Hamburger";
+import Header from './Header';
 import beths1 from "./images/project-1-a.jpg";
 import "./ProjectPage.scss";
 
 export default function ProjectPage(props) {
   return (
     <section className="project__section">
-      <Hamburger title={props.title} />
+      <Hamburger/>
+      <Header title='project #1'/>
       <section className="project__section__container">
         <section className="carousel">
           <h1 className="carousel__button">{`<`}</h1>

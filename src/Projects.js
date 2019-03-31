@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Hamburger from './Hamburger';
 import { BethsPage } from './ProjectPage';
 import ProjectSection from './ProjectSection';
+import Header from './Header';
 import splore from "./images/splore-c.jpg";
 import nats from "./images/night-at-the-savoy.jpg";
 import scj from "./images/sail-city-jump.jpg";
@@ -34,7 +35,8 @@ export default class Project extends React.Component {
       <Switch>
         <Route exact path="/projects" render={() => (
         <section className="projects">
-          <Hamburger title='projects'/>
+          <Hamburger/>
+          <Header title='projects'/>
           <ul className="projects__filter">
             <li className="projects__filter__button" onClick={() => {this.setFilter('web')}}>web</li>
             <li className="projects__filter__button" onClick={() => {this.setFilter('pr')}}>pr</li>

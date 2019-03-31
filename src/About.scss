@@ -1,20 +1,12 @@
 .about {
   font-family: "Open Sans", sans-serif;
-  background-image: url("./images/about-background.jpg");
+  // background-image: url("./images/about-background.jpg");
   background-size: cover;
   max-height: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
 
-  .about__header {
-    font-size: 1.5em;
-    line-height: 0.8em;
-    letter-spacing: 0.6rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-top: 6.5vh;
-  }
   .about__container {
     width: 100%;
     padding-bottom: 2vw;

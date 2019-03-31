@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header";
 import { NavLink } from "react-router-dom";
 import codeWars from "./images/codewars-logo.svg";
 import "./Nav.scss";
@@ -6,19 +7,19 @@ import "./Nav.scss";
 export default function Nav(props) {
   return (
     <section className={`nav ${props.open ? "nav--open" : ""} `}>
-      <section className="nav__container">
+        <Header title="garyun" />
         <div className="nav__wrapper">
-          <NavLink className="nav__link nav__link--projects" to="/projects">
+          <NavLink className="nav__link" to="/projects">
             -projects-
           </NavLink>
-          <NavLink className="nav__link nav__link--projects" to="/about">
+          <NavLink className="nav__link" to="/about">
             -about-
           </NavLink>
-          <NavLink className="nav__link nav__link--projects" to="/">
+          <NavLink className="nav__link" to="/">
             -cv-
           </NavLink>
         </div>
-        <section className="socials">
+        <section className="socials__wrapper">
           <a
             className="socials__link socials__link--github"
             href="https://github.com/garyunyoung"
@@ -33,7 +34,7 @@ export default function Nav(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-          <i className="envelope far fa-envelope" />
+            <i className="envelope far fa-envelope" />
           </a>
           <a
             className="socials__link socials__link--codewars"
@@ -44,7 +45,6 @@ export default function Nav(props) {
             <img src={codeWars} />
           </a>
         </section>
-      </section>
     </section>
   );
 }
