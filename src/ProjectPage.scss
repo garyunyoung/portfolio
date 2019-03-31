@@ -1,6 +1,6 @@
 .project__section {
   font-family: "Open Sans", sans-serif;
-  display: flex; 
+  display: flex;
   flex-flow: column;
   align-items: center;
 
@@ -13,14 +13,22 @@
     .project__section__info {
       padding: 0 1em;
       margin-bottom: 3vh;
-      font-size: .8em;
+      font-size: 0.8em;
       text-align: center;
     }
+  }
+}
 
-    .project__section__button {
-      text-transform: uppercase;
-      padding: 0 0.5em 0.3em 0;
-      box-shadow: 3px 3px black;
-    }
+.button__wrapper {
+  display: flex;
+
+  .button {
+    text-transform: uppercase;
+    padding: 0 0.5em 0.3em 0;
+    box-shadow: 3px 3px black;
+  }
+
+  .button--back {
+    margin-right: 10vw;
   }
 }

@@ -1,7 +1,8 @@
 import React from "react";
 import Hamburger from "./Hamburger";
 import Header from "./Header";
-import Carousel from './Carousel';
+import Carousel from "./Carousel";
+import { NavLink } from "react-router-dom";
 import beths1 from "./images/project-1-a.jpg";
 import beths2 from "./images/project-1-b.jpg";
 import beths3 from "./images/project-1-c.jpg";
@@ -13,11 +14,16 @@ export default function ProjectPage(props) {
       <Hamburger />
       <Header title="project #1" />
       <section className="project__section__container">
-        <Carousel images={props.images}/>
+        <Carousel images={props.images} />
         <p className="project__section__info">{props.info}</p>
-        <a href={props.link}>
-          <h1 className="project__section__button">visit site</h1>
-        </a>
+        <section className="button__wrapper">
+          <NavLink className="button button--back" to="/projects">
+            <h1>back</h1>
+          </NavLink>
+          <a href={props.link}>
+            <h1 className="button button--visit">visit site</h1>
+          </a>
+        </section>
       </section>
     </section>
   );
@@ -39,5 +45,14 @@ deserves."
 );
 
 export const Splore = () => (
-  <ProjectPage img={beths1} imgInfo="test" info="test" link="#" />
+  <ProjectPage
+    images={[
+      { img: beths1, imgInfo: "mobile first" },
+      { img: beths2, imgInfo: "mobile second" },
+      { img: beths3, imgInfo: "mobile third" }
+    ]}
+    imgInfo="test"
+    info="test"
+    link="#"
+  />
 );
