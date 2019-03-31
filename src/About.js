@@ -18,7 +18,14 @@ export default function About() {
           <br />
           Say hi!
         </p>
-        <i className="about__envelope far fa-envelope" />
+        <a
+            className="about__envelope"
+            href="mailto:garyunyoung@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <i className="envelope far fa-envelope" />
+          </a>
       </section>
     </section>
   );

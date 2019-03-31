@@ -1,6 +1,6 @@
 .projects {
   // background-image: url('./images/projects-background.svg');
-  background: linear-gradient(to right, #72C5F9 50vw, white 50vw);
+  // background: linear-gradient(to right, #72C5F9 50vw, white 50vw);
   display: flex;
   justify-content: center;
   min-height: 100%;
@@ -19,6 +19,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
+  font-style: italic;
   text-align: center;
   list-style: none;
   display: flex;
@@ -28,7 +29,7 @@
   .projects__nav__item {
     width: 3em;
     height: 1.6em;
-    box-shadow: 5px 5px #F9DA72;
-    margin: 0 4vw;
+    box-shadow: 2px 2px black;
+    margin: 0 5vw;
   }
 }

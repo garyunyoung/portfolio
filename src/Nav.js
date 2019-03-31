@@ -19,12 +19,30 @@ export default function Nav(props) {
           </NavLink>
         </div>
         <section className="socials">
-          <i className="socials__link socials__link--github fab fa-github" />
-          <i className="socials__link socials__link--envelope envelope far fa-envelope" />
-          <img
+          <a
+            className="socials__link socials__link--github"
+            href="https://github.com/garyunyoung"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github" />
+          </a>
+          <a
+            className="socials__link socials__link--envelope"
+            href="mailto:garyunyoung@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <i className="envelope far fa-envelope" />
+          </a>
+          <a
             className="socials__link socials__link--codewars"
-            src={codeWars}
-          />
+            href="https://www.codewars.com/users/gyou/completed_solutions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={codeWars} />
+          </a>
         </section>
       </section>
     </section>

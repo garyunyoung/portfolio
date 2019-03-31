@@ -1,7 +1,7 @@
 .nav {
   background-image: url(./images/nav-background.svg);
   height: 100%;
-  width: 100% ;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,12 +38,16 @@
   }
 
   .socials {
-      display:flex;
-      align-content: center;
-      height: 1em;
+    display: flex;
+    align-content: center;
+    height: 1em;
+
+    .socials__link {
+      color: black;
+    }
 
     .socials__link--envelope {
-        margin: 0 10vw;
+      margin: 0 10vw;
     }
 
     .socials__link--codewars {
@@ -54,5 +58,4 @@
 
 .nav--open {
   transform: translateX(0);
-
 }
