@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./Header";
+import Hamburger from "./Hamburger";
 import profilePic from "./images/profile-pic.jpg";
 import "./About.scss";
 
 export default function About() {
   return (
     <section className="about">
-      <Header title='about'/>
+      <Hamburger title='about'/>
       <h1 className="about__header">about</h1>
       <section className="about__container">
         <img className="about__photo" src={profilePic} />

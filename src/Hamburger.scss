@@ -1,0 +1,21 @@
+.hamburger {
+  position: fixed;
+  direction: rtl;
+  top: 8vh;
+  right: 10vw;
+  z-index: 2;
+}
+.hamburger__line {
+  background-color: black;
+  width: 14px;
+  height: 2px;
+  margin: 2px 0;
+}
+
+.hamburger__line--2 {
+  width: 17px;
+}
+
+.hamburger__line--3 {
+  width: 10px;
+}

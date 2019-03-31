@@ -1,9 +1,9 @@
 import React from "react";
 import Nav from "./Nav";
 import { NavLink } from "react-router-dom";
-import "./Header.scss";
+import "./Hamburger.scss";
 
-export default class Header extends React.Component {
+export default class Hamburger extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,15 +20,11 @@ export default class Header extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <header className="header">
-          <section className="header__wrapper">
-            <div className="hamburger" onClick={() => this.toggleNav()}>
-              <div className="hamburger__line hamburger__line--1" />
-              <div className="hamburger__line hamburger__line--2" />
-              <div className="hamburger__line hamburger__line--3" />
-            </div>
-          </section>
-        </header>
+          <div className="hamburger" onClick={() => this.toggleNav()}>
+            <div className="hamburger__line hamburger__line--1" />
+            <div className="hamburger__line hamburger__line--2" />
+            <div className="hamburger__line hamburger__line--3" />
+          </div>
         <Nav open={this.state.isOpen} />
       </React.Fragment>
     );
