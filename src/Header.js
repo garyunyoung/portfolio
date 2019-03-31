@@ -22,9 +22,9 @@ export default class Header extends React.Component {
       <React.Fragment>
         <header className="header">
           <section className="header__wrapper">
-            <NavLink className='header__title' to="/">
+            {/* <NavLink className='header__title' to="/">
               {this.state.isOpen ? 'garyun' : this.props.title}
-            </NavLink>
+            </NavLink> */}
             <div className="hamburger" onClick={() => this.toggleNav()}>
               <div className="hamburger__line hamburger__line--1" />
               <div className="hamburger__line hamburger__line--2" />

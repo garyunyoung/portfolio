@@ -7,6 +7,7 @@ export default function About() {
   return (
     <section className="about">
       <Header title='about'/>
+      <h1 className="about__header">about</h1>
       <section className="about__container">
         <img className="about__photo" src={profilePic} />
         <p className="about__text">
