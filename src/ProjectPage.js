@@ -3,9 +3,10 @@ import Hamburger from "./Hamburger";
 import Header from "./Header";
 import Carousel from "./Carousel";
 import { NavLink } from "react-router-dom";
-import beths1 from "./images/project-1-a.jpg";
-import beths2 from "./images/project-1-b.jpg";
-import beths3 from "./images/project-1-c.jpg";
+import beths0 from "./images/beths-project.png";
+import beths1 from "./images/project-1-a.png";
+import beths2 from "./images/project-1-b.png";
+import beths3 from "./images/project-1-c.png";
 import "./ProjectPage.scss";
 
 export default function ProjectPage(props) {
@@ -35,6 +36,7 @@ export default function ProjectPage(props) {
 export const BethsPage = () => (
   <ProjectPage
     images={[
+      { img: beths0, imgInfo: "desktop" },
       { img: beths1, imgInfo: "mobile first" },
       { img: beths2, imgInfo: "mobile second" },
       { img: beths3, imgInfo: "mobile third" }
