@@ -15,7 +15,7 @@ export default function Home() {
       </section>
       <section className="home__mid">
         <h1 className="home__front">
-          front end <br />
+          front end<br />
           developer
         </h1>
         <h1 className="home__london">london,uk</h1>

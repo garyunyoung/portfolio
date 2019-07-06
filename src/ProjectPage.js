@@ -17,13 +17,16 @@ export default function ProjectPage(props) {
         <Carousel images={props.images} />
         <p className="project__section__info">{props.info}</p>
         <section className="button__wrapper">
-          <NavLink className="button button--back" to="/projects">
-            <h1>back</h1>
-          </NavLink>
           <a href={props.link}>
             <h1 className="button button--visit">visit site</h1>
           </a>
+          <a href={props.link}>
+            <h1 className="button button--github">github</h1>
+          </a>
         </section>
+        <NavLink className="button button--back" to="/projects">
+          <h1>back</h1>
+        </NavLink>
       </section>
     </section>
   );

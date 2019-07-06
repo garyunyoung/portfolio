@@ -1,6 +1,6 @@
 .home {
   height: 100%;
-  background: linear-gradient(to left, #F9DA72 50vw, white 50vw);
+  background: linear-gradient(to left, #f9da72 50vw, white 50vw);
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
 }
@@ -16,6 +16,7 @@
     font-size: 4.4em;
     letter-spacing: 0.1em;
     padding-left: 5vw;
+    font-weight: 800;
   }
 
   .home__garyun {
@@ -24,6 +25,7 @@
     text-transform: capitalize;
     text-align: center;
     color: white;
+    font-weight: 800;
   }
 }
 
@@ -35,11 +37,13 @@
   .home__front {
     line-height: 1em;
     margin-bottom: 1vh;
+    font-weight: 800;
   }
 
   .home__london {
     font-style: italic;
     letter-spacing: 0.5em;
+    font-weight: 800;
   }
 }
 
