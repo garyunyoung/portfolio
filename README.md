@@ -1,5 +1,9 @@
-***Portfolio*** *in development*
+## Portfolio (in development) ##
 
-This project is the intended replacement for my current site at www.garyunyoung.com. It is built using mobile first/responsive design and BEM naming conventions. 
+This is the intended replacement for my current site at www.garyunyoung.com. 
 
-Created using: React, React Router and SCSS. 
+### Key Features: ###
+- Built using mobile first/responsive design.
+- Implemented with BEM. 
+
+**Created using:** React, React Router and SCSS. 
