@@ -1,5 +1,5 @@
 import React from "react";
-import Hamburger from "./components/Hamburger";
+import Hamburger from "./components/NavBar";
 import Header from "./components/Header";
 import Carousel from "./components/Carousel";
 import { NavLink } from "react-router-dom";

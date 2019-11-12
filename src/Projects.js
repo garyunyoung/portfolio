@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Hamburger from './components/Hamburger';
+import Hamburger from './components/NavBar';
 import { BethsPage, Splore } from './ProjectPage';
 import ProjectSection from './components/ProjectSection';
 import Header from './components/Header';

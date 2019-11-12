@@ -1,5 +1,5 @@
 import React from "react";
-import Hamburger from "./components/Hamburger";
+import Hamburger from "./components/NavBar";
 import Header from './components/Header';
 import profilePic from "./images/profile-pic.jpg";
 import "./stylesheets/About.scss";
