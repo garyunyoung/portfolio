@@ -48,17 +48,29 @@ function NavMenu(props) {
     <nav className={`menu ${props.open ? "menu--open" : ""}`}>
       <ul className="menu__items">
         <li>
-          <NavLink className="menu__item" to="/projects">
+          <NavLink
+            className="menu__item"
+            to="/projects"
+            onClick={() => this.closeNav()}
+          >
             Projects />
           </NavLink>
         </li>
         <li>
-          <NavLink className="menu__item" to="/about">
+          <NavLink
+            className="menu__item"
+            to="/about"
+            onClick={() => this.closeNav()}
+          >
             Contact />
           </NavLink>
         </li>
         <li>
-          <NavLink className="menu__item" to="/">
+          <NavLink
+            className="menu__item"
+            to="/"
+            onClick={() => this.closeNav()}
+          >
             ... />
           </NavLink>
         </li>

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import profileIllustration from "./images/profile-illustration.svg";
 import "./stylesheets/Home.scss";
 
@@ -17,9 +18,7 @@ export default function Home() {
           </span>
         </div>
         <img className="home__image" src={profileIllustration} />
-        <a className="home__nav home__nav--projects" href="#projects">
-          projects />
-        </a>
+        <NavLink to="/projects">Projects /></NavLink>
       </div>
     </section>
   );
