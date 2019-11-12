@@ -7,7 +7,6 @@ import {
 import Projects from "./Projects";
 import About from "./About";
 import Home from "./Home";
-import "./stylesheets/App.scss";
 
 export default class App extends Component {
   render() {
