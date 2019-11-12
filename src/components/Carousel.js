@@ -1,5 +1,5 @@
 import React from "react";
-import "./Carousel.scss";
+import "../stylesheets/Carousel.scss";
 
 export default class Carousel extends React.Component {
   constructor(props) {
@@ -28,7 +28,7 @@ export default class Carousel extends React.Component {
           <img className="carousel__image" src={this.props.images[this.state.currentSlide].img} />
           <p className="carousel__image__info">{this.props.images[this.state.currentSlide].imgInfo}</p>
         </div>
-        <h1 className="carousel__button" 
+        <h1 className="carousel__button"
             onClick={() => { this.handleClick(-1);
             }}>{`>`}</h1>
       </section>

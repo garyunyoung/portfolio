@@ -1,8 +1,9 @@
 import React from "react";
-import Hamburger from "./Hamburger";
-import Header from './Header';
+import Hamburger from "./components/Hamburger";
+import Header from './components/Header';
 import profilePic from "./images/profile-pic.jpg";
-import "./About.scss";
+import "./stylesheets/About.scss";
+
 
 export default function About() {
   return (

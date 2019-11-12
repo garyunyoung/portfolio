@@ -7,7 +7,7 @@ import {
 import Projects from "./Projects";
 import About from "./About";
 import Home from "./Home";
-import "./App.scss";
+import "./stylesheets/App.scss";
 
 export default class App extends Component {
   render() {
@@ -16,7 +16,7 @@ export default class App extends Component {
         <section className="App">
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route render={() => 
+            <Route render={() =>
             (
                 <React.Fragment>
                   <Route path="/projects" component={Projects} />

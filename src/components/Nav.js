@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import { NavLink } from "react-router-dom";
-import codeWars from "./images/codewars-logo.svg";
-import "./Nav.scss";
+import codeWars from "../images/codewars-logo.svg";
+import "../stylesheets/Nav.scss";
 
 export default function Nav(props) {
   return (

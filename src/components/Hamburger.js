@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-import "./Hamburger.scss";
+import "../stylesheets/Hamburger.scss";
 
 export default class Hamburger extends React.Component {
   constructor(props) {

@@ -1,13 +1,13 @@
 import React from "react";
-import Hamburger from "./Hamburger";
-import Header from "./Header";
-import Carousel from "./Carousel";
+import Hamburger from "./components/Hamburger";
+import Header from "./components/Header";
+import Carousel from "./components/Carousel";
 import { NavLink } from "react-router-dom";
 import beths0 from "./images/beths-project.png";
 import beths1 from "./images/project-1-a.png";
 import beths2 from "./images/project-1-b.png";
 import beths3 from "./images/project-1-c.png";
-import "./ProjectPage.scss";
+import "./stylesheets/ProjectPage.scss";
 
 export default function ProjectPage(props) {
   return (

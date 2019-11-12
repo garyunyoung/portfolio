@@ -1,14 +1,14 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Hamburger from './Hamburger';
+import Hamburger from './components/Hamburger';
 import { BethsPage, Splore } from './ProjectPage';
-import ProjectSection from './ProjectSection';
-import Header from './Header';
+import ProjectSection from './components/ProjectSection';
+import Header from './components/Header';
 import splore from "./images/splore-c.jpg";
 import nats from "./images/night-at-the-savoy.jpg";
 import scj from "./images/sail-city-jump.jpg";
 import beths from './images/beths-project.png';
-import "./Projects.scss";
+import "./stylesheets/Projects.scss";
 
 export default class Project extends React.Component {
   constructor(props) {
