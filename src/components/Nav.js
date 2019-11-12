@@ -6,19 +6,18 @@ import "../stylesheets/Nav.scss";
 
 export default function Nav(props) {
   return (
-    <section className={`nav ${props.open ? "nav--open" : ""} `}>
+    <section className={`nav ${props.open ? "nav--open" : ""}`}>
       <NavLink className="nav__link" to="/">
-        <Header title="garyun" />
       </NavLink>
       <div className="nav__wrapper">
         <NavLink className="nav__link" to="/projects">
-          -projects-
+          Projects />
         </NavLink>
         <NavLink className="nav__link" to="/about">
-          -about-
+          Contact />
         </NavLink>
         <NavLink className="nav__link" to="/">
-          -cv-
+          ... />
         </NavLink>
       </div>
       <section className="socials__wrapper">
@@ -30,7 +29,7 @@ export default function Nav(props) {
         >
           <i className="fab fa-github" />
         </a>
-        <a
+        {/* <a
           className="socials__link socials__link--envelope"
           href="mailto:garyunyoung@gmail.com"
           target="_blank"
@@ -45,7 +44,7 @@ export default function Nav(props) {
           rel="noopener noreferrer"
         >
           <img src={codeWars} />
-        </a>
+        </a> */}
       </section>
     </section>
   );

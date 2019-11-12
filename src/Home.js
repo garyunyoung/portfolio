@@ -1,13 +1,11 @@
 import React from "react";
-import Hamburger from "./components/Hamburger";
 import profileIllustration from "./images/profile-illustration.svg";
 import "./stylesheets/Home.scss";
 
 export default function Home() {
   return (
     <section className="home">
-      <Hamburger />
-      <section className="home__content">
+      <div className="home__content">
         <div className="home__text">
           <span>
             Hi, I'm Garyun
@@ -22,7 +20,7 @@ export default function Home() {
         <a className="home__nav home__nav--projects" href="#projects">
           projects />
         </a>
-      </section>
+      </div>
     </section>
   );
 }

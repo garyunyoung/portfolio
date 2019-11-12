@@ -1,26 +1,24 @@
 .nav {
-  background-image: url(../images/nav-background.svg);
-  background-color: white;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  z-index: 1;
+  transform: translateY(100vh);
+  position: absolute;
   top: 0;
-  transform: translateX(-200vw);
-  transition: transform 0.5s;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: -1;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 
   .nav__wrapper {
     text-align: center;
-    margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-bottom: 3em;
 
     .nav__link {
-      font-family: "Open Sans", sans-serif;
-      font-size: 1.3em;
-      font-weight: 800;
-      line-height: 2em;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
+      font-size: 1.7em;
+      line-height: 2.3;
       display: block;
     }
   }
@@ -34,16 +32,16 @@
     }
 
     .socials__link--envelope {
-      margin: 0 11vw;
+      margin: 0 1em;
     }
 
     .socials__link--codewars {
       width: 5vw;
-      margin-top: .4vh;
+      margin-top: 0.4vh;
     }
   }
 }
 
 .nav--open {
-  transform: translateX(0);
+  transform: translateY(0) !important;
 }

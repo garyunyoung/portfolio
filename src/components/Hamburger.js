@@ -18,15 +18,15 @@ export default class Hamburger extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
-          <div className="hamburger" onClick={() => this.toggleNav()}>
-            <div className="hamburger__line hamburger__line--1" />
-            <div className="hamburger__line hamburger__line--2" />
-            <div className="hamburger__line hamburger__line--3" />
-          </div>
+      <div className="hamburger-nav">
+        <div>{`< GARYUN YOUNG />`}</div>
+        <div className="hamburger" onClick={() => this.toggleNav()}>
+          <div className="hamburger__line hamburger__line--1" />
+          <div className="hamburger__line hamburger__line--2" />
+          <div className="hamburger__line hamburger__line--3" />
+        </div>
         <Nav open={this.state.isOpen} />
-      </React.Fragment>
+      </div>
     );
   }
 }
-
