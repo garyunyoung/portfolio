@@ -3,7 +3,7 @@
 }
 
 .home__content {
-  height: 100%;
+  height: calc(100vh - 60px);
   display: flex;
   flex-flow: column;
   align-items: center;

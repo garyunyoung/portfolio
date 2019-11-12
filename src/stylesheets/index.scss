@@ -5,11 +5,15 @@
 }
 
 body {
-    font-family: "Unica One", cursive;
-    text-transform: uppercase;
+  font-family: "Unica One", cursive;
+  text-transform: uppercase;
 }
 
 a:-webkit-any-link {
   text-decoration: none;
   color: black;
+}
+
+#root {
+  padding-top: 60px;
 }
