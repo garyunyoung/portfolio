@@ -1,16 +1,27 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Hamburger from "./components/Hamburger";
+import profileIllustration from "./images/profile-illustration.svg";
 import "./stylesheets/Home.scss";
 
 export default function Home() {
   return (
     <section className="home">
       <Hamburger />
-      <section className="home__body">
-        <NavLink className="home__nav home__nav--projects" to="/projects">
+      <section className="home__content">
+        <div className="home__text">
+          <span>
+            Hi, I'm Garyun
+            <br />A front end developer <br />
+            who likes to ....... <br />
+            <br />
+            Currently in <br />
+            London UK
+          </span>
+        </div>
+        <img className="home__image" src={profileIllustration} />
+        <a className="home__nav home__nav--projects" href="#projects">
           projects />
-        </NavLink>
+        </a>
       </section>
     </section>
   );

@@ -1,71 +1,27 @@
 .home {
+  height: 100vh;
+}
+
+.home__content {
   height: 100%;
-}
-
-.home__top {
-  height: 40vh;
   display: flex;
+  flex-flow: column;
   align-items: center;
-  letter-spacing: 0.1em;
-
-  .home__hello {
-    width: 50vw;
-    font-size: 4.4em;
-    letter-spacing: 0.1em;
-    padding-left: 5vw;
-    font-weight: 800;
-  }
-
-  .home__garyun {
-    width: 50vw;
-    font-size: 1.4em;
-    text-transform: capitalize;
-    text-align: center;
-    color: white;
-    font-weight: 800;
-  }
+  justify-content: center;
+  padding: 0 2em;
 }
 
-.home__mid {
-  font-size: 1.1em;
+.home__text {
   text-align: center;
-  margin-bottom: 12vh;
-
-  .home__front {
-    line-height: 1em;
-    margin-bottom: 1vh;
-    font-weight: 800;
-  }
-
-  .home__london {
-    font-style: italic;
-    letter-spacing: 0.5em;
-    font-weight: 800;
-  }
+  line-height: 1.4;
+  margin-bottom: 1em;
 }
 
-.home__bottom {
-  font-size: 1.5em;
-  letter-spacing: 0.4em;
+.home__text span {
+  box-shadow: inset 0 -8px 0 #ffddde;
+}
 
-  .home__nav {
-    font-weight: 800;
-    text-decoration: none;
-    color: black;
-    display: block;
-  }
-
-  .home__nav--projects {
-    margin-bottom: 4vh;
-    padding-left: 6vw;
-  }
-
-  .home__nav--about {
-    text-align: right;
-    padding-right: 10vw;
-  }
-
-  .home__nav--cv {
-    padding-left: 25vw;
-  }
+.home__image {
+  width: 80%;
+  margin-bottom: 3em;
 }
