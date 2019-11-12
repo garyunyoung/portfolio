@@ -16,16 +16,25 @@ export default class NavBar extends React.Component {
     }));
   }
 
+  closeNav() {
+    this.setState(() => ({
+      isOpen: false
+    }));
+  }
+
   render() {
     return (
       <div className="nav">
         <h2 className="nav__logo">
           <NavLink
             to="/"
-            onClick={() => this.toggleNav()}
+            onClick={() => this.closeNav()}
           >{`< GARYUN YOUNG />`}</NavLink>
         </h2>
-        <div className={`hamburger ${this.state.isOpen ? "hamburger--open" : ""}`} onClick={() => this.toggleNav()}>
+        <div
+          className={`hamburger ${this.state.isOpen ? "hamburger--open" : ""}`}
+          onClick={() => this.toggleNav()}
+        >
           <div className="hamburger__line" />
         </div>
         <NavMenu open={this.state.isOpen} />

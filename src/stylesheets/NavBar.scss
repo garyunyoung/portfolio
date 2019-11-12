@@ -1,31 +1,45 @@
 .hamburger {
   direction: rtl;
   position: relative;
-}
 
-.hamburger__line {
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  width: 17px;
-  height: 1px;
-
-  &::before {
+  .hamburger__line {
     background-color: black;
-    content: "";
     position: absolute;
-    bottom: 4px;
-    width: 14px;
+    bottom: 0;
+    width: 17px;
     height: 1px;
+
+    &::before {
+      background-color: black;
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      width: 14px;
+      height: 1px;
+    }
+
+    &::after {
+      background-color: black;
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      width: 14px;
+      height: 1px;
+    }
   }
 
-  &::after {
-    background-color: black;
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    width: 14px;
-    height: 1px;
+  &.hamburger--open {
+    .hamburger__line {
+      background-color: blue;
+    }
+
+    .hamburger__line::before {
+      background-color: red;
+    }
+
+    .hamburger__line::after {
+      background-color: yellow;
+    }
   }
 }
 
@@ -38,10 +52,10 @@
   justify-content: space-between;
   background-color: white;
   padding: 0 1.7em;
-}
 
-.nav__logo {
-  font-size: 1em;
+  .nav__logo {
+    font-size: 1em;
+  }
 }
 
 .menu {
@@ -57,38 +71,24 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-}
 
-.menu__items {
-  text-align: center;
-}
-
-.menu__item {
-  font-size: 1.7em;
-  line-height: 2.3;
-  display: block;
-}
-
-.menu__item--github {
-  margin-top: 1.6em;
-  font-size: 1.3em;
-}
-
-.menu--open {
-  transform: translateY(0);
-}
-
-.hamburger--open {
-
-  & .hamburger__line {
-    background-color: blue;
+  .menu__items {
+    text-align: center;
   }
 
-  & .hamburger__line::before {
-    background-color: red;
+  .menu__item {
+    font-size: 1.7em;
+    line-height: 2.3;
+    display: block;
   }
 
-  & .hamburger__line::after {
-    background-color: yellow;
+  .menu__item--github {
+    margin-top: 1.6em;
+    font-size: 1.3em;
+  }
+
+  &.menu--open {
+    transform: translateY(0);
   }
 }
+
