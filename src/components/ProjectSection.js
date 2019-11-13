@@ -1,13 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../stylesheets/ProjectSection.scss";
-
+import "../stylesheets/Projects.scss";
 
 export default function ProjectSection(props) {
   return (
     <React.Fragment>
       {props.list.map(project => (
-        <NavLink to={`projects/${project.title}`}><ProjectItem img={project.img} info={project.info} /></NavLink>
+        <NavLink to={`projects/${project.path}`}>
+          <ProjectItem
+            img={project.img}
+            info={project.info}
+            title={project.title}
+          />
+        </NavLink>
       ))}
     </React.Fragment>
   );
@@ -16,8 +21,8 @@ export default function ProjectSection(props) {
 function ProjectItem(props) {
   return (
     <section className="project__item">
-      <img className="project__item__image" src={props.img} />
-      <h1 className="project__item__info">{props.info}</h1>
+      <h1 className="project__item-title">01 <br/><span>{props.title}</span></h1>
+      <img className="project__item-image" src={props.img} />
     </section>
   );
 }
