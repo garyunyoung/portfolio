@@ -35,13 +35,15 @@ export default class Project extends React.Component {
       <Switch>
         <Route exact path="/projects" render={() => (
         <section className="projects">
-          <div className="projects__filter">
-            <h1 className="projects__filter__button" onClick={() => {this.setFilter('web')}}>web</h1>
-            <h1 className="projects__filter__button" onClick={() => {this.setFilter('pr')}}>pr</h1>
-          </div>
           <div className='projects__container'>
             <h1 className="projects__title">PROJECtS /></h1>
-          <ProjectSection list={this.state.projects.filter(project=> project.category === this.state.filter || this.state.filter === 'all')} />
+            <div className="projects__filter">
+              <h1 className="projects__filter__button" onClick={() => {this.setFilter('web')}}>web</h1>
+              <h1 className="projects__filter__button" onClick={() => {this.setFilter('pr')}}>pr</h1>
+            </div>
+            <div className='projects__item-container'>
+              <ProjectSection list={this.state.projects.filter(project=> project.category === this.state.filter || this.state.filter === 'all')} />
+            </div>
           </div>
         </section>)}/>
         <Route path="/projects/the-beths" component={BethsPage} />
