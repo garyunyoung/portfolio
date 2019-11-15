@@ -40,7 +40,7 @@ export default class NavBar extends React.Component {
             </li>
             <li className="menu-desktop__item">
               <NavLink to="/about" onClick={() => this.closeNav()}>
-                Contact
+                Me
               </NavLink>
             </li>
             <li className="menu-desktop__item">

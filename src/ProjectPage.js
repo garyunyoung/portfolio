@@ -10,36 +10,43 @@ import "./stylesheets/ProjectPage.scss";
 export default function ProjectPage(props) {
   return (
     <section className="project">
+      <img className="project__image" src={beths0} />
       <div className="project__content">
-        <img className="project__image" src={designMock} />
-        <p className="project__title">
-          <span>Stitched</span>
-        </p>
-        <p className="project__tools">Elixir | Phoenix | React | SCSS | HTML</p>
-        <p className="project__info">{props.info}</p>
-        <ul className="project__bullets">
-          <li>DESIGNED AND INTERATED USING GRAVIT.IO</li>
-          <li>MOBILE FiRST, RESPONSIVE AND ACCESSIBLE</li>
-          <li>INTEGrEATED GOOGLE ANALYTICS USING GOOGLE TAG MANAGER</li>
-        </ul>
+        <div className="project__description-container">
+          <p className="project__title">
+            <span>Stitched</span>
+          </p>
+          <p className="project__tools">
+            Elixir &nbsp; | &nbsp; Phoenix &nbsp;| &nbsp; React &nbsp; | &nbsp;
+            SCSS &nbsp; | &nbsp; HTML
+          </p>
+          <p className="project__description">{props.info}</p>
+        </div>
+        <div className="project__info-container">
+          <p className="project__info">{props.info}</p>
+          <ul className="project__bullets">
+            <span>KEY FEATURES</span>
+            <li>DESIGNED AND INTERATED USING GRAVIT.IO</li>
+            <li>MOBILE FiRST, RESPONSIVE AND ACCESSIBLE</li>
+            <li>INTEGrEATED GOOGLE ANALYTICS USING GOOGLE TAG MANAGER</li>
+          </ul>
+        </div>
         <div className="project__links">
           <a className="project__link" href={props.link}>
             visit site
           </a>
-          <span> | </span>
+          <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
           <a className="project__link" href={props.link}>
             github
           </a>
           <br />
           <NavLink className="project__link project__link--back" to="/projects">
-            back
+            &nbsp;&nbsp; back
           </NavLink>
           <br />
         </div>
         <a href="/">v</a>
-        <img src={beths0} />
-        <img src={beths1} />
-        <img src={beths2} />
+        <img src={designMock} />
       </div>
     </section>
   );
