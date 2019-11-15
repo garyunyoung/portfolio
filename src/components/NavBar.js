@@ -31,6 +31,25 @@ export default class NavBar extends React.Component {
             onClick={() => this.closeNav()}
           >{`< GARYUN YOUNG />`}</NavLink>
         </h2>
+        <div className="menu-desktop">
+          <ul className="menu-desktop__items">
+            <li className="menu-desktop__item">
+              <NavLink to="/projects" onClick={() => this.closeNav()}>
+                Projects
+              </NavLink>
+            </li>
+            <li className="menu-desktop__item">
+              <NavLink to="/about" onClick={() => this.closeNav()}>
+                Contact
+              </NavLink>
+            </li>
+            <li className="menu-desktop__item">
+              <NavLink to="/" onClick={() => this.closeNav()}>
+                ... />
+              </NavLink>
+            </li>
+          </ul>
+        </div>
         <div
           className={`hamburger ${this.state.isOpen ? "hamburger--open" : ""}`}
           onClick={() => this.toggleNav()}

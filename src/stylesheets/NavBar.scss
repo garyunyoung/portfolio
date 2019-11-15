@@ -51,7 +51,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
   padding: 0 1.7em;
 
   .nav__logo {
@@ -93,3 +92,30 @@
   }
 }
 
+.menu-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .menu-desktop {
+    display: flex;
+    direction: ltr;
+
+    .menu-desktop__items {
+      display: flex;
+      list-style: none;
+    }
+
+    .menu-desktop__item {
+      padding: 0 0.25em;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
