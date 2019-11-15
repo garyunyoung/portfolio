@@ -19,13 +19,18 @@ export default function ProjectSection(props) {
 
 function ProjectItem(props) {
   return (
-    <section className="project__item">
+    <li className="project__item">
       <NavLink to={`projects/${props.path}`}>
-        <img className="project__item-image" src={props.img} />
-        <h1 className="project__item-title">
-          <span>{props.title}</span>
-        </h1>
+        <span className="project__item-image-overlay"></span>
+        <span className="project__item-image-wrapper">
+          <img className="project__item-image" src={props.img} />
+        </span>
+        <span className="project__item-title-container">
+          <span className="project__item-title">
+            <span>{props.title}</span>
+          </span>
+        </span>
       </NavLink>
-    </section>
+    </li>
   );
 }

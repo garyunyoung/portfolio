@@ -11,7 +11,7 @@
     font-size: 17px;
     margin: 1em 0;
   }
-  .projects__item-container {
+  .projects__items-container {
     padding: 0 1em;
   }
 
@@ -35,40 +35,47 @@
 
 .projects__filter {
   display: none;
-  // font-family: "Open Sans", sans-serif;
-  // text-transform: uppercase;
-  // font-style: italic;
-  // text-align: center;
-  // font-weight: 600;
-  // display: flex;
-  // justify-content: center;
-  // margin-bottom: 5vh;
-
-  // .projects__filter__button {
-  //   width: 3em;
-  //   height: 1.6em;
-  //   box-shadow: 3px 3px #72c5f9;
-  //   margin: 0 5vw;
-  // }
 }
 
 @media only screen and (min-width: 600px) {
   .projects {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
+
+    .projects__item {
+      list-style: none;
+    }
+
+    .project__item {
+      position: relative;
+      width: 30%;
+      clear: both;
+
+      &:nth-of-type(1) {
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 30%;
+      }
+
+      &:nth-of-type(2) {
+        width: 40%;
+        margin-top: 50px;
+        margin-left: 5%;
+      }
+
+      &:nth-of-type(3) {
+        float: right;
+        margin-top: -280px;
+        width: 70%;
+      }
+    }
+
+    .project__item-image {
+      height: 425px;
+    }
+
+    .project__item-title {
+      display: none;
+    }
   }
-
-  .projects__item-container {
-
-  }
-
-  .project__item {
-    width: 50%;
-    padding: 1em;
-  }
-
-  .project__item-title {
-    display: none;
-  }
-
 }

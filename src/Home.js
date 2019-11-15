@@ -11,7 +11,8 @@ export default function Home() {
           <span>
             Hi, I'm Garyun
             <br />A front end developer <br />
-            who likes to ....... <br />
+            who likes to <br /> design and develop!
+            <br />
             <br />
             Currently in <br />
             London UK

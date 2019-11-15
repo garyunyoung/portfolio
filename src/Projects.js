@@ -14,8 +14,8 @@ export default class Project extends React.Component {
     this.state = {
       projects: [
         { img: beths, path: 'the-beths', title: "the beths", category: "web" },
-        { img: beths, path: 'stitched', title: "stitched", category: "web" },
-        { img: beths, path: 'waldour-studios', title: "waldour studios", category: "web" },
+        { img: splore, path: 'stitched', title: "stitched", category: "web" },
+        { img: scj, path: 'waldour-studios', title: "waldour studios", category: "web" },
         { img: splore, path: 'splore-2018', title: 'splore', category: "pr" },
         { img: nats, path: 'night-at-the-savoy', title: 'night at the savoy', category: "pr" },
         { img: scj, path: 'sail-city-jump', title:'sail city jump', category: "pr" },
@@ -41,8 +41,10 @@ export default class Project extends React.Component {
               <h1 className="projects__filter__button" onClick={() => {this.setFilter('web')}}>web</h1>
               <h1 className="projects__filter__button" onClick={() => {this.setFilter('pr')}}>pr</h1>
             </div>
-            <div className='projects__item-container'>
-              <ProjectSection list={this.state.projects.filter(project=> project.category === this.state.filter || this.state.filter === 'all')} />
+            <div className='projects__items-container'>
+              <ul className='projects__item'>
+                <ProjectSection list={this.state.projects.filter(project=> project.category === this.state.filter || this.state.filter === 'all')} />
+              </ul>
             </div>
           </div>
         </section>)}/>

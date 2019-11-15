@@ -4,12 +4,7 @@
     flex-flow: column;
     justify-content: center;
     text-align: center;
-    padding: 0 1.7em;
-  }
-
-  .project__image {
-    margin-bottom: 2em;
-    height: 425px;
+    padding: 0 1.7em 4em;
   }
 
   .project__title span {
@@ -31,6 +26,10 @@
 
   .project__link {
     text-decoration: underline;
+  }
+
+  .project__link-image {
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
   }
 
   .project__link--back {
@@ -87,7 +86,7 @@
 
     .project__info-container {
       display: flex;
-      flex-flow: row-reverse;
+      flex-flow: row;
       text-align: left;
     }
 
@@ -113,7 +112,11 @@
       margin-top: 4em;
     }
 
-    .project__info,
+    .project__info {
+      font-size: 24px;
+      padding-right: 2em;
+    }
+
     .project__bullets {
       font-size: 16px;
     }
