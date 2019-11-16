@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NavBar from "./components/NavBar";
 import Projects from "./Projects";
 import About from "./About";
 import Home from "./Home";
@@ -10,7 +9,6 @@ export default class App extends Component {
     return (
       <Router>
         <section className="App">
-          <NavBar />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route

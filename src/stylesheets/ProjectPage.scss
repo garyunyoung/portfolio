@@ -58,6 +58,16 @@
   .project__bullets {
     margin-bottom: 1em;
   }
+
+  .project__tools-text {
+    padding: 0 1em;
+    border-right: 1px solid #9b9999;
+    cursor: default;
+
+    &:last-child {
+      border: none;
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -76,7 +86,6 @@
       max-width: 600px;
       margin: 2em auto 1em;
     }
-
 
     .project__description-container,
     .project__info-container,

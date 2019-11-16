@@ -1,25 +1,20 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { BethsPage, Splore } from './ProjectPage';
-import ProjectSection from './components/ProjectSection';
-import splore from "./images/splore-c.jpg";
-import nats from "./images/night-at-the-savoy.jpg";
-import scj from "./images/sail-city-jump.jpg";
-import beths from './images/beths-project.png';
+import {
+  stitchedProject,
+  bethsProject,
+  waldourStudiosProject
+} from "./ProjectData";
+import NavBar from "./components/NavBar";
+import ProjectPage from "./ProjectPage";
+import ProjectSection from "./components/ProjectSection";
 import "./stylesheets/Projects.scss";
 
 export default class Project extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      projects: [
-        { img: beths, path: 'the-beths', title: "the beths", category: "web" },
-        { img: splore, path: 'stitched', title: "stitched", category: "web" },
-        { img: scj, path: 'waldour-studios', title: "waldour studios", category: "web" },
-        { img: splore, path: 'splore-2018', title: 'splore', category: "pr" },
-        { img: nats, path: 'night-at-the-savoy', title: 'night at the savoy', category: "pr" },
-        { img: scj, path: 'sail-city-jump', title:'sail city jump', category: "pr" },
-      ],
+      projects: [stitchedProject, bethsProject, waldourStudiosProject],
       filter: "web"
     };
   }
@@ -33,24 +28,115 @@ export default class Project extends React.Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/projects" render={() => (
-        <section className="projects">
-          <div className='projects__container'>
-            <h1 className="projects__title">PROJECtS /></h1>
-            <div className="projects__filter">
-              <h1 className="projects__filter__button" onClick={() => {this.setFilter('web')}}>web</h1>
-              <h1 className="projects__filter__button" onClick={() => {this.setFilter('pr')}}>pr</h1>
-            </div>
-            <div className='projects__items-container'>
-              <ul className='projects__item'>
-                <ProjectSection list={this.state.projects.filter(project=> project.category === this.state.filter || this.state.filter === 'all')} />
-              </ul>
-            </div>
-          </div>
-        </section>)}/>
-        <Route path="/projects/the-beths" component={BethsPage} />
-        <Route path="/projects/splore-2018" component={Splore} />
+        <Route
+          exact
+          path="/projects"
+          render={() => (
+            <React.Fragment>
+              <NavBar link="/" title="< GARYUN YOUNG />" />
+              <section className="projects">
+                <div className="projects__container">
+                  <h1 className="projects__title">PROJECTS /></h1>
+                  <ProjectFilter
+                    setFilter={category => this.setFilter(category)}
+                  />
+                  <div className="projects__items-container">
+                    <ul className="projects__item">
+                      <ProjectSection
+                        list={this.state.projects.filter(
+                          project =>
+                            project.category === this.state.filter ||
+                            this.state.filter === "all"
+                        )}
+                      />
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </React.Fragment>
+          )}
+        />
+        <Route
+          path={`/projects/${stitchedProject.path}`}
+          component={Stitched}
+        />
+        <Route path={`/projects/${bethsProject.path}`} component={TheBeths} />
+        <Route
+          path={`/projects/${waldourStudiosProject.path}`}
+          component={WaldourStudios}
+        />
       </Switch>
     );
   }
 }
+
+const ProjectFilter = props => {
+  return (
+    <div className="projects__filter">
+      <p
+        className="projects__filter__button"
+        onClick={() => {
+          props.setFilter("web");
+        }}
+      >
+        web
+      </p>
+      <p
+        className="projects__filter__button"
+        onClick={() => {
+          props.setFilter("pr");
+        }}
+      >
+        pr
+      </p>
+    </div>
+  );
+};
+
+export const Stitched = () => (
+  <React.Fragment>
+    <NavBar link="/projects" title="</ back" />
+    <ProjectPage
+      title={stitchedProject.title}
+      images={stitchedProject.images}
+      companyDescription={stitchedProject.companyDescription}
+      info={stitchedProject.info}
+      link={stitchedProject.link}
+      displayLink={stitchedProject.displayLink}
+      technologies={stitchedProject.technologies}
+      keyFeatures={stitchedProject.keyFeatures}
+    />
+  </React.Fragment>
+);
+
+export const TheBeths = () => (
+  <React.Fragment>
+    <NavBar link="/projects" title="</ back" />
+    <ProjectPage
+      title={bethsProject.title}
+      images={bethsProject.images}
+      companyDescription={bethsProject.companyDescription}
+      info={bethsProject.info}
+      link={bethsProject.link}
+      displayLink={bethsProject.displayLink}
+      technologies={bethsProject.technologies}
+      keyFeatures={bethsProject.keyFeatures}
+    />
+  </React.Fragment>
+);
+
+export const WaldourStudios = () => (
+  <React.Fragment>
+    <NavBar link="/projects" title="</ back" />
+    <ProjectPage
+      title={waldourStudiosProject.title}
+      images={waldourStudiosProject.images}
+      companyDescription={waldourStudiosProject.companyDescription}
+      info={waldourStudiosProject.info}
+      link={waldourStudiosProject.link}
+      displayLink={waldourStudiosProject.displayLink}
+      technologies={waldourStudiosProject.technologies}
+      keyFeatures={waldourStudiosProject.keyFeatures}
+    />
+  </React.Fragment>
+);

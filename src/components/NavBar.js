@@ -26,10 +26,9 @@ export default class NavBar extends React.Component {
     return (
       <div className="nav">
         <h2 className="nav__logo">
-          <NavLink
-            to="/"
-            onClick={() => this.closeNav()}
-          >{`< GARYUN YOUNG />`}</NavLink>
+          <NavLink to={this.props.link} onClick={() => this.closeNav()}>
+            {this.props.title}
+          </NavLink>
         </h2>
         <div className="menu-desktop">
           <ul className="menu-desktop__items">
