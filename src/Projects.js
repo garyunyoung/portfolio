@@ -27,7 +27,7 @@ export default class Project extends React.Component {
 
   render() {
     return (
-      <section className="projects">
+      <section id="projects" className="projects">
         <div className="projects__container">
           <h1 className="projects__title">PROJECTS /></h1>
           <ProjectFilter setFilter={category => this.setFilter(category)} />
@@ -72,40 +72,49 @@ const ProjectFilter = props => {
 };
 
 export const Stitched = () => (
-  <ProjectPage
-    title={stitchedProject.title}
-    images={stitchedProject.images}
-    companyDescription={stitchedProject.companyDescription}
-    info={stitchedProject.info}
-    link={stitchedProject.link}
-    displayLink={stitchedProject.displayLink}
-    technologies={stitchedProject.technologies}
-    keyFeatures={stitchedProject.keyFeatures}
-  />
+  <React.Fragment>
+    <NavBar link="/#projects" title="< BACK" />
+    <ProjectPage
+      title={stitchedProject.title}
+      images={stitchedProject.images}
+      companyDescription={stitchedProject.companyDescription}
+      info={stitchedProject.info}
+      link={stitchedProject.link}
+      displayLink={stitchedProject.displayLink}
+      technologies={stitchedProject.technologies}
+      keyFeatures={stitchedProject.keyFeatures}
+    />
+  </React.Fragment>
 );
 
 export const TheBeths = () => (
-  <ProjectPage
-    title={bethsProject.title}
-    images={bethsProject.images}
-    companyDescription={bethsProject.companyDescription}
-    info={bethsProject.info}
-    link={bethsProject.link}
-    displayLink={bethsProject.displayLink}
-    technologies={bethsProject.technologies}
-    keyFeatures={bethsProject.keyFeatures}
-  />
+  <React.Fragment>
+    <NavBar link="/#projects" title="< BACK" />
+    <ProjectPage
+      title={bethsProject.title}
+      images={bethsProject.images}
+      companyDescription={bethsProject.companyDescription}
+      info={bethsProject.info}
+      link={bethsProject.link}
+      displayLink={bethsProject.displayLink}
+      technologies={bethsProject.technologies}
+      keyFeatures={bethsProject.keyFeatures}
+    />
+  </React.Fragment>
 );
 
 export const WaldourStudios = () => (
-  <ProjectPage
-    title={waldourStudiosProject.title}
-    images={waldourStudiosProject.images}
-    companyDescription={waldourStudiosProject.companyDescription}
-    info={waldourStudiosProject.info}
-    link={waldourStudiosProject.link}
-    displayLink={waldourStudiosProject.displayLink}
-    technologies={waldourStudiosProject.technologies}
-    keyFeatures={waldourStudiosProject.keyFeatures}
-  />
+  <React.Fragment>
+    <NavBar link="/#projects" title="< BACK" />
+    <ProjectPage
+      title={waldourStudiosProject.title}
+      images={waldourStudiosProject.images}
+      companyDescription={waldourStudiosProject.companyDescription}
+      info={waldourStudiosProject.info}
+      link={waldourStudiosProject.link}
+      displayLink={waldourStudiosProject.displayLink}
+      technologies={waldourStudiosProject.technologies}
+      keyFeatures={waldourStudiosProject.keyFeatures}
+    />
+  </React.Fragment>
 );

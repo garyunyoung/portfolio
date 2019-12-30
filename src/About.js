@@ -5,7 +5,7 @@ import "./stylesheets/About.scss";
 
 export default function About() {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="about__content">
         <div className="about__header-image">
           {/* <img className="about__image" src={profileIllustration} /> */}

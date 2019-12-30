@@ -26,19 +26,19 @@ export default class NavBar extends React.Component {
     return (
       <div className="nav">
         <h2 className="nav__logo">
-          <NavLink to={this.props.link} onClick={() => this.closeNav()}>
+          <a href={this.props.link} onClick={() => this.closeNav()}>
             {this.props.title}
-          </NavLink>
+          </a>
         </h2>
         <div className="menu-desktop">
           <ul className="menu-desktop__items">
             <li className="menu-desktop__item">
-              <a href="#" onClick={() => this.closeNav()}>
+              <a href="/#projects" onClick={() => this.closeNav()}>
                 Projects
               </a>
             </li>
             <li className="menu-desktop__item">
-              <a href="#" onClick={() => this.closeNav()}>
+              <a href="/#about" onClick={() => this.closeNav()}>
                 Me
               </a>
             </li>
@@ -50,7 +50,7 @@ export default class NavBar extends React.Component {
         >
           <div className="hamburger__line" />
         </div>
-        <NavMenu open={this.state.isOpen} />
+        <NavMenu open={this.state.isOpen} closeNav={() => this.closeNav()} />
       </div>
     );
   }
@@ -61,31 +61,22 @@ function NavMenu(props) {
     <nav className={`menu ${props.open ? "menu--open" : ""}`}>
       <ul className="menu__items">
         <li>
-          <NavLink
+          <a
             className="menu__item"
-            to="/projects"
-            onClick={() => this.closeNav()}
+            href="/#projects"
+            onClick={() => props.closeNav()}
           >
             Projects />
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink
+          <a
             className="menu__item"
-            to="/about"
-            onClick={() => this.closeNav()}
+            href="/#about"
+            onClick={() => props.closeNav()}
           >
-            Contact />
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="menu__item"
-            to="/"
-            onClick={() => this.closeNav()}
-          >
-            ... />
-          </NavLink>
+            Me />
+          </a>
         </li>
         <li>
           <a

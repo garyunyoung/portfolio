@@ -4,6 +4,7 @@
   .projects__container {
     min-height: calc(100vh - 60px);
     padding: 0 1.7em;
+    padding-top: 60px;
   }
 
   .projects__title {
@@ -55,7 +56,10 @@
 }
 
 .projects__filter {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  margin: 1em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -92,7 +96,7 @@
     }
 
     .projects__title {
-      // display: none;
+      display: none;
     }
 
     .project__item-title span {

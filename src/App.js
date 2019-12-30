@@ -11,7 +11,6 @@ export default class App extends Component {
     return (
       <Router>
         <section className="App">
-          <NavBar link="/" title="< GARYUN YOUNG />" />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route
