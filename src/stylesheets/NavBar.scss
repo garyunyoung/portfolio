@@ -98,6 +98,12 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .nav__logo {
+    &:hover {
+      border-bottom: 1px solid black;
+    }
+  }
+
   .menu-desktop {
     display: flex;
     direction: ltr;
@@ -112,6 +118,10 @@
 
       &:last-child {
         padding-right: 0;
+      }
+
+      &:hover {
+        border-bottom: 1px solid black;
       }
     }
   }
