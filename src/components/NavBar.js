@@ -53,7 +53,6 @@ export default class NavBar extends React.Component {
           className={`hamburger ${this.state.isOpen ? "hamburger--open" : ""}`}
           onClick={() => this.toggleNav()}
         >
-          MENU
           <div className="hamburger__line" />
         </div>
         <NavMenu open={this.state.isOpen} />
@@ -100,7 +99,7 @@ function NavMenu(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-github" />
+            github
           </a>
         </li>
       </ul>

@@ -9,7 +9,6 @@ import About from "./About";
 export default function Home() {
   return (
     <React.Fragment>
-      <NavBar link="/" title="< GARYUN YOUNG />" />
       <section className="home">
         <div className="home__content">
           <div className="home__text">
@@ -23,7 +22,7 @@ export default function Home() {
             </span>
           </div>
           <img className="home__image" src={profileIllustration} />
-          <NavLink to="/projects">Projects</NavLink>
+          <p>Projects</p>
           <p>↓</p>
         </div>
       </section>
