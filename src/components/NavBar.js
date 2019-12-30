@@ -33,19 +33,14 @@ export default class NavBar extends React.Component {
         <div className="menu-desktop">
           <ul className="menu-desktop__items">
             <li className="menu-desktop__item">
-              <NavLink to="/projects" onClick={() => this.closeNav()}>
+              <a href="#" onClick={() => this.closeNav()}>
                 Projects
-              </NavLink>
+              </a>
             </li>
             <li className="menu-desktop__item">
-              <NavLink to="/about" onClick={() => this.closeNav()}>
+              <a href="#" onClick={() => this.closeNav()}>
                 Me
-              </NavLink>
-            </li>
-            <li className="menu-desktop__item">
-              <NavLink to="/" onClick={() => this.closeNav()}>
-                ... />
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>

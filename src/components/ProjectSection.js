@@ -32,7 +32,7 @@ function ProjectItem(props) {
         </span>
         <span className="project__item-title-container">
           <span className="project__item-title">
-            <span>{props.title}</span>
+            {props.title}
             <ul className="project__item-technologies">
               {props.technologies.map(technology => {
                 return (

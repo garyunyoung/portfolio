@@ -8,7 +8,7 @@ export default function ProjectPage(props) {
       <div className="project__content">
         <div className="project__description-container">
           <p className="project__title">
-            <span>{props.title}</span>
+           {props.title}
           </p>
           <p className="project__tools">
             {props.technologies.map(technology => {
@@ -32,7 +32,7 @@ export default function ProjectPage(props) {
         <div className="project__info-container">
           <p className="project__info">{props.info}</p>
           <ul className="project__bullets">
-            <span>KEY FEATURES</span>
+            <p>KEY FEATURES</p>
             {props.keyFeatures.map(keyFeature => {
               return <li>{keyFeature}</li>;
             })}

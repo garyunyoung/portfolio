@@ -26,10 +26,6 @@
     text-transform: uppercase;
   }
 
-  .project__item-title span {
-    box-shadow: inset 0 -8px 0 #ffddde;
-  }
-
   .project__item-technologies {
     list-style: none;
     display: flex;
@@ -96,7 +92,7 @@
     }
 
     .projects__title {
-      display: none;
+      // display: none;
     }
 
     .project__item-title span {
