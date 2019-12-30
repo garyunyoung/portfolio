@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Projects from "./Projects";
+import {
+  Stitched,
+  TheBeths,
+  WaldourStudios
+} from "./Projects";
+import Projects from "./Projects"
 import About from "./About";
 import Home from "./Home";
 
@@ -16,6 +21,21 @@ export default class App extends Component {
                 <React.Fragment>
                   <Route path="/projects" component={Projects} />
                   <Route path="/about" component={About} />
+                  <Route
+                    // path={`/projects/${stitchedProject.path}`}
+                    path={`/projects/stitched`}
+                    component={Stitched}
+                  />
+                  <Route
+                    // path={`/projects/${bethsProject.path}`}
+                    path={`/projects/the-beths`}
+                    component={TheBeths}
+                  />
+                  <Route
+                    // path={`/projects/${waldourStudiosProject.path}`}
+                    path={`/projects/waldour-studio`}
+                    component={WaldourStudios}
+                  />
                 </React.Fragment>
               )}
             />

@@ -53,6 +53,7 @@ export default class NavBar extends React.Component {
           className={`hamburger ${this.state.isOpen ? "hamburger--open" : ""}`}
           onClick={() => this.toggleNav()}
         >
+          MENU
           <div className="hamburger__line" />
         </div>
         <NavMenu open={this.state.isOpen} />
