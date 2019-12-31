@@ -1,5 +1,7 @@
+@import "./Variables.scss";
+
 .home__content {
-  height: calc(100vh - 60px);
+  height: calc(100vh - #{$site-header-height-mobile});
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -30,7 +32,7 @@
     // background-color: #f7f7f7;
     // outline: 1px solid #cccccc;
 
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $link-underline-color;
   }
 }
 

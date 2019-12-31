@@ -1,10 +1,12 @@
+@import "./Variables.scss";
+
 .projects {
   height: 100%;
 
   .projects__container {
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - #{$site-header-height-mobile});
     padding: 0 1.7em;
-    padding-top: 60px;
+    padding-top: $site-header-height-mobile;
   }
 
   .projects__title {

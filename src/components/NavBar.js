@@ -23,10 +23,14 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <header className={`nav ${this.state.isOpen ? "nav--open" : ""}`}>
-        <span className="nav__logo-wrapper">
+      <header
+        className={`site-header ${
+          this.state.isOpen ? "site-header--display-mobile-nav" : ""
+        }`}
+      >
+        <span className="site-header__logo-wrapper">
           <a
-            className="nav__logo"
+            className="site-header__logo"
             href={this.props.link}
             onClick={() => this.closeNav()}
           >
@@ -34,12 +38,12 @@ export default class NavBar extends React.Component {
           </a>
         </span>
         <button
-          className={`hamburger ${this.state.isOpen ? "hamburger--open" : ""}`}
+          className="site-header__mobile-menu-button"
           onClick={() => this.toggleNav()}
         >
           MENU
-          <span className="hamburger__menu-text"></span>
-          <span className="hamburger__menu-bar"></span>
+          <span className="site-header__mobile-menu-text"></span>
+          <span className="site-header__mobile-menu-bar"></span>
         </button>
         <NavMenu open={this.state.isOpen} closeNav={() => this.closeNav()} />
       </header>
@@ -49,20 +53,20 @@ export default class NavBar extends React.Component {
 
 function NavMenu(props) {
   return (
-    <nav className={`nav__menu`}>
+    <nav className="site-menu site-header__nav">
       {/* toggle aria label */}
-      <ul className="nav__menu-items">
-        <li className="nav__menu-item">
+      <ul className="site-menu__nav-items">
+        <li className="site-menu__nav-item">
           <a href="/#projects" onClick={() => props.closeNav()}>
             Projects
           </a>
         </li>
-        <li className="nav__menu-item">
+        <li className="site-menu__nav-item">
           <a href="/#about" onClick={() => props.closeNav()}>
             Me
           </a>
         </li>
-        <li className="nav__menu-item nav__menu-item--github">
+        <li className="site-menu__nav-item site-menu__nav-item--github">
           <a
             href="https://github.com/garyunyoung"
             target="_blank"

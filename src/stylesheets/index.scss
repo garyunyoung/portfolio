@@ -1,10 +1,13 @@
+@import "./Variables.scss";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+body,
+button {
   font-family: "Inconsolata", monospace;
 }
 
@@ -12,11 +15,17 @@ img {
   width: 100%;
 }
 
+button {
+  background-color: transparent;
+}
+
 a:-webkit-any-link {
   text-decoration: none;
   color: black;
 }
 
-#root {
-  padding-top: 60px;
+#root::before {
+  content: "";
+  height: $site-header-height-mobile;
+  display: block;
 }
