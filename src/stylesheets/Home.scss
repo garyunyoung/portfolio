@@ -8,7 +8,7 @@
   justify-content: center;
 
   text-align: center;
-  padding: 26px;
+  padding: 0 $side-padding-mobile;
 }
 
 .home__text {
@@ -29,10 +29,7 @@
   padding: 8px 16px;
 
   &:hover {
-    // background-color: #f7f7f7;
-    // outline: 1px solid #cccccc;
-
-    border-bottom: 1px solid $link-underline-color;
+    border-bottom: 1px solid $link-underline;
   }
 }
 

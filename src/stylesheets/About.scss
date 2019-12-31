@@ -1,11 +1,9 @@
 @import "./Variables.scss";
 
 .about {
-  height: 100%;
-
   .about__content {
     min-height: calc(100vh - #{$site-header-height-mobile});
-    padding: 0 1.7em;
+    padding: 0 $side-padding-mobile;
 
     .about__header-image {
       position: relative;

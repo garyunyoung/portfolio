@@ -27,20 +27,18 @@ export default class Project extends React.Component {
   render() {
     return (
       <section id="projects" className="projects">
-        <div className="projects__container">
-          <h1 className="projects__title">PROJECTS</h1>
+        <div className="projects__content">
+          <h2 className="projects__title">PROJECTS</h2>
           <ProjectFilter setFilter={category => this.setFilter(category)} />
-          <div className="projects__items-container">
-            <ul className="projects__item">
-              <ProjectSection
-                list={this.state.projects.filter(
-                  project =>
-                    project.category === this.state.filter ||
-                    this.state.filter === "all"
-                )}
-              />
-            </ul>
-          </div>
+          <ul className="projects__project-items">
+            <ProjectSection
+              list={this.state.projects.filter(
+                project =>
+                  project.category === this.state.filter ||
+                  this.state.filter === "all"
+              )}
+            />
+          </ul>
         </div>
       </section>
     );

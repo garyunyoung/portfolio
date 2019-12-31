@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
-    margin-left: 24px;
+    margin-left: $side-padding-mobile;
   }
 
   .site-header__logo {
@@ -24,7 +24,7 @@
     border-bottom: 1px solid transparent;
 
     &:hover {
-      border-color: $link-underline-color;
+      border-color: $link-underline;
     }
   }
 
@@ -38,10 +38,10 @@
 
     border: 0;
     border-bottom: 1px solid transparent;
-    margin-right: 24px;
+    margin-right: $side-padding-mobile;
 
     &:hover {
-      border-color: $link-underline-color;
+      border-color: $link-underline;
       cursor: pointer;
     }
   }
@@ -111,7 +111,7 @@
       border-bottom: 1px solid transparent;
 
       &:hover {
-        border-color: $link-underline-color;
+        border-color: $link-underline;
       }
 
       &:first-child {

@@ -20,28 +20,24 @@ export default function ProjectSection(props) {
 
 function ProjectItem(props) {
   return (
-    <li className="project__item">
+    <li className="project-item">
       <NavLink to={`projects/${props.path}`}>
-        <span className="project__item-image-overlay"></span>
-        <span className="project__item-image-wrapper">
+        <div className="project-item__image-wrapper">
           <img
-            className="project__item-image"
+            className="project-item__image"
             src={props.img.src}
             alt={props.img.alt}
           />
-        </span>
-        <span className="project__item-title-container">
-          <span className="project__item-title">
-            {props.title}
-            <ul className="project__item-technologies">
-              {props.technologies.map(technology => {
-                return (
-                  <li className="project__item-technology">{technology}</li>
-                );
-              })}
-            </ul>
-          </span>
-        </span>
+        </div>
+        <div className="project-item__content">
+          <h3 className="project-item__title">{props.title}</h3>
+          <p className="project-item__technologies-subtitle">Key Technologies</p>
+          <ul className="project-item__technologies">
+            {props.technologies.map(technology => {
+              return <li className="project-item__technology">{technology}</li>;
+            })}
+          </ul>
+        </div>
       </NavLink>
     </li>
   );
