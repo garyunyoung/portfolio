@@ -1,18 +1,25 @@
 @import "./Variables.scss";
-
 .home__content {
   height: calc(100vh - #{$site-header-height-mobile});
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
   padding: 0 $side-padding-mobile;
 }
 
+.home__image {
+  width: 70%;
+  margin-top: 16px;
+}
+
+.home__image--desktop {
+  display: none;
+}
+
 .home__text {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.4;
   margin-bottom: 1em;
 }
@@ -23,13 +30,13 @@
 
 .home__projects-text {
   font-size: 16px;
-  margin: 32px auto 0;
-
   width: max-content;
   padding: 8px 16px;
+  margin: 8px auto 0;
 
   &:hover {
-    border-bottom: 1px solid $link-underline;
+    background-color: $hover-background;
+    outline: 1px solid $hover-outline;
   }
 }
 
@@ -41,16 +48,23 @@
     padding: 0 26px;
   }
 
+  .home__image {
+    display: none;
+  }
+
+  .home__image--desktop {
+    display: block;
+    width: 56%;
+  }
+
   .home__text {
     font-size: 32px;
-
     height: 100%;
     display: flex;
     flex-flow: column;
     justify-content: center;
     flex-grow: 1;
-
-    margin-top: 56px;
+    margin: 56px auto 0 -11%;
   }
 
   .home__currently-text {

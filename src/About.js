@@ -7,7 +7,7 @@ export default function About() {
     <section id="about" className="about">
       <div className="about__content">
         <div className="about__header-image">
-          {/* <img className="about__image" src={profileIllustration} /> */}
+          <img className="about__image" src={profileIllustration} />
           <p className="about__header-text">
             Hi, <br /> Nice to meet you!
           </p>
