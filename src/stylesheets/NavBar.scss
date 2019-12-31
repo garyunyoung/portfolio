@@ -1,44 +1,15 @@
 .hamburger {
-  direction: rtl;
-  position: relative;
-
-  .hamburger__line {
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 17px;
-    height: 1px;
-
-    &::before {
-      background-color: black;
-      content: "";
-      position: absolute;
-      bottom: 4px;
-      width: 14px;
-      height: 1px;
-    }
-
-    &::after {
-      background-color: black;
-      content: "";
-      position: absolute;
-      bottom: -4px;
-      width: 14px;
-      height: 1px;
-    }
+  .hamburger__menu-text--close {
+    display: none;
   }
 
   &.hamburger--open {
-    .hamburger__line {
-      background-color: blue;
+    .hamburger__menu-text {
+      display: none;
     }
 
-    .hamburger__line::before {
-      background-color: red;
-    }
-
-    .hamburger__line::after {
-      background-color: yellow;
+    .hamburger__menu-text--close {
+      display: block;
     }
   }
 }
@@ -51,9 +22,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.5em;
   background-color: white;
 
+  padding: 0 24px;
   .nav__logo {
     font-size: 1em;
   }
