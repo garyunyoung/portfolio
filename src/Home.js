@@ -7,7 +7,7 @@ import About from "./About";
 export default function Home() {
   return (
     <React.Fragment>
-      <NavBar link="/#" title="< GARYUN YOUNG />" />
+      <NavBar link="/#" title="GARYUN YOUNG" />
       <section className="home">
         <div className="home__content">
           <div className="home__text">

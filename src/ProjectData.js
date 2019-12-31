@@ -1,4 +1,3 @@
-import React from "react";
 import stitchedHomePage from "./images/stitched-0.png";
 import bethsHomePage from "./images/beths-project.png";
 import waldourStudioHomePage from "./images/waldour-1.png";

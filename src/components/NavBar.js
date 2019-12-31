@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../stylesheets/NavBar.scss";
 
 export default class NavBar extends React.Component {
@@ -67,7 +66,7 @@ function NavMenu(props) {
             href="/#projects"
             onClick={() => props.closeNav()}
           >
-            Projects />
+            Projects
           </a>
         </li>
         <li>
@@ -76,7 +75,7 @@ function NavMenu(props) {
             href="/#about"
             onClick={() => props.closeNav()}
           >
-            Me />
+            Me
           </a>
         </li>
         <li>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
 import {
   stitchedProject,
   bethsProject,
@@ -29,7 +28,7 @@ export default class Project extends React.Component {
     return (
       <section id="projects" className="projects">
         <div className="projects__container">
-          <h1 className="projects__title">PROJECTS /></h1>
+          <h1 className="projects__title">PROJECTS</h1>
           <ProjectFilter setFilter={category => this.setFilter(category)} />
           <div className="projects__items-container">
             <ul className="projects__item">

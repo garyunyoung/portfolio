@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "./components/NavBar";
 import profileIllustration from "./images/profile-illustration.svg";
 import "./stylesheets/About.scss";
 
