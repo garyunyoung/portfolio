@@ -3,34 +3,16 @@
 .about {
   .about__content {
     min-height: calc(100vh - #{$site-header-height-mobile});
-    padding: 0 $side-padding-mobile;
-
-    .about__header-image {
-      position: relative;
-      height: 260px;
-      margin-bottom: 1.5em;
-      z-index: -1;
-    }
-    .about__image {
-      width: 70%;
-
-      position: absolute;
-      right: 0;
-      bottom: 3.6em;
-    }
+    padding: 60px $side-padding-mobile 0;
 
     .about__header-text {
       font-size: 32px;
-      line-height: 1.4;
-
-      position: absolute;
-      bottom: 0;
-      left: 0;
+      margin: 32px 0 24px;
     }
 
     .about__text {
-      font-size: 13px;
-      margin-bottom: 2em;
+      font-size: 14px;
+      margin-bottom: 24px;
     }
   }
 }

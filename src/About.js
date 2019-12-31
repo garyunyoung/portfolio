@@ -1,17 +1,13 @@
 import React from "react";
-import profileIllustration from "./images/profile-illustration.svg";
 import "./stylesheets/About.scss";
 
 export default function About() {
   return (
     <section id="about" className="about">
       <div className="about__content">
-        <div className="about__header-image">
-          <img className="about__image" src={profileIllustration} />
-          <p className="about__header-text">
-            Hi, <br /> Nice to meet you!
-          </p>
-        </div>
+        <p className="about__header-text">
+          Hi, <br /> Nice to meet you!
+        </p>
         <p className="about__text">
           Garyun is a New Zealand native who came of age in the Auckland music
           scene before moving to sunny London.
@@ -22,11 +18,15 @@ export default function About() {
         </p>
         <a
           className="about__text"
-          href="mailto:garyunyoung@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/#contact"
         >
-          CONtACT | CV
+          Contact
+        </a>
+        <a
+          className="about__text"
+          href="/#contact"
+        >
+          CV
         </a>
       </div>
     </section>
