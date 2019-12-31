@@ -55,7 +55,7 @@ export const bethsProject = {
 export const waldourStudiosProject = {
   title: "Waldour Studios",
   path: "waldour-studios",
-  category: "web",
+  category: "pr",
   jobType: "Freelance",
   github: "https://github.com/garyunyoung",
   previewImage: { src: waldourStudioHomePage, alt: "Waldour Studio Home Page" },
