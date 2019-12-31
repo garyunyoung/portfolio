@@ -48,22 +48,25 @@ export default class Project extends React.Component {
 const ProjectFilter = props => {
   return (
     <div className="projects__filter">
-      <p
-        className="projects__filter__button"
-        onClick={() => {
-          props.setFilter("web");
-        }}
-      >
-        web
-      </p>
-      <p
-        className="projects__filter__button"
-        onClick={() => {
-          props.setFilter("pr");
-        }}
-      >
-        pr
-      </p>
+      <h4 className="projects__filter-title">Filter by:</h4>
+      <div className="projects__filter-buttons">
+        <button
+          className="projects__filter-button"
+          onClick={() => {
+            props.setFilter("web");
+          }}
+        >
+          web
+        </button>
+        <button
+          className="projects__filter-button"
+          onClick={() => {
+            props.setFilter("pr");
+          }}
+        >
+          pr
+        </button>
+      </div>
     </div>
   );
 };

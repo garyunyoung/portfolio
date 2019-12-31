@@ -32,10 +32,15 @@
   width: max-content;
   padding: 8px 16px;
   margin: 8px auto 0;
+  border: 1px solid black;
 
   &:hover {
-    background-color: $hover-background;
-    outline: 1px solid $hover-outline;
+    background-color: $black;
+    cursor: pointer;
+
+    p {
+      color: $white;
+    }
   }
 }
 
@@ -45,6 +50,7 @@
     align-items: flex-end;
     justify-content: left;
     padding: 0 26px;
+    margin: 0 auto 120px auto;
   }
 
   .home__image {
@@ -79,8 +85,6 @@
   .home {
     .home__content {
       max-width: $max-width-desktop;
-      margin: 0 auto;
     }
   }
 }
-

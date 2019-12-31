@@ -26,7 +26,6 @@ export default function Home() {
               <div className="home__projects-text">
                 <a href="/#projects">
                   <p>Projects</p>
-                  <p>↓</p>
                 </a>
               </div>
             </div>

@@ -3,9 +3,12 @@
 .about {
   .about__content {
     min-height: calc(100vh - #{$site-header-height-mobile});
-    padding: 60px $side-padding-mobile 0;
+    padding: 0 16px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 
-    .about__header-text {
+    .about__header {
       font-size: 32px;
       margin: 32px 0 24px;
     }
@@ -14,5 +17,36 @@
       font-size: 14px;
       margin-bottom: 24px;
     }
+
+    .about__links {
+      display: flex;
+    }
+
+    .about__link {
+      width: max-content;
+      min-width: 80px;
+      font-size: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      border: 1px solid $light-black;
+      padding: 4px 16px;
+      margin-right: 8px;
+
+      &:hover {
+        background-color: $black;
+        cursor: pointer;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .about__content {
+    max-width: $max-width-desktop;
+    margin: 0 auto;
   }
 }

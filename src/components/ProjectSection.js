@@ -12,6 +12,7 @@ export default function ProjectSection(props) {
           title={project.title}
           path={project.path}
           technologies={project.technologies}
+          excerpt={project.excerpt}
         />
       ))}
     </React.Fragment>
@@ -35,13 +36,14 @@ function ProjectItem(props) {
         <div className="project-item__content">
           <h3 className="project-item__title">{props.title}</h3>
           <p className="project-item__technologies-subtitle">
-            Key Technologies
+            Key Technologies:
           </p>
           <ul className="project-item__technologies">
             {props.technologies.map(technology => {
               return <li className="project-item__technology">{technology}</li>;
             })}
           </ul>
+          <p className="project-item__excerpt">{props.excerpt}</p>
         </div>
       </NavLink>
     </li>

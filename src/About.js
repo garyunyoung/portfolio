@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about" className="about">
       <div className="about__content">
-        <p className="about__header-text">
+        <p className="about__header">
           Hi, <br /> Nice to meet you!
         </p>
         <p className="about__text">
@@ -16,18 +16,14 @@ export default function About() {
           She is far too obsessed with a band called The Beths, a dance called
           Lindy Hop, and that drool-worthy dish we call Carbonara.
         </p>
-        <a
-          className="about__text"
-          href="/#contact"
-        >
-          Contact
-        </a>
-        <a
-          className="about__text"
-          href="/#contact"
-        >
-          CV
-        </a>
+        <div className="about__links">
+          <div className="about__link">
+            <a href="/#contact">Contact</a>
+          </div>
+          <div className="about__link">
+            <a href="/#contact">CV</a>
+          </div>
+        </div>
       </div>
     </section>
   );

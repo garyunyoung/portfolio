@@ -10,6 +10,8 @@ export const stitchedProject = {
   jobType: "work",
   github: "n/a",
   previewImage: { src: stitchedHomePage, alt: "Stitched Home Page" },
+  excerpt:
+    "Stitched is an eco-friendly online curtain + blind retail start-up with a focus on 3D visualisation and AR",
   images: [{ src: stitchedLukesPage, alt: "Stitched Inspiration Page" }],
   companyDescription:
     "Stitched is an eco-friendly online curtain + blind retail start-up with a focus on 3D visualisation and AR",
@@ -35,6 +37,8 @@ export const bethsProject = {
   jobType: "Freelance",
   github: "https://github.com/garyunyoung",
   previewImage: { src: bethsHomePage, alt: "The Beths Home Page" },
+  excerpt:
+    "Stitched is an eco-friendly online curtain + blind retail start-up with a focus on 3D visualisation and AR",
   images: [{ src: bethsHomePage, alt: "The Beths Home Page" }],
   companyDescription:
     "The Beths are a New Zealand indie pop band, originally from Auckland, New Zealand.",
@@ -59,6 +63,8 @@ export const waldourStudiosProject = {
   jobType: "Freelance",
   github: "https://github.com/garyunyoung",
   previewImage: { src: waldourStudioHomePage, alt: "Waldour Studio Home Page" },
+  excerpt:
+    "Stitched is an eco-friendly online curtain + blind retail start-up with a focus on 3D visualisation and AR",
   images: [{ src: waldourStudioHomePage, alt: "Waldour Studio Home Page" }],
   companyDescription:
     "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
@@ -78,10 +84,12 @@ export const waldourStudiosProject = {
 export const learnKoreanProject = {
   title: "Learn Korean With Me",
   path: "learn-korean-with-me",
-  category: "web",
+  category: "pr",
   jobType: "Project",
   github: "https://github.com/garyunyoung",
   previewImage: { src: waldourStudioHomePage, alt: "Waldour Studio Home Page" },
+  excerpt:
+    "Stitched is an eco-friendly online curtain + blind retail start-up with a focus on 3D visualisation and AR",
   images: [{ src: waldourStudioHomePage, alt: "Waldour Studio Home Page" }],
   companyDescription:
     "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
