@@ -23,64 +23,47 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <div className="nav">
-        <h2 className="nav__logo">
-          <a href={this.props.link} onClick={() => this.closeNav()}>
+      <header className={`nav ${this.state.isOpen ? "nav--open" : ""}`}>
+        <span className="nav__logo-wrapper">
+          <a
+            className="nav__logo"
+            href={this.props.link}
+            onClick={() => this.closeNav()}
+          >
             {this.props.title}
           </a>
-        </h2>
-        <div className="menu-desktop">
-          <ul className="menu-desktop__items">
-            <li className="menu-desktop__item">
-              <a href="/#projects" onClick={() => this.closeNav()}>
-                Projects
-              </a>
-            </li>
-            <li className="menu-desktop__item">
-              <a href="/#about" onClick={() => this.closeNav()}>
-                Me
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div
+        </span>
+        <button
           className={`hamburger ${this.state.isOpen ? "hamburger--open" : ""}`}
           onClick={() => this.toggleNav()}
         >
-          <p className="hamburger__menu-text">MENU //</p>
-          <p className="hamburger__menu-text hamburger__menu-text--close">MENU X</p>
-          <NavMenu open={this.state.isOpen} closeNav={() => this.closeNav()} />
-        </div>
-      </div>
+          MENU
+          <span className="hamburger__menu-text"></span>
+          <span className="hamburger__menu-bar"></span>
+        </button>
+        <NavMenu open={this.state.isOpen} closeNav={() => this.closeNav()} />
+      </header>
     );
   }
 }
 
 function NavMenu(props) {
   return (
-    <nav className={`menu ${props.open ? "menu--open" : ""}`}>
-      <ul className="menu__items">
-        <li>
-          <a
-            className="menu__item"
-            href="/#projects"
-            onClick={() => props.closeNav()}
-          >
+    <nav className={`nav__menu`}>
+      {/* toggle aria label */}
+      <ul className="nav__menu-items">
+        <li className="nav__menu-item">
+          <a href="/#projects" onClick={() => props.closeNav()}>
             Projects
           </a>
         </li>
-        <li>
-          <a
-            className="menu__item"
-            href="/#about"
-            onClick={() => props.closeNav()}
-          >
+        <li className="nav__menu-item">
+          <a href="/#about" onClick={() => props.closeNav()}>
             Me
           </a>
         </li>
-        <li>
+        <li className="nav__menu-item nav__menu-item--github">
           <a
-            className="menu__item menu__item--github"
             href="https://github.com/garyunyoung"
             target="_blank"
             rel="noopener noreferrer"

@@ -1,99 +1,121 @@
-.hamburger {
-  .hamburger__menu-text--close {
-    display: none;
-  }
-
-  &.hamburger--open {
-    .hamburger__menu-text {
-      display: none;
-    }
-
-    .hamburger__menu-text--close {
-      display: block;
-    }
-  }
-}
-
 .nav {
   width: 100%;
   height: 60px;
   position: fixed;
   top: 0;
   display: flex;
+  flex-flow: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: white;
 
-  padding: 0 24px;
+  .nav__logo-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 24px;
+  }
+
   .nav__logo {
     font-size: 1em;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-color: black;
+    }
   }
-}
 
-.menu {
-  transform: translateY(100vh);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  z-index: -1;
+  .nav__menu {
+    display: none;
 
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid grey;
+  }
 
-  .menu__items {
+  .nav__menu-items {
+    list-style: none;
     text-align: center;
+    text-transform: uppercase;
+
+    margin-top: -20%;
   }
 
-  .menu__item {
-    font-size: 1.7em;
-    line-height: 2.3;
-    display: block;
+  .nav__menu-item {
+    font-size: 1.5em;
+    margin-bottom: 24px;
   }
 
-  .menu__item--github {
-    margin-top: 1.6em;
-    font-size: 1.3em;
-  }
-
-  &.menu--open {
-    transform: translateY(0);
+  &.nav--open {
+    .nav__menu {
+      display: flex;
+    }
   }
 }
 
-.menu-desktop {
-  display: none;
+.hamburger {
+  display: flex;
+  font-family: "Inconsolata", monospace;
+  font-size: 1em;
+
+  border: 0;
+  border-bottom: 1px solid transparent;
+  margin-right: 24px;
+
+  &:hover {
+    border-color: black;
+    cursor: pointer;
+  }
+
+  .hamburger__menu-bar::before {
+    content: "//";
+    display: block;
+    margin-left: 8px;
+  }
+
+  &.hamburger--open {
+    .hamburger__menu-bar::before {
+      content: "X";
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) {
-  .nav__logo {
-    &:hover {
-      border-bottom: 1px solid black;
+  .nav {
+    .nav__menu {
+      display: block;
+      height: auto;
+      width: max-content;
+      border: 0;
+
+      margin-right: 24px;
     }
-  }
 
-  .menu-desktop {
-    display: flex;
-    direction: ltr;
-
-    .menu-desktop__items {
+    .nav__menu-items {
       display: flex;
-      list-style: none;
+      margin: 0;
     }
 
-    .menu-desktop__item {
-      padding: 0 0.25em;
+    .nav__menu-item {
+      font-size: 1em;
+      margin: 0;
+      border-bottom: 1px solid transparent;
 
-      &:last-child {
-        padding-right: 0;
+      &:first-child {
+        margin-right: 16px;
       }
 
       &:hover {
-        border-bottom: 1px solid black;
+        border-color: black;
       }
+    }
+
+    .nav__menu-item--github {
+      display: none;
     }
   }
 
