@@ -1,69 +1,95 @@
 @import "./Variables.scss";
 
 .project {
-  overflow: hidden;
   .project__content {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    text-align: center;
-    padding: 0 1.7em 4em;
-    padding-top: 60px;
+    padding: 24px;
   }
 
-  .project__description {
+  .project__summary-container {
+    margin-bottom: 16px;
+  }
+
+  .project__title {
+    font-size: 32px;
+    padding: 16px 0 24px;
+  }
+
+  .project__job-type-subtitle {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .project__technologies {
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 16px;
+    padding-left: 16px;
+  }
+
+  .project__technology {
+    font-size: 14px;
+    color: #9b9999;
+
+    &::after {
+      display: inline;
+      content: "/";
+      margin: 0 8px;
+    }
+
+    &:last-child {
+      &::after {
+        content: "";
+      }
+    }
+  }
+
+  .project__company-description {
     display: none;
   }
 
-  .project__bullets {
+  .project__info {
+    font-size: 14px;
+    margin-bottom: 32px;
+    padding-left: 16px;
+  }
+
+  .project__key-features-subtitle {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .project__key-features {
+    font-size: 14px;
     list-style-type: square;
+    margin-bottom: 40px;
+    padding-left: 16px;
   }
 
-  .project__links {
-    text-align: center;
+  .project__key-feature {
+    margin: 0 8px 16px 16px;
   }
 
-  .project__link {
-    text-decoration: underline;
-  }
-
-  .project__link-image {
+  .project__image {
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
   }
 
-  .project__link--back {
-    text-decoration: none;
-  }
+  .project__link {
+    width: max-content;
+    min-width: 80px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid $light-black;
+    padding: 4px 16px;
+    margin: 40px auto;
 
-  .project__tools,
-  .project_description,
-  .project__info,
-  .project__bullets {
-    font-size: 14px;
-    padding-left: 1em;
-  }
+    &:hover {
+      background-color: $black;
+      cursor: pointer;
 
-  .project__tools,
-  .project__links a,
-  .project__links span {
-    font-size: 13px;
-    color: #9b9999;
-  }
-
-  .project__title,
-  .project__tools,
-  .project__info,
-  .project__bullets {
-    margin-bottom: 1em;
-  }
-
-  .project__tools-text {
-    padding: 0 1em;
-    border-right: 1px solid #9b9999;
-    cursor: default;
-
-    &:last-child {
-      border: none;
+      a {
+        color: $white;
+      }
     }
   }
 }
@@ -71,69 +97,74 @@
 @media only screen and (min-width: 600px) {
   .project {
     .project__content {
-      max-width: 600px;
       margin: 0 auto;
     }
 
-    .project__title span {
-      font-size: 60px;
+    .project__technologies {
+      justify-content: center;
+      margin-bottom: 32px;
+      padding-left: 0;
     }
 
-    .project__description {
-      display: block;
-      max-width: 600px;
-      margin: 2em auto 1em;
-    }
+    .project__technology {
+      font-size: 14px;
 
-    .project__description-container,
-    .project__info-container,
-    .project__links {
-      margin-bottom: 1em;
+      justify-content: center;
+      margin-bottom: 32px;
     }
 
     .project__info-container {
       display: flex;
-      flex-flow: row;
-      text-align: left;
     }
 
-    .project__tools,
-    .project__links a {
-      font-size: 16px;
-    }
-
-    .project__bullets {
-      width: 50%;
-      flex-shrink: 0;
-    }
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .project {
-    .project__content {
-      max-width: 900px;
-    }
-
-    .project__description-container {
-      margin-top: 4em;
+    .project__summary-container {
+      text-align: center;
     }
 
     .project__info {
-      font-size: 24px;
-      padding-right: 2em;
+      font-size: 14px;
+      margin-right: 24px;
+      padding-left: 0;
     }
 
-    .project__bullets {
-      font-size: 16px;
+    .project__key-features-container {
+      display: flex;
+      flex-flow: column;
+      flex: 1 0 50%;
+    }
+
+    .project__key-features {
+      font-size: 14px;
+      padding-left: 0;
+    }
+
+    .project__key-feature {
+      margin-right: 0;
     }
   }
 }
+
 
 @media only screen and (min-width: 1280px) {
   .project {
     .project__content {
       max-width: $max-width-desktop;
+    }
+
+    .project__technologies,
+    .project__key-features {
+      font-size: 18px;
+    }
+
+    .project__title {
+      font-size: 40px;
+    }
+
+    .project__technology {
+      font-size: 18px;
+    }
+    .project__info {
+      font-size: 20px;
     }
   }
 }

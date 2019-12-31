@@ -38,7 +38,6 @@
 }
 
 .project-item {
-  list-style: none;
   margin-bottom: 56px;
 
   .project-item__image {
@@ -62,14 +61,12 @@
   }
 
   .project-item__technologies {
-    list-style: none;
     display: flex;
     flex-flow: wrap;
     margin: 8px 0;
   }
 
   .project-item__technology {
-    display: flex;
     font-size: 14px;
     color: $light-black;
     text-align: left;
@@ -77,7 +74,7 @@
 
     &::after {
       content: "/";
-      display: block;
+      display: inline;
       padding: 0 8px;
     }
 

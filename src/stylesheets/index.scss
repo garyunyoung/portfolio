@@ -13,7 +13,9 @@ html {
 body,
 button {
   font-family: "Inconsolata", monospace;
-  line-height: 1.5;
+  line-height: 1.8;
+  color: $light-black;
+  text-rendering: optimizeLegibility;
 }
 
 img {
@@ -22,6 +24,10 @@ img {
 
 button {
   background-color: transparent;
+}
+
+ul {
+  list-style: none;
 }
 
 a:-webkit-any-link {

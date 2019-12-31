@@ -7,7 +7,7 @@ export const stitchedProject = {
   title: "Stitched",
   path: "stitched",
   category: "web",
-  jobType: "work",
+  jobType: "Front-end Intern",
   github: "n/a",
   previewImage: { src: stitchedHomePage, alt: "Stitched Home Page" },
   excerpt:

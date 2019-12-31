@@ -83,6 +83,7 @@ export const Stitched = () => (
       displayLink={stitchedProject.displayLink}
       technologies={stitchedProject.technologies}
       keyFeatures={stitchedProject.keyFeatures}
+      jobType={stitchedProject.jobType}
     />
   </React.Fragment>
 );
@@ -99,6 +100,7 @@ export const TheBeths = () => (
       displayLink={bethsProject.displayLink}
       technologies={bethsProject.technologies}
       keyFeatures={bethsProject.keyFeatures}
+      jobType={bethsProject.jobType}
     />
   </React.Fragment>
 );
@@ -115,6 +117,7 @@ export const WaldourStudios = () => (
       displayLink={waldourStudiosProject.displayLink}
       technologies={waldourStudiosProject.technologies}
       keyFeatures={waldourStudiosProject.keyFeatures}
+      jobType={waldourStudiosProject.jobType}
     />
   </React.Fragment>
 );
