@@ -9,6 +9,7 @@
   flex-flow: wrap;
   align-items: center;
   background-color: white;
+  z-index: 1;
 
   .site-header__logo-wrapper {
     height: 100%;
@@ -121,5 +122,11 @@
         display: none;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .site-header {
+    background-color: transparent;
   }
 }
