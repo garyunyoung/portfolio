@@ -24,7 +24,8 @@
     border-bottom: 1px solid transparent;
 
     &:hover {
-      border-color: $link-underline;
+      color: $hover-purple;
+      border-color: $hover-purple;
     }
   }
 
@@ -130,7 +131,11 @@
       border-bottom: 1px solid transparent;
 
       &:hover {
-        border-color: $link-underline;
+        border-color: $hover-purple;
+
+        a {
+          color: $hover-purple;
+        }
       }
 
       &:first-child {

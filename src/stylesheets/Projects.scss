@@ -28,10 +28,28 @@
     border: 1px solid $light-black;
     padding: 4px 16px;
     margin-right: 8px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background-color: $white;
+    }
 
     &:hover {
-      background-color: $hover-background;
       cursor: pointer;
+      color: $white;
+      //
+
+      &:after {
+        z-index: -1;
+        width: 100%;
+        background-color: $hover-purple;
+      }
     }
 
     &--is-selected {

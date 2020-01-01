@@ -17,12 +17,12 @@ export default function About() {
           Lindy Hop, and that drool-worthy dish we call Carbonara.
         </p>
         <div className="about__links">
-          <div className="about__link">
-            <a href="/#contact">Contact</a>
-          </div>
-          <div className="about__link">
-            <a href="/#contact">CV</a>
-          </div>
+          <a className="about__link" href="/#contact">
+            Contact
+          </a>
+          <a className="about__link" href="/#contact">
+            CV
+          </a>
         </div>
       </div>
     </section>
