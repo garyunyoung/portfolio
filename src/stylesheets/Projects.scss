@@ -30,9 +30,18 @@
     margin-right: 8px;
 
     &:hover {
+      background-color: $hover-background;
+      cursor: pointer;
+    }
+
+    &--is-selected {
       color: $white;
       background-color: $black;
-      cursor: pointer;
+
+      &:hover {
+        color: $white;
+        background-color: $black;
+      }
     }
   }
 }
