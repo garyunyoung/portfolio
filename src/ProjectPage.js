@@ -34,11 +34,15 @@ export default function ProjectPage(props) {
             <img className="project__image" src={image.src} alt={image.alt} />
           );
         })}
-        <div className="project__link">
-          <a href={props.link} rel="noopener noreferrer" target="_blank">
-            visit site
-          </a>
-        </div>
+        {props.link != "n/a" ? (
+          <div className="project__link">
+            <a href={props.link} rel="noopener noreferrer" target="_blank">
+              visit site
+            </a>
+          </div>
+        ) : (
+          null
+        )}
       </div>
     </section>
   );
