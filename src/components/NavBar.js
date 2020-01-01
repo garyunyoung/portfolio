@@ -1,4 +1,6 @@
 import React from "react";
+import githubLogo from "../images/github-logo.svg";
+import codewarsLogo from "../images/codewars-logo.svg";
 import "../stylesheets/NavBar.scss";
 
 export default class NavBar extends React.Component {
@@ -66,15 +68,26 @@ function NavMenu(props) {
             Me
           </a>
         </li>
-        <li className="site-menu__nav-item site-menu__nav-item--github">
-          <a
-            href="https://github.com/garyunyoung"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            github
-          </a>
-        </li>
+        <span className="site-menu__nav-socials">
+          <li className="site-menu__nav-item">
+            <a
+              href="https://www.codewars.com/users/garryunn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={codewarsLogo} />
+            </a>
+          </li>
+          <li className="site-menu__nav-item">
+            <a
+              href="https://github.com/garyunyoung"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={githubLogo} />
+            </a>
+          </li>
+        </span>
       </ul>
     </nav>
   );
