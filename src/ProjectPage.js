@@ -13,14 +13,15 @@ export default function ProjectPage(props) {
               return <li className="project__technology">{technology}</li>;
             })}
           </ul>
-          <p className="project__company-description">
-            {props.companyDescription}
-          </p>
         </div>
         <div className="project__info-container">
-          <p className="project__info">{props.info}</p>
+          <p className="project__info">
+            {props.companyDescription}
+            <br /> <br />
+            {props.info}
+          </p>
           <div className="project__key-features-container">
-            <p className="project__key-features-subtitle">Key Features:</p>
+            <p className="project__key-features-subtitle">My Role:</p>
             <ul className="project__key-features">
               {props.keyFeatures.map(keyFeature => {
                 return <li className="project__key-feature">{keyFeature}</li>;

@@ -10,12 +10,13 @@
   }
 
   .project__title {
-    font-size: 32px;
+    font-size: 27px;
     padding: 16px 0 24px;
+    text-transform: uppercase;
   }
 
   .project__job-type-subtitle {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 16px;
   }
 
@@ -27,7 +28,7 @@
   }
 
   .project__technology {
-    font-size: 14px;
+    font-size: 15px;
     color: #9b9999;
 
     &::after {
@@ -43,23 +44,19 @@
     }
   }
 
-  .project__company-description {
-    display: none;
-  }
-
   .project__info {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 32px;
     padding-left: 16px;
   }
 
   .project__key-features-subtitle {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 16px;
   }
 
   .project__key-features {
-    font-size: 14px;
+    font-size: 15px;
     list-style-type: square;
     margin-bottom: 40px;
     padding-left: 16px;
@@ -76,7 +73,7 @@
   .project__link {
     width: max-content;
     min-width: 80px;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
     text-transform: uppercase;
     border: 1px solid $light-black;
@@ -100,42 +97,36 @@
       margin: 0 auto;
     }
 
+    .project__summary-container {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
     .project__technologies {
       justify-content: center;
-      margin-bottom: 32px;
       padding-left: 0;
     }
 
     .project__technology {
-      font-size: 14px;
-
-      justify-content: center;
-      margin-bottom: 32px;
+      font-size: 15px;
     }
 
     .project__info-container {
       display: flex;
-    }
-
-    .project__summary-container {
-      text-align: center;
+      margin-bottom: 32px;
     }
 
     .project__info {
-      font-size: 14px;
-      margin-right: 24px;
+      font-size: 15px;
+      margin: 8px 40px 0;
       padding-left: 0;
-    }
 
-    .project__key-features-container {
-      display: flex;
-      flex-flow: column;
-      flex: 1 0 50%;
+      flex: 0 0 32%;
     }
 
     .project__key-features {
-      font-size: 14px;
-      padding-left: 0;
+      font-size: 15px;
+      margin: 0;
     }
 
     .project__key-feature {
@@ -143,7 +134,6 @@
     }
   }
 }
-
 
 @media only screen and (min-width: 1280px) {
   .project {
@@ -153,18 +143,32 @@
 
     .project__technologies,
     .project__key-features {
-      font-size: 18px;
+      font-size: 15px;
     }
 
     .project__title {
       font-size: 40px;
+      margin-top: 24px;
+    }
+
+    .project__summary-container {
+      margin-bottom: 56px;
+    }
+
+    .project__info-container {
+      margin-bottom: 56px;
+    }
+
+    .project__key-features-subtitle {
+      font-size: 17px;
+      font-weight: 600;
     }
 
     .project__technology {
-      font-size: 18px;
+      font-size: 15px;
     }
     .project__info {
-      font-size: 20px;
+      font-size: 17px;
     }
   }
 }
