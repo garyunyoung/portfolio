@@ -42,13 +42,11 @@
 
     &:hover {
       cursor: pointer;
-      color: $white;
-      //
 
       &:after {
         z-index: -1;
         width: 100%;
-        background-color: $hover-purple;
+        background-color: $hover-background;
       }
     }
 
