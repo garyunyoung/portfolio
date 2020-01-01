@@ -3,6 +3,7 @@ import bethsHomePage from "./images/beths-project.png";
 import waldourStudioHomePage from "./images/waldour-1.png";
 import stitchedLukesPage from "./images/stitched-1.png";
 import sploreBanner from "./images/splore-c.jpg"
+import sailCityJumpBanner from "./images/sail-city-jump.jpg"
 
 export const stitchedProject = {
   title: "Stitched",
@@ -98,7 +99,7 @@ export const sploreProject = {
     "At the end of 2017 I was brought onboard as a press assistant for Splore - arguably the best music festival in New Zealand. ",
   link: "http://www.splore.net/",
   displayLink: "http://www.splore.net/",
-  technologies: ["Artist Relations", "Communications", "Press Kits"],
+  technologies: ["Artist Relations", "Communications", "Press"],
   keyFeatures: [
     "Supporting the Head of PR.",
     "Coordinating artist interviews during the lead up to and during the festival.",
@@ -110,5 +111,32 @@ export const sploreProject = {
     "Researching new media opportunities.",
     "Organising media accreditation.",
     "Other general administrative tasks such as fielding media enquiries and requests.",
+  ]
+};
+
+export const sailCityJumpProject = {
+  title: "Sail City Jump",
+  path: "sail-city-jump-2017",
+  category: "pr",
+  jobType: "Freelance",
+  github: "n/a",
+  previewImage: { src: sailCityJumpBanner, alt: "sail city jump 2017 festival banner" },
+  excerpt:
+    "Sail City Jump was the first Swing Dance Festival held in Auckland after a two year hiatus. 2017's edition featured two days of Lindy Hop, Balboa and Solo Jazz workshops for beginner to advance level dancers.",
+  images: [{ src: sailCityJumpBanner, alt: "sail city jump 2017 festival banner" }],
+  companyDescription:
+    "Sail City Jump was the first Swing Dance Festival held in Auckland after a two year hiatus. 2017's edition featured two days of Lindy Hop, Balboa and Solo Jazz workshops for beginner to advance level dancers, five guest teachers including three international teachers, three social parties and one night dedicated to live music - that year were be lucky to have two of Auckland's best Big Bands battle it out on the bandstand. ",
+  info:
+    "Sail City Jump was the first Swing Dance Festival held in Auckland after a two year hiatus. 2017's edition featured two days of Lindy Hop, Balboa and Solo Jazz workshops for beginner to advance level dancers, five guest teachers including three international teachers, three social parties and one night dedicated to live music - that year were be lucky to have two of Auckland's best Big Bands battle it out on the bandstand. ",
+  link: "n/a",
+  displayLink: "n/a",
+  technologies: ["Event Co-ordination", "Social Media"],
+  keyFeatures: [
+    "Coordinating and overseeing event logistics such as: venue hire, audio and visual hire, volunteers, bands, DJs, emcees, run sheets, set-up and pack-down.",
+    "Planning event objectives, timelines and extensive task lists – delegated tasks. ",
+    "Generating engagement through Facebook pages and Facebook events.",
+    "Creating, collating, curating, and distributing marketing collateral. ",
+    "Tracking registrations and ticket sales.",
+    "Managing social media pages."
   ]
 };

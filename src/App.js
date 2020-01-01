@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Stitched, TheBeths, WaldourStudios, Splore } from "./Projects";
+import { Stitched, TheBeths, WaldourStudios, Splore, SailCityJump } from "./Projects";
 import Home from "./Home";
 
 export default class App extends Component {
@@ -31,6 +31,11 @@ export default class App extends Component {
                   // path={`/projects/${waldourStudiosProject.path}`}
                   path={`/projects/splore-2018`}
                   component={Splore}
+                />
+                <Route
+                  // path={`/projects/${waldourStudiosProject.path}`}
+                  path={`/projects/sail-city-jump-2017`}
+                  component={SailCityJump}
                 />
               </React.Fragment>
             )}
