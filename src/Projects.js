@@ -2,7 +2,8 @@ import React from "react";
 import {
   stitchedProject,
   bethsProject,
-  waldourStudiosProject
+  waldourStudiosProject,
+  sploreProject
 } from "./ProjectData";
 import NavBar from "./components/NavBar";
 import ProjectPage from "./ProjectPage";
@@ -13,7 +14,7 @@ export default class Project extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      projects: [stitchedProject, bethsProject, waldourStudiosProject],
+      projects: [stitchedProject, bethsProject, waldourStudiosProject, sploreProject],
       filter: "web"
     };
   }
@@ -118,6 +119,23 @@ export const WaldourStudios = () => (
       technologies={waldourStudiosProject.technologies}
       keyFeatures={waldourStudiosProject.keyFeatures}
       jobType={waldourStudiosProject.jobType}
+    />
+  </React.Fragment>
+);
+
+export const Splore = () => (
+  <React.Fragment>
+    <NavBar link="/#projects" title="< BACK" />
+    <ProjectPage
+      title={sploreProject.title}
+      images={sploreProject.images}
+      companyDescription={sploreProject.companyDescription}
+      info={sploreProject.info}
+      link={sploreProject.link}
+      displayLink={sploreProject.displayLink}
+      technologies={sploreProject.technologies}
+      keyFeatures={sploreProject.keyFeatures}
+      jobType={sploreProject.jobType}
     />
   </React.Fragment>
 );

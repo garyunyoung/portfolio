@@ -2,6 +2,7 @@ import stitchedHomePage from "./images/stitched-0.png";
 import bethsHomePage from "./images/beths-project.png";
 import waldourStudioHomePage from "./images/waldour-1.png";
 import stitchedLukesPage from "./images/stitched-1.png";
+import sploreBanner from "./images/splore-c.jpg"
 
 export const stitchedProject = {
   title: "Stitched",
@@ -49,7 +50,7 @@ export const bethsProject = {
   technologies: ["Next.js", "React", "SCSS", "HTML"],
   keyFeatures: [
     "Designed using Gravit.io.",
-    "Mobile first, responsive and accessible. ",
+    "Mobile first, responsive and accessible.",
     "Implemented with NextJS, SCSS and Git. Deployed on Heroku.",
     "Integrated Google Analytics using Google Tag Manager.",
     "Added a GDPR banner that enables/disables analytics."
@@ -59,7 +60,7 @@ export const bethsProject = {
 export const waldourStudiosProject = {
   title: "Waldour Studios",
   path: "waldour-studios",
-  category: "pr",
+  category: "web",
   jobType: "Freelance",
   github: "https://github.com/garyunyoung",
   previewImage: { src: waldourStudioHomePage, alt: "Waldour Studio Home Page" },
@@ -74,34 +75,40 @@ export const waldourStudiosProject = {
   displayLink: "wardourstudios.co.uk",
   technologies: ["Wordpress", "PHP", "SCSS", "HTML"],
   keyFeatures: [
-    "Mobile first, responsive and accessible. ",
+    "Mobile first, responsive and accessible.",
     "Implemented with Wordpress, using PHP, SCSS and Git.",
     "Integrated using PHP components",
     "Integrated with ACF (Advance Custom Fields) and other plugins"
   ]
 };
 
-export const learnKoreanProject = {
-  title: "Learn Korean With Me",
-  path: "learn-korean-with-me",
+export const sploreProject = {
+  title: "Splore 2018",
+  path: "splore-2018",
   category: "pr",
-  jobType: "Project",
-  github: "https://github.com/garyunyoung",
-  previewImage: { src: waldourStudioHomePage, alt: "Waldour Studio Home Page" },
+  jobType: "Intern",
+  github: "n/a",
+  previewImage: { src: sploreBanner, alt: "splore 2018 festival banner" },
   excerpt:
-    "Stitched is an eco-friendly online curtain + blind retail start-up with a focus on 3D visualisation and AR",
-  images: [{ src: waldourStudioHomePage, alt: "Waldour Studio Home Page" }],
+    "Situated on the beguiling shores of Tapapakanga Park, Splore is a boutique music and arts festival like no other. Three nights where people are invited to embrace the theme and join the mindful tribe of party animals! ",
+  images: [{ src: sploreBanner, alt: "splore 2018 festival banner" }],
   companyDescription:
-    "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
+    "Situated in a beguiling bay on the shores of Tapapakanga Park, Splore is a boutique music and arts festival like no other. An entertainment extravaganza, an unforgettable dress up party, three nights where people are invited to embrace the theme and join the mindful tribe of party animals! ",
   info:
-    "Designed and implemented a website for the Waldour Studios as a Freeland Project",
-  link: "https://wardourstudios.co.uk/",
-  displayLink: "wardourstudios.co.uk",
-  technologies: ["Wordpress", "PHP", "SCSS", "HTML"],
+    "At the end of 2017 I was brought onboard as a press assistant for Splore - arguably the best music festival in New Zealand. ",
+  link: "http://www.splore.net/",
+  displayLink: "http://www.splore.net/",
+  technologies: ["Artist Relations", "Communications", "Press Kits"],
   keyFeatures: [
-    "Mobile first, responsive and accessible. ",
-    "Implemented with Wordpress, using PHP, SCSS and Git.",
-    "Integrated using PHP components",
-    "Integrated with ACF (Advance Custom Fields) and other plugins"
+    "Supporting the Head of PR.",
+    "Coordinating artist interviews during the lead up to and during the festival.",
+    "Liasing between artists and journalists at the festival.",
+    "Pitching interviews and story ideas to media outlets.",
+    "Drafting and distributed press releases and press kits.",
+    "Compiling media reports for print, radio and online.",
+    "Building and maintaining targeted media lists for mail-outs and pitches.",
+    "Researching new media opportunities.",
+    "Organising media accreditation.",
+    "Other general administrative tasks such as fielding media enquiries and requests.",
   ]
 };
