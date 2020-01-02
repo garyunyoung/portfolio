@@ -1,9 +1,11 @@
 import React from "react";
+import ScrollToTopOnMount from "./utilities/ScrollToTop";
 import "./stylesheets/ProjectPage.scss";
 
 export default function ProjectPage(props) {
   return (
     <section className="project">
+      <ScrollToTopOnMount />
       <div className="project__content">
         <div className="project__summary-container">
           <h2 className="project__title">{props.title}</h2>
