@@ -17,9 +17,15 @@ export default class Contact extends Component {
   };
 
   draw = p5 => {
-    p5.background(234);
-    p5.ellipse(this.x, this.y, 70, 70);
-    this.x++;
+    // p5.fill(0,50,80);
+    // p5.fill(0,20,80);
+    p5.fill(90,10,90);
+    p5.stroke(255);
+    p5.ellipse(0, 0, 0, 0);
+  };
+
+  mouseMoved = p5 => {
+    p5.ellipse(p5.mouseX, p5.mouseY, 150, 150);
   };
 
   windowResized = p5 => {
@@ -33,6 +39,7 @@ export default class Contact extends Component {
         draw={this.draw}
         windowResized={this.windowResized}
         style={this.style}
+        mouseMoved={this.mouseMoved}
       />
     );
   }
