@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import Project from "./Projects";
 import About from "./About";
+import Contact from "./Contact";
 import profileIllustration from "./images/profile-illustration.svg";
 import "./stylesheets/Home.scss";
 
@@ -33,9 +34,7 @@ export default function Home() {
         </section>
         <Project />
         <About />
-        <section id="contact" className="contact">
-          <div className="about__content home__content">Contact Form</div>
-        </section>
+        <Contact />
       </main>
     </React.Fragment>
   );

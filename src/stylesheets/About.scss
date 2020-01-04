@@ -2,66 +2,72 @@
 
 .about {
   .about__content {
-    min-height: calc(100vh - #{$site-header-height-mobile});
+    min-height: 100vh;
     padding: 0 16px;
     display: flex;
     flex-flow: column;
     justify-content: center;
+  }
 
-    .about__header {
-      font-size: 27px;
-      margin: 32px 0 24px;
+  .about__header {
+    font-size: 27px;
+    margin: 32px 0 24px;
+  }
+
+  .about__text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .about__links {
+    display: flex;
+  }
+
+  .about__link {
+    position: relative;
+    width: max-content;
+    min-width: 80px;
+    border: 1px solid $light-black;
+    padding: 4px 16px;
+    margin-right: 8px;
+
+    font-size: 16px;
+    color: $black;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background-color: $white;
     }
 
-    .about__text {
-      font-size: 14px;
-      margin-bottom: 24px;
-    }
-
-    .about__links {
-      display: flex;
-    }
-
-    .about__link {
-      position: relative;
-      width: max-content;
-      min-width: 80px;
-      border: 1px solid $light-black;
-      padding: 4px 16px;
-      margin-right: 8px;
-
-      font-size: 16px;
-      color: $black;
-      text-align: center;
-      text-transform: uppercase;
+    &:hover {
+      // color: $white;
+      cursor: pointer;
 
       &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 0%;
-        height: 100%;
-        background-color: $white;
-      }
-
-      &:hover {
-        // color: $white;
-        cursor: pointer;
-
-        &:after {
-          z-index: -1;
-          width: 100%;
-          background-color: $hover-background;
-        }
+        z-index: -1;
+        width: 100%;
+        background-color: $hover-background;
       }
     }
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .about__content {
-    max-width: $max-width-desktop;
-    margin: 0 auto;
+  .about {
+    .about__content {
+      max-width: $max-width-desktop;
+      margin: 0 auto;
+    }
+
+    .about__header {
+      margin-top: 0;
+    }
   }
 }
