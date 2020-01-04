@@ -6050,6 +6050,11 @@ p-try@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.0.0.tgz#85080bb87c64688fa47996fe8f7dfbe8211760b1"
 
+p5@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/p5/-/p5-0.7.3.tgz#a0660327feb8da3e43359a16ad62566b96a7cabe"
+  integrity sha512-Ap0Op/YlbqlBe9BEkpislygOKcID9+i6lbGHcUY/QkgZl21+Jy0GPpw+bLjgURk/wlloLcXGnUDpuGsP0xsx2Q==
+
 pako@~1.0.5:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.8.tgz#6844890aab9c635af868ad5fecc62e8acbba3ea4"
@@ -7097,6 +7102,13 @@ react-is@^16.6.0, react-is@^16.7.0:
 react-is@^16.8.1:
   version "16.8.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.1.tgz#a80141e246eb894824fb4f2901c0c50ef31d4cdb"
+
+react-p5@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/react-p5/-/react-p5-1.1.8.tgz#f2870b07aff1ef2c7a0627b9116dfe24d63e14b4"
+  integrity sha512-IM3GrNIuIDal/FabkGxPIpi5bbRHuQc7cP7iZTa5cMBJ8vh+lAnCWavTtU35XElofbegmojFaxXWdz1rTUhgZQ==
+  dependencies:
+    p5 "^0.7.3"
 
 react-router-dom@^5.0.0:
   version "5.0.0"

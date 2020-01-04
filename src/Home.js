@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Project from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
+import Sketch from "./Sketch";
 import profileIllustration from "./images/profile-illustration.svg";
 import "./stylesheets/Home.scss";
 
@@ -11,6 +12,7 @@ export default function Home() {
     <React.Fragment>
       <NavBar link="/#" title="GARYUN YOUNG" />
       <main>
+        <Sketch />
         <section className="home">
           <div className="home__content">
             {/* <img
@@ -28,7 +30,9 @@ export default function Home() {
                 <p>Currently in London UK</p>
               </div>
               {/* <img className="home__image" alt="" src={profileIllustration} /> */}
-                <a className="home__projects-link" href="/#projects">Projects</a>
+              <a className="home__projects-link" href="/#projects">
+                Projects
+              </a>
             </div>
           </div>
         </section>
