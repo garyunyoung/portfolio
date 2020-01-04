@@ -64,6 +64,8 @@
     .about__content {
       max-width: $max-width-desktop;
       margin: 0 auto;
+
+      flex-flow: row;
     }
 
     .about__header {

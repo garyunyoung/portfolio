@@ -13,11 +13,11 @@ export default function Home() {
       <main>
         <section className="home">
           <div className="home__content">
-            <img
+            {/* <img
               className="home__image home__image--desktop"
               alt=""
               src={profileIllustration}
-            />
+            /> */}
             <div className="home__text">
               <p>
                 Hi, I'm Garyun
@@ -27,7 +27,7 @@ export default function Home() {
               <div className="home__currently-text">
                 <p>Currently in London UK</p>
               </div>
-              <img className="home__image" alt="" src={profileIllustration} />
+              {/* <img className="home__image" alt="" src={profileIllustration} /> */}
                 <a className="home__projects-link" href="/#projects">Projects</a>
             </div>
           </div>
