@@ -9,6 +9,12 @@
   padding: 0 $side-padding-mobile;
 }
 
+.home__text {
+  background-color: $white;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+  padding: 56px;
+}
+
 .home__image {
   width: 70%;
   margin-top: 16px;
@@ -61,11 +67,13 @@
 
 @media only screen and (min-width: 1024px) {
   .home__content {
-    flex-flow: row;
-    align-items: flex-end;
-    justify-content: left;
-    padding: 0 26px;
+    // flex-flow: row;
+    // align-items: flex-end;
+    // justify-content: left;
+    // padding: 0 26px;
     margin: 0 auto 120px auto;
+
+    align-content: center;
   }
 
   .home__image {
@@ -79,13 +87,15 @@
   }
 
   .home__text {
-    font-size: 27px;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    flex-grow: 1;
-    margin: 56px auto 0 -11%;
+    // font-size: 27px;
+    // height: 100%;
+    // display: flex;
+    // flex-flow: column;
+    // justify-content: center;
+    // flex-grow: 1;
+    // margin: 56px auto 0 -11%;
+    // margin: 56px auto 0 auto;
+    // width: max-content;
   }
 
   .home__currently-text {
