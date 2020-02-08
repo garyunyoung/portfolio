@@ -10,16 +10,16 @@ export const stitchedProject = {
   title: "Stitched",
   path: "stitched",
   category: "web",
-  jobType: "Front-end Intern",
+  jobType: "Intern | Junior",
   github: "n/a",
   previewImage: { src: stitchedHomePage, alt: "Stitched Home Page" },
   excerpt:
-    "Stitched is an eco-friendly online curtain + blind retail start-up with a focus on 3D visualisation and AR",
+    "Stitched is an eco-friendly, vc-backed, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, AR and machine learning.",
   images: [{ src: stitchedLukesPage, alt: "Stitched Inspiration Page" }],
   companyDescription:
-    "Stitched is an eco-friendly online curtain + blind retail start-up with a focus on 3D visualisation and AR",
+    "Stitched is an eco-friendly, vc-backed, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, AR and machine learning.",
   info:
-    "For my first role in a company I joined Stitched, interning as a Front End Developer. I was brought on to help with their site redesign but have since taken most front end features",
+    "For my first role in a company I joined Stitched, interning as a Front End Developer. I was brought on to help with their site redesign but have since taken most front end features.",
   link: "https://www.stitched.co.uk/",
   displayLink: "stitched.co.uk",
   technologies: ["Elixir", "Phoenix", "Liveview", "React", "SCSS", "HTML"],
@@ -41,10 +41,10 @@ export const bethsProject = {
   github: "https://github.com/garyunyoung",
   previewImage: { src: bethsHomePage, alt: "The Beths Home Page" },
   excerpt:
-    "Stitched is an eco-friendly online curtain + blind retail start-up with a focus on 3D visualisation and AR",
+    "The Beths are a New Zealand indie pop band that makes high-energy guitar music that makes you want to dance no matter the situation.",
   images: [{ src: bethsHomePage, alt: "The Beths Home Page" }],
   companyDescription:
-    "The Beths are a New Zealand indie pop band, originally from Auckland, New Zealand.",
+    "The Beths are a New Zealand indie music that makes you want to dance no matter the situation.",
   info:
     "Designed and implemented a website for the Beths. This was the first proper project I took on early in my coding career. I noticed that a friend's band's website needed a redesign and decided it would be a good way to develop my web development skills.",
   link: "https://thebeths.com/",
@@ -67,12 +67,12 @@ export const waldourStudiosProject = {
   github: "https://github.com/garyunyoung",
   previewImage: { src: waldourStudioHomePage, alt: "Waldour Studio Home Page" },
   excerpt:
-    "Stitched is an eco-friendly online curtain + blind retail start-up with a focus on 3D visualisation and AR",
+    "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
   images: [{ src: waldourStudioHomePage, alt: "Waldour Studio Home Page" }],
   companyDescription:
     "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
   info:
-    "Designed and implemented a website for the Waldour Studios as a Freeland Project",
+    "Designed and implemented a website for the Waldour Studios as a Freelance Project",
   link: "https://wardourstudios.co.uk/",
   displayLink: "wardourstudios.co.uk",
   technologies: ["Wordpress", "PHP", "SCSS", "HTML"],

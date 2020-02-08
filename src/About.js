@@ -12,26 +12,28 @@ export default function About() {
           </p>
           <div className="about__text">
             <p>
-              Hi, I'm Garyun, a front-end developer who carries and interest in
-              design and user experience for all (accessibility)
+              Garyun is a front-end developer who deeply values designing and
+              developing creative high-quality user experiences for absolutley anyone and everyone.
               <br />
-              <br />
-              Started coding in February, Have attended Rails Girls London as a
-              coach, Background in Marketing and Public Relations Main focus is
-              on user experience, clean code, Merging accessible design and
-              visual ascetics, New Zealander currently in London
+              <br/>
+              Having just moved from New Zealand to London and armed with a Bachelor of Communications - Marketing and Public Relations -
+              Garyun embarked on her coding career in February 2018, and has been able to transfer those skills
+              ......attended Rails Girls London as a coach,
             </p>
-            <br />
-            <br />
+            <br/>
+            <br/>
             <p>Key Principles</p>
             <br />
-            <p>1) Keep it simple the build from there</p>
-            <br />
-            <p>2) Accessibility first (Designed with Accessibility in mind)</p>
+            <p>
+              1) User-centered design
+            </p>
             <br />
             <p>
-              3) Two way communication flow/feedback loop - allows for target
-              and focused progress that will maximise the effectiveness
+              2) Feedback loops
+            </p>
+            <br />
+            <p>
+              3) Keeping code simple
             </p>
             <br />
           </div>
