@@ -22,9 +22,17 @@ export default class Contact extends Component {
   draw = p5 => {
     // p5.fill(0,50,80);
     // p5.fill(0,20,80);
-    // p5.fill(90,10,90);
-    // p5.stroke(255);
-    // p5.ellipse(0, 0, 0, 0);
+    p5.fill(90,10,90);
+    p5.stroke(255);
+    p5.ellipse(0, 0, 0, 0);
+
+    // for (let i = 0; i < numOfCircles; i++) {
+    //   circles[i] = new Circle(
+    //     random(width),
+    //     random(height),
+    //     random(30, 70),
+    //     i,
+    //     circles)
   };
 
   mouseMoved = p5 => {
