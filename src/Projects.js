@@ -119,6 +119,7 @@ export const Stitched = () => (
       technologies={stitchedProject.technologies}
       keyFeatures={stitchedProject.keyFeatures}
       jobType={stitchedProject.jobType}
+      jobYear={stitchedProject.jobYear}
     />
   </React.Fragment>
 );
@@ -136,6 +137,7 @@ export const TheBeths = () => (
       technologies={bethsProject.technologies}
       keyFeatures={bethsProject.keyFeatures}
       jobType={bethsProject.jobType}
+      jobYear={bethsProject.jobYear}
     />
   </React.Fragment>
 );
@@ -153,6 +155,7 @@ export const WaldourStudios = () => (
       technologies={waldourStudiosProject.technologies}
       keyFeatures={waldourStudiosProject.keyFeatures}
       jobType={waldourStudiosProject.jobType}
+      jobYear={waldourStudiosProject.jobYear}
     />
   </React.Fragment>
 );
@@ -170,6 +173,7 @@ export const Splore = () => (
       technologies={sploreProject.technologies}
       keyFeatures={sploreProject.keyFeatures}
       jobType={sploreProject.jobType}
+      jobYear={sploreProject.jobYear}
     />
   </React.Fragment>
 );
@@ -187,6 +191,7 @@ export const SailCityJump = () => (
       technologies={sailCityJumpProject.technologies}
       keyFeatures={sailCityJumpProject.keyFeatures}
       jobType={sailCityJumpProject.jobType}
+      jobYear={sailCityJumpProject.jobYear}
     />
   </React.Fragment>
 );
@@ -204,6 +209,7 @@ export const NightAtTheSavoy = () => (
       technologies={nightAtTheSavoyProject.technologies}
       keyFeatures={nightAtTheSavoyProject.keyFeatures}
       jobType={nightAtTheSavoyProject.jobType}
+      jobYear={nightAtTheSavoyProject.jobYear}
     />
   </React.Fragment>
 );

@@ -10,6 +10,7 @@ export default function ProjectPage(props) {
         <div className="project__summary-container">
           <h2 className="project__title">{props.title}</h2>
           <p className="project__job-type-subtitle">{props.jobType}</p>
+          <p className="project__job-year">{props.jobYear}</p>
           <ul className="project__technologies">
             {props.technologies.map(technology => {
               return <li className="project__technology">{technology}</li>;

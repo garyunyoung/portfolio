@@ -10,7 +10,8 @@ export const stitchedProject = {
   title: "Stitched",
   path: "stitched",
   category: "web",
-  jobType: "Intern | Junior",
+  jobType: "Intern to Junior Developer",
+  jobYear: "2019 - 2020",
   github: "n/a",
   previewImage: { src: stitchedHomePage, alt: "Stitched Home Page" },
   excerpt:
@@ -37,7 +38,8 @@ export const bethsProject = {
   title: "The Beths",
   path: "the-beths",
   category: "web",
-  jobType: "Freelance",
+  jobType: "Freelance Developer",
+  jobYear: "2019",
   github: "https://github.com/garyunyoung",
   previewImage: { src: bethsHomePage, alt: "The Beths Home Page" },
   excerpt:
@@ -63,7 +65,8 @@ export const waldourStudiosProject = {
   title: "Waldour Studios",
   path: "waldour-studios",
   category: "web",
-  jobType: "Freelance",
+  jobType: "Freelance Developer",
+  jobYear: "2019",
   github: "https://github.com/garyunyoung",
   previewImage: { src: waldourStudioHomePage, alt: "Waldour Studio Home Page" },
   excerpt:
@@ -88,7 +91,8 @@ export const sploreProject = {
   title: "Splore",
   path: "splore-2018",
   category: "pr",
-  jobType: "Public Relations Intern / 2018",
+  jobType: "Public Relations Intern",
+  jobYear: "2018",
   github: "n/a",
   previewImage: { src: sploreBanner, alt: "splore 2018 festival banner" },
   excerpt:
@@ -119,7 +123,8 @@ export const sailCityJumpProject = {
   title: "Sail City Jump",
   path: "sail-city-jump-2017",
   category: "pr",
-  jobType: "Freelance / 2017",
+  jobType: "Freelance",
+  jobYear: "2017",
   github: "n/a",
   previewImage: {
     src: sailCityJumpBanner,
@@ -151,7 +156,8 @@ export const nightAtTheSavoyProject = {
   title: "Night at the Savoy",
   path: "night-at-the-savoy-2017",
   category: "pr",
-  jobType: "Freelance / 2017",
+  jobType: "Freelance",
+  jobYear: "2017",
   github: "n/a",
   previewImage: {
     src: nightAtTheSavoyBanner,
