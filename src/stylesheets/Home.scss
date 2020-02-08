@@ -78,12 +78,7 @@
 
 @media only screen and (min-width: 1024px) {
   .home__content {
-    // flex-flow: row;
-    // align-items: flex-end;
-    // justify-content: left;
-    // padding: 0 26px;
     margin: 0 auto 120px auto;
-
     align-content: center;
   }
 
@@ -96,19 +91,6 @@
     width: 68%;
     margin-left: -48px;
   }
-
-  .home__text {
-    // font-size: 27px;
-    // height: 100%;
-    // display: flex;
-    // flex-flow: column;
-    // justify-content: center;
-    // flex-grow: 1;
-    // margin: 56px auto 0 -11%;
-    // margin: 56px auto 0 auto;
-    // width: max-content;
-  }
-
   .home__currently-text {
     margin-top: 56px;
   }
