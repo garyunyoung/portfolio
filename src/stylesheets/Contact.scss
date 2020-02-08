@@ -1,6 +1,7 @@
 @import "./Variables.scss";
 
 .contact {
+  display: none;
   .contact__content {
     min-height: calc(100vh - #{$site-header-height-mobile});
   }

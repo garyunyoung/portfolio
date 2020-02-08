@@ -89,6 +89,18 @@ const ProjectFilter = props => {
         >
           pr
         </button>
+        <button
+          className={`projects__filter-button ${
+            props.selected === "all"
+              ? "projects__filter-button--is-selected"
+              : ""
+          }`}
+          onClick={() => {
+            props.setFilter("all");
+          }}
+        >
+          all
+        </button>
       </div>
     </div>
   );

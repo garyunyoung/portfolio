@@ -37,14 +37,14 @@ export default function About() {
           </div>
           <div className="about__links">
             <a className="about__link" href="/#contact">
-              Contact
+              Contact via email
             </a>
             <a className="about__link" href="/#contact">
-              CV
+              Download CV (PDF)
             </a>
           </div>
         </div>
-        <img alt="" src={profileIllustration} />
+        <img className="about__profile-image" alt="" src={profileIllustration} />
       </div>
     </section>
   );

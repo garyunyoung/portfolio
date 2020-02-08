@@ -13,7 +13,7 @@
   }
 
   .projects__filter-title {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 16px;
     color: $light-grey;
   }
@@ -72,17 +72,17 @@
   }
 
   .project-item__content {
-    margin: 24px 0;
+    padding: 16px 24px;
   }
 
   .project-item__title {
     font-size: 17px;
     text-transform: uppercase;
-    margin: 16px 0;
+    margin: 0 0 16px 0;
   }
 
   .project-item__technologies-subtitle {
-    font-size: 15px;
+    font-size: 14px;
     color: $light-grey;
     margin: 20px 0 12px;
   }
@@ -94,7 +94,7 @@
   }
 
   .project-item__technology {
-    font-size: 15px;
+    font-size: 14px;
     color: $light-black;
     text-align: left;
     padding-bottom: 4px;
@@ -115,13 +115,23 @@
   }
 
   .project-item__excerpt {
-    font-size: 15px;
+    display: none;
+
+    font-size: 14px;
     margin: 8px 0;
 
     &:before {
       display: block;
       content: "-";
       margin: 8px 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .project-item {
+    .project-item__excerpt {
+      display: block;
     }
   }
 }

@@ -18,7 +18,7 @@ export default function Home() {
               <p>
                 Hello! I'm Garyun.
                 <br />A front-end developer<br />
-                with a passion for <br/>building creative and inclusive user experiences.
+                with a passion for <br/>building inclusive user experiences.
               </p>
               <div className="home__currently-text">
                 <p>Currently in London, UK</p>
