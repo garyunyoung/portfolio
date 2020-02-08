@@ -22,12 +22,18 @@ export default function Home() {
             /> */}
             <div className="home__text">
               <p>
-                Hi, I'm Garyun
-                <br />A front end developer <br />
-                who likes to <br /> design and develop!
+                Hello! I'm Garyun.
+                <br />A front-end developer<br />
+                {/* who likes to design and develop! */}
+                {/* with a passion for designing and developing highly-polished user experiences. */}
+                {/* with a passion for designing and developing for accessibility and inclusion. */}
+                {/* with a passion for designing and developing inclusive user experiences. */}
+                with a passion for <br/>building inclusive user experiences.
+                {/* who is passionate about <br/>building inclusive user experiences. */}
+                {/* that values <br/>building inclusive user experiences. */}
               </p>
               <div className="home__currently-text">
-                <p>Currently in London UK</p>
+                <p>Currently in London, UK</p>
               </div>
               {/* <img className="home__image" alt="" src={profileIllustration} /> */}
               <a className="home__projects-link" href="/#projects">
