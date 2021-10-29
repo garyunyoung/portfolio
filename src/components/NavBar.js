@@ -26,9 +26,8 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <header
-        className={`site-header ${
-          this.state.isOpen ? "site-header--display-mobile-nav" : ""
-        }`}
+        className={`site-header ${this.state.isOpen ? "site-header--display-mobile-nav" : ""
+          }`}
       >
         <span className="site-header__logo-wrapper">
           <a
@@ -36,7 +35,8 @@ export default class NavBar extends React.Component {
             href={this.props.link}
             onClick={() => this.closeNav()}
           >
-            {this.props.title}
+            <h1 className="site-header__title">GARYUN YOUNG</h1>
+            <p className="site-header__description">front-end developer</p>
           </a>
         </span>
         <button

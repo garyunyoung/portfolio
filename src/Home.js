@@ -9,7 +9,7 @@ import "./stylesheets/Home.scss";
 export default function Home() {
   return (
     <React.Fragment>
-      <NavBar link="/#" title="GARYUN YOUNG" />
+      <NavBar link="/#" />
       <main>
         {/* <Sketch /> */}
         <section className="home">
@@ -18,7 +18,7 @@ export default function Home() {
               <p>
                 Hello! I'm Garyun.
                 <br />A front-end developer<br />
-                with a passion for <br/>building inclusive user experiences.
+                with a passion for <br />building inclusive user experiences.
               </p>
               <div className="home__currently-text">
                 <p>Currently in London, UK</p>
