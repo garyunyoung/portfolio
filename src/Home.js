@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import Project from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
-import Sketch from "./Sketch";
+// import Sketch from "./Sketch";
 import "./stylesheets/Home.scss";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
     <React.Fragment>
       <NavBar link="/#" title="GARYUN YOUNG" />
       <main>
-        <Sketch />
+        {/* <Sketch /> */}
         <section className="home">
           <div className="home__content">
             <div className="home__text">
