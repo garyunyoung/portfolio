@@ -1,76 +1,28 @@
-@import './Variables.scss';
+@import './_mixins.scss';
+@import './_variables.scss';
 
-.site-header {
+@include block('site-header') {
   width: 100%;
   // height: $site-header-height-mobile;
 
   display: flex;
   flex-flow: wrap;
   align-items: flex-start;
-  // align-items: center;
-  // background-color: white;
-  background-color: paleturquoise;
+  align-items: center;
+  background-color: white;
 
   position: fixed;
   top: 0;
   z-index: 1;
 
   padding-top: 24px;
+  padding-bottom: 16px;
 
-  .site-header__logo-wrapper {
-    height: 100%;
-    display: flex;
-    // align-items: center;
-    flex-grow: 1;
-    margin-left: $side-padding-mobile;
+  @include med-desktop {
+    background-color: transparent;
   }
 
-  .site-header__logo {
-    display: flex;
-    flex-flow: column;
-
-    border-bottom: 1px solid transparent;
-
-    &:hover {
-      border-color: $black;
-    }
-  }
-
-  .site-header__title {
-    font-size: 24px;
-    font-weight: 400;
-  }
-
-  .site-header__description {
-    font-size: 18px;
-  }
-
-  .site-header__nav {
-    display: none;
-  }
-
-  .site-header__mobile-menu-button {
-    // display: flex;
-    font-size: 16px;
-
-    border: 0;
-    border-bottom: 1px solid transparent;
-
-    margin-right: $side-padding-mobile;
-
-    &:hover {
-      border-color: $link-underline;
-      cursor: pointer;
-    }
-  }
-
-  .site-header__mobile-menu-bar::before {
-    content: '//';
-    display: inline;
-    margin-left: 8px;
-  }
-
-  &.site-header--display-mobile-nav {
+  @include modifier('display-mobile-nav') {
     .site-header__nav {
       display: flex;
       width: 100%;
@@ -84,46 +36,40 @@
       content: 'X';
     }
   }
-}
 
-.site-menu {
-  .site-menu__nav-items {
-    text-align: center;
-    text-transform: uppercase;
-
-    margin-top: -20%;
-  }
-
-  .site-menu__nav-socials {
+  @include element('logo-wrapper') {
+    height: 100%;
     display: flex;
-    justify-content: center;
-    margin-top: 32px;
+    flex-grow: 1;
+    margin-left: $side-padding-mobile;
+  }
 
-    img {
-      width: 28px;
-      margin-right: 16px;
+  @include element('logo') {
+    display: flex;
+    flex-flow: column;
+
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-color: $black;
     }
   }
 
-  .site-menu__nav-item {
-    font-size: 1.5em;
-    margin-bottom: 24px;
-
-    &:last-child {
-      img {
-        margin-right: 0;
-      }
-    }
+  @include element('title') {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
   }
-}
 
-@media only screen and (min-width: 600px) {
-  .site-header {
-    .site-header__mobile-menu-button {
-      display: none;
-    }
+  @include element('description') {
+    font-size: 18px;
+    display: none;
+  }
 
-    .site-header__nav {
+  @include element('nav') {
+    display: none;
+
+    @include tablet {
       display: block;
       height: auto;
       width: max-content;
@@ -132,17 +78,71 @@
     }
   }
 
-  .site-menu {
-    .site-menu__nav-items {
+  @include element('mobile-menu-button') {
+    font-size: 18px;
+    line-height: 1.4;
+
+    border: 0;
+    border-bottom: 1px solid transparent;
+
+    margin-right: $side-padding-mobile;
+
+    &:hover {
+      border-color: $link-underline;
+      cursor: pointer;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  @include element('mobile-menu-bar::before') {
+    content: '☰';
+    display: inline;
+    margin-left: 8px;
+  }
+}
+
+@include block('site-menu') {
+  @include element('nav-items') {
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-top: -20%;
+
+    @include tablet {
       display: flex;
       margin: 0;
     }
+  }
 
-    .site-menu__nav-socials {
-      display: none;
+  @include element('nav-socials') {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+
+    img {
+      width: 28px;
+      margin-right: 16px;
     }
 
-    .site-menu__nav-item {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  @include element('nav-item') {
+    font-size: 1.5em;
+    margin-bottom: 24px;
+
+    &:last-child {
+      img {
+        margin-right: 0;
+      }
+    }
+
+    @include tablet {
       font-size: 1em;
       margin: 0;
       border-bottom: 1px solid transparent;
@@ -155,11 +155,5 @@
         margin-right: 16px;
       }
     }
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .site-header {
-    background-color: transparent;
   }
 }
