@@ -14,7 +14,7 @@
   }
 
   .projects__filter-title {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 16px;
     color: $light-grey;
   }
@@ -24,7 +24,8 @@
 
   .projects__filter-button {
     min-width: 80px;
-    font-size: 17px;
+    font-size: 18px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     border: 1px solid $light-black;
     padding: 4px 16px;
@@ -77,14 +78,14 @@
   }
 
   .project-item__title {
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin: 0 0 16px 0;
   }
 
   .project-item__technologies-subtitle {
-    font-size: 14px;
+    font-size: 16px;
     color: $light-grey;
     margin: 20px 0 12px;
   }
@@ -96,7 +97,7 @@
   }
 
   .project-item__technology {
-    font-size: 14px;
+    font-size: 16px;
     color: $light-black;
 
     text-align: left;
@@ -118,18 +119,17 @@
   }
 
   .project-item__excerpt {
-    display: none;
-
-    font-size: 14px;
+    font-size: 16px;
     margin: 16px 0;
   }
 
   .project-item__see-more {
     display: block;
 
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
+
     padding: 16px 0 0 0;
     margin: 0 auto;
     width: max-content;
@@ -180,6 +180,8 @@
     .project-item__container {
       display: flex;
       flex-flow: row-reverse;
+      align-items: center;
+
       padding: 24px;
 
       &:hover {
@@ -194,6 +196,7 @@
       display: flex;
       flex-flow: column;
       justify-content: flex-end;
+
       margin: 0 32px 0 0;
     }
 
