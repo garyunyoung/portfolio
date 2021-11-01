@@ -45,6 +45,7 @@ function ProjectItem(props) {
             })}
           </ul>
           <p className="project-item__excerpt">{props.excerpt}</p>
+          <a className="project-item__see-more">SEE DETAILS</a>
         </div>
       </NavLink>
     </li>
