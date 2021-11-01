@@ -1,4 +1,4 @@
-// font sizes
+// Font sizes
 $body-mobile: 16px;
 $body-tablet: 20px;
 $body-desktop: 24px;
@@ -15,7 +15,7 @@ $link-underline: black;
 $hover-background: #f7f7f7;
 $hover-outline: #cccccc;
 
-$hover-purple: #4e57ef;
+// $hover-purple: #4e57ef;
 // $hover-green: #7caa5e;
 // $hover-purple: #3f51b5;
 // $hover-purple: #A2D7FF;
@@ -24,7 +24,7 @@ $hover-purple: #4e57ef;
 // hover transition
 // transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1) 0.1s;
 
-// potential background colours
+// Background colour
 $page-background-color: #f9f8ef;
 // $page-background-color: #d1e3dc;
 // #dbdee4;
@@ -33,3 +33,39 @@ $page-background-color: #f9f8ef;
 // #d1e3dc;
 // #D1D7E5;
 // #f9f8ef;
+
+// Style
+@mixin cta-link {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  color: $light-black;
+  border: 1px solid $light-black;
+
+  padding: 10px 20px;
+
+  // position: relative;
+  // width: max-content;
+
+  // &:after {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 0%;
+  //   height: 100%;
+  //   background-color: $white;
+  // }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+
+    // &:after {
+    //   z-index: -1;
+    //   width: 100%;
+    //   background-color: $hover-background;
+    // }
+  }
+}

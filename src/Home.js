@@ -24,7 +24,7 @@ export default function Home() {
                 <p>Currently in London, UK</p>
               </div>
               <a className="home__projects-link" href="/#projects">
-                Projects
+                PROJECTS
               </a>
             </div>
           </div>

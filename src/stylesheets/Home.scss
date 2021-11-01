@@ -1,3 +1,4 @@
+@import './_mixins.scss';
 @import './_variables.scss';
 
 .home__content {
@@ -10,12 +11,11 @@
 }
 
 .home__text {
-  // background-color: $white;
-  // box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
-  padding: 24px;
   text-align: left;
 
-  transform: translateY(-74px);
+  padding: 24px;
+
+  transform: translateY(-$site-header-height-mobile);
 }
 
 .home__image {
@@ -29,6 +29,7 @@
 
 .home__text {
   font-size: 18px;
+
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -42,35 +43,9 @@
 }
 
 .home__projects-link {
-  position: relative;
-  width: max-content;
-  border: 1px solid black;
-  padding: 8px 16px;
-  margin: 8px auto 24px auto;
+  @include cta-link;
 
-  font-size: 16px;
-  color: $black;
-  text-transform: uppercase;
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0%;
-    height: 100%;
-    background-color: $white;
-  }
-
-  &:hover {
-    cursor: pointer;
-
-    &:after {
-      z-index: -1;
-      width: 100%;
-      background-color: $hover-background;
-    }
-  }
+  margin: 16px auto 24px auto;
 }
 
 @media only screen and (min-width: 375px) {
