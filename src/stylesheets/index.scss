@@ -1,4 +1,4 @@
-@import "./_variables.scss";
+@import './_variables.scss';
 
 * {
   margin: 0;
@@ -8,23 +8,24 @@
 
 body,
 button {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
   font-weight: 400;
   line-height: 1.8;
   color: $light-black;
   text-rendering: optimizeLegibility;
 }
 
-img {
-  width: 100%;
-}
-
 button {
+  border: none;
   background-color: transparent;
 }
 
 ul {
   list-style: none;
+}
+
+img {
+  width: 100%;
 }
 
 a:-webkit-any-link {
@@ -33,7 +34,11 @@ a:-webkit-any-link {
 }
 
 #root::before {
-  content: "";
+  content: '';
   height: $site-header-height-mobile;
   display: block;
+}
+
+.page {
+  background-color: $page-background-color;
 }
