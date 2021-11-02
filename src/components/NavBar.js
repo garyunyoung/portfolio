@@ -25,10 +25,7 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <header
-        className={`site-header ${this.state.isOpen ? 'is-open' : ''
-          }`}
-      >
+      <header className={`site-header ${this.state.isOpen ? 'is-open' : ''}`}>
         <div className='site-header__content'>
           <span className='site-header__logo-wrapper'>
             <a

@@ -1,37 +1,54 @@
-@import "./_variables.scss";
+@import './_mixins.scss';
+@import './_variables.scss';
 
-.about {
-  .about__content {
+@include block('about') {
+  @include element('content') {
     min-height: 100vh;
-    padding: 0 16px;
     display: flex;
     flex-flow: column;
     justify-content: center;
+
+    padding: 0 16px;
+    padding-top: calc(74px + 16px);
     margin-bottom: 32px;
+
+    @include tablet {
+      max-width: $max-width-desktop;
+      margin: 0 auto;
+
+      flex-flow: row;
+    }
   }
 
-  .about__text-container {
+  @include element('text-container') {
+    height: max-content;
     background-color: $white;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+
     padding: 24px;
-    height: max-content;
   }
 
-  .about__header {
+  @include element('header') {
     font-size: 27px;
+
+    
     margin: 32px 0 24px;
+
+    @include tablet {
+      margin-top: 0;
+    }
   }
 
-  .about__text {
+  @include element('text') {
     font-size: 14px;
     margin-bottom: 24px;
   }
 
-  .about__links {
+  @include element('links') {
     display: flex;
   }
 
-  .about__link {
+  @include element('link') {
     position: relative;
     width: max-content;
     min-width: 80px;
@@ -45,7 +62,7 @@
     text-transform: uppercase;
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0;
@@ -65,22 +82,7 @@
     }
   }
 
-  .about__profile-image {
+  @include element('profile-image') {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .about {
-    .about__content {
-      max-width: $max-width-desktop;
-      margin: 0 auto;
-
-      flex-flow: row;
-    }
-
-    .about__header {
-      margin-top: 0;
-    }
   }
 }
