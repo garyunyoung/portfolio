@@ -2,6 +2,8 @@
 @import './_variables.scss';
 
 @include block('about') {
+  padding-bottom: 24px;
+
   @include element('content') {
     min-height: 100vh;
     display: flex;
@@ -9,14 +11,13 @@
     justify-content: center;
 
     padding: 0 16px;
-    padding-top: calc(74px + 16px);
-    margin-bottom: 32px;
+    padding-top: calc(#{$site-header-height-mobile} + 16px);
 
     @include tablet {
       max-width: $max-width-desktop;
-      margin: 0 auto;
-
       flex-flow: row;
+
+      margin: 0 auto;
     }
   }
 
@@ -29,9 +30,8 @@
   }
 
   @include element('header') {
-    font-size: 27px;
+    font-size: 24px;
 
-    
     margin: 32px 0 24px;
 
     @include tablet {
@@ -40,7 +40,7 @@
   }
 
   @include element('text') {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 24px;
   }
 
@@ -49,36 +49,26 @@
   }
 
   @include element('link') {
-    position: relative;
     width: max-content;
     min-width: 80px;
-    border: 1px solid $light-black;
-    padding: 4px 16px;
-    margin-right: 8px;
 
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 1px;
     color: $black;
     text-align: center;
     text-transform: uppercase;
 
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 0%;
-      height: 100%;
-      background-color: $white;
+    padding: 8px 16px;
+
+    position: relative;
+    border: 1px solid $light-black;
+
+    &:first-child {
+      margin-right: 8px;
     }
 
     &:hover {
       cursor: pointer;
-
-      &:after {
-        z-index: -1;
-        width: 100%;
-        background-color: $hover-background;
-      }
     }
   }
 
