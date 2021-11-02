@@ -29,25 +29,26 @@ export default class NavBar extends React.Component {
         className={`site-header ${this.state.isOpen ? "site-header--display-mobile-nav" : ""
           }`}
       >
-        <span className="site-header__logo-wrapper">
-          <a
-            className="site-header__logo"
-            href={this.props.link}
-            onClick={() => this.closeNav()}
+        <div className='site-header__content'>
+          <span className="site-header__logo-wrapper">
+            <a
+              className="site-header__logo"
+              href={this.props.link}
+              onClick={() => this.closeNav()}
+            >
+              <h1 className="site-header__title">GARYUN YOUNG</h1>
+              <p className="site-header__description">front-end developer</p>
+            </a>
+          </span>
+          <button
+            className="site-header__mobile-menu-button"
+            onClick={() => this.toggleNav()}
           >
-            <h1 className="site-header__title">GARYUN YOUNG</h1>
-            <p className="site-header__description">front-end developer</p>
-          </a>
-        </span>
-        <button
-          className="site-header__mobile-menu-button"
-          onClick={() => this.toggleNav()}
-        >
-          {this.state.isOpen ? 'CLOSE' : 'MENU'}
-          <span className="site-header__mobile-menu-text"></span>
-          <span className="site-header__mobile-menu-bar"></span>
-        </button>
-        <NavMenu open={this.state.isOpen} closeNav={() => this.closeNav()} />
+            {this.state.isOpen ? 'CLOSE' : 'MENU'}
+            <span className="site-header__mobile-menu-button-icon">{this.state.isOpen ? 'X' : '☰'}</span>
+          </button>
+          <NavMenu open={this.state.isOpen} closeNav={() => this.closeNav()} />
+        </div>
       </header>
     );
   }

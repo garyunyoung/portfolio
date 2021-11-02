@@ -4,10 +4,6 @@
 @include block('site-header') {
   width: 100%;
 
-  display: flex;
-  flex-flow: wrap;
-  align-items: flex-start;
-  align-items: center;
   background-color: $page-background-color;
 
   position: fixed;
@@ -30,10 +26,16 @@
       align-items: center;
       background-color: $page-background-color;
     }
+  }
 
-    .site-header__mobile-menu-bar::before {
-      content: 'X';
-    }
+  @include element('content') {
+    max-width: calc(#{$max-width-desktop} + (180px * 2) + (32px * 2));
+
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+
+    margin: 0 auto;
   }
 
   @include element('logo-wrapper') {
@@ -86,7 +88,7 @@
     border: 0;
     border-bottom: 1px solid transparent;
 
-    margin-right: $side-padding-mobile;
+    margin: 0 $side-padding-mobile;
 
     &:hover {
       border-color: $link-underline;
@@ -98,9 +100,7 @@
     }
   }
 
-  @include element('mobile-menu-bar::before') {
-    content: '☰';
-    display: inline;
+  @include element('mobile-menu-button-icon') {
     margin-left: 8px;
   }
 }
@@ -134,7 +134,8 @@
   }
 
   @include element('nav-item') {
-    font-size: 1.5em;
+    font-size: 18px;
+    letter-spacing: 2px;
     margin-bottom: 24px;
 
     &:last-child {
@@ -144,9 +145,8 @@
     }
 
     @include tablet {
-      font-size: 1em;
-      margin: 0;
       border-bottom: 1px solid transparent;
+      margin-bottom: 0;
 
       &:hover {
         border-color: $black;
@@ -154,6 +154,12 @@
 
       &:first-child {
         margin-right: 16px;
+      }
+    }
+
+    @include sm-desktop {
+      &:first-child {
+        margin-right: 24px;
       }
     }
   }
