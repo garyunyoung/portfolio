@@ -37,13 +37,14 @@ function ProjectItem(props) {
         <div className="project-item__content">
           <h3 className="project-item__title">{props.title}</h3>
           <p className="project-item__technologies-subtitle">
-            {props.category === "web"? "Key Technologies:" : "Key skills:"}
+            {props.category === "web" ? "Key Technologies:" : "Key skills:"}
           </p>
           <ul className="project-item__technologies">
             {props.technologies.map(technology => {
               return <li className="project-item__technology">{technology}</li>;
             })}
           </ul>
+          <p>-</p>
           <p className="project-item__excerpt">{props.excerpt}</p>
           <a className="project-item__see-more">SEE DETAILS</a>
         </div>

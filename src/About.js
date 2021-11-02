@@ -13,9 +13,10 @@ export default function About() {
           <div className="about__text">
             <p>
               I'm a front-end developer who deeply values developing
-              quality user experiences for absolutley anyone and everyone.
+              quality user experiences for everyone.
             </p>
             <br />
+            <p>-</p>
             <br />
             <p>Key Principles</p>
             <br />
