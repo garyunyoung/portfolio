@@ -1,28 +1,53 @@
 @import './_mixins.scss';
 @import './_variables.scss';
 
-.projects {
-  .projects__content {
+@include block('projects') {
+  @include element('content') {
     min-height: calc(100vh - #{$site-header-height-mobile});
     padding: 0 $side-padding-mobile;
     padding-top: $site-header-height-mobile;
+
+    @include tablet {
+      max-width: $max-width-desktop;
+      margin: 0 auto;
+    }
   }
 
-  .projects__title {
-    font-size: 19px;
+  @include element('title') {
+    font-size: 20px;
+    letter-spacing: 1px;
     margin-bottom: 16px;
+
+    @include tablet {
+      font-size: 27px;
+    }
   }
 
-  .projects__filter-title {
+  @include element('filter-container') {
+    @include tablet {
+      background-color: $white;
+      box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+      width: max-content;
+      padding: 8px 24px 22px;
+      margin-bottom: 24px;
+    }
+  }
+
+  @include element('filter-title') {
     font-size: 16px;
     margin-bottom: 16px;
     color: $light-grey;
   }
-  .projects__filter-buttons {
+
+  @include element('filter-buttons') {
     margin-bottom: 40px;
+
+    @include tablet {
+      margin: 0;
+    }
   }
 
-  .projects__filter-button {
+  @include element('filter-button') {
     min-width: 80px;
     font-size: 18px;
     letter-spacing: 2px;
@@ -52,7 +77,7 @@
       }
     }
 
-    &--is-selected {
+    @include modifier('is-selected') {
       color: $white;
       background-color: $black;
 
@@ -64,39 +89,86 @@
   }
 }
 
-.project-item {
+@include block('project-item') {
   margin-bottom: 56px;
   background-color: $white;
   box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
 
-  .project-item__image {
+  @include tablet {
+    margin-bottom: 96px;
+
+    &:nth-of-type(2) {
+      .project-item__container {
+        flex-flow: row;
+      }
+
+      .project-item__content {
+        margin: 0 0 0 32px;
+      }
+    }
+  }
+
+  @include element('container') {
+    @include tablet {
+      display: flex;
+      flex-flow: row-reverse;
+      align-items: center;
+
+      padding: 24px;
+
+      &:hover {
+        background-color: $hover-background;
+        outline: 1px solid $hover-outline;
+      }
+    }
+  }
+
+  @include element('image') {
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
   }
 
-  .project-item__content {
+  @include element('content') {
     padding: 16px 24px;
+
+    @include tablet {
+      flex: 1 0 40%;
+
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-end;
+
+      margin: 0 32px 0 0;
+    }
   }
 
-  .project-item__title {
+  @include element('title') {
     font-size: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin: 0 0 16px 0;
+
+    @include tablet {
+      font-size: 25px;
+    }
   }
 
-  .project-item__technologies-subtitle {
+  @include element('technologies-subtitle') {
     font-size: 16px;
     color: $light-grey;
     margin: 20px 0 12px;
   }
 
-  .project-item__technologies {
+  @include element('technologies') {
     display: flex;
     flex-flow: wrap;
     margin: 8px 0;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
   }
 
-  .project-item__technology {
+  @include element('technology') {
     font-size: 16px;
     color: $light-black;
 
@@ -118,12 +190,12 @@
     }
   }
 
-  .project-item__excerpt {
+  @include element('excerpt') {
     font-size: 16px;
     margin: 16px 0;
   }
 
-  .project-item__see-more {
+  @include element('see-more') {
     display: block;
 
     font-size: 18px;
@@ -136,76 +208,6 @@
 
     @include sm-desktop {
       margin: 0;
-    }
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .projects {
-    .projects__content {
-      max-width: $max-width-desktop;
-      margin: 0 auto;
-    }
-
-    .projects__filter-container {
-      background-color: $white;
-      box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
-      width: max-content;
-      padding: 8px 24px 22px;
-      margin-bottom: 24px;
-    }
-
-    .projects__filter-buttons {
-      margin: 0;
-    }
-
-    .projects__title {
-      font-size: 27px;
-    }
-  }
-
-  .project-item {
-    margin-bottom: 96px;
-
-    &:nth-of-type(2) {
-      .project-item__container {
-        flex-flow: row;
-      }
-
-      .project-item__content {
-        margin: 0 0 0 32px;
-      }
-    }
-
-    .project-item__container {
-      display: flex;
-      flex-flow: row-reverse;
-      align-items: center;
-
-      padding: 24px;
-
-      &:hover {
-        background-color: $hover-background;
-        outline: 1px solid $hover-outline;
-      }
-    }
-
-    .project-item__content {
-      flex: 1 0 40%;
-
-      display: flex;
-      flex-flow: column;
-      justify-content: flex-end;
-
-      margin: 0 32px 0 0;
-    }
-
-    .project-item__title {
-      font-size: 25px;
-    }
-
-    .project-item__technologies {
-      margin-bottom: 0;
     }
   }
 }

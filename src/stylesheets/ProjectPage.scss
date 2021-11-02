@@ -1,80 +1,161 @@
-@import "./_variables.scss";
+@import './_mixins.scss';
+@import './_variables.scss';
 
-.project {
-  .project__content {
+@include block('project') {
+  @include element('content') {
     padding: 24px;
+
+    @include tablet {
+      margin: 0 auto;
+    }
+
+    @include med-desktop {
+      max-width: $max-width-desktop;
+    }
   }
 
-  .project__summary-container {
+  @include element('summary-container') {
     margin-bottom: 16px;
+
+    @include tablet {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    @include med-desktop {
+      margin-bottom: 56px;
+    }
   }
 
-  .project__title {
+  @include element('title') {
     font-size: 27px;
     padding: 16px 0 24px;
     text-transform: uppercase;
+
+    @include med-desktop {
+      font-size: 40px;
+      margin-top: 24px;
+    }
   }
 
-  .project__job-type-subtitle {
+  @include element('job-type-subtitle') {
     font-size: 17px;
     margin-bottom: 8px;
   }
 
-  .project__job-year {
+  @include element('job-year') {
     margin-bottom: 16px;
   }
 
-  .project__technologies {
+  @include element('technologies') {
     display: flex;
     flex-flow: wrap;
     margin-bottom: 16px;
     padding-left: 16px;
+
+    @include tablet {
+      justify-content: center;
+      padding-left: 0;
+    }
+
+    @include med-desktop {
+      font-size: 14px;
+    }
   }
 
-  .project__technology {
+  @include element('technology') {
     font-size: 14px;
     color: #9b9999;
 
     &::after {
       display: inline;
-      content: "/";
+      content: '/';
       margin: 0 8px;
     }
 
     &:last-child {
       &::after {
-        content: "";
+        content: '';
       }
+    }
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include med-desktop {
+      font-size: 14px;
     }
   }
 
-  .project__info {
+  @include element('info-container') {
+    @include tablet {
+      display: flex;
+      margin-bottom: 32px;
+    }
+
+    @include med-desktop {
+      margin-bottom: 56px;
+    }
+  }
+
+  @include element('info') {
     font-size: 14px;
     margin-bottom: 32px;
     padding-left: 16px;
+
+    @include tablet {
+      font-size: 14px;
+      margin: 8px 40px 0;
+      padding-left: 0;
+
+      flex: 0 0 32%;
+    }
+
+    @include med-desktop {
+      font-size: 17px;
+    }
   }
 
-  .project__key-features-subtitle {
+  @include element('key-features-subtitle') {
     font-size: 17px;
     margin-bottom: 16px;
+
+    @include med-desktop {
+      font-size: 17px;
+      font-weight: 600;
+    }
   }
 
-  .project__key-features {
+  @include element('key-features') {
     font-size: 14px;
     list-style-type: square;
     margin-bottom: 40px;
     padding-left: 16px;
+
+    @include tablet {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    @include med-desktop {
+      font-size: 14px;
+    }
   }
 
-  .project__key-feature {
+  @include element('key-feature') {
     margin: 0 8px 16px 16px;
+
+    @include tablet {
+      margin-right: 0;
+    }
   }
 
-  .project__image {
+  @include element('image') {
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
   }
 
-  .project__link {
+  @include element('link') {
     width: max-content;
     min-width: 80px;
     font-size: 17px;
@@ -91,88 +172,6 @@
       a {
         color: $white;
       }
-    }
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .project {
-    .project__content {
-      margin: 0 auto;
-    }
-
-    .project__summary-container {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-
-    .project__technologies {
-      justify-content: center;
-      padding-left: 0;
-    }
-
-    .project__technology {
-      font-size: 14px;
-    }
-
-    .project__info-container {
-      display: flex;
-      margin-bottom: 32px;
-    }
-
-    .project__info {
-      font-size: 14px;
-      margin: 8px 40px 0;
-      padding-left: 0;
-
-      flex: 0 0 32%;
-    }
-
-    .project__key-features {
-      font-size: 14px;
-      margin: 0;
-    }
-
-    .project__key-feature {
-      margin-right: 0;
-    }
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .project {
-    .project__content {
-      max-width: $max-width-desktop;
-    }
-
-    .project__technologies,
-    .project__key-features {
-      font-size: 14px;
-    }
-
-    .project__title {
-      font-size: 40px;
-      margin-top: 24px;
-    }
-
-    .project__summary-container {
-      margin-bottom: 56px;
-    }
-
-    .project__info-container {
-      margin-bottom: 56px;
-    }
-
-    .project__key-features-subtitle {
-      font-size: 17px;
-      font-weight: 600;
-    }
-
-    .project__technology {
-      font-size: 14px;
-    }
-    .project__info {
-      font-size: 17px;
     }
   }
 }
