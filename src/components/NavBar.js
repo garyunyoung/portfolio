@@ -1,7 +1,7 @@
-import React from "react";
-import githubLogo from "../images/github-logo.svg";
-import codewarsLogo from "../images/codewars-logo.svg";
-import "../stylesheets/NavBar.scss";
+import React from 'react';
+import githubLogo from '../images/github-logo.svg';
+import codewarsLogo from '../images/codewars-logo.svg';
+import '../stylesheets/NavBar.scss';
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -26,26 +26,25 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <header
-        className={`site-header ${this.state.isOpen ? "site-header--display-mobile-nav" : ""
+        className={`site-header ${this.state.isOpen ? 'is-open' : ''
           }`}
       >
         <div className='site-header__content'>
-          <span className="site-header__logo-wrapper">
+          <span className='site-header__logo-wrapper'>
             <a
-              className="site-header__logo"
+              className='site-header__logo'
               href={this.props.link}
               onClick={() => this.closeNav()}
             >
-              <h1 className="site-header__title">GARYUN YOUNG</h1>
-              <p className="site-header__description">front-end developer</p>
+              <h1 className='site-header__title'>GARYUN YOUNG</h1>
+              <p className='site-header__description'>front-end developer</p>
             </a>
           </span>
           <button
-            className="site-header__mobile-menu-button"
+            className='site-header__mobile-menu-button'
             onClick={() => this.toggleNav()}
           >
             {this.state.isOpen ? 'CLOSE' : 'MENU'}
-            <span className="site-header__mobile-menu-button-icon">{this.state.isOpen ? 'X' : '☰'}</span>
           </button>
           <NavMenu open={this.state.isOpen} closeNav={() => this.closeNav()} />
         </div>
@@ -56,34 +55,34 @@ export default class NavBar extends React.Component {
 
 function NavMenu(props) {
   return (
-    <nav className="site-menu site-header__nav">
+    <nav className='site-menu site-header__nav'>
       {/* toggle aria label */}
-      <ul className="site-menu__nav-items">
-        <li className="site-menu__nav-item">
-          <a href="/#projects" onClick={() => props.closeNav()}>
-            Projects
+      <ul className='site-menu__nav-items'>
+        <li className='site-menu__nav-item'>
+          <a href='/#projects' onClick={() => props.closeNav()}>
+            PROJECTS
           </a>
         </li>
-        <li className="site-menu__nav-item">
-          <a href="/#about" onClick={() => props.closeNav()}>
-            Me
+        <li className='site-menu__nav-item'>
+          <a href='/#about' onClick={() => props.closeNav()}>
+            ME
           </a>
         </li>
-        <span className="site-menu__nav-socials">
-          <li className="site-menu__nav-item">
+        <span className='site-menu__nav-socials'>
+          <li className='site-menu__nav-item'>
             <a
-              href="https://www.codewars.com/users/garryunn"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.codewars.com/users/garryunn'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img src={codewarsLogo} />
             </a>
           </li>
-          <li className="site-menu__nav-item">
+          <li className='site-menu__nav-item'>
             <a
-              href="https://github.com/garyunyoung"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/garyunyoung'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img src={githubLogo} />
             </a>

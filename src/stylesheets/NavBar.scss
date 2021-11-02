@@ -17,14 +17,13 @@
     background-color: transparent;
   }
 
-  @include modifier('display-mobile-nav') {
+  @include state('open') {
     .site-header__nav {
       display: flex;
-      width: 100%;
-      height: calc(100vh - #{$site-header-height-mobile});
-      justify-content: center;
-      align-items: center;
-      background-color: $page-background-color;
+    }
+
+    .site-header__mobile-menu-button::after {
+      content: 'X';
     }
   }
 
@@ -71,6 +70,12 @@
   @include element('nav') {
     display: none;
 
+    width: 100%;
+    height: calc(100vh - #{$site-header-height-mobile});
+    justify-content: center;
+    align-items: center;
+    background-color: $page-background-color;
+
     @include tablet {
       display: block;
       height: auto;
@@ -90,6 +95,12 @@
 
     margin: 0 $side-padding-mobile;
 
+    &:after {
+      content: '☰';
+      display: inline;
+      margin-left: 8px;
+    }
+
     &:hover {
       border-color: $link-underline;
       cursor: pointer;
@@ -98,10 +109,6 @@
     @include tablet {
       display: none;
     }
-  }
-
-  @include element('mobile-menu-button-icon') {
-    margin-left: 8px;
   }
 }
 
