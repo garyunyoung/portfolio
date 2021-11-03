@@ -30,7 +30,8 @@
   }
 
   @include element('header') {
-    font-size: 24px;
+    @include subheading-font;
+    // font-size: 24px;
 
     margin: 32px 0 24px;
 

@@ -4,53 +4,33 @@
 @include block('home') {
   @include element('content') {
     height: calc(100vh - #{$site-header-height-mobile});
+
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+
     padding: 0 $side-padding-mobile;
 
     @include sm-desktop {
-      max-width: $max-width-desktop;
-      align-content: center;
+      max-width: $max-width-content-desktop;
 
       margin: 0 auto 120px auto;
     }
   }
 
   @include element('text') {
+    @include subheading-font;
     text-align: left;
-    padding: 24px;
-
-    transform: translateY(-$site-header-height-mobile);
-
-    font-size: 18px;
 
     display: flex;
     flex-flow: column;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+
+    padding: 24px;
     margin: 16px 0;
-  }
 
-  @include element('image') {
-    width: 70%;
-    margin-top: 16px;
-
-    @include sm-desktop {
-      display: none;
-    }
-
-    @include modifier('desktop') {
-      display: none;
-
-      @include sm-desktop {
-        display: block;
-        width: 68%;
-        margin-left: -48px;
-      }
-    }
+    transform: translateY(-$site-header-height-mobile);
   }
 
   @include element('currently-text') {
