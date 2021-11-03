@@ -16,15 +16,14 @@ export default function Home() {
           <div className="home__content">
             <div className="home__text">
               <p>
-                Hello! I'm Garyun.
-                <br />A front-end developer<br />
-                with a passion for <br />building inclusive user experiences.
+                Hi! I'm Garyun. < br />
+                A front-end developer who values building inclusive user experiences.
               </p>
               <div className="home__currently-text">
-                <p>Currently in London, UK</p>
+                <p>Currently in Auckland, NZ</p>
               </div>
               <a className="home__projects-link" href="/#projects">
-                PROJECTS
+                See projects
               </a>
             </div>
           </div>

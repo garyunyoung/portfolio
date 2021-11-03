@@ -15,6 +15,7 @@
     @include sm-desktop {
       max-width: $max-width-content-desktop;
 
+      padding: 0 64px 0 0;
       margin: 0 auto 120px auto;
     }
   }
@@ -31,6 +32,10 @@
     margin: 16px 0;
 
     transform: translateY(-$site-header-height-mobile);
+
+    @include sm-desktop {
+      padding: 0;
+    }
   }
 
   @include element('currently-text') {
@@ -43,7 +48,6 @@
 
   @include element('projects-link') {
     @include cta-button;
-
     margin: 16px auto 24px auto;
 
     @include sm-desktop {

@@ -33,7 +33,7 @@ export default class NavBar extends React.Component {
               href={this.props.link}
               onClick={() => this.closeNav()}
             >
-              <h1 className='site-header__title'>GARYUN YOUNG</h1>
+              <h1 className='site-header__title'>garyun young</h1>
               <p className='site-header__description'>front-end developer</p>
             </a>
           </span>
@@ -57,12 +57,12 @@ function NavMenu(props) {
       <ul className='site-menu__nav-items'>
         <li className='site-menu__nav-item'>
           <a href='/#projects' onClick={() => props.closeNav()}>
-            PROJECTS
+            projects
           </a>
         </li>
         <li className='site-menu__nav-item'>
           <a href='/#about' onClick={() => props.closeNav()}>
-            ME
+            about
           </a>
         </li>
         <span className='site-menu__nav-socials'>

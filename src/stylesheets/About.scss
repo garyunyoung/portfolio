@@ -17,6 +17,7 @@
     @include tablet {
       max-width: $max-width-content-desktop;
       padding-right: 64px;
+      padding-left: 0;
       flex-flow: row;
 
       margin: 0 auto;
@@ -27,12 +28,14 @@
     height: max-content;
 
     padding: 24px;
+
+    @include sm-desktop {
+      padding: 0;
+    }
   }
 
   @include element('header') {
     @include subheading-font;
-    // font-size: 24px;
-
     margin: 32px 0 24px;
 
     @include tablet {
@@ -41,7 +44,6 @@
   }
 
   @include element('text') {
-    // font-size: 16px;
     @include body-font;
     margin-bottom: 24px;
   }
