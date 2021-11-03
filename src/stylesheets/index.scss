@@ -9,9 +9,6 @@
 body,
 button {
   font-family: 'Inconsolata', monospace;
-  font-weight: 400;
-  line-height: 1.8;
-  color: $light-black;
   text-rendering: optimizeLegibility;
 }
 
@@ -26,11 +23,6 @@ ul {
 
 img {
   width: 100%;
-}
-
-a:-webkit-any-link {
-  text-decoration: none;
-  color: black;
 }
 
 #root::before {

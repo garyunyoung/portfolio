@@ -38,11 +38,11 @@ export default function ProjectPage(props) {
           );
         })}
         {props.link != "n/a" ? (
-          <div className="project__link">
-            <a href={props.link} rel="noopener noreferrer" target="_blank">
-              visit site
-            </a>
-          </div>
+          // <div className="project__link">
+          <a className="project__link" href={props.link} rel="noopener noreferrer" target="_blank">
+            Visit site
+          </a>
+          // </div>
         ) : (
           null
         )}

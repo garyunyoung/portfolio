@@ -75,7 +75,7 @@ const ProjectFilter = props => {
             props.setFilter("web");
           }}
         >
-          web
+          Web
         </button>
         <button
           className={`projects__filter-button ${
@@ -87,7 +87,7 @@ const ProjectFilter = props => {
             props.setFilter("pr");
           }}
         >
-          pr
+          PR
         </button>
         <button
           className={`projects__filter-button ${
@@ -99,7 +99,7 @@ const ProjectFilter = props => {
             props.setFilter("all");
           }}
         >
-          all
+          All
         </button>
       </div>
     </div>
