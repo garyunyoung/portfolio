@@ -20,8 +20,6 @@
 
   @include element('filter-container') {
     @include tablet {
-      background-color: $white;
-      box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
       width: max-content;
       padding: 8px 24px 22px;
       margin-bottom: 24px;
@@ -70,9 +68,6 @@
 }
 
 @include block('project-item') {
-  background-color: $white;
-  box-shadow: $shadow;
-
   margin-bottom: 56px;
 
   @include tablet {
@@ -96,11 +91,6 @@
       align-items: center;
 
       padding: 24px;
-
-      &:hover {
-        background-color: $hover-background;
-        outline: 1px solid $hover-outline;
-      }
     }
   }
 
