@@ -9,7 +9,7 @@
       margin: 0 auto;
     }
 
-    @include med-desktop {
+    @include sm-desktop {
       max-width: $max-width-desktop;
     }
   }
