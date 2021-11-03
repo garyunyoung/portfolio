@@ -1,7 +1,7 @@
 // Font sizes
-$body-mobile: 16px;
-$body-tablet: 20px;
-$body-desktop: 24px;
+// $body-mobile: 16px;
+// $body-tablet: 20px;
+// $body-desktop: 24px;
 
 $site-header-height-mobile: 74px;
 $side-padding-mobile: 16px;
@@ -33,39 +33,3 @@ $page-background-color: #f9f8ef;
 // #d1e3dc;
 // #D1D7E5;
 // #f9f8ef;
-
-// Style
-@mixin cta-link {
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 2px;
-
-  color: $light-black;
-  border: 1px solid $light-black;
-
-  padding: 10px 20px;
-
-  // position: relative;
-  // width: max-content;
-
-  // &:after {
-  //   content: '';
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   width: 0%;
-  //   height: 100%;
-  //   background-color: $white;
-  // }
-
-  &:hover {
-    cursor: pointer;
-    background-color: $white;
-
-    // &:after {
-    //   z-index: -1;
-    //   width: 100%;
-    //   background-color: $hover-background;
-    // }
-  }
-}

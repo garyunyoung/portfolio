@@ -1,5 +1,6 @@
 // Bemify Documentation: https://franzheidl.github.io/bemify/
 @import 'bemify';
+@import './_variables.scss';
 
 // Media Queries
 @mixin lg-mobile {
@@ -42,4 +43,21 @@
 @mixin set-size($height, $width) {
   height: $height;
   width: $width;
+}
+
+// Style
+@mixin cta-link {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  color: $light-black;
+  border: 1px solid $light-black;
+
+  padding: 10px 20px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+  }
 }
