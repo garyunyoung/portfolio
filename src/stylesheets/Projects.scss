@@ -35,36 +35,24 @@
   @include element('filter-buttons') {
     display: flex;
     margin-bottom: 40px;
-    
+
     @include tablet {
       margin: 0;
     }
   }
-  
+
   @include element('filter-button') {
-    // @include body-font;
-    @include cta-link;
+    @include cta-button;
+
     margin: 0 16px 40px 0;
 
-    // min-width: 80px;
+    @include state('selected') {
+      color: $black;
+      background-color: transparent;
 
-    // text-transform: uppercase;
-    // border: 1px solid $light-black;
-    // padding: 4px 16px;
-    // margin-right: 8px;
-    // position: relative;
-
-    // &:hover {
-    //   cursor: pointer;
-    // }
-
-    @include modifier('is-selected') {
-      // color: $white;
-      // background-color: $black;
-
-      &:hover {
-        // color: $white;
-        // background-color: $black;
+      &:focus,
+      &:focus-visible {
+        outline: 2px dotted $black;
       }
     }
   }

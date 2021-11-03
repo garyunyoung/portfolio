@@ -49,8 +49,7 @@ export default class Project extends React.Component {
             <ProjectSection
               list={this.state.projects.filter(
                 project =>
-                  project.category === this.state.filter ||
-                  this.state.filter === "all"
+                  project.category === this.state.filter
               )}
             />
           </ul>
@@ -66,11 +65,10 @@ const ProjectFilter = props => {
       <h4 className="projects__filter-title">Filter by:</h4>
       <div className="projects__filter-buttons">
         <button
-          className={`projects__filter-button ${
-            props.selected === "web"
-              ? "projects__filter-button--is-selected"
-              : ""
-          }`}
+          className={`projects__filter-button ${props.selected === "web"
+            ? "is-selected"
+            : ""
+            }`}
           onClick={() => {
             props.setFilter("web");
           }}
@@ -78,28 +76,15 @@ const ProjectFilter = props => {
           Web
         </button>
         <button
-          className={`projects__filter-button ${
-            props.selected === "pr"
-              ? "projects__filter-button--is-selected"
-              : ""
-          }`}
+          className={`projects__filter-button ${props.selected === "pr"
+            ? "is-selected"
+            : ""
+            }`}
           onClick={() => {
             props.setFilter("pr");
           }}
         >
           PR
-        </button>
-        <button
-          className={`projects__filter-button ${
-            props.selected === "all"
-              ? "projects__filter-button--is-selected"
-              : ""
-          }`}
-          onClick={() => {
-            props.setFilter("all");
-          }}
-        >
-          All
         </button>
       </div>
     </div>

@@ -117,6 +117,7 @@
   @include body-font;
   letter-spacing: 2px;
   color: $page-background-color;
+  text-align: center;
   text-decoration: none;
 
   background-color: $black;
@@ -138,7 +139,7 @@
 
   &:focus,
   &:focus-visible {
-    outline: 2px dotted rgb(209, 228, 221);
+    outline: 2px dotted $focus-outline;
     outline-offset: -6px;
   }
 }

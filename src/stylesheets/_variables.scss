@@ -20,14 +20,16 @@ $side-padding-mobile: 16px;
 
 $site-header-height-mobile: 74px;
 
-$light-grey: #9b9999;
 $light-black: #404040;
+$light-grey: $light-black;
+// $light-grey: #9b9999;
 $white: white;
 $black: black;
 $link-underline: black;
 $hover-background: #f7f7f7;
 $hover-outline: #cccccc;
 $shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+$focus-outline: #d1e4dd;
 
 // $hover-purple: #4e57ef;
 // $hover-green: #7caa5e;
