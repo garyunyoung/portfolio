@@ -6,6 +6,7 @@
 
   @include element('content') {
     min-height: 100vh;
+
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -14,7 +15,8 @@
     padding-top: calc(#{$site-header-height-mobile} + 16px);
 
     @include tablet {
-      max-width: $max-width-desktop;
+      max-width: $max-width-content-desktop;
+      padding-right: 64px;
       flex-flow: row;
 
       margin: 0 auto;
@@ -38,7 +40,8 @@
   }
 
   @include element('text') {
-    font-size: 16px;
+    // font-size: 16px;
+    @include body-font;
     margin-bottom: 24px;
   }
 
@@ -47,19 +50,21 @@
   }
 
   @include element('link') {
-    width: max-content;
-    min-width: 80px;
+    // width: max-content;
+    // min-width: 80px;
 
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: $black;
-    text-align: center;
-    text-transform: uppercase;
+    // font-size: 18px;
+    // letter-spacing: 1px;
+    // color: $black;
+    // text-align: center;
+    // text-transform: uppercase;
 
-    padding: 8px 16px;
+    // padding: 8px 16px;
 
-    position: relative;
-    border: 1px solid $light-black;
+    // position: relative;
+    // border: 1px solid $light-black;
+
+    @include cta-button;
 
     &:first-child {
       margin-right: 8px;
