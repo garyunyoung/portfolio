@@ -1,7 +1,18 @@
 // Font sizes
-// $body-mobile: 16px;
-// $body-tablet: 20px;
-// $body-desktop: 24px;
+$body-mobile: 16px;
+$body-tablet: 18px;
+$body-sm-desktop: 18px;
+$body-med-desktop: 18px;
+
+$heading-1-mobile: 28px;
+$heading-1-tablet: 30px;
+$heading-1-sm-desktop: 30px;
+$heading-1-med-desktop: 40px;
+
+$subheading-mobile: 18px;
+$subheading-tablet: 18px;
+$subheading-sm-desktop: 20px;
+$subheading-med-desktop: 20px;
 
 $site-header-height-mobile: 74px;
 $side-padding-mobile: 16px;
@@ -14,6 +25,7 @@ $black: black;
 $link-underline: black;
 $hover-background: #f7f7f7;
 $hover-outline: #cccccc;
+$shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
 
 // $hover-purple: #4e57ef;
 // $hover-green: #7caa5e;

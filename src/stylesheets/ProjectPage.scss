@@ -28,22 +28,21 @@
   }
 
   @include element('title') {
-    font-size: 28px;
+    @include heading-1-font;
     padding: 16px 0 24px;
-    text-transform: uppercase;
 
     @include med-desktop {
-      font-size: 40px;
       margin-top: 24px;
     }
   }
 
   @include element('job-type-subtitle') {
-    font-size: 18px;
+    @include subheading-font;
     margin-bottom: 8px;
   }
 
   @include element('job-year') {
+    @include subheading-font;
     margin-bottom: 16px;
   }
 
@@ -57,34 +56,22 @@
       justify-content: center;
       padding-left: 0;
     }
-
-    @include med-desktop {
-      font-size: 14px;
-    }
   }
 
   @include element('technology') {
-    font-size: 16px;
-    color: #9b9999;
+    @include body-font;
+    color: $light-grey;
 
     &::after {
       display: inline;
       content: '/';
-      margin: 0 8px;
+      margin: 0 12px;
     }
 
     &:last-child {
       &::after {
         content: '';
       }
-    }
-
-    @include tablet {
-      font-size: 14px;
-    }
-
-    @include med-desktop {
-      font-size: 14px;
     }
   }
 
@@ -100,47 +87,35 @@
   }
 
   @include element('info') {
-    font-size: 16px;
+    @include body-font;
 
-    margin-bottom: 32px;
     padding-left: 16px;
+    margin-bottom: 32px;
 
     @include tablet {
-      font-size: 14px;
-      margin: 8px 40px 0;
       padding-left: 0;
+      margin: 8px 40px 0;
 
       flex: 0 0 32%;
-    }
-
-    @include med-desktop {
-      font-size: 17px;
     }
   }
 
   @include element('key-features-subtitle') {
-    font-size: 18px;
-    margin-bottom: 16px;
+    @include subheading-font;
 
-    @include med-desktop {
-      font-size: 17px;
-      font-weight: 600;
-    }
+    margin-bottom: 16px;
   }
 
   @include element('key-features') {
-    font-size: 16px;
-    list-style-type: square;
-    margin-bottom: 40px;
+    @include body-font;
+
     padding-left: 16px;
+    margin-bottom: 40px;
+
+    list-style-type: square;
 
     @include tablet {
-      font-size: 14px;
       margin: 0;
-    }
-
-    @include med-desktop {
-      font-size: 14px;
     }
   }
 
@@ -153,27 +128,12 @@
   }
 
   @include element('image') {
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: $shadow;
   }
 
   @include element('link') {
-    width: max-content;
-    min-width: 80px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-    border: 1px solid $light-black;
-    padding: 4px 16px;
+    @include cta-link;
+
     margin: 40px auto;
-
-    &:hover {
-      background-color: $black;
-      cursor: pointer;
-
-      a {
-        color: $white;
-      }
-    }
   }
 }

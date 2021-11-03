@@ -46,18 +46,90 @@
 }
 
 // Style
-@mixin cta-link {
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 2px;
 
+@mixin heading-1-font {
+  font-size: $heading-1-mobile;
+  color: $black;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  margin: 0;
+
+  @include tablet {
+    font-size: $heading-1-tablet;
+  }
+
+  @include sm-desktop {
+    font-size: $heading-1-sm-desktop;
+  }
+
+  @include med-desktop {
+    font-size: $heading-1-med-desktop;
+  }
+}
+
+@mixin subheading-font {
+  font-size: $subheading-mobile;
+  color: $black;
+
+  margin: 0;
+
+  @include tablet {
+    font-size: $subheading-tablet;
+  }
+
+  @include sm-desktop {
+    font-size: $subheading-sm-desktop;
+  }
+
+  @include med-desktop {
+    font-size: $subheading-med-desktop;
+  }
+}
+
+@mixin body-font {
+  font-size: $body-mobile;
   color: $light-black;
-  border: 1px solid $light-black;
+  font-weight: 400;
+  margin: 0;
 
-  padding: 10px 20px;
+  @include tablet {
+    font-size: $body-tablet;
+  }
+
+  @include sm-desktop {
+    font-size: $body-sm-desktop;
+  }
+
+  @include med-desktop {
+    font-size: $body-med-desktop;
+  }
+}
+
+@mixin cta-link {
+  @include body-font;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  background-color: $black;
+  border: 2px solid $black;
+
+  width: max-content;
+  min-width: 80px;
+
+  padding: 12px 24px;
+
+  a {
+    color: $page-background-color;
+  }
 
   &:hover {
+    background-color: transparent;
     cursor: pointer;
-    background-color: $white;
+
+    a {
+      color: $black;
+    }
   }
 }

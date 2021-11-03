@@ -40,7 +40,7 @@ export default function ProjectPage(props) {
         {props.link != "n/a" ? (
           <div className="project__link">
             <a href={props.link} rel="noopener noreferrer" target="_blank">
-              visit site
+              VISIT SITE
             </a>
           </div>
         ) : (
