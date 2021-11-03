@@ -14,13 +14,8 @@
   }
 
   @include element('title') {
-    font-size: 20px;
-    letter-spacing: 1px;
+    @include subheading-font;
     margin-bottom: 16px;
-
-    @include tablet {
-      font-size: 27px;
-    }
   }
 
   @include element('filter-container') {
@@ -48,33 +43,18 @@
   }
 
   @include element('filter-button') {
+    @include body-font;
+
     min-width: 80px;
-    font-size: 18px;
-    letter-spacing: 2px;
+
     text-transform: uppercase;
     border: 1px solid $light-black;
     padding: 4px 16px;
     margin-right: 8px;
     position: relative;
 
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 0%;
-      height: 100%;
-      background-color: $white;
-    }
-
     &:hover {
       cursor: pointer;
-
-      &:after {
-        z-index: -1;
-        width: 100%;
-        background-color: $hover-background;
-      }
     }
 
     @include modifier('is-selected') {
@@ -90,9 +70,10 @@
 }
 
 @include block('project-item') {
-  margin-bottom: 56px;
   background-color: $white;
-  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: $shadow;
+
+  margin-bottom: 56px;
 
   @include tablet {
     margin-bottom: 96px;
@@ -124,14 +105,14 @@
   }
 
   @include element('image') {
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: $shadow;
   }
 
   @include element('content') {
     padding: 16px 24px;
 
     @include tablet {
-      flex: 1 0 40%;
+      flex: 1 0 50%;
 
       display: flex;
       flex-flow: column;
@@ -142,18 +123,14 @@
   }
 
   @include element('title') {
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0 0 16px 0;
+    @include subheading-font;
 
-    @include tablet {
-      font-size: 25px;
-    }
+    text-transform: uppercase;
+    margin-bottom: 16px;
   }
 
   @include element('technologies-subtitle') {
-    font-size: 16px;
+    @include body-font;
     color: $light-grey;
     margin: 20px 0 12px;
   }
@@ -169,10 +146,10 @@
   }
 
   @include element('technology') {
-    font-size: 16px;
+    @include body-font;
     color: $light-black;
-
     text-align: left;
+
     padding-bottom: 4px;
 
     &::after {
@@ -191,20 +168,13 @@
   }
 
   @include element('excerpt') {
-    font-size: 16px;
+    @include body-font;
     margin: 16px 0;
   }
 
   @include element('see-more') {
-    display: block;
-
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-
-    padding: 16px 0 0 0;
+    @include cta-link;
     margin: 0 auto;
-    width: max-content;
 
     @include sm-desktop {
       margin: 0;

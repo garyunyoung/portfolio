@@ -46,7 +46,7 @@ function ProjectItem(props) {
           </ul>
           <p>-</p>
           <p className="project-item__excerpt">{props.excerpt}</p>
-          <a className="project-item__see-more">SEE DETAILS</a>
+          <a className="project-item__see-more">See details</a>
         </div>
       </NavLink>
     </li>

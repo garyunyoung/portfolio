@@ -43,7 +43,7 @@
 }
 
 .home__projects-link {
-  @include cta-link;
+  @include cta-button;
 
   margin: 16px auto 24px auto;
 }

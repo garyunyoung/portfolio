@@ -132,7 +132,7 @@
   }
 
   @include element('link') {
-    @include cta-link;
+    @include cta-button;
 
     margin: 40px auto;
   }
