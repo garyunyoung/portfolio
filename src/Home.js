@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import Project from "./Projects";
 import About from "./About";
+import Footer from "./Footer";
 // import Sketch from "./Sketch";
 import "./stylesheets/Home.scss";
 
@@ -29,6 +30,7 @@ export default function Home() {
         </section>
         <Project />
         <About />
+        <Footer />
       </main>
     </React.Fragment>
   );

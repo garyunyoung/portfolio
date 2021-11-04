@@ -7,7 +7,7 @@ export default function About() {
       <div className="about__content">
         <div className="about__text-container">
           <p className="about__header">
-            Hi, <br /> Nice to meet you!
+            Nice to meet you!
           </p>
           <div className="about__text">
             <p>
@@ -30,12 +30,8 @@ export default function About() {
             <br />
           </div>
           <div className="about__links">
-            <a className="about__link" href="/#">
-              Download resume (PDF)
-            </a>
-            <a className="about__link" href="/#">
-              Email me
-            </a>
+            <a className="about__link" href="/#">Download resume (PDF)</a>
+            <a className="about__link" href="/#">Email me</a>
           </div>
         </div>
       </div>

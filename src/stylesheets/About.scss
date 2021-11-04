@@ -15,7 +15,9 @@
     padding-top: calc(#{$site-header-height-mobile} + 16px);
 
     @include tablet {
+      min-height: 80vh;
       max-width: $max-width-content-desktop;
+      padding-top: calc(#{$site-header-height-mobile} + 56px);
       padding-right: 64px;
       padding-left: 0;
       flex-flow: row;
