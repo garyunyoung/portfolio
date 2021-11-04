@@ -32,10 +32,10 @@ export default function About() {
           </div>
           <div className="about__links">
             <a className="about__link" href="/#contact">
-              Contact via email
+              Download resume (PDF)
             </a>
             <a className="about__link" href="/#contact">
-              Download CV (PDF)
+              Email me
             </a>
           </div>
         </div>

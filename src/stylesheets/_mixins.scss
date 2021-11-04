@@ -123,7 +123,6 @@
   background-color: $black;
   border: 2px solid $black;
 
-  width: max-content;
   min-width: 80px;
 
   padding: 12px 24px;
@@ -153,8 +152,6 @@
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-
-  width: max-content;
 
   &:hover {
     text-decoration-style: dotted;

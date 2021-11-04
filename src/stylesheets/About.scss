@@ -49,32 +49,24 @@
   }
 
   @include element('links') {
-    display: flex;
+    @include tablet {
+      display: flex;
+    }
   }
 
   @include element('link') {
-    // width: max-content;
-    // min-width: 80px;
-
-    // font-size: 18px;
-    // letter-spacing: 1px;
-    // color: $black;
-    // text-align: center;
-    // text-transform: uppercase;
-
-    // padding: 8px 16px;
-
-    // position: relative;
-    // border: 1px solid $light-black;
-
     @include cta-button;
+    overflow-wrap: break-word;
+    
 
     &:first-child {
-      margin-right: 8px;
+      margin-bottom: 16px;
     }
 
-    &:hover {
-      cursor: pointer;
+    @include tablet {
+      &:first-child {
+        margin: 0 16px 0;
+      }
     }
   }
 
