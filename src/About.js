@@ -1,5 +1,4 @@
 import React from "react";
-import profileIllustration from "./images/profile-illustration.svg";
 import "./stylesheets/About.scss";
 
 export default function About() {
@@ -39,7 +38,6 @@ export default function About() {
             </a>
           </div>
         </div>
-        <img className="about__profile-image" alt="" src={profileIllustration} />
       </div>
     </section>
   );

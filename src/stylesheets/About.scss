@@ -57,7 +57,6 @@
   @include element('link') {
     @include cta-button;
     overflow-wrap: break-word;
-    
 
     &:first-child {
       margin-bottom: 16px;
@@ -68,9 +67,5 @@
         margin: 0 16px 0;
       }
     }
-  }
-
-  @include element('profile-image') {
-    display: none;
   }
 }
