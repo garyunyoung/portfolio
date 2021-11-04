@@ -27,16 +27,9 @@ export default class NavBar extends React.Component {
     return (
       <header className={`site-header ${this.state.isOpen ? 'is-open' : ''}`}>
         <div className='site-header__content'>
-          <span className='site-header__logo-wrapper'>
-            <a
-              className='site-header__logo'
-              href={this.props.link}
-              onClick={() => this.closeNav()}
-            >
-              <h1 className='site-header__title'>garyun young</h1>
-              <p className='site-header__description'>front-end developer</p>
-            </a>
-          </span>
+          <div className='site-header__title-wrapper'>
+            <h1 className='site-header__title'>Garyun Young</h1>
+          </div>
           <button
             className='site-header__mobile-menu-button'
             onClick={() => this.toggleNav()}

@@ -37,36 +37,17 @@
     margin: 0 auto;
   }
 
-  @include element('logo-wrapper') {
-    height: 100%;
+  @include element('title-wrapper') {
     display: flex;
     flex-grow: 1;
+
     margin-left: $side-padding-mobile;
-  }
-
-  @include element('logo') {
-    display: flex;
-    flex-flow: column;
-
-    border-bottom: 1px solid transparent;
-
-    &:hover {
-      border-color: $black;
-    }
   }
 
   @include element('title') {
     font-size: 24px;
     font-weight: 700;
-    letter-spacing: 3px;
-    line-height: 1.4;
-
-    text-transform: uppercase;
-  }
-
-  @include element('description') {
-    font-size: 18px;
-    display: none;
+    letter-spacing: 2px;
   }
 
   @include element('nav') {
