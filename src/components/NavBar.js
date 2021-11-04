@@ -34,7 +34,7 @@ export default class NavBar extends React.Component {
             className='site-header__mobile-menu-button'
             onClick={() => this.toggleNav()}
           >
-            {this.state.isOpen ? 'CLOSE' : 'MENU'}
+            {this.state.isOpen ? 'Close' : 'Menu'}
           </button>
           <NavMenu open={this.state.isOpen} closeNav={() => this.closeNav()} />
         </div>
