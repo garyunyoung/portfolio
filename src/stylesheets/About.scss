@@ -5,20 +5,17 @@
   padding-bottom: 24px;
 
   @include element('content') {
-    min-height: 100vh;
-
     display: flex;
     flex-flow: column;
     justify-content: center;
 
-    padding: 0 16px;
-    padding-top: calc(#{$site-header-height-mobile} + 16px);
+    padding: $site-header-height-mobile $side-padding-mobile 0
+      $side-padding-mobile;
 
     @include tablet {
       min-height: 80vh;
       max-width: $max-width-content-desktop;
       padding-top: calc(#{$site-header-height-mobile} + 56px);
-      padding-right: 64px;
       padding-left: 0;
       flex-flow: row;
 
@@ -48,11 +45,19 @@
   @include element('text') {
     @include body-font;
     margin-bottom: 24px;
+
+    @include tablet {
+      padding-right: 64px;
+    }
   }
 
   @include element('links') {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: center;
+
     @include tablet {
-      display: flex;
+      flex-flow: row;
     }
   }
 
@@ -60,12 +65,12 @@
     @include cta-button;
     overflow-wrap: break-word;
 
-    &:first-child {
+    &:last-child {
       margin-bottom: 16px;
     }
 
     @include tablet {
-      &:first-child {
+      &:last-child {
         margin: 0 16px 0;
       }
     }
