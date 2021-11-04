@@ -148,18 +148,13 @@
     }
   }
 
-
   @include element('excerpt') {
     @include body-font;
-    margin: 32px 0 32px 0;
+
+    margin: 32px 0;
   }
 
   @include element('see-more') {
     @include cta-link;
-    margin: 0 auto;
-
-    @include sm-desktop {
-      margin: 0;
-    }
   }
 }

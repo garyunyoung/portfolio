@@ -136,14 +136,15 @@
     cursor: pointer;
   }
 
-  &:focus,
-  &:focus-visible {
+  &:focus {
     outline: 2px dotted $focus-outline;
     outline-offset: -6px;
   }
 }
 
 @mixin cta-link {
+  display: block;
+
   @include body-font;
   color: $black;
   font-weight: 700;
@@ -153,6 +154,8 @@
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 
+  width: fit-content;
+
   &:hover {
     text-decoration-style: dotted;
 
@@ -161,6 +164,8 @@
 
   &:focus {
     background-color: $white;
+    outline: 2px solid $white;
+
     text-decoration-style: dotted;
   }
 }
