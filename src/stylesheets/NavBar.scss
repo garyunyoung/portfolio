@@ -84,8 +84,7 @@
     line-height: 1.4;
     letter-spacing: 2px;
 
-    border: 0;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px dotted transparent;
 
     margin: 0 $side-padding-mobile;
 
@@ -93,6 +92,10 @@
       content: '☰';
       display: inline;
       margin-left: 8px;
+    }
+
+    &:focus {
+      border-color: $link-underline;
     }
 
     &:hover {
