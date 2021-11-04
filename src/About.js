@@ -31,10 +31,10 @@ export default function About() {
             <br />
           </div>
           <div className="about__links">
-            <a className="about__link" href="/#contact">
+            <a className="about__link" href="/#">
               Download resume (PDF)
             </a>
-            <a className="about__link" href="/#contact">
+            <a className="about__link" href="/#">
               Email me
             </a>
           </div>

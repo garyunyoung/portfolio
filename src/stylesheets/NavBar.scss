@@ -98,8 +98,6 @@
 @include block('site-menu') {
   @include element('nav-items') {
     text-align: center;
-    text-transform: uppercase;
-
     margin-top: -20%;
 
     @include tablet {
@@ -124,33 +122,9 @@
   }
 
   @include element('nav-item') {
-    font-size: 18px;
-    letter-spacing: 2px;
-    margin-bottom: 24px;
+  }
 
-    &:last-child {
-      img {
-        margin-right: 0;
-      }
-    }
-
-    @include tablet {
-      border-bottom: 1px solid transparent;
-      margin-bottom: 0;
-
-      &:hover {
-        border-color: $black;
-      }
-
-      &:first-child {
-        margin-right: 16px;
-      }
-    }
-
-    @include sm-desktop {
-      &:first-child {
-        margin-right: 24px;
-      }
-    }
+  @include element('nav-item-link') {
+    @include cta-link-button;
   }
 }
