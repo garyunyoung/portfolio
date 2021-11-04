@@ -23,10 +23,7 @@ export default function ProjectSection(props) {
 function ProjectItem(props) {
   return (
     <li className="project-item">
-      <NavLink
-        className="project-item__container"
-        to={`projects/${props.path}`}
-      >
+      <div className="project-item__container">
         <div className="project-item__image-wrapper">
           <img
             className="project-item__image"
@@ -44,11 +41,12 @@ function ProjectItem(props) {
               return <li className="project-item__technology">{technology}</li>;
             })}
           </ul>
-          <p>-</p>
           <p className="project-item__excerpt">{props.excerpt}</p>
-          <a className="project-item__see-more">See details</a>
+          <NavLink className="project-item__see-more" to={`projects/${props.path}`}>
+            See project details
+          </NavLink>
         </div>
-      </NavLink>
+      </div>
     </li>
   );
 }

@@ -148,9 +148,10 @@
     }
   }
 
+
   @include element('excerpt') {
     @include body-font;
-    margin: 16px 0;
+    margin: 32px 0 32px 0;
   }
 
   @include element('see-more') {

@@ -16,8 +16,6 @@ export default function About() {
               quality user experiences for everyone.
             </p>
             <br />
-            <p>-</p>
-            <br />
             <p>Key Principles</p>
             <br />
             <p>
