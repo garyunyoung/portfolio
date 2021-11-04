@@ -28,7 +28,10 @@ export default class NavBar extends React.Component {
       <header className={`site-header ${this.state.isOpen ? 'is-open' : ''}`}>
         <div className='site-header__content'>
           <div className='site-header__title-wrapper'>
-            <h1 className='site-header__title'>Garyun Young</h1>
+            {this.props.link === '/#' ?
+              <h1 className='site-header__title'>Garyun Young</h1> :
+              <a className={`site-header__title-link ${this.props.link === '/#' ? '' : 'is-active'}`} href='/#'>Garyun Young</a>
+            }
           </div>
           <button
             className='site-header__mobile-menu-button'

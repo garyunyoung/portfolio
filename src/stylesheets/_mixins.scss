@@ -91,6 +91,27 @@
   }
 }
 
+@mixin title-font {
+  font-size: $title-mobile;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  color: $black;
+
+  margin: 0;
+
+  @include tablet {
+    font-size: $title-tablet;
+  }
+
+  @include sm-desktop {
+    font-size: $title-sm-desktop;
+  }
+
+  @include med-desktop {
+    font-size: $title-med-desktop;
+  }
+}
+
 @mixin body-font {
   font-size: $body-mobile;
   color: $black;
@@ -191,7 +212,6 @@
 
   &:hover {
     text-decoration-color: $black;
-
     cursor: pointer;
   }
 
@@ -200,5 +220,14 @@
     outline: 2px solid transparent;
 
     text-decoration-color: $black;
+  }
+
+  @include state('active') {
+    text-decoration-style: solid;
+    text-decoration-color: $black;
+
+    &:hover {
+      text-decoration-style: dotted;
+    }
   }
 }

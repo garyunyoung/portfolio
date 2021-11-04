@@ -45,9 +45,21 @@
   }
 
   @include element('title') {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 2px;
+    @include title-font;
+
+    @include tablet {
+      padding: 12px 24px;
+    }
+  }
+
+  @include element('title-link') {
+    @include cta-link-button;
+    @include title-font;
+    padding: 0;
+
+    @include tablet {
+      padding: 12px 24px;
+    }
   }
 
   @include element('nav') {
