@@ -3,9 +3,10 @@
 
 @include block('project') {
   @include element('content') {
-    padding: 24px;
+    padding: $side-padding-mobile;
 
     @include tablet {
+      padding: 24px;
       margin: 0 auto;
     }
 
@@ -49,10 +50,11 @@
   @include element('technologies') {
     display: flex;
     flex-flow: wrap;
+    padding-left: 0;
     margin-bottom: 16px;
-    padding-left: 16px;
 
     @include tablet {
+      padding-left: 16px;
       justify-content: center;
       padding-left: 0;
     }
@@ -89,11 +91,10 @@
   @include element('info') {
     @include body-font;
 
-    padding-left: 16px;
+    padding-left: 0;
     margin-bottom: 32px;
 
     @include tablet {
-      padding-left: 0;
       margin: 8px 40px 0;
 
       flex: 0 0 32%;
