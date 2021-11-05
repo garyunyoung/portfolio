@@ -12,8 +12,8 @@ export default function ProjectPage(props) {
           <p className="project__job-type-subtitle">{props.jobType}</p>
           <p className="project__job-year">{props.jobYear}</p>
           <ul className="project__technologies">
-            {props.technologies.map(technology => {
-              return <li className="project__technology">{technology}</li>;
+            {props.technologies.map((technology, index) => {
+              return <li key={index} className="project__technology">{technology}</li>;
             })}
           </ul>
         </div>
@@ -26,23 +26,21 @@ export default function ProjectPage(props) {
           <div className="project__key-features-container">
             <p className="project__key-features-subtitle">My Role:</p>
             <ul className="project__key-features">
-              {props.keyFeatures.map(keyFeature => {
-                return <li className="project__key-feature">{keyFeature}</li>;
+              {props.keyFeatures.map((keyFeature, index) => {
+                return <li key={index} className="project__key-feature">{keyFeature}</li>;
               })}
             </ul>
           </div>
         </div>
-        {props.images.map(image => {
+        {props.images.map((image, index) => {
           return (
-            <img className="project__image" src={image.src} alt={image.alt} />
+            <img key={index} className="project__image" src={image.src} alt={image.alt} />
           );
         })}
         {props.link !== "n/a" ? (
-          // <div className="project__link">
           <a className="project__link" href={props.link} rel="noopener noreferrer" target="_blank">
             Visit site
           </a>
-          // </div>
         ) : (
           null
         )}
