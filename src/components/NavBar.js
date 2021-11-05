@@ -1,49 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import githubLogo from '../images/github-logo.svg';
 import codewarsLogo from '../images/codewars-logo.svg';
 import '../stylesheets/NavBar.scss';
 
-export default class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false
-    };
+export default function NavBar(props) {
+  const [isOpen, setIsOpen] = useState(false)
+
+  function toggleNav() {
+    setIsOpen(prevState => !prevState)
   }
 
-  toggleNav() {
-    this.setState(prevState => ({
-      isOpen: !prevState.isOpen
-    }));
+  function closeNav() {
+    setIsOpen(false)
   }
 
-  closeNav() {
-    this.setState(() => ({
-      isOpen: false
-    }));
-  }
-
-  render() {
-    return (
-      <header className={`site-header ${this.state.isOpen ? 'is-open' : ''}`}>
-        <div className='site-header__content'>
-          <div className='site-header__title-wrapper'>
-            {this.props.link === '/#' ?
-              <h1 className='site-header__title'>Garyun Young</h1> :
-              <a className={`site-header__title-link ${this.props.link === '/#' ? '' : 'is-active'}`} href='/#'>Garyun Young</a>
-            }
-          </div>
-          <button
-            className='site-header__mobile-menu-button'
-            onClick={() => this.toggleNav()}
-          >
-            {this.state.isOpen ? 'Close' : 'Menu'}
-          </button>
-          <NavMenu open={this.state.isOpen} closeNav={() => this.closeNav()} />
+  return (
+    <header className={`site-header ${isOpen ? 'is-open' : ''}`}>
+      <div className='site-header__content'>
+        <div className='site-header__title-wrapper'>
+          {props.link === '/#' ?
+            <h1 className='site-header__title'>Garyun Young</h1> :
+            <a className={`site-header__title-link ${props.link === '/#' ? '' : 'is-active'}`} href='/#'>Garyun Young</a>
+          }
         </div>
-      </header>
-    );
-  }
+        <button
+          className='site-header__mobile-menu-button'
+          onClick={() => toggleNav()}
+        >
+          {isOpen ? 'Close' : 'Menu'}
+        </button>
+        <NavMenu closeNav={() => closeNav()} />
+      </div>
+    </header>
+  );
 }
 
 function NavMenu(props) {
@@ -52,12 +41,12 @@ function NavMenu(props) {
       {/* toggle aria label */}
       <ul className='site-menu__nav-items'>
         <li className='site-menu__nav-item'>
-          <a className='site-menu__nav-item-link' href='/#projects' onClick={() => props.closeNav()}>
+          <a className='site-menu__nav-item-link' href='/#projects' onClick={props.closeNav}>
             Projects
           </a>
         </li>
         <li className='site-menu__nav-item'>
-          <a className='site-menu__nav-item-link' href='/#about' onClick={() => props.closeNav()}>
+          <a className='site-menu__nav-item-link' href='/#about' onClick={props.closeNav}>
             About
           </a>
         </li>
@@ -68,7 +57,7 @@ function NavMenu(props) {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src={codewarsLogo} alt=''/>
+              <img src={codewarsLogo} alt='' />
             </a>
           </li>
           <li className='site-menu__nav-item'>
@@ -77,7 +66,7 @@ function NavMenu(props) {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src={githubLogo} alt=''/>
+              <img src={githubLogo} alt='' />
             </a>
           </li>
         </span>
