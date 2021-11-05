@@ -3,15 +3,16 @@ import NavBar from "./components/NavBar";
 import Project from "./Projects";
 import About from "./About";
 import Footer from "./Footer";
-// import Sketch from "./Sketch";
+import ElementInView from "./utilities/ElementInView";
+
 import "./stylesheets/Home.scss";
 
 export default function Home() {
+
   return (
     <React.Fragment>
       <NavBar link="/#" />
       <main>
-        {/* <Sketch /> */}
         <section className="home">
           <div className="home__content">
             <div className="home__text">
@@ -31,6 +32,7 @@ export default function Home() {
         <Project />
         <About />
         <Footer />
+        <ElementInView />
       </main>
     </React.Fragment>
   );

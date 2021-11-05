@@ -41,12 +41,12 @@ function NavMenu(props) {
       {/* toggle aria label */}
       <ul className='site-menu__nav-items'>
         <li className='site-menu__nav-item'>
-          <a className='site-menu__nav-item-link' href='/#projects' onClick={props.closeNav}>
+          <a className='site-menu__nav-item-link site-menu__nav-item-link--projects' href='/#projects' onClick={props.closeNav}>
             Projects
           </a>
         </li>
         <li className='site-menu__nav-item'>
-          <a className='site-menu__nav-item-link' href='/#about' onClick={props.closeNav}>
+          <a className='site-menu__nav-item-link site-menu__nav-item-link--about' href='/#about' onClick={props.closeNav}>
             About
           </a>
         </li>
