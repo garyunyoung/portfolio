@@ -19,7 +19,7 @@ export default class Project extends React.Component {
       projects: [
         stitchedProject,
         bethsProject,
-        // waldourStudiosProject,
+        waldourStudiosProject,
         sploreProject,
         sailCityJumpProject,
         nightAtTheSavoyProject
