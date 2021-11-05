@@ -1,4 +1,5 @@
 import React from "react";
+import UnderConstructionBanner from "./components/UnderConstructionBanner";
 import NavBar from "./components/NavBar";
 import Project from "./Projects";
 import About from "./About";
@@ -11,6 +12,8 @@ export default function Home() {
 
   return (
     <React.Fragment>
+
+      <UnderConstructionBanner />
       <NavBar link="/#" />
       <main>
         <section className="home">

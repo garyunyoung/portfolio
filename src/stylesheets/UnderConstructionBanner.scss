@@ -1,0 +1,26 @@
+@import './_mixins.scss';
+@import './_variables.scss';
+
+@include block('under-construction-banner') {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+
+  background-color: white;
+
+  @include element('text') {
+    font-size: 16px;
+    color: $black;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    padding: 12px 24px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

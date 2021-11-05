@@ -3,7 +3,7 @@
 
 @include block('footer') {
   @include element('content') {
-    padding: 72px 0;
+    padding: 72px 0 120px 0;
 
     @include tablet {
       padding-top: 0;
