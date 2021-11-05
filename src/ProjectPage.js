@@ -20,7 +20,7 @@ export default function ProjectPage(props) {
         </div>
         <div className="project__info-container">
           <div className="project__description-container">
-            <p className="project__description">{props.companyDescription}</p>
+            <p className="project__description project__description--company">{props.companyDescription}</p>
 
             {props.info.map((info, index) => {
               return <p key={index} className="project__description" >{info}</p>
@@ -49,6 +49,6 @@ export default function ProjectPage(props) {
         )}
         <a href='/#projects' className='project__back is-active' >Back to projects</a>
       </div>
-    </section >
+    </section>
   );
 }

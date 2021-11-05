@@ -111,6 +111,10 @@
     @include body-font;
 
     margin-bottom: 32px;
+
+    @include modifier('company') {
+      display: none;
+    }
   }
 
   @include element('description-container') {
