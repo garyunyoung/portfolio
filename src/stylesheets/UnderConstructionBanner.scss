@@ -2,25 +2,54 @@
 @import './_variables.scss';
 
 @include block('under-construction-banner') {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
+  max-width: calc(1150px + (180px * 2) + (32px * 2));
+  background-color: rgba(0, 0, 0, 0.2);
 
-  background-color: white;
+  display: flex;
+  flex-flow: column;
+
+  padding: 24px $side-padding-mobile 80px $side-padding-mobile;
+  margin: 0 auto;
+
+  @include sm-desktop {
+    flex-flow: row;
+    justify-content: space-between;
+
+    padding: 24px 40px 32px 40px;
+  }
 
   @include element('text') {
-    font-size: 16px;
-    color: $black;
-    font-weight: 400;
-    line-height: 1.8;
-    margin: 0;
+    max-width: $max-width-content-desktop;
+    @include body-font;
+    margin-bottom: 56px;
+
+    @include sm-desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  @include element('link') {
+    @include cta-link;
+    display: inline;
+
+    margin: 0 4px;
+  }
+
+  @include element('back-to-top') {
+    @include cta-link;
+    height: fit-content;
+    font-size: 18px;
 
     @include tablet {
       font-size: 18px;
     }
 
-    padding: 12px 24px;
-    background-color: rgba(0, 0, 0, 0.2);
+    @include sm-desktop {
+      font-size: 18px;
+    }
+
+    @include med-desktop {
+      font-size: 18px;
+    }
   }
 }

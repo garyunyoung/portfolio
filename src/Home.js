@@ -9,11 +9,8 @@ import ElementInView from "./utilities/ElementInView";
 import "./stylesheets/Home.scss";
 
 export default function Home() {
-
   return (
     <React.Fragment>
-
-      <UnderConstructionBanner />
       <NavBar link="/#" />
       <main>
         <section className="home">
@@ -35,6 +32,7 @@ export default function Home() {
         <Project />
         <About />
         <Footer />
+        <UnderConstructionBanner />
         <ElementInView />
       </main>
     </React.Fragment>
