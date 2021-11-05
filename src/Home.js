@@ -1,5 +1,4 @@
 import React from "react";
-import UnderConstructionBanner from "./components/UnderConstructionBanner";
 import NavBar from "./components/NavBar";
 import Project from "./Projects";
 import About from "./About";
@@ -32,7 +31,6 @@ export default function Home() {
         <Project />
         <About />
         <Footer />
-        <UnderConstructionBanner />
         <ElementInView />
       </main>
     </React.Fragment>
