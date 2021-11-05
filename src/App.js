@@ -9,6 +9,7 @@ import {
   NightAtTheSavoy
 } from "./Projects";
 import Home from "./Home";
+import Footer from "./Footer";
 
 export default class App extends Component {
   render() {
@@ -47,6 +48,7 @@ export default class App extends Component {
             component={NightAtTheSavoy}
           />
         </Switch>
+        <Footer />
       </Router>
     );
   }
