@@ -7,7 +7,6 @@ export default function ProjectPage(props) {
     <section className="project">
       <ScrollToTopOnMount />
       <div className="project__content">
-        <a href='/#projects' className='project__back project__back--desktop is-active' >Back to projects</a>
         <div className="project__summary-container">
           <h2 className="project__title">{props.title}</h2>
           <p className="project__job-type-subtitle">{props.jobType}</p>
@@ -40,14 +39,17 @@ export default function ProjectPage(props) {
             <img key={index} className="project__image" src={image.src} alt={image.alt} />
           );
         })}
-        {props.link !== "n/a" ? (
-          <a className="project__link" href={props.link} rel="noopener noreferrer" target="_blank">
-            Visit site
-          </a>
-        ) : (
-          null
-        )}
-        <a href='/#projects' className='project__back is-active' >Back to projects</a>
+
+        <div className='project__cta-links'>
+          {props.link !== "n/a" ? (
+            <a className="project__link" href={props.link} rel="noopener noreferrer" target="_blank">
+              Visit site
+            </a>
+          ) : (
+            null
+          )}
+          <a href='/#projects' className='project__back is-active' >Back to projects</a>
+        </div>
       </div>
     </section>
   );
