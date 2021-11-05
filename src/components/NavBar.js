@@ -68,7 +68,7 @@ function NavMenu(props) {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src={codewarsLogo} />
+              <img src={codewarsLogo} alt=''/>
             </a>
           </li>
           <li className='site-menu__nav-item'>
@@ -77,7 +77,7 @@ function NavMenu(props) {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src={githubLogo} />
+              <img src={githubLogo} alt=''/>
             </a>
           </li>
         </span>

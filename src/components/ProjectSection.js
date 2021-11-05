@@ -5,8 +5,10 @@ import "../stylesheets/Projects.scss";
 export default function ProjectSection(props) {
   return (
     <React.Fragment>
-      {props.list.map(project => (
+      {props.list.map((project, index) => (
         <ProjectItem
+          id={index}
+          key={index}
           img={project.previewImage}
           info={project.info}
           category={project.category}
@@ -37,8 +39,8 @@ function ProjectItem(props) {
             {props.category === "web" ? "Key Technologies:" : "Key skills:"}
           </p>
           <ul className="project-item__technologies">
-            {props.technologies.map(technology => {
-              return <li className="project-item__technology">{technology}</li>;
+            {props.technologies.map((technology, index) => {
+              return <li key={index} className="project-item__technology">{technology}</li>;
             })}
           </ul>
           <p className="project-item__excerpt">{props.excerpt}</p>

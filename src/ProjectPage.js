@@ -37,7 +37,7 @@ export default function ProjectPage(props) {
             <img className="project__image" src={image.src} alt={image.alt} />
           );
         })}
-        {props.link != "n/a" ? (
+        {props.link !== "n/a" ? (
           // <div className="project__link">
           <a className="project__link" href={props.link} rel="noopener noreferrer" target="_blank">
             Visit site
