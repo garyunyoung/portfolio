@@ -15,6 +15,25 @@
     }
   }
 
+  @include element('back') {
+    @include cta-link;
+    margin: 0 auto 56px auto;
+
+    @include sm-desktop {
+      display: none;
+    }
+
+    @include modifier('desktop') {
+      display: none;
+
+      @include sm-desktop {
+        display: flex;
+        margin-left: 40px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
   @include element('summary-container') {
     margin-bottom: 16px;
 

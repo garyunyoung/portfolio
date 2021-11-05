@@ -7,6 +7,7 @@ export default function ProjectPage(props) {
     <section className="project">
       <ScrollToTopOnMount />
       <div className="project__content">
+        <a href='/#projects' className='project__back project__back--desktop is-active' >Back to projects</a>
         <div className="project__summary-container">
           <h2 className="project__title">{props.title}</h2>
           <p className="project__job-type-subtitle">{props.jobType}</p>
@@ -44,6 +45,7 @@ export default function ProjectPage(props) {
         ) : (
           null
         )}
+        <a href='/#projects' className='project__back is-active' >Back to projects</a>
       </div>
     </section>
   );
