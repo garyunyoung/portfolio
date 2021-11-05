@@ -15,10 +15,10 @@ export const stitchedProject = {
   github: "n/a",
   previewImage: { src: stitchedHomePage, alt: "Stitched Home Page" },
   excerpt:
-    "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, Augmented Reality, and machine learning.",
+    "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   images: [{ src: stitchedLukesPage, alt: "Stitched Inspiration Page" }],
   companyDescription:
-    "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, Augmented Reality and machine learning.",
+    "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, augmented reality and machine learning.",
   info:
     ['In 2019 I joined Stitched, interning as a front-end developer which then lead to a full-time contract. I was brought on to help with their site redesign but since then took on their front-end features.', 'Near the end of 2020 I helped develop the front-end of an AR app.'],
   link: "https://www.stitched.co.uk/",

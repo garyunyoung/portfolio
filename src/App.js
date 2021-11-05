@@ -48,7 +48,7 @@ export default class App extends Component {
             component={NightAtTheSavoy}
           />
         </Switch>
-        <Footer />
+        <Footer window={window}/>
       </Router>
     );
   }

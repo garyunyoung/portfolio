@@ -1,12 +1,16 @@
 import React from "react";
 import "./stylesheets/Footer.scss";
 
-export default function Footer() {
+export default function Footer(props) {
+  function scrollToTop() {
+    props.window.scrollTo(0, 0);
+  }
+
   return (
     <section id="footer" className='footer'>
       <div className="footer__content">
         <p className='footer__text'>
-          This site is an open work-in-progress while I continue to learn and apply relevant accessibility standards. 
+          This site is an open work-in-progress while I continue to learn and apply relevant accessibility standards.
           This site aims to be
           <a
             className='footer__link'
@@ -15,7 +19,7 @@ export default function Footer() {
             rel='noopener noreferrer'
           >Web Content Accessibility Guidelines 2.1 (WCAG)</a>AA compliant.
         </p>
-        <a className='footer__back-to-top' href='/#'>Back to top</a>
+        <p className='footer__back-to-top' onClick={() => scrollToTop()}>Back to top</p>
       </div>
     </section>
   );

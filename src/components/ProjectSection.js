@@ -36,7 +36,7 @@ function ProjectItem(props) {
         <div className="project-item__content">
           <h3 className="project-item__title">{props.title}</h3>
           <p className="project-item__technologies-subtitle">
-            {props.category === "web" ? "Key Technologies:" : "Key skills:"}
+            {props.category === "web" ? "Key Technologies:" : "Key Skills:"}
           </p>
           <ul className="project-item__technologies">
             {props.technologies.map((technology, index) => {
