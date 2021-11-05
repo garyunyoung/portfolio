@@ -27,7 +27,6 @@ $site-header-height-mobile: 83px;
 
 $light-black: #404040;
 $light-grey: $light-black;
-// $light-grey: #9b9999;
 $white: white;
 $black: black;
 $link-underline: black;
@@ -36,24 +35,26 @@ $hover-outline: #cccccc;
 $shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
 $focus-outline: #d1e4dd;
 
+$footer-background-colour: #d1d7e5;
+// $footer-background-colour: #d1e3dc;
+
+$page-background-colour: #f7f7f7;
+// $page-background-colour: #f9f8ef;
+
+// $page-background-colour: #dbdee4;
+// $page-background-colour: #d4d8f2;
+// $page-background-colour: #f0ebff;
+// $page-background-colour: #dbdee4;
+// $page-background-colour: #faedca;
+// $page-background-colour: #d1e3dc;
+// $page-background-colour: #d1d7e5;
+
 // $hover-purple: #4e57ef;
 // $hover-green: #7caa5e;
 // $hover-purple: #3f51b5;
-// $hover-purple: #A2D7FF;
+// $hover-purple: #a2d7ff;
 // $hover-green: #66e2d5;
 
 // hover transition
 // transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1) 0.1s;
-
-// Background colour
-// $page-background-color: #f9f8ef;
-// $page-background-color: #dbdee4;
-// $page-background-color: #d4d8f2;
-// $page-background-color: #f0ebff;
-$page-background-color: #f7f7f7;
-// #dbdee4;
-// #FAEDCA;
-// #d1e3dc;
-// #d1e3dc;
-// #D1D7E5;
-// #f9f8ef;
+// $light-grey: #9b9999;

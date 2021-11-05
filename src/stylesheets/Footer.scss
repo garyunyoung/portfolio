@@ -4,7 +4,7 @@
 @include block('footer') {
   @include element('content') {
     max-width: calc(1150px + (180px * 2) + (32px * 2));
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $footer-background-colour;
 
     display: flex;
     flex-flow: column;

@@ -6,16 +6,15 @@ export default function Footer() {
     <section id="footer" className='footer'>
       <div className="footer__content">
         <p className='footer__text'>
-          Please bare with, this site is constantly under development as I continue to learn on how
-          to be
+          This site is an open work-in-progress while I continue to learn and apply relevant accessibility standards. 
+          This site aims to be
           <a
             className='footer__link'
             href='https://www.w3.org/WAI/standards-guidelines/wcag/'
             target='_blank'
             rel='noopener noreferrer'
-          >AA Web Content Accessibility Guidelines 2.1 (WCAG)</a>compliant.
+          >Web Content Accessibility Guidelines 2.1 (WCAG)</a>AA compliant.
         </p>
-
         <a className='footer__back-to-top' href='/#'>Back to top</a>
       </div>
     </section>

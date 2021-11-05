@@ -3,6 +3,7 @@
 
 @include block('about') {
   padding-bottom: 24px;
+  margin-bottom: 64px;
 
   @include element('content') {
     display: flex;

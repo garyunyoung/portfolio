@@ -4,7 +4,7 @@
 @include block('site-header') {
   width: 100%;
 
-  background-color: $page-background-color;
+  background-color: $page-background-colour;
 
   position: fixed;
   top: 0;
@@ -69,7 +69,7 @@
     height: calc(100vh - #{$site-header-height-mobile});
     justify-content: center;
     align-items: center;
-    background-color: $page-background-color;
+    background-color: $page-background-colour;
 
     @include tablet {
       display: block;
