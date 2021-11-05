@@ -10,27 +10,30 @@ export const stitchedProject = {
   title: "Stitched",
   path: "stitched",
   category: "web",
-  jobType: "Intern to Junior Developer",
+  jobType: "Front-end Developer",
   jobYear: "2019 - 2020",
   github: "n/a",
   previewImage: { src: stitchedHomePage, alt: "Stitched Home Page" },
   excerpt:
-    "Stitched is an eco-friendly, vc-backed, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, AR and machine learning.",
+    "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, Augmented Reality, and machine learning.",
   images: [{ src: stitchedLukesPage, alt: "Stitched Inspiration Page" }],
   companyDescription:
-    "Stitched is an eco-friendly, vc-backed, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, AR and machine learning.",
+    "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, Augmented Reality and machine learning.",
   info:
-    "For my first role in a company I joined Stitched, interning as a Front End Developer. I was brought on to help with their site redesign but have since taken most front end features.",
+    ['In 2019 I joined Stitched, interning as a front-end developer which then lead to a full-time contract. I was brought on to help with their site redesign but since then took on their front-end features.', 'Near the end of 2020 I helped develop the front-end of an AR app.'],
   link: "https://www.stitched.co.uk/",
   displayLink: "stitched.co.uk",
-  technologies: ["Elixir", "Phoenix", "Liveview", "React", "SCSS", "HTML"],
+  technologies: ["Elixir", "Phoenix LiveView", "JavaScript", "React", "SCSS", "HTML"],
   keyFeatures: [
-    "Built and deployed front-end changes for a site redesign that involved reusable CMS components.",
-    "Mobile first and responsive site using React, JS, SASS, HTML/embedded Elixir and Git.",
-    "Exposed to Redux, Elixir, Phoenix and unit/integration testing. ",
-    "Worked closely with our UX/UI designer while implementing designs created on Zeplin.",
-    "Experience using Kanban, CI and CD (Docker and Google Cloud).",
-    "Practised pair programming with senior engineers."
+    "Built and deployed front-end changes for a site redesign/overhaul that involved custom reusable CMS components.",
+    "Built the front-end using Elixir / Phoenix LiveView, JS / React, SCSS, HTML/embedded Elixir, and Git for version control.",
+    "Experience with Kanban methodology, CI / CD (Google Cloud & Docker then Kubernetes)",
+    "Exposed to Ruby / Ruby on Rails, Redux, and unit/integration testing.", 
+    "Pair programmed with senior back-end and full-stack engineers.", 
+    "Worked closely with the UX/UI designer to implement designs created on Figma, as well as collaborating to find ways to improve user experience.", 
+    "Approached designs with a mobile-first and responsive methodology.",
+    "Approached features with a maintainable and reusable methodology.",
+    "Built the front-end of an AR app using Swift / SwiftUI"
   ]
 };
 

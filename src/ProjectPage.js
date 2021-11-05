@@ -19,11 +19,13 @@ export default function ProjectPage(props) {
           </ul>
         </div>
         <div className="project__info-container">
-          <p className="project__info">
-            {props.companyDescription}
-            <br /> <br />
-            {props.info}
-          </p>
+          <div className="project__description-container">
+            <p className="project__description">{props.companyDescription}</p>
+
+            {props.info.map((info, index) => {
+              return <p key={index} className="project__description" >{info}</p>
+            })}
+          </div>
           <div className="project__key-features-container">
             <p className="project__key-features-subtitle">My Role:</p>
             <ul className="project__key-features">
@@ -47,6 +49,6 @@ export default function ProjectPage(props) {
         )}
         <a href='/#projects' className='project__back is-active' >Back to projects</a>
       </div>
-    </section>
+    </section >
   );
 }

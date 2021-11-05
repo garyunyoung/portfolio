@@ -107,16 +107,19 @@
     }
   }
 
-  @include element('info') {
+  @include element('description') {
     @include body-font;
 
-    padding-left: 0;
     margin-bottom: 32px;
+  }
 
+  @include element('description-container') {
     @include tablet {
-      margin: 8px 40px 0;
+      display: flex;
+      flex-flow: column;
 
       flex: 0 0 32%;
+      margin: 8px 64px 0;
     }
   }
 
