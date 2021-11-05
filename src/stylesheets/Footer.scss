@@ -2,9 +2,10 @@
 @import './_variables.scss';
 
 @include block('footer') {
+  background-color: $footer-background-colour;
+  
   @include element('content') {
     max-width: calc(1150px + (180px * 2) + (32px * 2));
-    background-color: $footer-background-colour;
 
     display: flex;
     flex-flow: column;
