@@ -1,7 +1,8 @@
-import stitchedHomePage from "./images/stitched-desktop-home.png";
+import stitchedHomePage from "./images/stitched-desktop-homepage.png";
+import stitchedARHomePage from "./images/stitchedar-homepage-1207x741.png";
 import bethsHomePage from "./images/beths-project.png";
 import waldourStudioHomePage from "./images/waldour-1.png";
-import stitchedLukesPage from "./images/stitched-desktop-homes.png";
+import stitchedLukesPage from "./images/stitched-desktop-homepage.png";
 import sploreBanner from "./images/splore-c.jpg";
 import sailCityJumpBanner from "./images/sail-city-jump.jpg";
 import nightAtTheSavoyBanner from "./images/night-at-the-savoy.jpg";
@@ -11,7 +12,7 @@ export const stitchedProject = {
   path: "stitched",
   category: "web",
   jobType: "Front-end Developer",
-  jobYear: "2019 - 2020",
+  jobYear: "2019 - 2021",
   github: "n/a",
   previewImage: { src: stitchedHomePage, alt: "Stitched Home Page" },
   excerpt:
@@ -24,6 +25,37 @@ export const stitchedProject = {
   link: "https://www.stitched.co.uk/",
   displayLink: "stitched.co.uk",
   technologies: ["Elixir", "Phoenix LiveView", "JavaScript", "React", "SCSS", "HTML"],
+  keyFeatures: [
+    "Built and deployed front-end changes for a site redesign/overhaul that involved custom reusable CMS components.",
+    "Built the front-end using Elixir / Phoenix LiveView, JS / React, SCSS, HTML/embedded Elixir, and Git for version control.",
+    "Experience with Kanban methodology, CI / CD (Google Cloud & Docker then Kubernetes)",
+    "Exposed to Ruby / Ruby on Rails, Redux, and unit/integration testing.", 
+    "Pair programmed with senior back-end and full-stack engineers.", 
+    "Worked closely with the UX/UI designer to implement designs created on Figma, as well as collaborating to find ways to improve user experience.", 
+    "Approached designs with a mobile-first and responsive methodology.",
+    "Approached features with a maintainable and reusable methodology.",
+    "Built the front-end of an AR app using Swift / SwiftUI"
+  ]
+};
+
+export const stitchedARProject = {
+  title: "Stitched AR",
+  path: "stitchedAR",
+  category: "web",
+  jobType: "",
+  jobYear: "",
+  github: "n/a",
+  previewImage: { src: stitchedARHomePage, alt: "Stitched AR Home Page" },
+  // n/a
+  excerpt: "",
+  images: [{ src: stitchedLukesPage, alt: "Stitched Inspiration Page" }],
+  companyDescription:
+    "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, augmented reality and machine learning.",
+  info:
+    ['Near the end of 2020 I helped develop the front-end of an AR app.'],
+  link: "https://apps.apple.com/gb/app/stitched-ar/id1461104538",
+  displayLink: "n/a",
+  technologies: ["Swift", "SwiftUI"],
   keyFeatures: [
     "Built and deployed front-end changes for a site redesign/overhaul that involved custom reusable CMS components.",
     "Built the front-end using Elixir / Phoenix LiveView, JS / React, SCSS, HTML/embedded Elixir, and Git for version control.",

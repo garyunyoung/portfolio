@@ -87,6 +87,11 @@
 
   @include element('image') {
     box-shadow: $shadow;
+
+    @include modifier('stitchedAR') {
+      box-shadow: none;
+      filter: drop-shadow($drop-shadow);
+    }
   }
 
   @include element('content') {
@@ -128,12 +133,11 @@
 
   @include element('technology') {
     @include body-font;
-    color: $light-black;
     text-align: left;
 
     padding-bottom: 4px;
 
-    &::after {
+    &:after {
       content: '/';
       display: inline;
       padding: 0 8px;
@@ -143,7 +147,7 @@
       border: none;
 
       &::after {
-        content: '';
+        display: none;
       }
     }
   }

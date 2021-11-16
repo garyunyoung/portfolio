@@ -28,7 +28,7 @@ function ProjectItem(props) {
       <div className="project-item__container">
         <div className="project-item__image-wrapper">
           <img
-            className="project-item__image"
+            className={`project-item__image project-item__image--${props.path}`}
             src={props.img.src}
             alt={props.img.alt}
           />

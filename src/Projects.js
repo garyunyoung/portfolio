@@ -1,6 +1,7 @@
 import React from "react";
 import {
   stitchedProject,
+  stitchedARProject,
   bethsProject,
   waldourStudiosProject,
   sploreProject,
@@ -18,6 +19,7 @@ export default class Project extends React.Component {
     this.state = {
       projects: [
         stitchedProject,
+        stitchedARProject,
         bethsProject,
         waldourStudiosProject,
         sploreProject,
@@ -105,6 +107,24 @@ export const Stitched = () => (
       keyFeatures={stitchedProject.keyFeatures}
       jobType={stitchedProject.jobType}
       jobYear={stitchedProject.jobYear}
+    />
+  </React.Fragment>
+);
+
+export const StitchedAR = () => (
+  <React.Fragment>
+    <NavBar link="/#projects" title="< BACK" />
+    <ProjectPage
+      title={stitchedARProject.title}
+      images={stitchedARProject.images}
+      companyDescription={stitchedARProject.companyDescription}
+      info={stitchedARProject.info}
+      link={stitchedARProject.link}
+      displayLink={stitchedARProject.displayLink}
+      technologies={stitchedARProject.technologies}
+      keyFeatures={stitchedARProject.keyFeatures}
+      jobType={stitchedARProject.jobType}
+      jobYear={stitchedARProject.jobYear}
     />
   </React.Fragment>
 );

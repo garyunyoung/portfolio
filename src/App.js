@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
   Stitched,
+  StitchedAR,
   TheBeths,
   WaldourStudios,
   Splore,
@@ -21,6 +22,11 @@ export default class App extends Component {
             // path={`/projects/${stitchedProject.path}`}
             path={`/projects/stitched`}
             component={Stitched}
+          />
+          <Route
+            // path={`/projects/${stitchedProject.path}`}
+            path={`/projects/stitchedAR`}
+            component={StitchedAR}
           />
           <Route
             // path={`/projects/${bethsProject.path}`}
