@@ -59,7 +59,7 @@
 }
 
 @include block('project-item') {
-  margin-bottom: 18vh;
+  margin-bottom: 24vh;
 
   @include sm-desktop {
     margin-bottom: 33vh;
@@ -89,7 +89,7 @@
   }
 
   @include element('content') {
-    padding: 8vh 16px 24px 16px;
+    padding: 6vh 16px 24px 16px;
 
     @include sm-desktop {
       flex: 1 0 50%;
