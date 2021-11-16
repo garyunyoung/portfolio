@@ -16,10 +16,10 @@ export const stitchedProject = {
   github: "n/a",
   previewImage: { src: stitchedHomePage, alt: "Stitched Home Page" },
   excerpt:
-    "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
+    "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   images: [{ src: stitchedLukesPage, alt: "Stitched Inspiration Page" }],
   companyDescription:
-    "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, augmented reality and machine learning.",
+    "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   info:
     ['In 2019 I joined Stitched, interning as a front-end developer which then lead to a full-time contract. I was brought on to help with their site redesign but since then took on their front-end features.', 'Near the end of 2020 I helped develop the front-end of an AR app.'],
   link: "https://www.stitched.co.uk/",
@@ -29,9 +29,9 @@ export const stitchedProject = {
     "Built and deployed front-end changes for a site redesign/overhaul that involved custom reusable CMS components.",
     "Built the front-end using Elixir / Phoenix LiveView, JS / React, SCSS, HTML/embedded Elixir, and Git for version control.",
     "Experience with Kanban methodology, CI / CD (Google Cloud & Docker then Kubernetes)",
-    "Exposed to Ruby / Ruby on Rails, Redux, and unit/integration testing.", 
-    "Pair programmed with senior back-end and full-stack engineers.", 
-    "Worked closely with the UX/UI designer to implement designs created on Figma, as well as collaborating to find ways to improve user experience.", 
+    "Exposed to Ruby / Ruby on Rails, Redux, and unit/integration testing.",
+    "Pair programmed with senior back-end and full-stack engineers.",
+    "Worked closely with the UX/UI designer to implement designs created on Figma, as well as collaborating to find ways to improve user experience.",
     "Approached designs with a mobile-first and responsive methodology.",
     "Approached features with a maintainable and reusable methodology.",
     "Built the front-end of an AR app using Swift / SwiftUI"
@@ -50,7 +50,7 @@ export const stitchedARProject = {
   excerpt: "Stitched AR is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
   images: [{ src: stitchedARHomePage, alt: "Stitched Inspiration Page" }],
   companyDescription:
-    "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, augmented reality and machine learning.",
+    "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   info:
     ['Near the end of 2020 I helped develop the front-end of an AR app.', 'Allows users to visualise curtains in their home', 'Allows users to measure curtains using AR tools', 'Allows users to order sample fabrics using Apple Pay'],
   link: "https://apps.apple.com/gb/app/stitched-ar/id1461104538",

@@ -30,8 +30,12 @@ export default function About() {
             <br />
           </div>
           <div className="about__links">
-            <a className="about__link" href="/#">Download resume (PDF xxkb)</a>
-            <a className="about__link" href="/#">Email me</a>
+            <a className="about__link"
+              href="https://res.cloudinary.com/garyou/image/upload/v1637034607/portfolio/Garyun_Young_Developer_2021.pdf"
+              target='_blank'
+              rel='noopener noreferrer'
+            >See resume</a>
+            <a className="about__link" href="mailto:garyunyoung@gmail.com">Email me</a>
           </div>
         </div>
       </div>

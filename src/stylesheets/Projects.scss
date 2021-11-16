@@ -84,10 +84,9 @@
     @include tablet {
       display: flex;
       flex-flow: row-reverse;
-      
+
       align-items: flex-start;
       align-items: center;
-
 
       padding: 24px;
     }
