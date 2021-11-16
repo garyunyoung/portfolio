@@ -9,6 +9,7 @@ import nightAtTheSavoyBanner from "./images/night-at-the-savoy.jpg";
 
 export const stitchedProject = {
   title: "Stitched",
+  modifier: "stitched",
   path: "stitched",
   category: "web",
   jobType: "Front-end Developer",
@@ -43,8 +44,8 @@ export const stitchedARProject = {
   modifier: "stitched-ar",
   path: "stitchedAR",
   category: "web",
-  jobType: "",
-  jobYear: "",
+  jobType: "Front-end Developer",
+  jobYear: "2020",
   github: "n/a",
   previewImage: { src: stitchedARHomePage, alt: "Stitched AR Home Page" },
   excerpt: "Stitched AR is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
@@ -65,19 +66,20 @@ export const stitchedARProject = {
 
 export const bethsProject = {
   title: "The Beths",
+  modifier: "the-beths",
   path: "the-beths",
   category: "web",
-  jobType: "Freelance Developer",
+  jobType: "Freelance",
   jobYear: "2019",
   github: "https://github.com/garyunyoung",
   previewImage: { src: bethsHomePage, alt: "The Beths Home Page" },
   excerpt:
-    "The Beths are a New Zealand indie pop band based in Auckland, New Zealand.",
+    "The Beths are an award-winning indie pop band based in Auckland, New Zealand.",
   images: [{ src: bethsHomePage, alt: "The Beths Home Page" }],
   companyDescription:
-    "The Beths are a New Zealand indie music that makes you want to dance no matter the situation.",
+    "The Beths are an award-winning indie pop band based in Auckland, New Zealand.",
   info:
-    "Designed and implemented a website for the Beths. This was the first proper project I took on early in my coding career. I noticed that a friend's band's website needed a redesign and decided it would be a good way to develop my web development skills.",
+    ["Designed and implemented a website for the Beths. This was the first proper project I took on early in my coding career.", "I noticed that a friend's band's website needed a redesign and decided it would be a good way to develop my web development skills."],
   link: "https://thebeths.com/",
   displayLink: "thebeths.com",
   technologies: ["Next.js", "React", "SCSS", "HTML"],
@@ -92,19 +94,20 @@ export const bethsProject = {
 
 export const waldourStudiosProject = {
   title: "Waldour Studios",
+  modifier: "waldour-studios",
   path: "waldour-studios",
   category: "web",
-  jobType: "Freelance Developer",
+  jobType: "Freelance",
   jobYear: "2019",
   github: "https://github.com/garyunyoung",
   previewImage: { src: waldourStudioHomePage, alt: "Waldour Studio Home Page" },
   excerpt:
-    "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
+    "Wardour Studios is a podcast recording studio and production compnay based in Central London.",
   images: [{ src: waldourStudioHomePage, alt: "Waldour Studio Home Page" }],
   companyDescription:
     "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
   info:
-    "Designed and implemented a website for the Waldour Studios as a Freelance Project",
+    ["Designed and implemented a website for the Waldour Studios as a Freelance Project"],
   link: "https://wardourstudios.co.uk/",
   displayLink: "wardourstudios.co.uk",
   technologies: ["Wordpress", "PHP", "SCSS", "HTML"],
@@ -118,22 +121,23 @@ export const waldourStudiosProject = {
 
 export const sploreProject = {
   title: "Splore",
+  modifier: "splore",
   path: "splore-2018",
   category: "pr",
-  jobType: "Public Relations Intern",
+  jobType: "Intern",
   jobYear: "2018",
   github: "n/a",
   previewImage: { src: sploreBanner, alt: "splore 2018 festival banner" },
   excerpt:
-    "Situated on the beguiling shores of Tapapakanga Park, Splore is a boutique music and arts festival like no other. Three nights where people are invited to embrace the theme and join the mindful tribe of party animals! ",
+    "Splore is a boutique music and arts festival situated on the shores of Tapapakanga Park.",
   images: [{ src: sploreBanner, alt: "splore 2018 festival banner" }],
   companyDescription:
     "Situated in a beguiling bay on the shores of Tapapakanga Park, Splore is a boutique music and arts festival like no other. An entertainment extravaganza, an unforgettable dress up party, three nights where people are invited to embrace the theme and join the mindful tribe of party animals! ",
   info:
-    "At the end of 2017 I was brought onboard as a press assistant for Splore - arguably the best music festival in New Zealand. ",
+    ["At the end of 2017 I was brought onboard as a press assistant for Splore - arguably the best music festival in New Zealand."],
   link: "http://www.splore.net/",
   displayLink: "http://www.splore.net/",
-  technologies: ["Artist Relations", "Communications", "Press"],
+  technologies: ["Communications", "Press"],
   keyFeatures: [
     "Supporting the Head of PR.",
     "Coordinating artist interviews during the lead up to and during the festival.",
@@ -150,6 +154,7 @@ export const sploreProject = {
 
 export const sailCityJumpProject = {
   title: "Sail City Jump",
+  modifier: "sail-city-jump",
   path: "sail-city-jump-2017",
   category: "pr",
   jobType: "Freelance",
@@ -160,14 +165,14 @@ export const sailCityJumpProject = {
     alt: "sail city jump 2017 festival banner"
   },
   excerpt:
-    "Sail City Jump was the first Swing Dance Festival held in Auckland after a two year hiatus. 2017's edition featured two days of Lindy Hop, Balboa and Solo Jazz workshops for beginner to advance level dancers.",
+    "Sail City Jump was a multi-day dance event held in Auckland featuring two days of Lindy Hop, Balboa and Solo Jazz workshops and socials.",
   images: [
     { src: sailCityJumpBanner, alt: "sail city jump 2017 festival banner" }
   ],
   companyDescription:
     "Sail City Jump was the first Swing Dance Festival held in Auckland after a two year hiatus. 2017's edition featured two days of Lindy Hop, Balboa and Solo Jazz workshops for beginner to advance level dancers.",
   info:
-    "Sail City Jump was the first Swing Dance Festival held in Auckland after a two year hiatus. 2017's edition featured two days of Lindy Hop, Balboa and Solo Jazz workshops for beginner to advance level dancers, five guest teachers including three international teachers, three social parties and one night dedicated to live music - that year were be lucky to have two of Auckland's best Big Bands battle it out on the bandstand. ",
+    ["Sail City Jump was the first Swing Dance Festival held in Auckland after a two year hiatus. 2017's edition featured two days of Lindy Hop, Balboa and Solo Jazz workshops for beginner to advance level dancers, five guest teachers including three international teachers, three social parties and one night dedicated to live music - that year were be lucky to have two of Auckland's best Big Bands battle it out on the bandstand."],
   link: "n/a",
   displayLink: "n/a",
   technologies: ["Event Co-ordination", "Social Media"],
@@ -183,6 +188,7 @@ export const sailCityJumpProject = {
 
 export const nightAtTheSavoyProject = {
   title: "Night at the Savoy",
+  modifier: "night-at-the-savoy",
   path: "night-at-the-savoy-2017",
   category: "pr",
   jobType: "Freelance",
@@ -193,7 +199,7 @@ export const nightAtTheSavoyProject = {
     alt: "Night ath the Savoy 2017 festival banner"
   },
   excerpt:
-    "Night at the Savoy was the first event I had organised for Swing Out Central / Gin Mill Swing - a Swing Dance school based in Auckland, New Zealand. This event focused on celebrating 'World Lindy Hop Day",
+    "Night at the Savoy was a dance event organised for Swing Out Central / Gin Mill Swing celebrating 'World Lindy Hop Day.",
   images: [
     {
       src: nightAtTheSavoyBanner,
@@ -203,7 +209,7 @@ export const nightAtTheSavoyProject = {
   companyDescription:
     "Night at the Savoy was the first event I had organised for Swing Out Central / Gin Mill Swing - a Swing Dance school based in Auckland, New Zealand. This event focused on celebrating 'World Lindy Hop Day', a day dedicated towards the fun and charismatic sprit of a dance born out of the ballrooms of Harlem.",
   info:
-    "The event itself brought in around 200 dancers and spectators. It featured a selection of Lindy Hop performances, fun competitions, social dancing and a brief talk about the history of Lindy Hop from one of the founding member of the Lindy Hop scene in New Zealand.",
+    ["The event itself brought in around 200 dancers and spectators. It featured a selection of Lindy Hop performances, fun competitions, social dancing and a brief talk about the history of Lindy Hop from one of the founding member of the Lindy Hop scene in New Zealand."],
   link: "n/a",
   displayLink: "n/a",
   technologies: ["Event Co-ordination", "Social Media"],

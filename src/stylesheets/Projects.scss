@@ -130,7 +130,11 @@
   @include element('technologies-subtitle') {
     @include body-font;
     color: $light-grey;
-    margin: 20px 0 12px;
+    margin: 20px 0 0 0;
+
+    @include sm-desktop {
+      margin: 0 0 6px 0;
+    }
   }
 
   @include element('technologies') {
@@ -152,7 +156,7 @@
     &:after {
       content: '/';
       display: inline;
-      padding: 0 8px;
+      padding: 0 16px;
     }
 
     &:last-child {

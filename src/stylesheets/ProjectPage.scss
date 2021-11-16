@@ -16,21 +16,17 @@
   }
 
   @include element('summary-container') {
-    margin-bottom: 16px;
-
-    @include tablet {
-      text-align: center;
-      margin-bottom: 32px;
-    }
+    text-align: center;
+    margin: 5vh 0 10vh 0;
 
     @include med-desktop {
-      margin-bottom: 56px;
+      margin-bottom: 8vh;
     }
   }
 
   @include element('title') {
     @include heading-1-font;
-    padding: 16px 0 24px;
+    margin: 16px 0 24px;
 
     @include med-desktop {
       margin-top: 24px;
@@ -39,23 +35,31 @@
 
   @include element('job-type-subtitle') {
     @include subheading-font;
-    margin-bottom: 8px;
+
+    @include sm-desktop {
+      margin-bottom: 8px;
+    }
   }
 
   @include element('job-year') {
-    @include subheading-font;
-    margin-bottom: 16px;
+    @include body-font;
+    margin-bottom: 32px;
+
+    @include sm-desktop {
+      margin-bottom: 32px;
+    }
   }
 
   @include element('technologies') {
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
+
     padding-left: 0;
-    margin-bottom: 16px;
+    margin-bottom: 56px;
 
     @include tablet {
-      padding-left: 16px;
-      justify-content: center;
+      padding-bottom: 16px;
       padding-left: 0;
     }
   }
@@ -67,7 +71,7 @@
     &::after {
       display: inline;
       content: '/';
-      margin: 0 12px;
+      margin: 0 16px;
     }
 
     &:last-child {
@@ -78,20 +82,20 @@
   }
 
   @include element('info-container') {
-    @include tablet {
-      display: flex;
-      margin-bottom: 32px;
-    }
+    margin-bottom: 10vh;
 
-    @include med-desktop {
-      margin-bottom: 56px;
+    @include sm-desktop {
+      display: flex;
     }
   }
 
   @include element('description') {
     @include body-font;
-
     margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 10vh;
+    }
 
     @include modifier('company') {
       display: none;
@@ -151,11 +155,11 @@
 
   @include element('link') {
     @include cta-button;
-    margin: 40px auto;
+    margin: 10vh auto 5vh auto;
   }
 
   @include element('back') {
     @include cta-link-button;
-    margin: 0 auto 56px auto;
+    margin: 0 auto 10vh auto;
   }
 }
