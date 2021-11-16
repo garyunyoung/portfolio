@@ -7,7 +7,7 @@
     padding: 0 $side-padding-mobile;
     padding-top: $site-header-height-mobile;
 
-    @include tablet {
+    @include sm-desktop {
       max-width: $max-width-desktop;
       margin: 0 auto;
     }
@@ -19,7 +19,7 @@
   }
 
   @include element('filter-container') {
-    @include tablet {
+    @include sm-desktop {
       width: max-content;
       padding: 8px 24px 22px;
       margin-bottom: 24px;
@@ -36,7 +36,7 @@
     display: flex;
     margin-bottom: 40px;
 
-    @include tablet {
+    @include sm-desktop {
       margin: 0;
     }
   }
@@ -61,8 +61,8 @@
 @include block('project-item') {
   margin-bottom: 18vh;
 
-  @include tablet {
-    margin-bottom: 96px;
+  @include sm-desktop {
+    margin-bottom: 33vh;
 
     &:nth-of-type(2n) {
       .project-item__container {
@@ -74,14 +74,10 @@
         margin: 0 0 0 32px;
       }
     }
-
-    @include sm-desktop {
-      margin-bottom: 33vh;
-    }
   }
 
   @include element('container') {
-    @include tablet {
+    @include sm-desktop {
       display: flex;
       flex-flow: row-reverse;
 
@@ -95,7 +91,7 @@
   @include element('content') {
     padding: 8vh 16px 24px 16px;
 
-    @include tablet {
+    @include sm-desktop {
       flex: 1 0 50%;
       padding-top: 0;
       padding-right: 56px;
@@ -142,7 +138,7 @@
     flex-flow: wrap;
     margin: 8px 0;
 
-    @include tablet {
+    @include sm-desktop {
       margin-bottom: 0;
     }
   }
