@@ -137,6 +137,11 @@
 
   @include element('image') {
     box-shadow: $shadow;
+
+    @include modifier('stitched-ar') {
+      box-shadow: none;
+      filter: drop-shadow($drop-shadow);
+    }
   }
 
   @include element('cta-links') {

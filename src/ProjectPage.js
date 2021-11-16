@@ -36,7 +36,7 @@ export default function ProjectPage(props) {
         </div>
         {props.images.map((image, index) => {
           return (
-            <img key={index} className="project__image" src={image.src} alt={image.alt} />
+            <img key={index} className={`project__image project__image--${props.modifier}`} src={image.src} alt={image.alt} />
           );
         })}
 

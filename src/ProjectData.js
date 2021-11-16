@@ -40,32 +40,26 @@ export const stitchedProject = {
 
 export const stitchedARProject = {
   title: "Stitched AR",
+  modifier: "stitched-ar",
   path: "stitchedAR",
   category: "web",
   jobType: "",
   jobYear: "",
   github: "n/a",
   previewImage: { src: stitchedARHomePage, alt: "Stitched AR Home Page" },
-  // n/a
-  excerpt: "",
-  images: [{ src: stitchedLukesPage, alt: "Stitched Inspiration Page" }],
+  excerpt: "Stitched AR is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
+  images: [{ src: stitchedARHomePage, alt: "Stitched Inspiration Page" }],
   companyDescription:
     "Stitched is an eco-friendly, online curtain + blind retail start-up focused on redefining home interiors by using 3D visualisation, augmented reality and machine learning.",
   info:
-    ['Near the end of 2020 I helped develop the front-end of an AR app.'],
+    ['Near the end of 2020 I helped develop the front-end of an AR app.', 'Allows users to visualise curtains in their home', 'Allows users to measure curtains using AR tools', 'Allows users to order sample fabrics using Apple Pay'],
   link: "https://apps.apple.com/gb/app/stitched-ar/id1461104538",
   displayLink: "n/a",
   technologies: ["Swift", "SwiftUI"],
   keyFeatures: [
-    "Built and deployed front-end changes for a site redesign/overhaul that involved custom reusable CMS components.",
-    "Built the front-end using Elixir / Phoenix LiveView, JS / React, SCSS, HTML/embedded Elixir, and Git for version control.",
-    "Experience with Kanban methodology, CI / CD (Google Cloud & Docker then Kubernetes)",
-    "Exposed to Ruby / Ruby on Rails, Redux, and unit/integration testing.", 
-    "Pair programmed with senior back-end and full-stack engineers.", 
-    "Worked closely with the UX/UI designer to implement designs created on Figma, as well as collaborating to find ways to improve user experience.", 
-    "Approached designs with a mobile-first and responsive methodology.",
-    "Approached features with a maintainable and reusable methodology.",
-    "Built the front-end of an AR app using Swift / SwiftUI"
+    "Built the front-end of the app using Swift / SwiftUI",
+    "Tested on various iOS devices and screen sizes",
+    "Challenges: No prior experience with Swift / SwiftUI",
   ]
 };
 
@@ -78,7 +72,7 @@ export const bethsProject = {
   github: "https://github.com/garyunyoung",
   previewImage: { src: bethsHomePage, alt: "The Beths Home Page" },
   excerpt:
-    "The Beths are a New Zealand indie pop band that makes high-energy guitar music that makes you want to dance no matter the situation.",
+    "The Beths are a New Zealand indie pop band based in Auckland, New Zealand.",
   images: [{ src: bethsHomePage, alt: "The Beths Home Page" }],
   companyDescription:
     "The Beths are a New Zealand indie music that makes you want to dance no matter the situation.",

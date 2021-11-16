@@ -64,7 +64,7 @@
   @include tablet {
     margin-bottom: 96px;
 
-    &:nth-of-type(2) {
+    &:nth-of-type(2n) {
       .project-item__container {
         flex-flow: row;
       }
@@ -72,6 +72,10 @@
       .project-item__content {
         margin: 0 0 0 32px;
       }
+    }
+
+    @include sm-desktop {
+      margin-bottom: 33vh;
     }
   }
 

@@ -116,6 +116,7 @@ export const StitchedAR = () => (
     <NavBar link="/#projects" title="< BACK" />
     <ProjectPage
       title={stitchedARProject.title}
+      modifier={stitchedARProject.modifier}
       images={stitchedARProject.images}
       companyDescription={stitchedARProject.companyDescription}
       info={stitchedARProject.info}
