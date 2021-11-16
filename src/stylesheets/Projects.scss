@@ -110,8 +110,6 @@
 
   @include element('title') {
     @include subheading-font;
-
-    text-transform: uppercase;
     margin-bottom: 16px;
   }
 
