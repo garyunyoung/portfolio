@@ -59,7 +59,7 @@
 }
 
 @include block('project-item') {
-  margin-bottom: 56px;
+  margin-bottom: 18vh;
 
   @include tablet {
     margin-bottom: 96px;
@@ -92,6 +92,22 @@
     }
   }
 
+  @include element('content') {
+    padding: 8vh 16px 24px 16px;
+
+    @include tablet {
+      flex: 1 0 50%;
+      padding-top: 0;
+      padding-right: 56px;
+
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-end;
+
+      margin: 0 32px 0 0;
+    }
+  }
+
   @include element('image-wrapper') {
     @include sm-desktop {
       display: flex;
@@ -107,21 +123,6 @@
     @include modifier('stitchedAR') {
       box-shadow: none;
       filter: drop-shadow($drop-shadow);
-    }
-  }
-
-  @include element('content') {
-    padding: 16px 24px;
-
-    @include tablet {
-      flex: 1 0 50%;
-      padding-right: 56px;
-
-      display: flex;
-      flex-flow: column;
-      justify-content: flex-end;
-
-      margin: 0 32px 0 0;
     }
   }
 
@@ -175,7 +176,19 @@
 
   @include element('see-more') {
     @include cta-link;
-    margin-top: 32px;
-    transform: translateX(0);
+
+    @include sm-desktop {
+      display: none;
+    }
+
+    @include modifier('desktop') {
+      display: none;
+
+      @include sm-desktop {
+        display: block;
+        margin-top: 32px;
+        transform: translateX(0);
+      }
+    }
   }
 }
