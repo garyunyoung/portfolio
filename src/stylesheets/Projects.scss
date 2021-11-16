@@ -84,9 +84,21 @@
     @include tablet {
       display: flex;
       flex-flow: row-reverse;
+      
+      align-items: flex-start;
       align-items: center;
 
+
       padding: 24px;
+    }
+  }
+
+  @include element('image-wrapper') {
+    @include sm-desktop {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-evenly;
+      align-items: center;
     }
   }
 
@@ -164,5 +176,7 @@
 
   @include element('see-more') {
     @include cta-link;
+    margin-top: 32px;
+    transform: translateX(0);
   }
 }

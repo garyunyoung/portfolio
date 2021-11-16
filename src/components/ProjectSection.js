@@ -32,6 +32,9 @@ function ProjectItem(props) {
             src={props.img.src}
             alt={props.img.alt}
           />
+          <NavLink className="project-item__see-more" to={`projects/${props.path}`}>
+            See project details
+          </NavLink>
         </div>
         <div className="project-item__content">
           <h3 className="project-item__title">{props.title}</h3>
@@ -44,9 +47,7 @@ function ProjectItem(props) {
             })}
           </ul>
           <p className="project-item__excerpt">{props.excerpt}</p>
-          <NavLink className="project-item__see-more" to={`projects/${props.path}`}>
-            See project details
-          </NavLink>
+
         </div>
       </div>
     </li>
