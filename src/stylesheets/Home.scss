@@ -21,7 +21,7 @@
   }
 
   @include element('text') {
-    @include subheading-font;
+    @include homepage-body-font;
     text-align: left;
 
     display: flex;

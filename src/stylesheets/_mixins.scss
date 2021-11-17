@@ -118,8 +118,6 @@
   line-height: 1.8;
   margin: 0;
 
-  
-
   @include tablet {
     font-size: $body-tablet;
   }
@@ -130,6 +128,27 @@
 
   @include med-desktop {
     font-size: $body-med-desktop;
+  }
+}
+
+@mixin homepage-body-font {
+  font-size: $homepage-body-mobile;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  color: $black;
+
+  margin: 0;
+
+  @include tablet {
+    font-size: $homepage-body-tablet;
+  }
+
+  @include sm-desktop {
+    font-size: $homepage-body-sm-desktop;
+  }
+
+  @include med-desktop {
+    font-size: $homepage-body-med-desktop;
   }
 }
 
