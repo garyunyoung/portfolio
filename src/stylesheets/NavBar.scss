@@ -13,6 +13,10 @@
   padding-top: 24px;
   padding-bottom: 16px;
 
+  @include tablet {
+    height: $site-header-height-tablet;
+  }
+
   @include med-desktop {
     background-color: transparent;
   }

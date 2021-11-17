@@ -7,6 +7,11 @@
     padding: 0 $side-padding-mobile;
     padding-top: $site-header-height-mobile;
 
+    @include tablet {
+      min-height: calc(100vh - #{$site-header-height-tablet});
+      padding-top: $site-header-height-tablet;
+    }
+
     @include sm-desktop {
       max-width: $max-width-desktop;
       margin: 0 auto;

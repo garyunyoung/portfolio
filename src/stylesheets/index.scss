@@ -1,3 +1,4 @@
+@import './mixins.scss';
 @import './_variables.scss';
 
 * {
@@ -31,4 +32,8 @@ img {
   content: '';
   height: $site-header-height-mobile;
   display: block;
+
+  @include tablet {
+    height: $site-header-height-tablet;
+  }
 }
