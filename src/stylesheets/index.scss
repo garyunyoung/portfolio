@@ -6,14 +6,16 @@
   box-sizing: border-box;
 }
 
-body,
-button {
+body {
+  background-color: $page-background-colour;
   font-family: 'Inconsolata', monospace;
   text-rendering: optimizeLegibility;
 }
 
 button {
   border: none;
+  font-family: 'Inconsolata', monospace;
+  text-rendering: optimizeLegibility;
   background-color: transparent;
 }
 
@@ -29,8 +31,4 @@ img {
   content: '';
   height: $site-header-height-mobile;
   display: block;
-}
-
-.page {
-  background-color: $page-background-colour;
 }
