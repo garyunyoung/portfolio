@@ -2,31 +2,27 @@
 @import './_variables.scss';
 
 @include block('about') {
-  padding-bottom: 24px;
-  margin-bottom: 64px;
+  min-height: 94.5vh;
 
   @include element('content') {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-
-    padding: $site-header-height-mobile $side-padding-mobile 0
-      $side-padding-mobile;
+    padding: $spacer-large $side-padding-mobile;
 
     @include tablet {
-      min-height: 80vh;
-      max-width: $max-width-content-desktop;
-      padding-top: calc(#{$site-header-height-tablet} + 56px);
-      padding-left: 0;
       flex-flow: row;
 
+      max-width: $max-width-content-desktop;
+      padding-top: 20vh;
+      padding-left: 40px;
+
       margin: 0 auto;
+    }
+
+    @include lg-desktop {
+      padding-top: 20vh;
     }
   }
 
   @include element('text-container') {
-    height: max-content;
-
     padding: 24px;
 
     @include sm-desktop {
@@ -45,7 +41,6 @@
 
   @include element('text') {
     @include body-font;
-    margin-bottom: 24px;
 
     @include tablet {
       padding-right: 64px;
@@ -54,24 +49,26 @@
 
   @include element('links') {
     display: flex;
-    flex-flow: column-reverse;
-    justify-content: center;
+    flex-flow: column;
 
     @include tablet {
       flex-flow: row;
+      justify-content: center;
     }
   }
 
   @include element('link') {
     @include cta-button;
-    overflow-wrap: break-word;
+    width: 100%;
 
-    &:last-child {
+    &:first-child {
       margin-bottom: 16px;
     }
 
     @include tablet {
-      &:last-child {
+      width: fit-content;
+
+      &:first-child {
         margin: 0 16px 0;
       }
     }

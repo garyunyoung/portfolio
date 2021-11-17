@@ -6,26 +6,15 @@ export default function About() {
     <section id="about" className="about">
       <div className="about__content">
         <div className="about__text-container">
-          <p className="about__header">
-            Nice to meet you!
-          </p>
+          <p className="about__header">Nice to meet you!</p>
           <div className="about__text">
-            <p>
-              I'm a front-end developer who deeply values developing
-              quality user experiences for everyone.
-            </p>
+            <p>I'm a front-end developer who is interested in contributing towards quality user experiences for anyone and everyone.</p>
             <br />
-            <p>Key Principles</p>
+            <p>Principals:</p>
             <br />
-            <p>
-              1) User-centered design
-            </p>
-            <p>
-              2) Clear and maintainable code
-            </p>
-            <p>
-              3) Feedback loops
-            </p>
+            <p>- User-centered design</p>
+            <p>- Clear and maintainable code</p>
+            <p>- Being helpful in general</p>
             <br />
             <br />
           </div>
