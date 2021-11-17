@@ -17,7 +17,7 @@
 
   @include element('summary-container') {
     text-align: center;
-    margin: 5vh 0 10vh 0;
+    margin:$spacer-small 0 $spacer-large 0;
 
     @include med-desktop {
       margin-bottom: 8vh;
@@ -82,7 +82,7 @@
   }
 
   @include element('info-container') {
-    margin-bottom: 10vh;
+    margin-bottom: $spacer-large;
 
     @include sm-desktop {
       display: flex;
@@ -94,7 +94,7 @@
     margin-bottom: 32px;
 
     &:last-child {
-      margin-bottom: 10vh;
+      margin-bottom: $spacer-large;
     }
 
     @include modifier('company') {
@@ -155,11 +155,11 @@
 
   @include element('link') {
     @include cta-button;
-    margin: 10vh auto 5vh auto;
+    margin: $spacer-large auto$spacer-small auto;
   }
 
   @include element('back') {
     @include cta-link-button;
-    margin: 0 auto 10vh auto;
+    margin: 0 auto $spacer-large auto;
   }
 }
