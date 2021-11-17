@@ -5,7 +5,7 @@
   min-height: 94.5vh;
 
   @include element('content') {
-    padding: $spacer-large $side-padding-mobile;
+    padding: $spacer-large $side-padding-mobile 20vh $side-padding-mobile;
 
     @include tablet {
       flex-flow: row;
@@ -13,6 +13,7 @@
       max-width: $max-width-content-desktop;
       padding-top: 20vh;
       padding-left: 40px;
+      padding-bottom: $spacer-large;
 
       margin: 0 auto;
     }

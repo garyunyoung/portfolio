@@ -41,7 +41,7 @@ export default class Project extends React.Component {
       <section id="projects" className="projects">
         <div className="projects__content">
           <div className="projects__filter-container">
-            <h2 className="projects__title">PROJECTS</h2>
+            <h2 className="projects__title">Projects</h2>
             <ProjectFilter
               setFilter={category => this.setFilter(category)}
               selected={this.state.filter}
