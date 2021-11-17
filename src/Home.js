@@ -13,18 +13,14 @@ export default function Home() {
       <main>
         <section className="home">
           <div className="home__content">
-            <div className="home__text">
-              <p>
-                Hi! I'm Garyun. < br />
-                A front-end developer who values building inclusive user experiences.
-              </p>
-              <div className="home__currently-text">
-                <p>Currently in Auckland, NZ</p>
-              </div>
-              <a className="home__projects-link" href="/#projects">
-                See projects
-              </a>
-            </div>
+            <p className="home__text">
+              Hi! I'm Garyun. <br /> 
+              A front-end developer who values building inclusive user experiences.
+            </p>
+            <p className="home__text">Currently in Auckland, NZ</p>
+            <a className="home__projects-cta" href="/#projects">
+              See projects
+            </a>
           </div>
         </section>
         <Project />

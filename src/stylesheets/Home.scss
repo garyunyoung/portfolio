@@ -2,64 +2,49 @@
 @import './_variables.scss';
 
 @include block('home') {
+  height: 100vh;
+  padding: 0 $side-padding-mobile;
+
+  @include tablet {
+    padding: 0 $side-padding-tablet;
+  }
+
   @include element('content') {
-    height: calc(100vh - #{$site-header-height-mobile});
+    max-width: 380px;
+    text-align: left;
 
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 0 $side-padding-mobile;
+    padding: 15vh 24px 0;
 
     @include tablet {
-      height: calc(100vh - #{$site-header-height-tablet});
+      max-width: $max-width-content-desktop;
+      padding-top: 20vh;
+      padding-left: 40px;
     }
 
     @include sm-desktop {
       max-width: $max-width-content-desktop;
 
-      padding: 0 64px 0 0;
-      margin: 0 auto 120px auto;
+      padding-top: 15vh;
+      margin: 0 auto;
+    }
+
+    @include lg-desktop {
+      padding-top: 20vh;
     }
   }
 
   @include element('text') {
     @include homepage-body-font;
-    text-align: left;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-
-    padding: 24px;
-    margin: 16px 0;
-
-    transform: translateY(-$site-header-height-mobile);
-
-    @include tablet {
-      transform: translateY(-$site-header-height-tablet);
-    }
+    margin-bottom: 32px;
 
     @include sm-desktop {
-      padding: 0;
+      margin-bottom: 56px;
     }
   }
 
-  @include element('currently-text') {
-    margin: 32px 0;
-
-    @include sm-desktop {
-      margin-top: 56px;
-    }
-  }
-
-  @include element('projects-link') {
+  @include element('projects-cta') {
     @include cta-button;
-    margin: 16px auto 24px auto;
-
-    @include sm-desktop {
-      margin-top: 56px;
-    }
+    width: fit-content;
+    margin: 10vh auto 0 auto;
   }
 }

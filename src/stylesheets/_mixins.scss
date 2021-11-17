@@ -28,7 +28,7 @@
 }
 
 @mixin lg-desktop {
-  @media (min-width: 2559px) {
+  @media (min-width: 1899px) {
     @content;
   }
 }
