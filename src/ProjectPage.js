@@ -34,11 +34,34 @@ export default function ProjectPage(props) {
             </ul>
           </div>
         </div>
-        {props.images.map((image, index) => {
-          return (
-            <img key={index} className={`project__image project__image--${props.modifier}`} src={image.src} alt={image.alt} />
-          );
-        })}
+
+        {
+          props.images ?
+            <div className={`project__desktop-images project__desktop-images--${props.mobileImages ? 'spacer' : ""}`}>
+              {props.images.map((image, index) => {
+                return (
+                  <img
+                    key={index}
+                    className={`project__image project__image--${props.modifier}`}
+                    src={image.src} alt={image.alt} />
+                );
+              })}
+            </div> : null
+        }
+
+        {
+          props.mobileImages ?
+            <div className="project__mobile-images">
+              {props.mobileImages.map((image, index) => {
+                return (
+                  <img
+                    key={index}
+                    className={`project__mobile-image project__mobile-image--${props.modifier}`}
+                    src={image.src} alt={image.alt} />
+                );
+              })}
+            </div> : null
+        }
 
         <div className='project__cta-links'>
           {props.link !== "n/a" ? (
@@ -51,6 +74,6 @@ export default function ProjectPage(props) {
           <a href='/#projects' className='project__back is-active' >Back to projects</a>
         </div>
       </div>
-    </section>
+    </section >
   );
 }

@@ -99,6 +99,7 @@ export const Stitched = () => (
     <ProjectPage
       title={stitchedProject.title}
       images={stitchedProject.images}
+      mobileImages={stitchedProject.mobileImages}
       companyDescription={stitchedProject.companyDescription}
       info={stitchedProject.info}
       link={stitchedProject.link}
@@ -133,17 +134,18 @@ export const StitchedAR = () => (
 export const TheBeths = () => (
   <React.Fragment>
     <NavBar link="/#projects" title="< BACK" />
-    <ProjectPage
-      title={bethsProject.title}
-      images={bethsProject.images}
-      companyDescription={bethsProject.companyDescription}
-      info={bethsProject.info}
-      link={bethsProject.link}
-      displayLink={bethsProject.displayLink}
-      technologies={bethsProject.technologies}
-      keyFeatures={bethsProject.keyFeatures}
-      jobType={bethsProject.jobType}
-      jobYear={bethsProject.jobYear}
+    <ProjectPage 
+    title={bethsProject.title}
+    mobileImages={bethsProject.mobileImages}
+    images={bethsProject.images}
+    companyDescription={bethsProject.companyDescription}
+    info={bethsProject.info}
+    link={bethsProject.link}
+    displayLink={bethsProject.displayLink}
+    technologies={bethsProject.technologies}
+    keyFeatures={bethsProject.keyFeatures}
+    jobType={bethsProject.jobType}
+    jobYear={bethsProject.jobYear}
     />
   </React.Fragment>
 );

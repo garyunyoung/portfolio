@@ -17,7 +17,7 @@
 
   @include element('summary-container') {
     text-align: center;
-    margin:$spacer-small 0 $spacer-large 0;
+    margin: $spacer-small 0 $spacer-large 0;
 
     @include med-desktop {
       margin-bottom: 8vh;
@@ -139,13 +139,34 @@
     }
   }
 
-  @include element('image') {
-    box-shadow: $shadow;
-
-    @include modifier('stitched-ar') {
-      box-shadow: none;
-      filter: drop-shadow($drop-shadow);
+  @include element('desktop-images') {
+    @include modifier('spacer') {
+      margin-bottom: $spacer-large;
     }
+  }
+
+  @include element('mobile-images') {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-bottom: -16px;
+    margin-top: $spacer-large;
+  }
+
+  @include element('mobile-image') {
+    border-radius: 5%;
+
+    width: calc(50% - 8px);
+    margin-bottom: 16px;
+
+    @include sm-desktop {
+      width: calc(25% - 16px);
+    }
+  }
+
+  @include element('image') {
+    box-shadow: none;
+    filter: drop-shadow($drop-shadow);
   }
 
   @include element('cta-links') {

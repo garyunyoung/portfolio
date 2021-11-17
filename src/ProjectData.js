@@ -7,6 +7,14 @@ import sploreBanner from "./images/splore-c.jpg";
 import sailCityJumpBanner from "./images/sail-city-jump.jpg";
 import nightAtTheSavoyBanner from "./images/night-at-the-savoy.jpg";
 
+
+import theBethsHomepageMobile from "./images/the-beths/homepage-mobile.png"
+import theBethsWatchMobile from "./images/the-beths/watch-mobile.png"
+import theBethsMerchMobile from "./images/the-beths/merch-mobile.png"
+import theBethsContactMobile from "./images/the-beths/contact-mobile.png"
+
+
+
 export const stitchedProject = {
   title: "Stitched",
   modifier: "stitched",
@@ -76,6 +84,24 @@ export const bethsProject = {
   excerpt:
     "The Beths are an award-winning indie pop band based in Auckland, New Zealand.",
   images: [{ src: bethsHomePage, alt: "The Beths Home Page" }],
+  mobileImages: [
+    {
+      src: theBethsHomepageMobile,
+      alt: ""
+    },
+    {
+      src: theBethsWatchMobile,
+      alt: ""
+    },
+    {
+      src: theBethsMerchMobile,
+      alt: ""
+    },
+    {
+      src: theBethsContactMobile,
+      alt: ""
+    }
+  ],
   companyDescription:
     "The Beths are an award-winning indie pop band based in Auckland, New Zealand.",
   info:

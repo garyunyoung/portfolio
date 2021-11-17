@@ -12,6 +12,7 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 General
 [ ] Add project images
 [ ] Update copy
+[ ] Link up-to-date resume
 [ ] Update mobile nav styling
 [ ] Remove p5.js or find another use for it
 
@@ -19,6 +20,7 @@ Refactor
 [ ] Project data: conditional rendering for project page prop data
 [ ] Revise react router
 [ ] Revise navbar placement
+[ ] Revise about page elements
 
 Accessibility
 Checklist: https://www.a11yproject.com/checklist/
