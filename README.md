@@ -9,29 +9,29 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 **Created using:** React, React Router and SCSS.
 
 ### Task list: ###
-General
-[ ] Update copy
-[ ] Add project images
-[ ] Add ar demo link
-[ ] Add titles to socials in the mobile nav
-[ ] Add socials to desktop nav
-[ ] Link up-to-date resume
-[ ] Update mobile nav styling
-[ ] Remove p5.js or find another use for it
+#### General ####
+- [ ] Update copy
+- [ ] Add project images
+- [ ] Add ar demo link
+- [ ] Add titles to socials in the mobile nav
+- [ ] Add socials to desktop nav
+- [ ] Link up-to-date resume
+- [ ] Update mobile nav styling
+- [ ] Remove p5.js or find another use for it
 
-Refactor
-[ ] Project data: conditional rendering for project page prop data
-[ ] Revise react router
-[ ] Revise navbar placement
-[ ] Revise about page elements
-[ ] Revise navbar and footer placement in the HTML
+#### Refactor ####
+- [ ] Project data: conditional rendering for project page prop data
+- [ ] Revise react router
+- [ ] Revise navbar placement
+- [ ] Revise about page elements
+- [ ] Revise navbar and footer placement in the HTML
 
-Accessibility
+#### Accessibility ####
 Checklist: https://www.a11yproject.com/checklist/
-[ ] Fix HTML heading levels 
-[ ] Revise page content landmarks
-[ ] Revise HTML nav elements
-[ ] Add 'Skip to content'
+- [ ] Fix HTML heading levels 
+- [ ] Revise page content landmarks
+- [ ] Revise HTML nav elements
+- [ ] Add 'Skip to content'
 
-Optimisation
-[ ] Optimise images - move to cloudinary
+#### Optimisation ####
+- [ ] Optimise images - move to cloudinary
