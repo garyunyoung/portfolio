@@ -13,7 +13,7 @@ export default function About() {
             <p>Principals:</p>
             <br />
             <p>- User-centered design</p>
-            <p>- Clear and maintainable code</p>
+            <p>- Maintainable and clear code</p>
             <p>- Being helpful in general</p>
             <br />
             <br />

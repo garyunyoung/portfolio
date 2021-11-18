@@ -206,16 +206,14 @@ export const sploreProject = {
   displayLink: "http://www.splore.net/",
   technologies: ["Communications", "Press"],
   keyFeatures: [
-    "Supporting the Head of PR.",
-    "Coordinating artist interviews during the lead up to and during the festival.",
-    "Liasing between artists and journalists at the festival.",
-    "Pitching interviews and story ideas to media outlets.",
-    "Drafting and distributed press releases and press kits.",
-    "Compiling media reports for print, radio and online.",
-    "Building and maintaining targeted media lists for mail-outs and pitches.",
-    "Researching new media opportunities.",
-    "Organising media accreditation.",
-    "Other general administrative tasks such as fielding media enquiries and requests."
+    "Supported the Head of PR.",
+    "Coordinated artist interviews during the lead-up to and during the festival.",
+    "Drafted and distributed press kits.",
+    "Pitched interviews and story ideas to media.",
+    "Compiled media reports.",
+    "Buit and maintaned targeted media lists for mail-outs and pitches.",
+    "Researched media opportunities.",
+    "General administrative tasks"
   ]
 };
 
@@ -232,24 +230,27 @@ export const sailCityJumpProject = {
     alt: "sail city jump 2017 festival banner"
   },
   excerpt:
-    "Sail City Jump was a multi-day dance event held in Auckland featuring two days of Lindy Hop, Balboa and Solo Jazz workshops and socials.",
+    "Sail City Jump is a multi-day dance event featuring Lindy Hop, Balboa and Solo Jazz workshops and dance socials.",
   images: [
     { src: sailCityJumpBanner, alt: "sail city jump 2017 festival banner" }
   ],
   companyDescription:
     "Sail City Jump was the first Swing Dance Festival held in Auckland after a two year hiatus. 2017's edition featured two days of Lindy Hop, Balboa and Solo Jazz workshops for beginner to advance level dancers.",
   info:
-    ["Sail City Jump was the first Swing Dance Festival held in Auckland after a two year hiatus. 2017's edition featured two days of Lindy Hop, Balboa and Solo Jazz workshops for beginner to advance level dancers, five guest teachers including three international teachers, three social parties and one night dedicated to live music - that year were be lucky to have two of Auckland's best Big Bands battle it out on the bandstand."],
-  link: "n/a",
+    [
+      "Sail City Jump is a community based Swing Dance Festival held in Auckland, New Zealand.",
+      "2017's edition featured Lindy Hop, Balboa and Solo Jazz workshops, international guest teachers and social events with one night dedicated to live music.",
+      "That year we were lucky to have two Big Bands (Tuxedo Swing and Queen City Big Band) battle it out for us on the bandstand."
+    ],
+  link: "https://www.facebook.com/events/2039384882959969/?active_tab=discussion",
   displayLink: "n/a",
-  technologies: ["Event Co-ordination", "Social Media"],
+  technologies: ["Event Coordination", "Social Media"],
   keyFeatures: [
-    "Coordinating and overseeing event logistics such as: venue hire, audio and visual hire, volunteers, bands, DJs, emcees, run sheets, set-up and pack-down.",
-    "Planning event objectives, timelines and extensive task lists – delegated tasks. ",
-    "Generating engagement through Facebook pages and Facebook events.",
-    "Creating, collating, curating, and distributing marketing collateral. ",
-    "Tracking registrations and ticket sales.",
-    "Managing social media pages."
+    "Planned event objectives, timelines and task lists.",
+    "Coordinated event logistics such as: venue hire, audio and visual hire, volunteers, bands, DJs, emcees, run sheets, set-up and pack-down.",
+    "Generated social media schedules and engagement through Facebook pages and events.",
+    "Curated and distributed marketing collateral both digital and physical.",
+    "Tracked registrations and ticket sales.",
   ]
 };
 
@@ -263,28 +264,31 @@ export const nightAtTheSavoyProject = {
   github: "n/a",
   previewImage: {
     src: nightAtTheSavoyBanner,
-    alt: "Night ath the Savoy 2017 festival banner"
+    alt: "Night at the Savoy 2017 festival banner"
   },
   excerpt:
-    "Night at the Savoy was a dance event organised for Swing Out Central / Gin Mill Swing celebrating 'World Lindy Hop Day.",
+    "Night at the Savoy was a dance event organised for Swing Out Central / Gin Mill Swing celebrating World Lindy Hop Day.",
   images: [
     {
       src: nightAtTheSavoyBanner,
-      alt: "Night ath the Savoy 2017 festival banner"
+      alt: "Night at the Savoy 2017 festival banner"
     }
   ],
   companyDescription:
     "Night at the Savoy was the first event I had organised for Swing Out Central / Gin Mill Swing - a Swing Dance school based in Auckland, New Zealand. This event focused on celebrating 'World Lindy Hop Day', a day dedicated towards the fun and charismatic sprit of a dance born out of the ballrooms of Harlem.",
   info:
-    ["The event itself brought in around 200 dancers and spectators. It featured a selection of Lindy Hop performances, fun competitions, social dancing and a brief talk about the history of Lindy Hop from one of the founding member of the Lindy Hop scene in New Zealand."],
-  link: "n/a",
+    [
+      "Night at the Savoy was the first event I had organised for Swing Out Central / Gin Mill Swing - a Swing Dance school based in Auckland, New Zealand",
+      "The event itself brought in around 200 dancers and spectators.",
+      "It featured a selection of Lindy Hop performances, fun competitions, social dancing and a talk about the history of Lindy Hop from one of the founding members of the New Zealand's Lindy Hop scene"],
+  link: "https://www.facebook.com/events/220801418420563",
   displayLink: "n/a",
-  technologies: ["Event Co-ordination", "Social Media"],
+  technologies: ["Event Coordination", "Social Media"],
   keyFeatures: [
-    "Generating engagement through Facebook via Facebook pages and events.",
-    "Coordinating and overseeing all aspects of the event including: event logistics, budgets, venue hire, audio and visual hire, volunteers, bands, DJs, emcees, set-up and pack-down.",
-    "Planning event objectives, timelines and extensive task lists – delegating tasks.",
-    "Tracking registrations and ticket sales.",
-    "Creating, curating and distributing marketing material."
+    "Planned event objectives, timelines and task lists.",
+    "Coordinated and oversaw event aspects such as: logistics, budgets, venue hire, audio and visual hire, volunteers, bands, DJs, emcees, set-up and pack-down.",
+    "Generated social media schedules and engagement through Facebook pages and events.",
+    "Curated and distributed marketing material.",
+    "Tracked registrations and ticket sales."
   ]
 };
