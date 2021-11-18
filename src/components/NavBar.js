@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import githubLogo from '../images/github-logo.svg';
-import codewarsLogo from '../images/codewars-logo.svg';
+import githubLogo from '../images/logos/github.svg';
+import codewarsLogo from '../images/logos/codewars.svg';
+import exercismLogo from '../images/logos/exercism.svg';
 import '../stylesheets/NavBar.scss';
 
 export default function NavBar(props) {
@@ -67,6 +68,15 @@ function NavMenu(props) {
               rel='noopener noreferrer'
             >
               <img src={githubLogo} alt='' />
+            </a>
+          </li>
+          <li className='site-menu__nav-item site-menu__nav-item--exercism'>
+            <a
+              href='https://exercism.org/profiles/garyunyoung'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={exercismLogo} alt='' />
             </a>
           </li>
         </span>

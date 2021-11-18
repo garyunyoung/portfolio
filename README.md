@@ -12,6 +12,8 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 General
 [ ] Add project images
 [ ] Update copy
+[ ] Add titles to socials in the mobile nav
+[ ] Add socials to desktop nav
 [ ] Link up-to-date resume
 [ ] Update mobile nav styling
 [ ] Remove p5.js or find another use for it
@@ -21,6 +23,7 @@ Refactor
 [ ] Revise react router
 [ ] Revise navbar placement
 [ ] Revise about page elements
+[ ] Revise navbar and footer placement in the HTML
 
 Accessibility
 Checklist: https://www.a11yproject.com/checklist/

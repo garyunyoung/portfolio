@@ -133,8 +133,13 @@
 
     img {
       width: 28px;
+    }
+
+    li {
       margin-right: 16px;
     }
+
+    margin-right: -16px;
 
     @include tablet {
       display: none;
@@ -142,6 +147,13 @@
   }
 
   @include element('nav-item') {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include modifier('exercism') {
+      transform: translateY(1px);
+    }
   }
 
   @include element('nav-item-link') {
