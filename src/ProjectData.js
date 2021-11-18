@@ -1,18 +1,25 @@
 import stitchedHomePage from "./images/stitched-desktop-homepage.png";
-import stitchedARHomePage from "./images/stitchedar-homepage-1207x741.png";
-import bethsHomePage from "./images/beths-project.png";
 import waldourStudioHomePage from "./images/waldour-1.png";
 import stitchedLukesPage from "./images/stitched-desktop-homepage.png";
 import sploreBanner from "./images/splore-c.jpg";
 import sailCityJumpBanner from "./images/sail-city-jump.jpg";
 import nightAtTheSavoyBanner from "./images/night-at-the-savoy.jpg";
 
-
+import bethsHomePage from "./images/beths-project.png";
 import theBethsHomepageMobile from "./images/the-beths/homepage-mobile.png"
 import theBethsWatchMobile from "./images/the-beths/watch-mobile.png"
 import theBethsMerchMobile from "./images/the-beths/merch-mobile.png"
 import theBethsContactMobile from "./images/the-beths/contact-mobile.png"
 
+import stitchedARHomePage from "./images/stitchedar-homepage-1207x741.png";
+import stitchedARLoadingPage from "./images/stitchedAR/loading-page.png"
+import stitchedARSecondaryHomepage from "./images/stitchedAR/secondary-homepage.png"
+import stitchedARHowToMeasure from "./images/stitchedAR/how-to-measure.png"
+import stitchedARHowToDesign from "./images/stitchedAR/how-to-design.png"
+import stitchedARARMeasure from "./images/stitchedAR/ar-measure.png"
+import stitchedARARFabricDetails from "./images/stitchedAR/ar-fabric-details.png"
+import stitchedARConfirmMeasurements from "./images/stitchedAR/confirm-measurements.png"
+import stitchedARCheckout from "./images/stitchedAR/checkout.png"
 
 
 export const stitchedProject = {
@@ -58,6 +65,40 @@ export const stitchedARProject = {
   previewImage: { src: stitchedARHomePage, alt: "Stitched AR Home Page" },
   excerpt: "Stitched AR is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
   images: [{ src: stitchedARHomePage, alt: "Stitched Inspiration Page" }],
+  mobileImages: [
+    {
+      src: stitchedARLoadingPage,
+      alt: ""
+    },
+    {
+      src: stitchedARSecondaryHomepage,
+      alt: ""
+    },
+    {
+      src: stitchedARHowToMeasure,
+      alt: ""
+    },
+    {
+      src: stitchedARHowToDesign,
+      alt: ""
+    },
+    {
+      src: stitchedARARMeasure,
+      alt: ""
+    },
+    {
+      src: stitchedARARFabricDetails,
+      alt: ""
+    },
+    {
+      src: stitchedARConfirmMeasurements,
+      alt: ""
+    },
+    {
+      src: stitchedARCheckout,
+      alt: ""
+    }
+  ],
   companyDescription:
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   info:

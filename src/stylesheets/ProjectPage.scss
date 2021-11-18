@@ -154,9 +154,8 @@
   }
 
   @include element('mobile-image') {
-    border-radius: 5%;
-
     width: calc(50% - 8px);
+    filter: drop-shadow($drop-shadow);
     margin-bottom: 16px;
 
     @include sm-desktop {

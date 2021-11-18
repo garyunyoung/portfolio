@@ -10,8 +10,9 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 
 ### Task list: ###
 General
-[ ] Add project images
 [ ] Update copy
+[ ] Add project images
+[ ] Add ar demo link
 [ ] Add titles to socials in the mobile nav
 [ ] Add socials to desktop nav
 [ ] Link up-to-date resume
@@ -33,5 +34,5 @@ Checklist: https://www.a11yproject.com/checklist/
 [ ] Add 'Skip to content'
 
 Optimisation
-[ ] Optimise images 
+[ ] Optimise images - move to cloudinary
 

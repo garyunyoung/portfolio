@@ -119,6 +119,7 @@ export const StitchedAR = () => (
       title={stitchedARProject.title}
       modifier={stitchedARProject.modifier}
       images={stitchedARProject.images}
+      mobileImages={stitchedARProject.mobileImages}
       companyDescription={stitchedARProject.companyDescription}
       info={stitchedARProject.info}
       link={stitchedARProject.link}
