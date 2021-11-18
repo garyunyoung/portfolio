@@ -1,17 +1,6 @@
-import stitchedHomePage from "./images/stitched-desktop-homepage.png";
-import waldourStudioHomePage from "./images/waldour-1.png";
-import stitchedLukesPage from "./images/stitched-desktop-homepage.png";
-import sploreBanner from "./images/splore-c.jpg";
-import sailCityJumpBanner from "./images/sail-city-jump.jpg";
-import nightAtTheSavoyBanner from "./images/night-at-the-savoy.jpg";
+import stitchedHomepage from "./images/stitched/homepage-desktop.png";
 
-import bethsHomePage from "./images/beths-project.png";
-import theBethsHomepageMobile from "./images/the-beths/homepage-mobile.png"
-import theBethsWatchMobile from "./images/the-beths/watch-mobile.png"
-import theBethsMerchMobile from "./images/the-beths/merch-mobile.png"
-import theBethsContactMobile from "./images/the-beths/contact-mobile.png"
-
-import stitchedARHomePage from "./images/stitchedar-homepage-1207x741.png";
+import stitchedARHomepage from "./images/stitchedAR/homepage.png";
 import stitchedARLoadingPage from "./images/stitchedAR/loading-page.png"
 import stitchedARSecondaryHomepage from "./images/stitchedAR/secondary-homepage.png"
 import stitchedARHowToMeasure from "./images/stitchedAR/how-to-measure.png"
@@ -21,6 +10,17 @@ import stitchedARARFabricDetails from "./images/stitchedAR/ar-fabric-details.png
 import stitchedARConfirmMeasurements from "./images/stitchedAR/confirm-measurements.png"
 import stitchedARCheckout from "./images/stitchedAR/checkout.png"
 
+import theBethsHomepageDesktop from "./images/the-beths/homepage-desktop.png";
+import theBethsHomepageMobile from "./images/the-beths/homepage-mobile.png"
+import theBethsWatchMobile from "./images/the-beths/watch-mobile.png"
+import theBethsMerchMobile from "./images/the-beths/merch-mobile.png"
+import theBethsContactMobile from "./images/the-beths/contact-mobile.png"
+
+import waldourHomepage from "./images/waldour/homepage-desktop.png";
+
+import sploreBanner from "./images/pr/splore-2018.jpg";
+import sailCityJumpBanner from "./images/pr/sail-city-jump.jpg";
+import nightAtTheSavoyBanner from "./images/pr/night-at-the-savoy.jpg";
 
 export const stitchedProject = {
   title: "Stitched",
@@ -30,10 +30,10 @@ export const stitchedProject = {
   jobType: "Front-end Developer",
   jobYear: "2019 - 2021",
   github: "n/a",
-  previewImage: { src: stitchedHomePage, alt: "Stitched Home Page" },
+  previewImage: { src: stitchedHomepage, alt: "Stitched Home Page" },
   excerpt:
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
-  images: [{ src: stitchedLukesPage, alt: "Stitched Inspiration Page" }],
+  images: [{ src: stitchedHomepage, alt: "Stitched Inspiration Page" }],
   companyDescription:
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   info:
@@ -62,9 +62,9 @@ export const stitchedARProject = {
   jobType: "Front-end Developer",
   jobYear: "2020",
   github: "n/a",
-  previewImage: { src: stitchedARHomePage, alt: "Stitched AR Home Page" },
+  previewImage: { src: stitchedARHomepage, alt: "Stitched AR Home Page" },
   excerpt: "Stitched AR is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
-  images: [{ src: stitchedARHomePage, alt: "Stitched Inspiration Page" }],
+  images: [{ src: stitchedARHomepage, alt: "Stitched Inspiration Page" }],
   mobileImages: [
     {
       src: stitchedARLoadingPage,
@@ -121,10 +121,10 @@ export const bethsProject = {
   jobType: "Freelance",
   jobYear: "2019",
   github: "https://github.com/garyunyoung",
-  previewImage: { src: bethsHomePage, alt: "The Beths Home Page" },
+  previewImage: { src: theBethsHomepageDesktop, alt: "The Beths Home Page" },
   excerpt:
     "The Beths are an award-winning indie pop band based in Auckland, New Zealand.",
-  images: [{ src: bethsHomePage, alt: "The Beths Home Page" }],
+  images: [{ src: theBethsHomepageDesktop, alt: "The Beths Home Page" }],
   mobileImages: [
     {
       src: theBethsHomepageMobile,
@@ -159,7 +159,7 @@ export const bethsProject = {
   ]
 };
 
-export const waldourStudiosProject = {
+export const waldourProject = {
   title: "Waldour Studios",
   modifier: "waldour-studios",
   path: "waldour-studios",
@@ -167,10 +167,10 @@ export const waldourStudiosProject = {
   jobType: "Freelance",
   jobYear: "2019",
   github: "https://github.com/garyunyoung",
-  previewImage: { src: waldourStudioHomePage, alt: "Waldour Studio Home Page" },
+  previewImage: { src: waldourHomepage, alt: "Waldour Studio Home Page" },
   excerpt:
     "Wardour Studios is a podcast recording studio and production compnay based in Central London.",
-  images: [{ src: waldourStudioHomePage, alt: "Waldour Studio Home Page" }],
+  images: [{ src: waldourHomepage, alt: "Waldour Studio Home Page" }],
   companyDescription:
     "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
   info:

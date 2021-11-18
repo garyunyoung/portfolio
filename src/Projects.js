@@ -3,7 +3,7 @@ import {
   stitchedProject,
   stitchedARProject,
   bethsProject,
-  waldourStudiosProject,
+  waldourProject,
   sploreProject,
   sailCityJumpProject,
   nightAtTheSavoyProject
@@ -21,7 +21,7 @@ export default class Project extends React.Component {
         stitchedProject,
         stitchedARProject,
         bethsProject,
-        // waldourStudiosProject,
+        // waldourProject,
         sploreProject,
         sailCityJumpProject,
         nightAtTheSavoyProject
@@ -155,16 +155,16 @@ export const WaldourStudios = () => (
   <React.Fragment>
     <NavBar link="/#projects" title="< BACK" />
     <ProjectPage
-      title={waldourStudiosProject.title}
-      images={waldourStudiosProject.images}
-      companyDescription={waldourStudiosProject.companyDescription}
-      info={waldourStudiosProject.info}
-      link={waldourStudiosProject.link}
-      displayLink={waldourStudiosProject.displayLink}
-      technologies={waldourStudiosProject.technologies}
-      keyFeatures={waldourStudiosProject.keyFeatures}
-      jobType={waldourStudiosProject.jobType}
-      jobYear={waldourStudiosProject.jobYear}
+      title={waldourProject.title}
+      images={waldourProject.images}
+      companyDescription={waldourProject.companyDescription}
+      info={waldourProject.info}
+      link={waldourProject.link}
+      displayLink={waldourProject.displayLink}
+      technologies={waldourProject.technologies}
+      keyFeatures={waldourProject.keyFeatures}
+      jobType={waldourProject.jobType}
+      jobYear={waldourProject.jobYear}
     />
   </React.Fragment>
 );
