@@ -92,7 +92,7 @@ export const stitchedProject = {
 export const stitchedARProject = {
   title: "Stitched AR",
   modifier: "stitched-ar",
-  path: "stitchedAR",
+  path: "stitched-ar",
   category: "web",
   jobType: "Front-end Developer",
   jobYear: "2020",

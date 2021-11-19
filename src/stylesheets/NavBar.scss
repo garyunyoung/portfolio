@@ -76,7 +76,7 @@
     height: calc(100vh - #{$site-header-height-mobile});
     background-color: $page-background-colour;
 
-    padding-top: calc(#{$site-header-height-mobile} + 56px);
+    padding-top: calc(#{$site-header-height-mobile} + #{$spacer-large});
 
     @include sm-desktop {
       display: block;
