@@ -20,8 +20,8 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 - [ ] Check site meta data is correct
 - [x] Add socials to desktop nav
 - [ ] Change socials logos to pseudo elements
-- [ ] Add titles to socials in the mobile nav
-- [ ] Fix nav height on small desktop
+- [x] Add titles to socials in the mobile nav
+- [ ] Fix nav height on tablet and small desktop
 - [ ] Update mobile nav styling
 - [ ] Remove p5.js or find another use for it
 - [ ] Fix state when returning to projects page from a pr project page
