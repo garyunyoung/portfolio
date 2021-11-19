@@ -9,9 +9,9 @@ export const stitchedCurtainsDesktop = `${cloudinary + stitched}curtains-desktop
 export const stitchedCurtainsTablet = `${cloudinary + stitched}curtains-tablet.png`;
 export const stitchedCurtainsMobile = `${cloudinary + stitched}curtains-mobile.png`;
 
-export const stitchedFabricDesktop = `${cloudinary + stitched}fabric-page-desktop.png`;
-export const stitchedFabricTablet = `${cloudinary + stitched}fabric-page-tablet.png`;
-export const stitchedFabricMobile = `${cloudinary + stitched}fabric-page-mobile.png`;
+export const stitchedFabricDesktop = `${cloudinary + stitched}fabric-desktop.png`;
+export const stitchedFabricTablet = `${cloudinary + stitched}fabric-tablet.png`;
+export const stitchedFabricMobile = `${cloudinary + stitched}fabric-mobile.png`;
 
 export const stitchedHomesDesktop = `${cloudinary + stitched}homes-desktop.png`;
 export const stitchedHomesTablet = `${cloudinary + stitched}homes-tablet.png`;
