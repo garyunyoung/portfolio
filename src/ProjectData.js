@@ -136,8 +136,8 @@ export const bethsProject = {
     "The Beths are an award-winning indie pop band based in Auckland, New Zealand.",
   info:
     [
-      "This was the first website I took on early in my coding career.",
-      "I noticed that the band could do with a new website and thought it would be a good way to develop and test out my newly learned development skills."
+      "This was the first website I took on early in my coding journey.",
+      "I noticed that the band could do with a new website and thought it would be a good way to develop and test out my newly learned web development skills."
     ],
   link: "https://thebeths.com/",
   displayLink: "thebeths.com",
