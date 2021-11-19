@@ -19,6 +19,7 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 - [ ] Update mobile nav styling
 - [ ] Remove p5.js or find another use for it
 - [ ] Fix state when returning to projects page from a pr project page
+- [ ] Check site meta data is correct
 
 #### Refactor ####
 - [ ] Project data: conditional rendering for project page prop data
