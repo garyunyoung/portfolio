@@ -104,7 +104,6 @@ export const Stitched = () => (
       companyDescription={stitchedProject.companyDescription}
       info={stitchedProject.info}
       link={stitchedProject.link}
-      displayLink={stitchedProject.displayLink}
       technologies={stitchedProject.technologies}
       keyFeatures={stitchedProject.keyFeatures}
       jobType={stitchedProject.jobType}
@@ -124,7 +123,6 @@ export const StitchedAR = () => (
       companyDescription={stitchedARProject.companyDescription}
       info={stitchedARProject.info}
       link={stitchedARProject.link}
-      displayLink={stitchedARProject.displayLink}
       technologies={stitchedARProject.technologies}
       keyFeatures={stitchedARProject.keyFeatures}
       jobType={stitchedARProject.jobType}
@@ -136,18 +134,17 @@ export const StitchedAR = () => (
 export const TheBeths = () => (
   <React.Fragment>
     <NavBar link="/#projects" title="< BACK" />
-    <ProjectPage 
-    title={bethsProject.title}
-    mobileImages={bethsProject.mobileImages}
-    images={bethsProject.images}
-    companyDescription={bethsProject.companyDescription}
-    info={bethsProject.info}
-    link={bethsProject.link}
-    displayLink={bethsProject.displayLink}
-    technologies={bethsProject.technologies}
-    keyFeatures={bethsProject.keyFeatures}
-    jobType={bethsProject.jobType}
-    jobYear={bethsProject.jobYear}
+    <ProjectPage
+      title={bethsProject.title}
+      mobileImages={bethsProject.mobileImages}
+      images={bethsProject.images}
+      companyDescription={bethsProject.companyDescription}
+      info={bethsProject.info}
+      link={bethsProject.link}
+      technologies={bethsProject.technologies}
+      keyFeatures={bethsProject.keyFeatures}
+      jobType={bethsProject.jobType}
+      jobYear={bethsProject.jobYear}
     />
   </React.Fragment>
 );
@@ -161,7 +158,6 @@ export const WaldourStudios = () => (
       companyDescription={waldourProject.companyDescription}
       info={waldourProject.info}
       link={waldourProject.link}
-      displayLink={waldourProject.displayLink}
       technologies={waldourProject.technologies}
       keyFeatures={waldourProject.keyFeatures}
       jobType={waldourProject.jobType}
@@ -179,7 +175,6 @@ export const Splore = () => (
       companyDescription={sploreProject.companyDescription}
       info={sploreProject.info}
       link={sploreProject.link}
-      displayLink={sploreProject.displayLink}
       technologies={sploreProject.technologies}
       keyFeatures={sploreProject.keyFeatures}
       jobType={sploreProject.jobType}
@@ -197,7 +192,6 @@ export const SailCityJump = () => (
       companyDescription={sailCityJumpProject.companyDescription}
       info={sailCityJumpProject.info}
       link={sailCityJumpProject.link}
-      displayLink={sailCityJumpProject.displayLink}
       technologies={sailCityJumpProject.technologies}
       keyFeatures={sailCityJumpProject.keyFeatures}
       jobType={sailCityJumpProject.jobType}
@@ -215,7 +209,6 @@ export const NightAtTheSavoy = () => (
       companyDescription={nightAtTheSavoyProject.companyDescription}
       info={nightAtTheSavoyProject.info}
       link={nightAtTheSavoyProject.link}
-      displayLink={nightAtTheSavoyProject.displayLink}
       technologies={nightAtTheSavoyProject.technologies}
       keyFeatures={nightAtTheSavoyProject.keyFeatures}
       jobType={nightAtTheSavoyProject.jobType}

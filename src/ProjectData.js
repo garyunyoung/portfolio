@@ -103,7 +103,6 @@ export const stitchedProject = {
       "Stitched is based in London, United Kingdom."
     ],
   link: "https://www.stitched.co.uk/",
-  displayLink: "stitched.co.uk",
   technologies: ["Elixir", "Phoenix LiveView", "JavaScript", "React", "SCSS", "HTML"],
   keyFeatures: [
     "Built and deployed front-end changes for a site redesign that involved custom reusable CMS components.",
@@ -157,7 +156,6 @@ export const stitchedARProject = {
       "* This app is only avaliable for download in the United Kingdom. See the demo link below the mobile images for an example of how the app works."
     ],
   link: "https://apps.apple.com/gb/app/stitched-ar/id1461104538",
-  displayLink: "n/a",
   technologies: ["Swift", "SwiftUI"],
   keyFeatures: [
     "Built the front-end of the app using Swift / SwiftUI based on design provided by the UI designer.",
@@ -205,7 +203,6 @@ export const bethsProject = {
       "I noticed that the band could do with a new website and thought it would be a good way to develop and test out my newly learned web development skills."
     ],
   link: "https://thebeths.com/",
-  displayLink: "thebeths.com",
   technologies: ["Next.js", "React", "SCSS", "HTML"],
   keyFeatures: [
     "Designed UI/UX.",
@@ -235,7 +232,6 @@ export const waldourProject = {
   info:
     ["Designed and implemented a website for the Waldour Studios as a Freelance Project"],
   link: "https://wardourstudios.co.uk/",
-  displayLink: "wardourstudios.co.uk",
   technologies: ["Wordpress", "PHP", "SCSS", "HTML"],
   keyFeatures: [
     "Mobile first, responsive and accessible.",
@@ -262,7 +258,6 @@ export const sploreProject = {
   info:
     ["At the end of 2017 I was brought onboard as a press assistant for Splore - arguably the best music festival in New Zealand."],
   link: "http://www.splore.net/",
-  displayLink: "http://www.splore.net/",
   technologies: ["Communications", "Press"],
   keyFeatures: [
     "Supported the Head of PR.",
@@ -302,7 +297,6 @@ export const sailCityJumpProject = {
       "That year we were lucky to have two Big Bands (Tuxedo Swing and Queen City Big Band) battle it out for us on the bandstand."
     ],
   link: "https://www.facebook.com/events/2039384882959969/?active_tab=discussion",
-  displayLink: "n/a",
   technologies: ["Event Coordination", "Social Media"],
   keyFeatures: [
     "Planned event objectives, timelines and task lists.",
@@ -341,7 +335,6 @@ export const nightAtTheSavoyProject = {
       "The event itself brought in around 200 dancers and spectators.",
       "It featured a selection of Lindy Hop performances, fun competitions, social dancing and a talk about the history of Lindy Hop from one of the founding members of the New Zealand's Lindy Hop scene"],
   link: "https://www.facebook.com/events/220801418420563",
-  displayLink: "n/a",
   technologies: ["Event Coordination", "Social Media"],
   keyFeatures: [
     "Planned event objectives, timelines and task lists.",
