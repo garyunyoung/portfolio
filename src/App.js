@@ -19,37 +19,30 @@ export default class App extends Component {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route
-            // path={`/projects/${stitchedProject.path}`}
             path={`/projects/stitched`}
             component={Stitched}
           />
           <Route
-            // path={`/projects/${stitchedProject.path}`}
-            path={`/projects/stitchedAR`}
+            path={`/projects/stitched-ar`}
             component={StitchedAR}
           />
           <Route
-            // path={`/projects/${bethsProject.path}`}
             path={`/projects/the-beths`}
             component={TheBeths}
           />
           <Route
-            // path={`/projects/${waldourProject.path}`}
             path={`/projects/waldour-studio`}
             component={WaldourStudios}
           />
           <Route
-            // path={`/projects/${waldourProject.path}`}
             path={`/projects/splore-2018`}
             component={Splore}
           />
           <Route
-            // path={`/projects/${waldourProject.path}`}
             path={`/projects/sail-city-jump-2017`}
             component={SailCityJump}
           />
           <Route
-            // path={`/projects/${waldourProject.path}`}
             path={`/projects/night-at-the-savoy-2017`}
             component={NightAtTheSavoy}
           />

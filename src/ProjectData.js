@@ -8,23 +8,23 @@ export const stitchedProject = {
   jobType: "Front-end Developer",
   jobYear: "2019 - 2021",
   github: "n/a",
-  previewImage: { src: Image.stitchedHomepage, alt: "Stitched Home Page" },
+  previewImage: { src: Image.stitchedHomepageDesktop, alt: "Stitched Home Page" },
   excerpt:
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   imageSets: [
     [
       {
-        src: Image.stitchedFabricPageDesktop,
+        src: Image.stitchedFabricDesktop,
         modifier: "desktop",
         alt: ""
       },
       {
-        src: Image.stitchedFabricPageTablet,
+        src: Image.stitchedFabricTablet,
         modifier: "tablet",
         alt: ""
       },
       {
-        src: Image.stitchedFabricPageMobile,
+        src: Image.stitchedFabricMobile,
         modifier: "mobile",
         alt: ""
       }
@@ -101,11 +101,11 @@ export const stitchedARProject = {
   excerpt: "Stitched AR is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
   mobileImages: [
     {
-      src: Image.stitchedARARMeasure,
+      src: Image.stitchedARMeasure,
       alt: ""
     },
     {
-      src: Image.stitchedARARCurtain,
+      src: Image.stitchedARCurtain,
       alt: ""
     },
     {
@@ -198,10 +198,10 @@ export const waldourProject = {
   jobType: "Freelance",
   jobYear: "2019",
   github: "https://github.com/garyunyoung",
-  previewImage: { src: Image.waldourHomepage, alt: "Waldour Studio Home Page" },
+  previewImage: { src: Image.waldourHomepageDesktop, alt: "Waldour Studio Home Page" },
   excerpt:
     "Wardour Studios is a podcast recording studio and production compnay based in Central London.",
-  images: [{ src: Image.waldourHomepage, alt: "Waldour Studio Home Page" }],
+  images: [{ src: Image.waldourHomepageDesktop, alt: "Waldour Studio Home Page" }],
   companyDescription:
     "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
   info:

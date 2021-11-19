@@ -16,10 +16,11 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 - [x] Update copy
 - [x] Add project images
 - [x] Add ar demo link
-- [ ] Link up-to-date resume
+- [ ] Link up-to-date resume with working links
 - [ ] Check site meta data is correct
-- [ ] Add titles to socials in the mobile nav
 - [ ] Add socials to desktop nav
+- [ ] Add titles to socials in the mobile nav
+- [ ] Fix nav height on small desktop
 - [ ] Update mobile nav styling
 - [ ] Remove p5.js or find another use for it
 - [ ] Fix state when returning to projects page from a pr project page
