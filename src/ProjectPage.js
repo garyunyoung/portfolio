@@ -94,7 +94,8 @@ export default function ProjectPage(props) {
                   <a
                     key={index}
                     className="project__link"
-                    href={link.url} rel="noopener noreferrer"
+                    href={link.url} 
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     {link.text}

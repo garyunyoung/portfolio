@@ -18,7 +18,8 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 - [x] Add ar demo link
 - [ ] Link up-to-date resume with working links
 - [ ] Check site meta data is correct
-- [ ] Add socials to desktop nav
+- [x] Add socials to desktop nav
+- [ ] Change socials logos to pseudo elements
 - [ ] Add titles to socials in the mobile nav
 - [ ] Fix nav height on small desktop
 - [ ] Update mobile nav styling
@@ -33,6 +34,7 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 - [ ] Revise about page elements
 - [ ] Revise navbar and footer placement in the HTML
 - [ ] Refactor project page images
+- [ ] Refactor navbar
 
 #### Accessibility
 

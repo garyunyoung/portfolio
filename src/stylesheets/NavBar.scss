@@ -13,7 +13,7 @@
   padding-top: 24px;
   padding-bottom: 16px;
 
-  @include tablet {
+  @include sm-desktop {
     height: $site-header-height-tablet;
   }
 
@@ -51,7 +51,7 @@
   @include element('title') {
     @include title-font;
 
-    @include tablet {
+    @include sm-desktop {
       padding: 12px 24px;
     }
   }
@@ -63,25 +63,29 @@
 
     background-color: $page-background-colour;
 
-    @include tablet {
+    @include sm-desktop {
       padding: 12px 24px;
     }
   }
 
   @include element('nav') {
     display: none;
+    justify-content: flex-end;
 
     width: 100%;
     height: calc(100vh - #{$site-header-height-mobile});
-    justify-content: center;
-    align-items: center;
     background-color: $page-background-colour;
 
-    @include tablet {
+    padding-top: calc(#{$site-header-height-mobile} + 56px);
+
+    @include sm-desktop {
       display: block;
+
       height: auto;
       width: max-content;
+
       border: 0;
+      padding-top: 0;
     }
   }
 
@@ -91,7 +95,6 @@
     letter-spacing: 2px;
 
     border-bottom: 1px dotted transparent;
-
     margin: 0 $side-padding-mobile;
 
     &:after {
@@ -109,7 +112,7 @@
       cursor: pointer;
     }
 
-    @include tablet {
+    @include sm-desktop {
       display: none;
     }
   }
@@ -117,46 +120,66 @@
 
 @include block('site-menu') {
   @include element('nav-items') {
-    text-align: center;
-    margin-top: -20%;
+    margin-top: -$spacer-large;
 
-    @include tablet {
+    @include sm-desktop {
       display: flex;
-      margin: 0;
+      flex-flow: column;
+
+      margin-top: 0;
+      position: relative;
+    }
+  }
+
+  @include element('nav-main-items') {
+    @include sm-desktop {
+      display: flex;
     }
   }
 
   @include element('nav-socials') {
     display: flex;
+    flex-flow: column;
     justify-content: center;
+    align-items: flex-end;
+
     margin-top: 32px;
 
     img {
       width: 28px;
     }
 
-    li {
-      margin-right: 16px;
-    }
+    @include sm-desktop {
+      position: absolute;
+      top: 68px;
+      right: 0px;
 
-    margin-right: -16px;
-
-    @include tablet {
-      display: none;
+      background-color: $page-background-colour;
+      padding-bottom: 8px;
+      margin-top: 0;
     }
+  }
+
+  @include element('nav-item-link-social') {
+    @include cta-link-button;
+    padding-right: 16px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include element('nav-item-text-social') {
+    margin-right: 16px;
   }
 
   @include element('nav-item') {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-
-    @include modifier('exercism') {
-      transform: translateY(1px);
-    }
   }
 
   @include element('nav-item-link') {
     @include cta-link-button;
+    padding-right: 16px;
   }
 }

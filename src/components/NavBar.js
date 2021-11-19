@@ -39,46 +39,54 @@ export default function NavBar(props) {
 function NavMenu(props) {
   return (
     <nav className='site-menu site-header__nav'>
-      {/* toggle aria label */}
       <ul className='site-menu__nav-items'>
-        <li className='site-menu__nav-item'>
-          <a className='site-menu__nav-item-link site-menu__nav-item-link--projects' href='/#projects' onClick={props.closeNav}>
-            Projects
-          </a>
-        </li>
-        <li className='site-menu__nav-item'>
-          <a className='site-menu__nav-item-link site-menu__nav-item-link--about' href='/#about' onClick={props.closeNav}>
-            About
-          </a>
-        </li>
-        <span className='site-menu__nav-socials'>
+        <span className="site-menu__nav-main-items">
           <li className='site-menu__nav-item'>
-            <a
-              href='https://www.codewars.com/users/garryunn'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <img src={codewarsLogo} alt='' />
+            <a className='site-menu__nav-item-link site-menu__nav-item-link--projects' href='/#projects' onClick={props.closeNav}>
+              Projects
             </a>
           </li>
           <li className='site-menu__nav-item'>
+            <a className='site-menu__nav-item-link site-menu__nav-item-link--about' href='/#about' onClick={props.closeNav}>
+              About
+            </a>
+          </li>
+        </span>
+        <span className='site-menu__nav-socials'>
+          <li>
             <a
+              className='site-menu__nav-item-link-social'
               href='https://github.com/garyunyoung'
               target='_blank'
               rel='noopener noreferrer'
             >
+              <p className="site-menu__nav-item-text-social">Github</p>
               <img src={githubLogo} alt='' />
             </a>
           </li>
-          <li className='site-menu__nav-item site-menu__nav-item--exercism'>
+          <li>
             <a
+              className='site-menu__nav-item-link-social'
               href='https://exercism.org/profiles/garyunyoung'
               target='_blank'
               rel='noopener noreferrer'
             >
+              <p className="site-menu__nav-item-text-social">Exercism</p>
               <img src={exercismLogo} alt='' />
             </a>
           </li>
+          <li>
+            <a
+              className='site-menu__nav-item-link-social'
+              href='https://www.codewars.com/users/garryunn'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <p className="site-menu__nav-item-text-social">Codewars</p>
+              <img src={codewarsLogo} alt='' />
+            </a>
+          </li>
+
         </span>
       </ul>
     </nav>
