@@ -13,18 +13,14 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 
 #### General
 
-- [x] Update copy
-- [x] Add project images
-- [x] Add ar demo link
 - [ ] Link up-to-date resume with working links
 - [ ] Check site meta data is correct
-- [x] Add socials to desktop nav
 - [ ] Change socials logos to pseudo elements
-- [x] Add titles to socials in the mobile nav
 - [ ] Fix nav height on tablet and small desktop
 - [ ] Update mobile nav styling
-- [ ] Remove p5.js or find another use for it
+- [ ] Fix nav desktop padding
 - [ ] Fix state when returning to projects page from a pr project page
+- [ ] Remove p5.js or find another use for it
 
 #### Refactor
 
