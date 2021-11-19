@@ -35,7 +35,8 @@ export const stitchedProject = {
   info:
     [
       "In 2019 I joined Stitched, interning as a front-end developer which then lead to a full-time contract.",
-      "I was brought on to help with their site redesign but then took on other front- end features."
+      "I was brought on to help with their site redesign but then took on other front-end features.",
+      "Stitched is based in London, United Kingdom."
     ],
   link: "https://www.stitched.co.uk/",
   displayLink: "stitched.co.uk",
@@ -89,7 +90,7 @@ export const stitchedARProject = {
       "The app allows users to visualise curtains in their home using AR.",
       "Users are provided measurements based on the visualisation.",
       "The app also allows users to order curtains and sample fabrics using Apple Pay.",
-      "* This app is only avaliable for download in the UK. See demo link below."
+      "* This app is only avaliable for download in the United Kingdom. See the demo link below the mobile images for an example of how the app works."
     ],
   link: "https://apps.apple.com/gb/app/stitched-ar/id1461104538",
   displayLink: "n/a",
