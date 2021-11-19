@@ -28,10 +28,11 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 
 #### Accessibility ####
 Checklist: https://www.a11yproject.com/checklist/
+- [ ] Add alt tags to images
 - [ ] Fix HTML heading levels 
 - [ ] Revise page content landmarks
 - [ ] Revise HTML nav elements
 - [ ] Add 'Skip to content'
 
 #### Optimisation ####
-- [ ] Optimise images - move to cloudinary
+- [ ] Optimise images - move to Cloudinary

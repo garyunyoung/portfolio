@@ -1,12 +1,8 @@
 import stitchedHomepage from "./images/stitched/homepage-desktop.png";
 
 import stitchedARHomepage from "./images/stitchedAR/homepage.png";
-import stitchedARLoadingPage from "./images/stitchedAR/loading-page.png"
-import stitchedARSecondaryHomepage from "./images/stitchedAR/secondary-homepage.png"
-import stitchedARHowToMeasure from "./images/stitchedAR/how-to-measure.png"
-import stitchedARHowToDesign from "./images/stitchedAR/how-to-design.png"
 import stitchedARARMeasure from "./images/stitchedAR/ar-measure.png"
-import stitchedARARFabricDetails from "./images/stitchedAR/ar-fabric-details.png"
+import stitchedARARCurtain from "./images/stitchedAR/ar-curtain.png"
 import stitchedARConfirmMeasurements from "./images/stitchedAR/confirm-measurements.png"
 import stitchedARCheckout from "./images/stitchedAR/checkout.png"
 
@@ -37,20 +33,23 @@ export const stitchedProject = {
   companyDescription:
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   info:
-    ['In 2019 I joined Stitched, interning as a front-end developer which then lead to a full-time contract. I was brought on to help with their site redesign but since then took on their front-end features.', 'Near the end of 2020 I helped develop the front-end of an AR app.'],
+    [
+      "In 2019 I joined Stitched, interning as a front-end developer which then lead to a full-time contract.",
+      "I was brought on to help with their site redesign but then took on other front- end features."
+    ],
   link: "https://www.stitched.co.uk/",
   displayLink: "stitched.co.uk",
   technologies: ["Elixir", "Phoenix LiveView", "JavaScript", "React", "SCSS", "HTML"],
   keyFeatures: [
-    "Built and deployed front-end changes for a site redesign/overhaul that involved custom reusable CMS components.",
-    "Built the front-end using Elixir / Phoenix LiveView, JS / React, SCSS, HTML/embedded Elixir, and Git for version control.",
+    "Built and deployed front-end changes for a site redesign that involved custom reusable CMS components.",
+    "Built the front-end using Elixir / Phoenix LiveView, JS / React, SCSS and HTML/embedded Elixir along with two senior developers.",
     "Experience with Kanban methodology, CI / CD (Google Cloud & Docker then Kubernetes)",
     "Exposed to Ruby / Ruby on Rails, Redux, and unit/integration testing.",
-    "Pair programmed with senior back-end and full-stack engineers.",
+    "Used Git for version control.",
+    "Pair programmed with senior back-end and full-stack developers.",
     "Worked closely with the UX/UI designer to implement designs created on Figma, as well as collaborating to find ways to improve user experience.",
     "Approached designs with a mobile-first and responsive methodology.",
-    "Approached features with a maintainable and reusable methodology.",
-    "Built the front-end of an AR app using Swift / SwiftUI"
+    "Approached features with a focus on maintainable and reusable code."
   ]
 };
 
@@ -64,30 +63,13 @@ export const stitchedARProject = {
   github: "n/a",
   previewImage: { src: stitchedARHomepage, alt: "Stitched AR Home Page" },
   excerpt: "Stitched AR is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
-  images: [{ src: stitchedARHomepage, alt: "Stitched Inspiration Page" }],
   mobileImages: [
-    {
-      src: stitchedARLoadingPage,
-      alt: ""
-    },
-    {
-      src: stitchedARSecondaryHomepage,
-      alt: ""
-    },
-    {
-      src: stitchedARHowToMeasure,
-      alt: ""
-    },
-    {
-      src: stitchedARHowToDesign,
-      alt: ""
-    },
     {
       src: stitchedARARMeasure,
       alt: ""
     },
     {
-      src: stitchedARARFabricDetails,
+      src: stitchedARARCurtain,
       alt: ""
     },
     {
@@ -102,14 +84,21 @@ export const stitchedARProject = {
   companyDescription:
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   info:
-    ['Near the end of 2020 I helped develop the front-end of an AR app.', 'Allows users to visualise curtains in their home', 'Allows users to measure curtains using AR tools', 'Allows users to order sample fabrics using Apple Pay'],
+    [
+      "While working for Stitched I helped develop the front-end of an augmented reality app.",
+      "The app allows users to visualise curtains in their home using AR.",
+      "Users are provided measurements based on the visualisation.",
+      "The app also allows users to order curtains and sample fabrics using Apple Pay.",
+      "* This app is only avaliable for download in the UK. See demo link below."
+    ],
   link: "https://apps.apple.com/gb/app/stitched-ar/id1461104538",
   displayLink: "n/a",
   technologies: ["Swift", "SwiftUI"],
   keyFeatures: [
-    "Built the front-end of the app using Swift / SwiftUI",
-    "Tested on various iOS devices and screen sizes",
-    "Challenges: No prior experience with Swift / SwiftUI",
+    "Built the front-end of the app using Swift / SwiftUI based on design provided by the UI designer.",
+    "Worked closely with a senior developer while they implemented the AR capabilites.",
+    "Tested on various iOS devices and screen sizes.",
+    "Challenges: No prior experience with app development."
   ]
 };
 
@@ -146,16 +135,21 @@ export const bethsProject = {
   companyDescription:
     "The Beths are an award-winning indie pop band based in Auckland, New Zealand.",
   info:
-    ["Designed and implemented a website for the Beths. This was the first proper project I took on early in my coding career.", "I noticed that a friend's band's website needed a redesign and decided it would be a good way to develop my web development skills."],
+    [
+      "This was the first website I took on early in my coding career.",
+      "I noticed that the band could do with a new website and thought it would be a good way to develop and test out my newly learned development skills."
+    ],
   link: "https://thebeths.com/",
   displayLink: "thebeths.com",
   technologies: ["Next.js", "React", "SCSS", "HTML"],
   keyFeatures: [
-    "Designed using Gravit.io.",
-    "Mobile first, responsive and accessible.",
-    "Implemented with NextJS, SCSS and Git. Deployed on Heroku.",
+    "Designed UI/UX.",
+    "Built using NextJS, SCSS and Git. Deployed on Heroku.",
     "Integrated Google Analytics using Google Tag Manager.",
-    "Added a GDPR banner that enables/disables analytics."
+    "Added a GDPR banner that enables/disables analytics.",
+    "Integrated Mailchimp and Songkick widgets.",
+    "Ongoing maintenance and design based on requests and feeback from band and management.",
+    "Mobile first and responsive."
   ]
 };
 
