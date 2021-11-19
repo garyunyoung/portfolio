@@ -223,15 +223,13 @@ export const waldourProject = {
   companyDescription:
     "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
   info:
-    ["In 2019 I helped develop a custom WordPress theme for Waldour Studios.", "I was initially brought on to touch-up existing code, that then developed into a site refactor and design update."],
+    ["In 2019 I helped develop a custom WordPress theme and page templates for Waldour Studios.", "I was initially brought on to touch-up existing code, that then developed into a site refactor and design update."],
   links: [{ url: "https://wardourstudios.co.uk/", text: "Visit site" }],
   technologies: ["WordPress", "PHP", "SCSS", "HTML"],
   keyFeatures: [
-    "Based on a design provided by a UI designer.",
-    "Implemented with WordPress, using PHP, SCSS and Git.",
-    "Developed custom theme and page templates.",
-    "Built using reusable PHP components.",
-    "Integrated with Advance Custom Fields and other plugins.",
+    "Built custom theme and page templates based on a design provided by a UI designer.",
+    "Build using PHP, SCSS, and Git for version control.",
+    "Integrated with Advance Custom Fields - a free plugin - to create custom reusable PHP components.",
     "Mobile first and responsive."
   ]
 };
