@@ -49,6 +49,7 @@ export default function ProjectPage(props) {
             </div> : null
         }
 
+
         {
           props.mobileImages ?
             <div className="project__mobile-images">
@@ -61,6 +62,28 @@ export default function ProjectPage(props) {
                 );
               })}
             </div> : null
+        }
+
+        {
+          props.imageSets ?
+            <React.Fragment>
+              {props.imageSets.map((imageSet) => {
+                return (
+                  <div className={`project__image-set`}>
+                    {
+                      imageSet.map((image, index) => {
+                        return (
+                          <img
+                            key={index}
+                            className={`project__image-set-image project__image-set-image--${image.modifier}`}
+                            src={image.src} alt={image.alt} />
+                        );
+                      })
+                    }
+                  </div>
+                )
+              })}
+            </React.Fragment> : null
         }
 
         <div className='project__cta-links'>

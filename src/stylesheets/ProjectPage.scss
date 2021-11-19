@@ -139,6 +139,46 @@
     }
   }
 
+  @include element('image-set') {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-top: $spacer-small;
+
+    @include sm-desktop {
+      margin-top: $spacer-large;
+    }
+  }
+
+  @include element('image-set-image') {
+    width: 100%;
+    filter: drop-shadow($drop-shadow);
+
+    margin-bottom: 24px;
+
+    @include modifier('desktop') {
+      margin-bottom: 24px;
+
+      @include sm-desktop {
+        margin-bottom: $spacer-small;
+      }
+    }
+
+    @include modifier('tablet') {
+      width: 60%;
+    }
+
+    @include modifier('mobile') {
+      width: calc(40% - 24px);
+
+      @include sm-desktop {
+        width: calc(40% - #{$spacer-small});
+      }
+    }
+  }
+
   @include element('desktop-images') {
     @include modifier('spacer') {
       margin-bottom: $spacer-large;
@@ -164,7 +204,6 @@
   }
 
   @include element('image') {
-    box-shadow: none;
     filter: drop-shadow($drop-shadow);
   }
 

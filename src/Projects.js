@@ -99,6 +99,7 @@ export const Stitched = () => (
     <ProjectPage
       title={stitchedProject.title}
       images={stitchedProject.images}
+      imageSets={stitchedProject.imageSets}
       mobileImages={stitchedProject.mobileImages}
       companyDescription={stitchedProject.companyDescription}
       info={stitchedProject.info}

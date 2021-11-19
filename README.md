@@ -14,7 +14,7 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 #### General
 
 - [x] Update copy
-- [ ] Add project images
+- [x] Add project images
 - [ ] Add ar demo link
 - [ ] Add titles to socials in the mobile nav
 - [ ] Add socials to desktop nav
@@ -31,6 +31,7 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 - [ ] Revise navbar placement
 - [ ] Revise about page elements
 - [ ] Revise navbar and footer placement in the HTML
+- [ ] Refactor project page images
 
 #### Accessibility
 

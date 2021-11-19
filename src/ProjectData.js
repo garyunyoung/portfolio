@@ -1,5 +1,17 @@
 import stitchedHomepage from "./images/stitched/homepage-desktop.png";
 
+import stitchedHomesMobile from "./images/stitched/homes-mobile.png";
+import stitchedHomesTablet from "./images/stitched/homes-tablet.png";
+import stitchedHomesDesktop from "./images/stitched/homes-desktop.png";
+
+import stitchedCurtainsMobile from "./images/stitched/curtains-mobile.png";
+import stitchedCurtainsTablet from "./images/stitched/curtains-tablet.png";
+import stitchedCurtainsDesktop from "./images/stitched/curtains-desktop.png";
+
+import stitchedFabricPageMobile from "./images/stitched/fabric-page-mobile.png";
+import stitchedFabricPageTablet from "./images/stitched/fabric-page-tablet.png";
+import stitchedFabricPageDesktop from "./images/stitched/fabric-page-desktop.png";
+
 import stitchedARHomepage from "./images/stitchedAR/homepage.png";
 import stitchedARARMeasure from "./images/stitchedAR/ar-measure.png"
 import stitchedARARCurtain from "./images/stitchedAR/ar-curtain.png"
@@ -29,7 +41,59 @@ export const stitchedProject = {
   previewImage: { src: stitchedHomepage, alt: "Stitched Home Page" },
   excerpt:
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
-  images: [{ src: stitchedHomepage, alt: "Stitched Inspiration Page" }],
+  imageSets: [
+    [
+      {
+        src: stitchedFabricPageDesktop,
+        modifier: "desktop",
+        alt: ""
+      },
+      {
+        src: stitchedFabricPageTablet,
+        modifier: "tablet",
+        alt: ""
+      },
+      {
+        src: stitchedFabricPageMobile,
+        modifier: "mobile",
+        alt: ""
+      }
+    ],
+    [
+      {
+        src: stitchedCurtainsDesktop,
+        modifier: "desktop",
+        alt: ""
+      },
+      {
+        src: stitchedCurtainsTablet,
+        modifier: "tablet",
+        alt: ""
+      },
+      {
+        src: stitchedCurtainsMobile,
+        modifier: "mobile",
+        alt: ""
+      }
+    ],
+    [
+      {
+        src: stitchedHomesDesktop,
+        modifier: "desktop",
+        alt: ""
+      },
+      {
+        src: stitchedHomesTablet,
+        modifier: "tablet",
+        alt: ""
+      },
+      {
+        src: stitchedHomesMobile,
+        modifier: "mobile",
+        alt: ""
+      }
+    ]
+  ],
   companyDescription:
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   info:
