@@ -21,7 +21,7 @@ export default class Project extends React.Component {
         stitchedProject,
         stitchedARProject,
         bethsProject,
-        // waldourProject,
+        waldourProject,
         sploreProject,
         sailCityJumpProject,
         nightAtTheSavoyProject
@@ -95,7 +95,7 @@ const ProjectFilter = props => {
 
 export const Stitched = () => (
   <React.Fragment>
-    <NavBar link="/#projects" title="< BACK" />
+    <NavBar link="/#projects" />
     <ProjectPage
       title={stitchedProject.title}
       images={stitchedProject.images}
@@ -114,7 +114,7 @@ export const Stitched = () => (
 
 export const StitchedAR = () => (
   <React.Fragment>
-    <NavBar link="/#projects" title="< BACK" />
+    <NavBar link="/#projects" />
     <ProjectPage
       title={stitchedARProject.title}
       modifier={stitchedARProject.modifier}
@@ -133,7 +133,7 @@ export const StitchedAR = () => (
 
 export const TheBeths = () => (
   <React.Fragment>
-    <NavBar link="/#projects" title="< BACK" />
+    <NavBar link="/#projects" />
     <ProjectPage
       title={bethsProject.title}
       mobileImages={bethsProject.mobileImages}
@@ -151,7 +151,7 @@ export const TheBeths = () => (
 
 export const WaldourStudios = () => (
   <React.Fragment>
-    <NavBar link="/#projects" title="< BACK" />
+    <NavBar link="/#projects" />
     <ProjectPage
       title={waldourProject.title}
       images={waldourProject.images}
@@ -168,7 +168,7 @@ export const WaldourStudios = () => (
 
 export const Splore = () => (
   <React.Fragment>
-    <NavBar link="/#projects" title="< BACK" />
+    <NavBar link="/#projects" />
     <ProjectPage
       title={sploreProject.title}
       images={sploreProject.images}
@@ -185,7 +185,7 @@ export const Splore = () => (
 
 export const SailCityJump = () => (
   <React.Fragment>
-    <NavBar link="/#projects" title="< BACK" />
+    <NavBar link="/#projects" />
     <ProjectPage
       title={sailCityJumpProject.title}
       images={sailCityJumpProject.images}
@@ -202,7 +202,7 @@ export const SailCityJump = () => (
 
 export const NightAtTheSavoy = () => (
   <React.Fragment>
-    <NavBar link="/#projects" title="< BACK" />
+    <NavBar link="/#projects" />
     <ProjectPage
       title={nightAtTheSavoyProject.title}
       images={nightAtTheSavoyProject.images}
