@@ -31,7 +31,7 @@ export default class App extends Component {
             component={TheBeths}
           />
           <Route
-            path={`/projects/waldour-studio`}
+            path={`/projects/waldour-studios`}
             component={WaldourStudios}
           />
           <Route

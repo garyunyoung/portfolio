@@ -200,19 +200,39 @@ export const waldourProject = {
   github: "https://github.com/garyunyoung",
   previewImage: { src: Image.waldourHomepageDesktop, alt: "Waldour Studio Home Page" },
   excerpt:
-    "Wardour Studios is a podcast recording studio and production compnay based in Central London.",
-  images: [{ src: Image.waldourHomepageDesktop, alt: "Waldour Studio Home Page" }],
+    "Wardour Studios is a podcast recording studio and production company based in Central London.",
+  imageSets: [
+    [
+      {
+        src: Image.waldourWhatWeDoDesktop,
+        modifier: "desktop",
+        alt: ""
+      },
+      {
+        src: Image.waldourWhatWeDoTablet,
+        modifier: "tablet",
+        alt: ""
+      },
+      {
+        src: Image.waldourWhatWeDoMobile,
+        modifier: "mobile",
+        alt: ""
+      }
+    ]
+  ],
   companyDescription:
     "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
   info:
-    ["Designed and implemented a website for the Waldour Studios as a Freelance Project"],
+    ["In 2019 I helped develop a custom WordPress theme for Waldour Studios.", "I was initially brought on to touch-up existing code, that then developed into a site refactor and design update."],
   links: [{ url: "https://wardourstudios.co.uk/", text: "Visit site" }],
-  technologies: ["Wordpress", "PHP", "SCSS", "HTML"],
+  technologies: ["WordPress", "PHP", "SCSS", "HTML"],
   keyFeatures: [
-    "Mobile first, responsive and accessible.",
-    "Implemented with Wordpress, using PHP, SCSS and Git.",
-    "Integrated using PHP components",
-    "Integrated with ACF (Advance Custom Fields) and other plugins"
+    "Based on a design provided by a UI designer.",
+    "Implemented with WordPress, using PHP, SCSS and Git.",
+    "Developed custom theme and page templates.",
+    "Built using reusable PHP components.",
+    "Integrated with Advance Custom Fields and other plugins.",
+    "Mobile first and responsive."
   ]
 };
 

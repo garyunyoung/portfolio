@@ -36,9 +36,13 @@ export const theBethsMerchMobile = `${cloudinary + theBeths}merch-mobile.png`;
 export const theBethsContactMobile = `${cloudinary + theBeths}contact-mobile.png`;
 
 // Waldour
-const waldour = "waldour/"
+const waldour = "waldour-studios/"
 
 export const waldourHomepageDesktop = `${cloudinary + waldour}homepage-desktop.png`;
+
+export const waldourWhatWeDoDesktop = `${cloudinary + waldour}what-we-do-desktop.png`;
+export const waldourWhatWeDoTablet = `${cloudinary + waldour}what-we-do-tablet.png`;
+export const waldourWhatWeDoMobile = `${cloudinary + waldour}what-we-do-mobile.png`;
 
 // PR
 const pr = "pr/"

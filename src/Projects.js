@@ -154,7 +154,7 @@ export const WaldourStudios = () => (
     <NavBar link="/#projects" />
     <ProjectPage
       title={waldourProject.title}
-      images={waldourProject.images}
+      imageSets={waldourProject.imageSets}
       companyDescription={waldourProject.companyDescription}
       info={waldourProject.info}
       links={waldourProject.links}
