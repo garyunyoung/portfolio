@@ -87,15 +87,23 @@ export default function ProjectPage(props) {
         }
 
         <div className='project__cta-links'>
-          {props.link !== "n/a" ? (
-            <a className="project__link" href={props.link} rel="noopener noreferrer" target="_blank">
-              Visit site
-            </a>
-          ) : (
-            null
-          )}
-          <a href='/#projects' className='project__back is-active' >Back to projects</a>
+          {
+            props.links !== "" ?
+              props.links.map((link) => {
+                console.log(link)
+                return (
+                  <a
+                    className="project__link"
+                    href={link.url} rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {link.text}
+                  </a>
+                )
+              }) : null
+          }
         </div>
+        <a href='/#projects' className='project__back is-active' >Back to projects</a>
       </div>
     </section >
   );

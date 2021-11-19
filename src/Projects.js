@@ -103,7 +103,7 @@ export const Stitched = () => (
       mobileImages={stitchedProject.mobileImages}
       companyDescription={stitchedProject.companyDescription}
       info={stitchedProject.info}
-      link={stitchedProject.link}
+      links={stitchedProject.links}
       technologies={stitchedProject.technologies}
       keyFeatures={stitchedProject.keyFeatures}
       jobType={stitchedProject.jobType}
@@ -122,7 +122,7 @@ export const StitchedAR = () => (
       mobileImages={stitchedARProject.mobileImages}
       companyDescription={stitchedARProject.companyDescription}
       info={stitchedARProject.info}
-      link={stitchedARProject.link}
+      links={stitchedARProject.links}
       technologies={stitchedARProject.technologies}
       keyFeatures={stitchedARProject.keyFeatures}
       jobType={stitchedARProject.jobType}
@@ -140,7 +140,7 @@ export const TheBeths = () => (
       images={bethsProject.images}
       companyDescription={bethsProject.companyDescription}
       info={bethsProject.info}
-      link={bethsProject.link}
+      links={bethsProject.links}
       technologies={bethsProject.technologies}
       keyFeatures={bethsProject.keyFeatures}
       jobType={bethsProject.jobType}
@@ -157,7 +157,7 @@ export const WaldourStudios = () => (
       images={waldourProject.images}
       companyDescription={waldourProject.companyDescription}
       info={waldourProject.info}
-      link={waldourProject.link}
+      links={waldourProject.links}
       technologies={waldourProject.technologies}
       keyFeatures={waldourProject.keyFeatures}
       jobType={waldourProject.jobType}
@@ -174,7 +174,7 @@ export const Splore = () => (
       images={sploreProject.images}
       companyDescription={sploreProject.companyDescription}
       info={sploreProject.info}
-      link={sploreProject.link}
+      links={sploreProject.links}
       technologies={sploreProject.technologies}
       keyFeatures={sploreProject.keyFeatures}
       jobType={sploreProject.jobType}
@@ -191,7 +191,7 @@ export const SailCityJump = () => (
       images={sailCityJumpProject.images}
       companyDescription={sailCityJumpProject.companyDescription}
       info={sailCityJumpProject.info}
-      link={sailCityJumpProject.link}
+      links={sailCityJumpProject.links}
       technologies={sailCityJumpProject.technologies}
       keyFeatures={sailCityJumpProject.keyFeatures}
       jobType={sailCityJumpProject.jobType}
@@ -208,7 +208,7 @@ export const NightAtTheSavoy = () => (
       images={nightAtTheSavoyProject.images}
       companyDescription={nightAtTheSavoyProject.companyDescription}
       info={nightAtTheSavoyProject.info}
-      link={nightAtTheSavoyProject.link}
+      links={nightAtTheSavoyProject.links}
       technologies={nightAtTheSavoyProject.technologies}
       keyFeatures={nightAtTheSavoyProject.keyFeatures}
       jobType={nightAtTheSavoyProject.jobType}

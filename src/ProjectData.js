@@ -102,7 +102,9 @@ export const stitchedProject = {
       "I was brought on to help with their site redesign but then took on other front-end features.",
       "Stitched is based in London, United Kingdom."
     ],
-  link: "https://www.stitched.co.uk/",
+  links: [
+    { url: "https://www.stitched.co.uk/", text: "Visit site" }
+  ],
   technologies: ["Elixir", "Phoenix LiveView", "JavaScript", "React", "SCSS", "HTML"],
   keyFeatures: [
     "Built and deployed front-end changes for a site redesign that involved custom reusable CMS components.",
@@ -153,9 +155,12 @@ export const stitchedARProject = {
       "The app allows users to visualise curtains in their home using AR.",
       "Users are provided measurements based on the visualisation.",
       "The app also allows users to order curtains and sample fabrics using Apple Pay.",
-      "* This app is only avaliable for download in the United Kingdom. See the demo link below the mobile images for an example of how the app works."
+      "* This app is only avaliable for download in the United Kingdom. See the demo links below the mobile images for an example of how the app works."
     ],
-  link: "https://apps.apple.com/gb/app/stitched-ar/id1461104538",
+  links: [
+    { url: "https://apps.apple.com/gb/app/stitched-ar/id1461104538", text: 'View in app store' },
+    { url: "https://drive.google.com/file/d/1V79ak7lZGta91WAPVZhYcK4M8w3TOur3/view?usp=sharing", text: 'See demo' }
+  ],
   technologies: ["Swift", "SwiftUI"],
   keyFeatures: [
     "Built the front-end of the app using Swift / SwiftUI based on design provided by the UI designer.",
@@ -202,7 +207,7 @@ export const bethsProject = {
       "This was the first website I took on early in my coding journey.",
       "I noticed that the band could do with a new website and thought it would be a good way to develop and test out my newly learned web development skills."
     ],
-  link: "https://thebeths.com/",
+  links: [{ url: "https://thebeths.com/", text: "Visit site" }],
   technologies: ["Next.js", "React", "SCSS", "HTML"],
   keyFeatures: [
     "Designed UI/UX.",
@@ -231,7 +236,7 @@ export const waldourProject = {
     "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
   info:
     ["Designed and implemented a website for the Waldour Studios as a Freelance Project"],
-  link: "https://wardourstudios.co.uk/",
+  links: [{ url: "https://wardourstudios.co.uk/", text: "Visit site" }],
   technologies: ["Wordpress", "PHP", "SCSS", "HTML"],
   keyFeatures: [
     "Mobile first, responsive and accessible.",
@@ -257,7 +262,7 @@ export const sploreProject = {
     "Situated in a beguiling bay on the shores of Tapapakanga Park, Splore is a boutique music and arts festival like no other. An entertainment extravaganza, an unforgettable dress up party, three nights where people are invited to embrace the theme and join the mindful tribe of party animals! ",
   info:
     ["At the end of 2017 I was brought onboard as a press assistant for Splore - arguably the best music festival in New Zealand."],
-  link: "http://www.splore.net/",
+  links: [{ url: "http://www.splore.net/", text: "Visit site" }],
   technologies: ["Communications", "Press"],
   keyFeatures: [
     "Supported the Head of PR.",
@@ -296,7 +301,7 @@ export const sailCityJumpProject = {
       "2017's edition featured Lindy Hop, Balboa and Solo Jazz workshops, international guest teachers and social events with one night dedicated to live music.",
       "That year we were lucky to have two Big Bands (Tuxedo Swing and Queen City Big Band) battle it out for us on the bandstand."
     ],
-  link: "https://www.facebook.com/events/2039384882959969/?active_tab=discussion",
+  links: [{ url: "https://www.facebook.com/events/2039384882959969/?active_tab=discussion", text: "See event page" }],
   technologies: ["Event Coordination", "Social Media"],
   keyFeatures: [
     "Planned event objectives, timelines and task lists.",
@@ -334,7 +339,9 @@ export const nightAtTheSavoyProject = {
       "Night at the Savoy was the first event I had organised for Swing Out Central / Gin Mill Swing - a Swing Dance school based in Auckland, New Zealand",
       "The event itself brought in around 200 dancers and spectators.",
       "It featured a selection of Lindy Hop performances, fun competitions, social dancing and a talk about the history of Lindy Hop from one of the founding members of the New Zealand's Lindy Hop scene"],
-  link: "https://www.facebook.com/events/220801418420563",
+  links: [
+    { url: "https://www.facebook.com/events/220801418420563", text: 'See event page' }
+  ],
   technologies: ["Event Coordination", "Social Media"],
   keyFeatures: [
     "Planned event objectives, timelines and task lists.",
