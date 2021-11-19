@@ -4,6 +4,7 @@ This is the intended replacement for my current site at www.garyunyoung.com.
 
 ### Key Features:
 
+- Implemented with a focus on accessibliy.
 - Built using mobile first/responsive design.
 - Implemented with BEM.
 
