@@ -45,4 +45,4 @@ Checklist: https://www.a11yproject.com/checklist/
 
 #### Optimisation
 
-- [ ] Optimise images - move to Cloudinary
+- [x] Optimise images - move to Cloudinary

@@ -67,9 +67,9 @@ export default function ProjectPage(props) {
         {
           props.imageSets ?
             <React.Fragment>
-              {props.imageSets.map((imageSet) => {
+              {props.imageSets.map((imageSet, index) => {
                 return (
-                  <div className={`project__image-set`}>
+                  <div key={index} className={`project__image-set`}>
                     {
                       imageSet.map((image, index) => {
                         return (
@@ -89,10 +89,10 @@ export default function ProjectPage(props) {
         <div className='project__cta-links'>
           {
             props.links !== "" ?
-              props.links.map((link) => {
-                console.log(link)
+              props.links.map((link, index) => {
                 return (
                   <a
+                    key={index}
                     className="project__link"
                     href={link.url} rel="noopener noreferrer"
                     target="_blank"

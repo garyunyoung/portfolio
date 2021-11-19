@@ -1,34 +1,4 @@
-import stitchedHomepage from "./images/stitched/homepage-desktop.png";
-
-import stitchedHomesMobile from "./images/stitched/homes-mobile.png";
-import stitchedHomesTablet from "./images/stitched/homes-tablet.png";
-import stitchedHomesDesktop from "./images/stitched/homes-desktop.png";
-
-import stitchedCurtainsMobile from "./images/stitched/curtains-mobile.png";
-import stitchedCurtainsTablet from "./images/stitched/curtains-tablet.png";
-import stitchedCurtainsDesktop from "./images/stitched/curtains-desktop.png";
-
-import stitchedFabricPageMobile from "./images/stitched/fabric-page-mobile.png";
-import stitchedFabricPageTablet from "./images/stitched/fabric-page-tablet.png";
-import stitchedFabricPageDesktop from "./images/stitched/fabric-page-desktop.png";
-
-import stitchedARHomepage from "./images/stitchedAR/homepage.png";
-import stitchedARARMeasure from "./images/stitchedAR/ar-measure.png"
-import stitchedARARCurtain from "./images/stitchedAR/ar-curtain.png"
-import stitchedARConfirmMeasurements from "./images/stitchedAR/confirm-measurements.png"
-import stitchedARCheckout from "./images/stitchedAR/checkout.png"
-
-import theBethsHomepageDesktop from "./images/the-beths/homepage-desktop.png";
-import theBethsHomepageMobile from "./images/the-beths/homepage-mobile.png"
-import theBethsWatchMobile from "./images/the-beths/watch-mobile.png"
-import theBethsMerchMobile from "./images/the-beths/merch-mobile.png"
-import theBethsContactMobile from "./images/the-beths/contact-mobile.png"
-
-import waldourHomepage from "./images/waldour/homepage-desktop.png";
-
-import sploreBanner from "./images/pr/splore-2018.jpg";
-import sailCityJumpBanner from "./images/pr/sail-city-jump.jpg";
-import nightAtTheSavoyBanner from "./images/pr/night-at-the-savoy.jpg";
+import * as Image from "./utilities/Cloudinary";
 
 export const stitchedProject = {
   title: "Stitched",
@@ -38,57 +8,57 @@ export const stitchedProject = {
   jobType: "Front-end Developer",
   jobYear: "2019 - 2021",
   github: "n/a",
-  previewImage: { src: stitchedHomepage, alt: "Stitched Home Page" },
+  previewImage: { src: Image.stitchedHomepage, alt: "Stitched Home Page" },
   excerpt:
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   imageSets: [
     [
       {
-        src: stitchedFabricPageDesktop,
+        src: Image.stitchedFabricPageDesktop,
         modifier: "desktop",
         alt: ""
       },
       {
-        src: stitchedFabricPageTablet,
+        src: Image.stitchedFabricPageTablet,
         modifier: "tablet",
         alt: ""
       },
       {
-        src: stitchedFabricPageMobile,
+        src: Image.stitchedFabricPageMobile,
         modifier: "mobile",
         alt: ""
       }
     ],
     [
       {
-        src: stitchedCurtainsDesktop,
+        src: Image.stitchedCurtainsDesktop,
         modifier: "desktop",
         alt: ""
       },
       {
-        src: stitchedCurtainsTablet,
+        src: Image.stitchedCurtainsTablet,
         modifier: "tablet",
         alt: ""
       },
       {
-        src: stitchedCurtainsMobile,
+        src: Image.stitchedCurtainsMobile,
         modifier: "mobile",
         alt: ""
       }
     ],
     [
       {
-        src: stitchedHomesDesktop,
+        src: Image.stitchedHomesDesktop,
         modifier: "desktop",
         alt: ""
       },
       {
-        src: stitchedHomesTablet,
+        src: Image.stitchedHomesTablet,
         modifier: "tablet",
         alt: ""
       },
       {
-        src: stitchedHomesMobile,
+        src: Image.stitchedHomesMobile,
         modifier: "mobile",
         alt: ""
       }
@@ -127,23 +97,23 @@ export const stitchedARProject = {
   jobType: "Front-end Developer",
   jobYear: "2020",
   github: "n/a",
-  previewImage: { src: stitchedARHomepage, alt: "Stitched AR Home Page" },
+  previewImage: { src: Image.stitchedARHomepage, alt: "Stitched AR Home Page" },
   excerpt: "Stitched AR is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
   mobileImages: [
     {
-      src: stitchedARARMeasure,
+      src: Image.stitchedARARMeasure,
       alt: ""
     },
     {
-      src: stitchedARARCurtain,
+      src: Image.stitchedARARCurtain,
       alt: ""
     },
     {
-      src: stitchedARConfirmMeasurements,
+      src: Image.stitchedARConfirmMeasurements,
       alt: ""
     },
     {
-      src: stitchedARCheckout,
+      src: Image.stitchedARCheckout,
       alt: ""
     }
   ],
@@ -178,25 +148,25 @@ export const bethsProject = {
   jobType: "Freelance",
   jobYear: "2019",
   github: "https://github.com/garyunyoung",
-  previewImage: { src: theBethsHomepageDesktop, alt: "The Beths Home Page" },
+  previewImage: { src: Image.theBethsHomepageDesktop, alt: "The Beths Home Page" },
   excerpt:
     "The Beths are an award-winning indie pop band based in Auckland, New Zealand.",
-  images: [{ src: theBethsHomepageDesktop, alt: "The Beths Home Page" }],
+  images: [{ src: Image.theBethsHomepageDesktop, alt: "The Beths Home Page" }],
   mobileImages: [
     {
-      src: theBethsHomepageMobile,
+      src: Image.theBethsHomepageMobile,
       alt: ""
     },
     {
-      src: theBethsWatchMobile,
+      src: Image.theBethsWatchMobile,
       alt: ""
     },
     {
-      src: theBethsMerchMobile,
+      src: Image.theBethsMerchMobile,
       alt: ""
     },
     {
-      src: theBethsContactMobile,
+      src: Image.theBethsContactMobile,
       alt: ""
     }
   ],
@@ -228,10 +198,10 @@ export const waldourProject = {
   jobType: "Freelance",
   jobYear: "2019",
   github: "https://github.com/garyunyoung",
-  previewImage: { src: waldourHomepage, alt: "Waldour Studio Home Page" },
+  previewImage: { src: Image.waldourHomepage, alt: "Waldour Studio Home Page" },
   excerpt:
     "Wardour Studios is a podcast recording studio and production compnay based in Central London.",
-  images: [{ src: waldourHomepage, alt: "Waldour Studio Home Page" }],
+  images: [{ src: Image.waldourHomepage, alt: "Waldour Studio Home Page" }],
   companyDescription:
     "Wardour Studios specialises in podcast production and voiceover recording in a comfortable, creative and professional environment.",
   info:
@@ -254,10 +224,10 @@ export const sploreProject = {
   jobType: "Intern",
   jobYear: "2018",
   github: "n/a",
-  previewImage: { src: sploreBanner, alt: "splore 2018 festival banner" },
+  previewImage: { src: Image.sploreBanner, alt: "splore 2018 festival banner" },
   excerpt:
     "Splore is a boutique music and arts festival situated on the shores of Tapapakanga Park.",
-  images: [{ src: sploreBanner, alt: "splore 2018 festival banner" }],
+  images: [{ src: Image.sploreBanner, alt: "splore 2018 festival banner" }],
   companyDescription:
     "Situated in a beguiling bay on the shores of Tapapakanga Park, Splore is a boutique music and arts festival like no other. An entertainment extravaganza, an unforgettable dress up party, three nights where people are invited to embrace the theme and join the mindful tribe of party animals! ",
   info:
@@ -285,13 +255,13 @@ export const sailCityJumpProject = {
   jobYear: "2017",
   github: "n/a",
   previewImage: {
-    src: sailCityJumpBanner,
+    src: Image.sailCityJumpBanner,
     alt: "sail city jump 2017 festival banner"
   },
   excerpt:
     "Sail City Jump is a multi-day dance event featuring Lindy Hop, Balboa and Solo Jazz workshops and dance socials.",
   images: [
-    { src: sailCityJumpBanner, alt: "sail city jump 2017 festival banner" }
+    { src: Image.sailCityJumpBanner, alt: "sail city jump 2017 festival banner" }
   ],
   companyDescription:
     "Sail City Jump was the first Swing Dance Festival held in Auckland after a two year hiatus. 2017's edition featured two days of Lindy Hop, Balboa and Solo Jazz workshops for beginner to advance level dancers.",
@@ -321,14 +291,14 @@ export const nightAtTheSavoyProject = {
   jobYear: "2017",
   github: "n/a",
   previewImage: {
-    src: nightAtTheSavoyBanner,
+    src: Image.nightAtTheSavoyBanner,
     alt: "Night at the Savoy 2017 festival banner"
   },
   excerpt:
     "Night at the Savoy was a dance event organised for Swing Out Central / Gin Mill Swing celebrating World Lindy Hop Day.",
   images: [
     {
-      src: nightAtTheSavoyBanner,
+      src: Image.nightAtTheSavoyBanner,
       alt: "Night at the Savoy 2017 festival banner"
     }
   ],
