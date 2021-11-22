@@ -179,7 +179,9 @@
   }
 
   @include element('nav-socials') {
-    display: block;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
 
     @include sm-desktop {
       display: none;
@@ -187,8 +189,6 @@
 
     @include state('visible') {
       display: flex;
-      flex-flow: column;
-      align-items: flex-end;
     }
   }
 
