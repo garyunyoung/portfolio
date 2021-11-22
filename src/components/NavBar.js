@@ -6,6 +6,7 @@ import '../stylesheets/NavBar.scss';
 
 export default function NavBar(props) {
   const [isOpen, setIsOpen] = useState(false)
+  const [isSocialsOpen, setIsSocialsOpen] = useState(false)
 
   function toggleNav() {
     setIsOpen(prevState => !prevState)
@@ -13,6 +14,10 @@ export default function NavBar(props) {
 
   function closeNav() {
     setIsOpen(false)
+  }
+
+  function toggleSocials() {
+    setIsSocialsOpen(prevState => !prevState)
   }
 
   return (
@@ -30,7 +35,10 @@ export default function NavBar(props) {
         >
           {isOpen ? 'Close' : 'Menu'}
         </button>
-        <NavMenu closeNav={() => closeNav()} />
+        <NavMenu
+          isSocialsOpen={isSocialsOpen}
+          toggleSocials={() => toggleSocials()}
+          closeNav={() => closeNav()} />
       </div>
     </header>
   );
@@ -52,41 +60,53 @@ function NavMenu(props) {
             </a>
           </li>
         </span>
-        <span className='site-menu__nav-socials'>
-          <li>
-            <a
-              className='site-menu__nav-item-link-social'
-              href='https://github.com/garyunyoung'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <p className="site-menu__nav-item-text-social">Github</p>
-              <img src={githubLogo} alt='' />
-            </a>
+        <span className='site-menu__nav-socials-container'>
+          <li
+            onClick={props.toggleSocials}
+          >
+            <button className={`
+              site-menu__nav-item-link 
+              site-menu__nav-item-link--socials 
+              ${props.isSocialsOpen ? 'is-selected is-active' : ''}
+            `}>
+              Code
+            </button>
           </li>
-          <li>
-            <a
-              className='site-menu__nav-item-link-social'
-              href='https://exercism.org/profiles/garyunyoung'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <p className="site-menu__nav-item-text-social">Exercism</p>
-              <img src={exercismLogo} alt='' />
-            </a>
-          </li>
-          <li>
-            <a
-              className='site-menu__nav-item-link-social'
-              href='https://www.codewars.com/users/garryunn'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <p className="site-menu__nav-item-text-social">Codewars</p>
-              <img src={codewarsLogo} alt='' />
-            </a>
-          </li>
-
+          <span className={`site-menu__nav-socials ${props.isSocialsOpen ? 'is-visible' : ''}`}>
+            <li>
+              <a
+                className='site-menu__nav-item-link-social'
+                href='https://github.com/garyunyoung'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <p className="site-menu__nav-item-text-social">Github</p>
+                <img src={githubLogo} alt='' />
+              </a>
+            </li>
+            <li>
+              <a
+                className='site-menu__nav-item-link-social'
+                href='https://exercism.org/profiles/garyunyoung'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <p className="site-menu__nav-item-text-social">Exercism</p>
+                <img src={exercismLogo} alt='' />
+              </a>
+            </li>
+            <li>
+              <a
+                className='site-menu__nav-item-link-social'
+                href='https://www.codewars.com/users/garryunn'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <p className="site-menu__nav-item-text-social">Codewars</p>
+                <img src={codewarsLogo} alt='' />
+              </a>
+            </li>
+          </span>
         </span>
       </ul>
     </nav>

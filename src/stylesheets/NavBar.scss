@@ -137,7 +137,7 @@
     }
   }
 
-  @include element('nav-socials') {
+  @include element('nav-socials-container') {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -178,8 +178,48 @@
     align-items: center;
   }
 
+  @include element('nav-socials') {
+    display: block;
+
+    @include sm-desktop {
+      display: none;
+    }
+
+    @include state('visible') {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end;
+    }
+  }
+
   @include element('nav-item-link') {
     @include cta-link-button;
     padding-right: 16px;
+
+    @include modifier('socials') {
+      display: none;
+
+      @include sm-desktop {
+        display: block;
+        margin-bottom: 16px;
+
+        &:before {
+          display: inline-block;
+          @include set-size(8px, 8px);
+          content: '';
+          border-top: 2px solid $black;
+          border-right: 2px solid $black;
+          transform: rotate(45deg);
+
+          margin-right: 16px;
+        }
+      }
+    }
+
+    @include state('selected') {
+      &:before {
+        transform: rotate(135deg);
+      }
+    }
   }
 }
