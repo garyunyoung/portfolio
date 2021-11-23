@@ -1,6 +1,8 @@
 ## Portfolio - work in progress
 
-This is the intended replacement for my current site at www.garyunyoung.com.
+Currently viewable at https://portfolio-garyun-young.herokuapp.com/
+
+This is the intended replacement for my current domain www.garyunyoung.com.
 
 ### Key Features:
 
