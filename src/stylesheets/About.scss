@@ -43,9 +43,15 @@
   @include element('text') {
     @include body-font;
 
+    margin-bottom: $spacer-small;
+
     @include tablet {
       padding-right: 64px;
     }
+  }
+
+  @include element('list') {
+    list-style: '- ' inside none;
   }
 
   @include element('links') {

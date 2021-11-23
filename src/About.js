@@ -10,16 +10,16 @@ export default function About() {
           <div className="about__text">
             <p>I'm a front-end developer who is interested in contributing towards high-quality web and mobile experiences for anyone and everyone.</p>
             <br />
-            <p>Principals:</p>
+            <p>Things I like:</p>
             <br />
-            <p>- Human-centered design</p>
-            <p>- Testing and iterating - two-way communication</p>
-            <p>- Writing clear, reusuable, and reliable code</p>
-            <p>- Accessibility (A11Y) advocate</p>
-            <p>- Diversity and inclusivity</p>
-            <p>- Being a 'net-positive' to the world ✌️</p>
-            <br />
-            <br />
+            <ul className="about__list">
+              <li>Human-centered design</li>
+              <li>Testing and iterating - two-way communication</li>
+              <li>Writing clear, reusuable, and reliable code</li>
+              <li>Accessibility (A11Y) advocate</li>
+              <li>Diversity and inclusivity</li>
+              <li>Being a 'net-positive' to the world ✌️</li>
+            </ul>
           </div>
           <div className="about__links">
             <a className="about__link"
