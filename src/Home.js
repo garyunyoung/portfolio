@@ -15,7 +15,7 @@ export default function Home() {
           <div className="home__content">
             <p className="home__text">
               Hi! I'm Garyun. <br />
-              A front-end developer interested in building innovative and inclusive user experiences.
+              A front-end developer interested in building innovative and inclusive web and mobile experiences.
             </p>
             <p className="home__text">Currently in Auckland, NZ</p>
             <a className="home__projects-cta" href="/#projects">

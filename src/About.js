@@ -8,7 +8,7 @@ export default function About() {
         <div className="about__text-container">
           <p className="about__header">Nice to meet you!</p>
           <div className="about__text">
-            <p>I'm a front-end developer who is interested in contributing towards quality user experiences for anyone and everyone.</p>
+            <p>I'm a front-end developer who is interested in contributing towards high-quality web and mobile experiences for anyone and everyone.</p>
             <br />
             <p>Principals:</p>
             <br />
@@ -23,7 +23,7 @@ export default function About() {
           </div>
           <div className="about__links">
             <a className="about__link"
-              href="https://res.cloudinary.com/garyou/image/upload/v1637034607/portfolio/Garyun_Young_Developer_2021.pdf"
+              href="https://res.cloudinary.com/garyou/image/upload/v1637624735/portfolio/Garyun_Young_Developer_CV_2021.pdf"
               target='_blank'
               rel='noopener noreferrer'
             >See resume</a>
