@@ -17,7 +17,7 @@ export default function Home() {
               Hi! I'm <u>Garyun</u>.
               <br />
               <br />
-              A front-end developer passionate about building <u>inclusive</u> and <u>innovative</u> web and mobile experiences.
+              A front-end developer passionate about building <u>inclusive</u> and <u>innovative</u> digital experiences.
             </p>
             <p className="home__text">Currently in Auckland, NZ</p>
             <a className="home__projects-cta" href="/#projects">

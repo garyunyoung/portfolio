@@ -14,7 +14,7 @@ export default function About() {
             <br />
             <ul className="about__list">
               <li>Human-centered design</li>
-              <li>Testing and iterating - two-way communication</li>
+              <li>Testing and iterating - two-way feedback</li>
               <li>Writing clear, reusuable, and reliable code</li>
               <li>Accessibility (A11Y) advocate</li>
               <li>Diversity and inclusivity</li>
