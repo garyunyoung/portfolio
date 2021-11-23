@@ -17,7 +17,7 @@ export default function About() {
               <li>Testing and iterating - two-way communication</li>
               <li>Writing clear, reusuable, and reliable code</li>
               <li>Accessibility (A11Y) advocate</li>
-              {/* <li>Diversity and inclusivity</li> */}
+              <li>Diversity and inclusivity</li>
               <li>Being a 'net-positive' to the world ✌️</li>
             </ul>
           </div>
