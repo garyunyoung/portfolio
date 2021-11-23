@@ -13,9 +13,10 @@ export default function About() {
             <p>Principals:</p>
             <br />
             <p>- Human-centered design</p>
-            <p>- Feedback loops</p>
-            <p>- Writing clear, reusuable, and maintainable code</p>
+            <p>- Testing and iterating - two-way communication</p>
+            <p>- Writing clear, reusuable, and reliable code</p>
             <p>- Accessibility (A11Y) advocate</p>
+            <p>- Diversity and inclusivity</p>
             <p>- Being a 'net-positive' to the world ✌️</p>
             <br />
             <br />
