@@ -43,7 +43,7 @@
   @include element('text') {
     @include body-font;
 
-    margin-bottom: $spacer-small;
+    margin-bottom: $spacer-large;
 
     @include tablet {
       padding-right: 64px;
