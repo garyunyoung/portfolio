@@ -14,7 +14,6 @@ Viewable at: https://www.garyunyoung.com
 #### General
 
 - [ ] Investigate ANAME record/create a redirect
-- [ ] Link up-to-date resume with working links
 - [ ] Check site meta data is correct
 - [ ] Change socials logos to pseudo elements
 - [ ] Fix nav height on tablet and small desktop

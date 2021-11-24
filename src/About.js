@@ -13,7 +13,7 @@ export default function About() {
             <p>Things I like:</p>
             <br />
             <ul className="about__list">
-              <li>Human-centered design</li>
+              <li>User-friendly design</li>
               <li>Testing and iterating - two-way feedback</li>
               <li>Writing clear, reusuable, and reliable code</li>
               <li>Accessibility (A11Y) advocate</li>
@@ -23,7 +23,7 @@ export default function About() {
           </div>
           <div className="about__links">
             <a className="about__link"
-              href="https://res.cloudinary.com/garyou/image/upload/v1637624735/portfolio/Garyun_Young_Developer_CV_2021.pdf"
+              href="https://res.cloudinary.com/garyou/image/upload/v1637715050/portfolio/GaryunYoung_CV_Developer_2021.pdf"
               target='_blank'
               rel='noopener noreferrer'
             >See resume</a>
