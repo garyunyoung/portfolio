@@ -68,8 +68,7 @@ export const stitchedProject = {
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
   info:
     [
-      "In 2019 I joined Stitched, interning as a front-end developer which then lead to a full-time contract.",
-      "I was brought on to help with their site redesign but then took on other front-end features.",
+      "I joined Stitched in 2019, where I started as a front-end intern helping with a site redesign, to becoming a valuable member of their development team tackling most of their front-end features.",
       "Stitched is based in London, United Kingdom."
     ],
   links: [
