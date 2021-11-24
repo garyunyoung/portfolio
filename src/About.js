@@ -13,7 +13,7 @@ export default function About() {
             <p>Things I like:</p>
             <br />
             <ul className="about__list">
-              <li>User-friendly design</li>
+              <li>User-centered design</li>
               <li>Testing and iterating - two-way feedback</li>
               <li>Writing clear, reusuable, and reliable code</li>
               <li>Accessibility (A11Y) advocate</li>
