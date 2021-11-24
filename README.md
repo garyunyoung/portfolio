@@ -1,8 +1,5 @@
-## Portfolio - work in progress
-
-Currently viewable at https://portfolio-garyun-young.herokuapp.com/
-
-This is the intended replacement for my current domain www.garyunyoung.com.
+## Portfolio
+Viewable at: www.garyunyoung.com
 
 ### Key Features:
 
@@ -16,6 +13,7 @@ This is the intended replacement for my current domain www.garyunyoung.com.
 
 #### General
 
+- [ ] Investigate ANAME record/create a redirect
 - [ ] Link up-to-date resume with working links
 - [ ] Check site meta data is correct
 - [ ] Change socials logos to pseudo elements
