@@ -233,6 +233,42 @@ export const waldourProject = {
   ]
 };
 
+export const portfolioProject = {
+  title: "Portfolio",
+  modifier: "portfolio",
+  path: "portfolio",
+  category: "web",
+  jobType: "Project",
+  jobYear: "2021",
+  github: "https://github.com/garyunyoung",
+  previewImage: { src: Image.portfolioHomepageDesktop, alt: "Portfolio Home Page" },
+  excerpt:
+    "A bit meta, but I guess this portfolio counts as a project (an ongoing work-in-progress).",
+  imageSets: [],
+  companyDescription:
+    "",
+  info:
+    ["Did a site redesign with a focus on accessiblity.", "Things that changed: font size, capitlisation, focus states, white-space, colour-contrast, clear language"],
+  links: [{ url: "https://github.com/garyunyoung/portfolio", text: "See code" }],
+  technologies: ["React", "JavaScript", "SCSS", "HTML"],
+  keyFeatures: [
+    "Built using React, SCSS and Git. Deployed on Heroku.",
+    "Single page app using React Router.",
+    "Redesigned UI/UX with accessibly in mind.",
+    "Used A11y project's checklist as a guideline.",
+    "Used axe DevTools for accessibility.",
+    "Used Chrome's Lighthouse tool for performance.",
+    "Mobile first and responsive.",
+    "Technical examples here/below",
+    "Reusable code",
+    "Components - modular",
+    "Linters",
+    "BEM used with SCSS",
+    "Optimised images using links from Cloudinary",
+    "Add before and after pictures"
+  ]
+};
+
 export const sploreProject = {
   title: "Splore",
   modifier: "splore",

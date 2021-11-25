@@ -44,6 +44,11 @@ export const waldourWhatWeDoDesktop = `${cloudinary + waldour}what-we-do-desktop
 export const waldourWhatWeDoTablet = `${cloudinary + waldour}what-we-do-tablet.png`;
 export const waldourWhatWeDoMobile = `${cloudinary + waldour}what-we-do-mobile.png`;
 
+// Portfolio
+const portfolio = "portfolio/"
+
+export const portfolioHomepageDesktop = `${cloudinary + portfolio}homepage-desktop.png`;
+
 // PR
 const pr = "pr/"
 export const sploreBanner = `${cloudinary + pr}splore-2018.png`;

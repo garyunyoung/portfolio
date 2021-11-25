@@ -4,6 +4,7 @@ import {
   stitchedARProject,
   bethsProject,
   waldourProject,
+  portfolioProject,
   sploreProject,
   sailCityJumpProject,
   nightAtTheSavoyProject
@@ -22,6 +23,7 @@ export default class Project extends React.Component {
         stitchedARProject,
         bethsProject,
         waldourProject,
+        portfolioProject,
         sploreProject,
         sailCityJumpProject,
         nightAtTheSavoyProject
@@ -162,6 +164,23 @@ export const WaldourStudios = () => (
       keyFeatures={waldourProject.keyFeatures}
       jobType={waldourProject.jobType}
       jobYear={waldourProject.jobYear}
+    />
+  </React.Fragment>
+);
+
+export const Portfolio = () => (
+  <React.Fragment>
+    <NavBar link="/#projects" />
+    <ProjectPage
+      title={portfolioProject.title}
+      imageSets={portfolioProject.imageSets}
+      companyDescription={portfolioProject.companyDescription}
+      info={portfolioProject.info}
+      links={portfolioProject.links}
+      technologies={portfolioProject.technologies}
+      keyFeatures={portfolioProject.keyFeatures}
+      jobType={portfolioProject.jobType}
+      jobYear={portfolioProject.jobYear}
     />
   </React.Fragment>
 );

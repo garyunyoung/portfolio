@@ -5,6 +5,7 @@ import {
   StitchedAR,
   TheBeths,
   WaldourStudios,
+  Portfolio,
   Splore,
   SailCityJump,
   NightAtTheSavoy
@@ -33,6 +34,10 @@ export default class App extends Component {
           <Route
             path={`/projects/waldour-studios`}
             component={WaldourStudios}
+          />
+          <Route
+            path={`/projects/portfolio`}
+            component={Portfolio}
           />
           <Route
             path={`/projects/splore-2018`}
