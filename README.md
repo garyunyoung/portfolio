@@ -4,7 +4,7 @@ Viewable at: https://www.garyunyoung.com
 ### Key Features:
 
 - Implemented with a focus on accessibliy.
-- More info here: https://www.garyunyoung.com/projects/portfolio
+- See key features here: https://www.garyunyoung.com/projects/portfolio
 
 **Created using:** React, React Router, HTML, and SCSS.
 
