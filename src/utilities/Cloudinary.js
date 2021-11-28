@@ -47,7 +47,7 @@ export const waldourWhatWeDoMobile = `${cloudinary + waldour}what-we-do-mobile.p
 // Portfolio
 const portfolio = "portfolio/"
 
-export const portfolioHomepageDesktop = `${cloudinary + portfolio}homepage-desktop.png`;
+export const portfolioHomepageDesktop = `https://res.cloudinary.com/garyou/image/upload/v1638136170/portfolio/portfolio/homepage-desktop.png`;
 
 // PR
 const pr = "pr/"
