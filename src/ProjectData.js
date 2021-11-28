@@ -80,7 +80,7 @@ export const stitchedProject = {
     "Built the front-end using Elixir / Phoenix LiveView, JS / React, SCSS and HTML/embedded Elixir along with two senior developers.",
     "Experience with Kanban methodology, CI / CD (Google Cloud & Docker then Kubernetes)",
     "Exposed to Ruby / Ruby on Rails and Redux.",
-    "Exerience with unit and integration testing.", 
+    "Exerience with unit and integration testing.",
     "Used Git for version control.",
     "Pair programmed with senior back-end and full-stack developers.",
     "Worked closely with the UX/UI designer to implement designs created on Figma, as well as collaborating to find ways to improve user experience.",
@@ -182,11 +182,12 @@ export const bethsProject = {
   keyFeatures: [
     "Designed UI/UX.",
     "Built using NextJS, SCSS and Git. Deployed on Heroku.",
+    "Uses Block Element Modifier (BEM) naming convention.",
     "Integrated Google Analytics using Google Tag Manager.",
-    "Added a GDPR banner that enables/disables analytics.",
     "Integrated Mailchimp and Songkick widgets.",
+    "Added a GDPR banner that enables/disables analytics.",
     "Ongoing maintenance and design based on requests and feeback from band and management.",
-    "Mobile first and responsive."
+    "Mobile first and responsive design."
   ]
 };
 
