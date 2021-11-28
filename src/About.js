@@ -20,7 +20,7 @@ export default function About() {
 
         <div className="about__links">
           <a className="about__link"
-            href="https://res.cloudinary.com/garyou/image/upload/v1638089966/portfolio/Garyun-Young-CV-FrontEnd-Developer-2021.pdf"
+            href="https://res.cloudinary.com/garyou/image/upload/v1638130760/portfolio/Garyun-Young-Front-End-Developer-CV-2021.pdf"
             target='_blank'
             rel='noopener noreferrer'
           >See resume</a>
