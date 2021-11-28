@@ -23,14 +23,6 @@
     }
   }
 
-  @include element('text-container') {
-    padding: 24px;
-
-    @include sm-desktop {
-      padding: 0;
-    }
-  }
-
   @include element('header') {
     @include subheading-font;
     margin: 32px 0 24px;
@@ -40,9 +32,12 @@
     }
   }
 
-  @include element('text') {
+  @include element('description') {
     @include body-font;
+    margin-bottom: $spacer-small;
+  }
 
+  @include element('personality-list-container') {
     margin-bottom: $spacer-large;
 
     @include tablet {
@@ -50,7 +45,8 @@
     }
   }
 
-  @include element('list') {
+  @include element('personality-list') {
+    @include body-font;
     list-style: '- ' inside none;
   }
 
@@ -58,10 +54,17 @@
     display: flex;
     flex-flow: column;
 
+    margin-bottom: $spacer-large;
+
     @include tablet {
       flex-flow: row;
       justify-content: center;
     }
+  }
+
+  @include element('list-header') {
+    @include body-font;
+    margin-bottom: 24px;
   }
 
   @include element('link') {
@@ -79,5 +82,32 @@
         margin: 0 16px 0;
       }
     }
+  }
+
+  @include element('resource-list') {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  @include element('resource-list-item') {
+    @include body-font;
+    display: flex;
+    align-items: center;
+
+    &:after {
+      content: '/';
+      display: inline-flex;
+      margin: 0 16px 0 4px;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  @include element('resource-list-item-link') {
+    @include cta-link;
   }
 }
