@@ -4,10 +4,9 @@ Viewable at: https://www.garyunyoung.com
 ### Key Features:
 
 - Implemented with a focus on accessibliy.
-- Built using mobile first/responsive design.
-- Implemented with BEM.
+- More info here: https://www.garyunyoung.com/projects/portfolio
 
-**Created using:** React, React Router and SCSS.
+**Created using:** React, React Router, HTML, and SCSS.
 
 ### Task list:
 

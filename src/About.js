@@ -17,7 +17,7 @@ export default function About() {
             <li>Being a 'net-positive' to the world ✌️</li>
           </ul>
         </div>
-        
+
         <div className="about__links">
           <a className="about__link"
             href="https://res.cloudinary.com/garyou/image/upload/v1637715764/portfolio/Garyun_Young_Developer_CV_2021.pdf"

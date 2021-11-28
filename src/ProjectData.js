@@ -243,29 +243,27 @@ export const portfolioProject = {
   github: "https://github.com/garyunyoung",
   previewImage: { src: Image.portfolioHomepageDesktop, alt: "Portfolio Home Page" },
   excerpt:
-    "A bit meta, but I guess this portfolio counts as a project (an ongoing work-in-progress).",
+    "A bit meta, but I'm going to put my portfolio here as a project (an ongoing project).",
   imageSets: [],
   companyDescription:
     "",
   info:
-    ["Did a site redesign with a focus on accessiblity.", "Things that changed: font size, capitlisation, focus states, white-space, colour-contrast, clear language"],
+    [
+      "Having not updated this site in a while I noticed that the usability for both mobile and desktop could be improved.",
+      "I plan on continuing to work on this site as a way to practise new and old skills."],
   links: [{ url: "https://github.com/garyunyoung/portfolio", text: "See code" }],
   technologies: ["React", "JavaScript", "SCSS", "HTML"],
   keyFeatures: [
-    "Built using React, SCSS and Git. Deployed on Heroku.",
-    "Single page app using React Router.",
-    "Redesigned UI/UX with accessibly in mind.",
-    "Used A11y project's checklist as a guideline.",
-    "Used axe DevTools for accessibility.",
-    "Used Chrome's Lighthouse tool for performance.",
-    "Mobile first and responsive.",
-    "Technical examples here/below",
-    "Reusable code",
-    "Components - modular",
-    "Linters",
-    "BEM used with SCSS",
-    "Optimised images using links from Cloudinary",
-    "Add before and after pictures"
+    "Built using React, HTML, and SCSS. Deployed on Heroku.",
+    "Designed UI/UX with accessibly in mind.",
+    "Single Page Application using React Router.",
+    "Uses Block Element Modifier (BEM) naming convention.",
+    "Reusable and modular components.",
+    "Mobile first and responsive design.",
+    "Optimised images using Cloudinary.",
+    "Uses The A11Y Project's checklist as a guideline.",
+    "Tools used: Axe DevTools for accessibility and Chrome's Lighthouse for performance.",
+    "Key design features: readable font size, removed unnecessary capitalisation, styled focus states, font colour-contrast, uses plain language."
   ]
 };
 
