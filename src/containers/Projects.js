@@ -11,7 +11,7 @@ import {
 } from "../data/ProjectData";
 import Navigation from "./Navigation";
 import ProjectPage from "./ProjectPage";
-import ProjectSection from "../components/ProjectSection";
+import ProjectItems from "../components/ProjectItems";
 import "../stylesheets/Projects.scss";
 
 export default class Project extends React.Component {
@@ -50,7 +50,7 @@ export default class Project extends React.Component {
             />
           </div>
           <ul className="projects__project-items">
-            <ProjectSection
+            <ProjectItems
               list={this.state.projects.filter(
                 project =>
                   project.category === this.state.filter

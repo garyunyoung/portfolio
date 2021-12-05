@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../stylesheets/Projects.scss";
 
-export default function ProjectSection(props) {
+export default function ProjectItems(props) {
   return (
     <React.Fragment>
       {props.list.map((project, index) => (
