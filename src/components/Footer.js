@@ -1,11 +1,8 @@
 import React from "react";
+import scrollToTop from "../utilities/scrollToTop";
 import "../styles/Footer.scss";
 
-export default function Footer(props) {
-  function scrollToTop() {
-    props.window.scrollTo(0, 0);
-  }
-
+export default function Footer() {
   return (
     <section id="footer" className='footer'>
       <div className="footer__content">

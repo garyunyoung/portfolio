@@ -1,11 +1,11 @@
-import React from "react";
-import ScrollToTopOnMount from "../utilities/ScrollToTop";
+import React, { useEffect } from "react";
+import scrollToTop from "../utilities/scrollToTop";
 import "../styles/ProjectPage.scss";
 
 export default function ProjectPage(props) {
+  useEffect(() => scrollToTop())
   return (
     <section className="project">
-      <ScrollToTopOnMount />
       <div className="project__content">
         <div className="project__summary-container">
           <h2 className="project__title">{props.title}</h2>
