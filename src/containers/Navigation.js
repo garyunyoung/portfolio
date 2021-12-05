@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import githubLogo from '../images/logos/github.svg';
 import codewarsLogo from '../images/logos/codewars.svg';
 import exercismLogo from '../images/logos/exercism.svg';
-import '../stylesheets/NavBar.scss';
+import '../stylesheets/Navigation.scss';
 
-export default function NavBar(props) {
+export default function Navigation(props) {
   const [isOpen, setIsOpen] = useState(false)
   const [isSocialsOpen, setIsSocialsOpen] = useState(false)
 

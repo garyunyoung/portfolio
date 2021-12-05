@@ -1,4 +1,4 @@
-import * as Image from "./utilities/Cloudinary";
+import * as Image from "../utilities/Cloudinary";
 
 export const stitchedProject = {
   title: "Stitched",

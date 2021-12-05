@@ -1,15 +1,15 @@
 import React from "react";
-import NavBar from "./components/NavBar";
+import Navigation from "./Navigation";
 import Project from "./Projects";
 import About from "./About";
-import ElementInView from "./utilities/ElementInView";
+import ElementInView from "../utilities/ElementInView";
 
-import "./stylesheets/Home.scss";
+import "../stylesheets/Home.scss";
 
 export default function Home() {
   return (
     <React.Fragment>
-      <NavBar link="/#" />
+      <Navigation link="/#" />
       <main>
         <section className="home">
           <div className="home__content">

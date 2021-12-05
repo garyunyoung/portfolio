@@ -1,6 +1,6 @@
 import React from "react";
-import ScrollToTopOnMount from "./utilities/ScrollToTop";
-import "./stylesheets/ProjectPage.scss";
+import ScrollToTopOnMount from "../utilities/ScrollToTop";
+import "../stylesheets/ProjectPage.scss";
 
 export default function ProjectPage(props) {
   return (
@@ -94,7 +94,7 @@ export default function ProjectPage(props) {
                   <a
                     key={index}
                     className="project__link"
-                    href={link.url} 
+                    href={link.url}
                     rel="noopener noreferrer"
                     target="_blank"
                   >

@@ -1,5 +1,5 @@
 import React from "react";
-import "./stylesheets/Footer.scss";
+import "../stylesheets/Footer.scss";
 
 export default function Footer(props) {
   function scrollToTop() {
