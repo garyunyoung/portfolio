@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import githubLogo from '../../assets/logos/github.svg';
-import codewarsLogo from '../../assets/logos/codewars.svg';
-import exercismLogo from '../../assets/logos/exercism.svg';
+import githubLogo from '../assets/logos/github.svg';
+import codewarsLogo from '../assets/logos/codewars.svg';
+import exercismLogo from '../assets/logos/exercism.svg';
 
-import './Navigation.scss';
+import '../styles/Navigation.scss';
 
 export default function Navigation(props) {
   const [isOpen, setIsOpen] = useState(false)

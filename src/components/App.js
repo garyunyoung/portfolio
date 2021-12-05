@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navigation from "./Navigation/Navigation";
-import Home from "./Home/Home";
-import Footer from "./Footer/Footer";
+import Navigation from "./Navigation";
+import Home from "./Home";
+import Footer from "./Footer";
 import {
   Stitched,
   StitchedAR,
@@ -13,7 +13,7 @@ import {
   Splore,
   SailCityJump,
   NightAtTheSavoy
-} from "./Projects/Projects";
+} from "./Projects";
 
 export default class App extends Component {
   render() {

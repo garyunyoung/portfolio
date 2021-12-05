@@ -8,11 +8,11 @@ import {
   sploreProject,
   sailCityJumpProject,
   nightAtTheSavoyProject
-} from "../../data/projects";
-import Navigation from "../Navigation/Navigation";
-import ProjectPage from "../Project/ProjectPage";
+} from "../data/projects";
+import Navigation from "./Navigation";
+import ProjectPage from "./ProjectPage";
 import ProjectItems from "./ProjectItems";
-import "./Projects.scss";
+import "../styles/Projects.scss";
 
 export default class Project extends React.Component {
   constructor(props) {
