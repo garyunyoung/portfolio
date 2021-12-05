@@ -24,9 +24,7 @@ export default function Navigation(props) {
     setIsSocialsOpen(prevState => !prevState)
   }
 
-  useEffect(() => {
-    elementInView()
-  })
+  useEffect(() => elementInView())
 
   return (
     <header className={`site-header ${isOpen ? 'is-open' : ''}`}>
