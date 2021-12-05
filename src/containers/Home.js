@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "./Navigation";
+
 import Project from "./Projects";
 import About from "./About";
 import ElementInView from "../utilities/ElementInView";
@@ -9,7 +9,6 @@ import "../stylesheets/Home.scss";
 export default function Home() {
   return (
     <React.Fragment>
-      <Navigation link="/#" />
       <main>
         <section className="home">
           <div className="home__content">
@@ -27,8 +26,8 @@ export default function Home() {
         </section>
         <Project />
         <About />
-        <ElementInView />
       </main>
+      <ElementInView />
     </React.Fragment>
   );
 }

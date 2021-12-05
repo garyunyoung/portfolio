@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Navigation from "./Navigation";
+import Home from "./Home";
+import Footer from "./Footer";
 import {
   Stitched,
   StitchedAR,
@@ -10,13 +14,12 @@ import {
   SailCityJump,
   NightAtTheSavoy
 } from "./Projects";
-import Home from "./Home";
-import Footer from "./Footer";
 
 export default class App extends Component {
   render() {
     return (
       <Router>
+        <Navigation link="/#" />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route
@@ -52,7 +55,7 @@ export default class App extends Component {
             component={NightAtTheSavoy}
           />
         </Switch>
-        <Footer window={window}/>
+        <Footer window={window} />
       </Router>
     );
   }

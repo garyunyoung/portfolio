@@ -1,5 +1,4 @@
 import React from "react";
-
 export default class elementInView extends React.Component {
   componentDidMount() {
     const projects = document.querySelector('#projects');
@@ -26,6 +25,7 @@ export default class elementInView extends React.Component {
         aboutEl.classList.remove('is-active')
       }
     })
+
   }
 
   render() {
