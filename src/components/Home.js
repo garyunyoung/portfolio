@@ -2,7 +2,6 @@ import React from "react";
 
 import Project from "./Projects";
 import About from "./About";
-import ElementInView from "../utilities/ElementInView";
 
 import "../styles/Home.scss";
 
@@ -27,7 +26,6 @@ export default function Home() {
         <Project />
         <About />
       </main>
-      <ElementInView />
     </React.Fragment>
   );
 }

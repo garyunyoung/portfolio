@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import githubLogo from '../assets/logos/github.svg';
 import codewarsLogo from '../assets/logos/codewars.svg';
 import exercismLogo from '../assets/logos/exercism.svg';
+
+import elementInView from "../utilities/elementInView";
 
 import '../styles/Navigation.scss';
 
@@ -21,6 +23,10 @@ export default function Navigation(props) {
   function toggleSocials() {
     setIsSocialsOpen(prevState => !prevState)
   }
+
+  useEffect(() => {
+    elementInView()
+  })
 
   return (
     <header className={`site-header ${isOpen ? 'is-open' : ''}`}>
