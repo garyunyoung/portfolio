@@ -1,5 +1,5 @@
 import React from "react";
-export default class elementInView extends React.Component {
+export default class ElementInView extends React.Component {
   componentDidMount() {
     const projects = document.querySelector('#projects');
     const projectsEl = document.querySelector('.site-menu__nav-item-link--projects');
