@@ -1,16 +1,18 @@
-@import './_mixins.scss';
-@import './_variables.scss';
+// @import './_mixins.scss';
+// @import './_variables.scss';
+@import '../../styles/index.scss';
 
 @include block('footer') {
   background-color: $footer-background-colour;
-  
+
   @include element('content') {
     max-width: calc(1150px + (180px * 2) + (32px * 2));
 
     display: flex;
     flex-flow: column;
 
-    padding: 24px $side-padding-mobile 80px $side-padding-mobile;
+    padding: 24px $side-padding-mobile 80px
+      $side-padding-mobile;
     margin: 0 auto;
 
     @include sm-desktop {

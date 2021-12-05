@@ -1,4 +1,7 @@
-@import './mixins.scss';
+// Bemify Documentation: https://franzheidl.github.io/bemify/
+@import 'bemify';
+
+@import './_mixins.scss';
 @import './_variables.scss';
 
 * {

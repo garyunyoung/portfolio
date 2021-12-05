@@ -1,10 +1,10 @@
 import React from "react";
 
-import Project from "./Projects";
-import About from "./About";
-import ElementInView from "../utilities/ElementInView";
+import Project from "../Projects/Projects";
+import About from "../About/About";
+import ElementInView from "../../utilities/ElementInView";
 
-import "../stylesheets/Home.scss";
+import "./Home.scss";
 
 export default function Home() {
   return (

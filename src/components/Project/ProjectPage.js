@@ -1,6 +1,6 @@
 import React from "react";
-import ScrollToTopOnMount from "../utilities/ScrollToTop";
-import "../stylesheets/ProjectPage.scss";
+import ScrollToTopOnMount from "../../utilities/ScrollToTop";
+import "./ProjectPage.scss";
 
 export default function ProjectPage(props) {
   return (

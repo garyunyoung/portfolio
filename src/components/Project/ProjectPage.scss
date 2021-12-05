@@ -1,5 +1,4 @@
-@import './_mixins.scss';
-@import './_variables.scss';
+@import '../../styles/index.scss';
 
 @include block('project') {
   @include element('content') {
@@ -210,7 +209,8 @@
   @include element('cta-links') {
     display: flex;
     flex-flow: column;
-    margin: calc(#{$spacer-large} - 32px) auto $spacer-small auto;
+    margin: calc(#{$spacer-large} - 32px) auto $spacer-small
+      auto;
   }
 
   @include element('link') {

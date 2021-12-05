@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../stylesheets/Projects.scss";
+import "./Projects.scss";
 
 export default function ProjectItems(props) {
   return (

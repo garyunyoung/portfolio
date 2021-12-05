@@ -1,5 +1,4 @@
-@import './_mixins.scss';
-@import './_variables.scss';
+@import '../../styles/index.scss';
 
 @include block('site-header') {
   width: 100%;
@@ -32,7 +31,9 @@
   }
 
   @include element('content') {
-    max-width: calc(#{$max-width-desktop} + (180px * 2) + (32px * 2));
+    max-width: calc(
+      #{$max-width-desktop} + (180px * 2) + (32px * 2)
+    );
 
     display: flex;
     flex-flow: wrap;
@@ -76,7 +77,9 @@
     height: calc(100vh - #{$site-header-height-mobile});
     background-color: $page-background-colour;
 
-    padding-top: calc(#{$site-header-height-mobile} + #{$spacer-large});
+    padding-top: calc(
+      #{$site-header-height-mobile} + #{$spacer-large}
+    );
 
     @include sm-desktop {
       display: block;

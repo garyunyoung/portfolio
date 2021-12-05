@@ -1,11 +1,11 @@
-@import './_mixins.scss';
-@import './_variables.scss';
+@import '../../styles/index.scss';
 
 @include block('about') {
   min-height: 94.5vh;
 
   @include element('content') {
-    padding: $spacer-large $side-padding-mobile 20vh $side-padding-mobile;
+    padding: $spacer-large $side-padding-mobile 20vh
+      $side-padding-mobile;
 
     @include tablet {
       flex-flow: row;
