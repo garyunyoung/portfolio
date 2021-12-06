@@ -30,10 +30,10 @@ img {
 
 #root::before {
   content: '';
-  height: $site-header-height-mobile;
+  height: $navigation-height-mobile;
   display: block;
 
   @include tablet {
-    height: $site-header-height-tablet;
+    height: $navigation-height-tablet;
   }
 }

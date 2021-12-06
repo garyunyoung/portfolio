@@ -13,7 +13,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isSocialsOpen, setIsSocialsOpen] = useState(false)
 
-  const isHome = useLocation().pathname === '/'
+  const isHomePage = useLocation().pathname === '/'
 
   function toggleNav() {
     setIsOpen(prevState => !prevState)
@@ -28,27 +28,30 @@ export default function Navigation() {
   }
 
   useEffect(() => {
-    if (isHome) {
+    if (isHomePage) {
       elementInView()
     }
   })
 
   return (
-    <header className={`site-header ${isOpen ? 'is-open' : ''}`}>
-      <div className='site-header__content'>
-        <div className='site-header__title-wrapper'>
-          {isHome ?
-            <h1 className='site-header__title'>Garyun Young</h1> :
-            <a className={`site-header__title-link ${isHome ? '' : 'is-active'}`} href='/#'>Garyun Young</a>
+    <header className={`navigation ${isOpen ? 'is-open' : ''}`}>
+      <div className='navigation__content'>
+        <div className='navigation__title-wrapper'>
+          {isHomePage ?
+            <h1 className='navigation__title'>Garyun Young</h1> :
+            <a
+              className={`navigation__title-link ${isHomePage ? '' : 'is-active'}`}
+              href='/#'>
+              Garyun Young</a>
           }
         </div>
         <button
-          className='site-header__mobile-menu-button'
+          className='navigation__mobile-menu-button'
           onClick={() => toggleNav()}
         >
           {isOpen ? 'Close' : 'Menu'}
         </button>
-        <NavMenu
+        <NavigationMenu
           isSocialsOpen={isSocialsOpen}
           toggleSocials={() => toggleSocials()}
           closeNav={() => closeNav()} />
@@ -57,71 +60,71 @@ export default function Navigation() {
   );
 }
 
-function NavMenu(props) {
+function NavigationMenu(props) {
   return (
-    <nav className='site-menu site-header__nav'>
-      <ul className='site-menu__nav-items'>
-        <span className="site-menu__nav-main-items">
-          <li className='site-menu__nav-item'>
-            <a className='site-menu__nav-item-link site-menu__nav-item-link--projects' href='/#projects' onClick={props.closeNav}>
+    <nav className='navigation-menu navigation__nav'>
+      <ul className='navigation-menu__nav-items'>
+        <span className="navigation-menu__nav-main-items">
+          <li className='navigation-menu__nav-item'>
+            <a className='navigation-menu__nav-item-link navigation-menu__nav-item-link--projects' href='/#projects' onClick={props.closeNav}>
               Projects
             </a>
           </li>
-          <li className='site-menu__nav-item'>
-            <a className='site-menu__nav-item-link site-menu__nav-item-link--about' href='/#about' onClick={props.closeNav}>
+          <li className='navigation-menu__nav-item'>
+            <a className='navigation-menu__nav-item-link navigation-menu__nav-item-link--about' href='/#about' onClick={props.closeNav}>
               About
             </a>
           </li>
         </span>
-        <span className='site-menu__nav-socials-container'>
+        <span className='navigation-menu__nav-socials-container'>
           <li
             onClick={props.toggleSocials}
           >
             <button className={`
-              site-menu__nav-item-link 
-              site-menu__nav-item-link--socials 
+              navigation-menu__nav-item-link 
+              navigation-menu__nav-item-link--socials 
               ${props.isSocialsOpen ? 'is-selected is-active' : ''}
             `}>
               Code
             </button>
           </li>
-          <span className={`site-menu__nav-socials ${props.isSocialsOpen ? 'is-visible' : ''}`}>
+          <span className={`navigation-menu__nav-socials ${props.isSocialsOpen ? 'is-visible' : ''}`}>
             <li>
-              <a
-                className='site-menu__nav-item-link-social'
-                href='https://github.com/garyunyoung'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <p className="site-menu__nav-item-text-social">Github</p>
-                <img src={githubLogo} alt='' />
-              </a>
+              <NavItemLinkSocial
+                link="https://github.com/garyunyoung"
+                title="Github"
+                image={githubLogo} />
             </li>
             <li>
-              <a
-                className='site-menu__nav-item-link-social'
-                href='https://exercism.org/profiles/garyunyoung'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <p className="site-menu__nav-item-text-social">Exercism</p>
-                <img src={exercismLogo} alt='' />
-              </a>
+              <NavItemLinkSocial
+                link="https://exercism.org/profiles/garyunyoung"
+                title="Exercism"
+                image={exercismLogo} />
+
             </li>
             <li>
-              <a
-                className='site-menu__nav-item-link-social'
-                href='https://www.codewars.com/users/garryunn'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <p className="site-menu__nav-item-text-social">Codewars</p>
-                <img src={codewarsLogo} alt='' />
-              </a>
+              <NavItemLinkSocial
+                link="https://www.codewars.com/users/garryunn"
+                title="Codewars"
+                image={codewarsLogo} />
             </li>
           </span>
         </span>
       </ul>
-    </nav>
+    </nav >
   );
+}
+
+function NavItemLinkSocial(props) {
+  return (
+    <a
+      className="navigation-menu__nav-item-link-social"
+      href={props.link}
+      target='_blank'
+      rel='noopener noreferrer'
+    >
+      <p className="navigation-menu__nav-item-text-social">{props.title}</p>
+      <img src={props.image} alt='' />
+    </a>
+  )
 }

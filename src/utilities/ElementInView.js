@@ -1,9 +1,9 @@
 export default function elementInView() {
   if (document.querySelector('#projects') && document.querySelector('#about')) {
     const projects = document.querySelector('#projects')
-    const projectsEl = document.querySelector('.site-menu__nav-item-link--projects')
+    const projectsEl = document.querySelector('.navigation-menu__nav-item-link--projects')
     const about = document.querySelector('#about')
-    const aboutEl = document.querySelector('.site-menu__nav-item-link--about')
+    const aboutEl = document.querySelector('.navigation-menu__nav-item-link--about')
 
     const projectsPos = projects.getBoundingClientRect().top + window.scrollY
     const aboutPos = about.getBoundingClientRect().top + window.scrollY

@@ -1,7 +1,7 @@
 @import './_mixins.scss';
 @import './_variables.scss';
 
-@include block('site-header') {
+@include block('navigation') {
   width: 100%;
 
   background-color: $page-background-colour;
@@ -14,7 +14,7 @@
   padding-bottom: 16px;
 
   @include sm-desktop {
-    height: $site-header-height-tablet;
+    height: $navigation-height-tablet;
   }
 
   @include med-desktop {
@@ -22,11 +22,11 @@
   }
 
   @include state('open') {
-    .site-header__nav {
+    .navigation__nav {
       display: flex;
     }
 
-    .site-header__mobile-menu-button::after {
+    .navigation__mobile-menu-button::after {
       content: 'X';
     }
   }
@@ -75,11 +75,11 @@
     justify-content: flex-end;
 
     width: 100%;
-    height: calc(100vh - #{$site-header-height-mobile});
+    height: calc(100vh - #{$navigation-height-mobile});
     background-color: $page-background-colour;
 
     padding-top: calc(
-      #{$site-header-height-mobile} + #{$spacer-large}
+      #{$navigation-height-mobile} + #{$spacer-large}
     );
 
     @include sm-desktop {
@@ -122,7 +122,7 @@
   }
 }
 
-@include block('site-menu') {
+@include block('navigation-menu') {
   @include element('nav-items') {
     margin-top: -$spacer-large;
 

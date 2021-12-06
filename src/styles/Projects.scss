@@ -3,15 +3,15 @@
 
 @include block('projects') {
   @include element('content') {
-    min-height: calc(100vh - #{$site-header-height-mobile});
+    min-height: calc(100vh - #{$navigation-height-mobile});
     padding: 0 $side-padding-mobile;
-    padding-top: $site-header-height-mobile;
+    padding-top: $navigation-height-mobile;
 
     @include tablet {
       min-height: calc(
-        100vh - #{$site-header-height-tablet}
+        100vh - #{$navigation-height-tablet}
       );
-      padding-top: $site-header-height-tablet;
+      padding-top: $navigation-height-tablet;
     }
 
     @include sm-desktop {
