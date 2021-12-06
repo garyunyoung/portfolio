@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import { ButtonExternal } from './partials/Buttons'
+import { LinkInternal } from './partials/Links'
 
 import scrollToTop from "../utilities/scrollToTop";
 import "../styles/ProjectPage.scss";
@@ -103,7 +104,10 @@ export default function ProjectPage(props) {
               }) : null
           }
         </div>
-        <a href='/#projects' className='project__back is-active' >Back to projects</a>
+        <LinkInternal
+          className="project__back is-active"
+          link="/#projects"
+          title="Back to projects" />
       </div>
     </section >
   );

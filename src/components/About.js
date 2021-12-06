@@ -1,5 +1,6 @@
 import React from "react";
 import { ButtonExternal, ButtonInternal } from './partials/Buttons'
+import { LinkExternal } from './partials/Links'
 import "../styles/About.scss";
 
 export default function About() {
@@ -48,11 +49,10 @@ export default function About() {
 function ListItemLink(props) {
   return (
     <li className="about__resource-list-item">
-      <a className="about__resource-list-item-link"
-        href={props.link}
-        target='_blank'
-        rel='noopener noreferrer'
-      >{props.linkName}</a>
+      <LinkExternal
+        className="about__resource-list-item-link"
+        link={props.link}
+        title={props.linkName} />
     </li>
   )
 }
