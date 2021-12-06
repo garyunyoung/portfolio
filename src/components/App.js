@@ -19,7 +19,7 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <Navigation link="/#" />
+        <Navigation modifier="home" />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route

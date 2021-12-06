@@ -9,11 +9,9 @@ import {
   sailCityJumpProject,
   nightAtTheSavoyProject
 } from "../data/projects";
-import Navigation from "./Navigation";
 import ProjectPage from "./ProjectPage";
 import ProjectItems from "./ProjectItems";
 import "../styles/Projects.scss";
-
 export default class Project extends React.Component {
   constructor(props) {
     super(props);
@@ -97,7 +95,6 @@ const ProjectFilter = props => {
 
 export const Stitched = () => (
   <React.Fragment>
-    <Navigation link="/#projects" />
     <ProjectPage
       title={stitchedProject.title}
       images={stitchedProject.images}
@@ -116,7 +113,6 @@ export const Stitched = () => (
 
 export const StitchedAR = () => (
   <React.Fragment>
-    <Navigation link="/#projects" />
     <ProjectPage
       title={stitchedARProject.title}
       modifier={stitchedARProject.modifier}
@@ -135,7 +131,6 @@ export const StitchedAR = () => (
 
 export const TheBeths = () => (
   <React.Fragment>
-    <Navigation link="/#projects" />
     <ProjectPage
       title={bethsProject.title}
       mobileImages={bethsProject.mobileImages}
@@ -153,7 +148,6 @@ export const TheBeths = () => (
 
 export const WaldourStudios = () => (
   <React.Fragment>
-    <Navigation link="/#projects" />
     <ProjectPage
       title={waldourProject.title}
       imageSets={waldourProject.imageSets}
@@ -170,7 +164,6 @@ export const WaldourStudios = () => (
 
 export const Portfolio = () => (
   <React.Fragment>
-    <Navigation link="/#projects" />
     <ProjectPage
       title={portfolioProject.title}
       imageSets={portfolioProject.imageSets}
@@ -187,7 +180,6 @@ export const Portfolio = () => (
 
 export const Splore = () => (
   <React.Fragment>
-    <Navigation link="/#projects" />
     <ProjectPage
       title={sploreProject.title}
       images={sploreProject.images}
@@ -204,7 +196,6 @@ export const Splore = () => (
 
 export const SailCityJump = () => (
   <React.Fragment>
-    <Navigation link="/#projects" />
     <ProjectPage
       title={sailCityJumpProject.title}
       images={sailCityJumpProject.images}
@@ -221,7 +212,6 @@ export const SailCityJump = () => (
 
 export const NightAtTheSavoy = () => (
   <React.Fragment>
-    <Navigation link="/#projects" />
     <ProjectPage
       title={nightAtTheSavoyProject.title}
       images={nightAtTheSavoyProject.images}

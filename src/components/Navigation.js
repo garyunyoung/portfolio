@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom'
+
 
 import githubLogo from '../assets/logos/github.svg';
 import codewarsLogo from '../assets/logos/codewars.svg';
@@ -8,9 +10,12 @@ import elementInView from "../utilities/elementInView";
 
 import '../styles/Navigation.scss';
 
-export default function Navigation(props) {
+export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isSocialsOpen, setIsSocialsOpen] = useState(false)
+
+  const currentPath = useLocation().pathname
+  const homePath = '/'
 
   function toggleNav() {
     setIsOpen(prevState => !prevState)
@@ -30,10 +35,7 @@ export default function Navigation(props) {
     <header className={`site-header ${isOpen ? 'is-open' : ''}`}>
       <div className='site-header__content'>
         <div className='site-header__title-wrapper'>
-          {props.link === '/#' ?
-            <h1 className='site-header__title'>Garyun Young</h1> :
-            <a className={`site-header__title-link ${props.link === '/#' ? '' : 'is-active'}`} href='/#'>Garyun Young</a>
-          }
+          <NameLogo currentPath={currentPath} homePath='/' />
         </div>
         <button
           className='site-header__mobile-menu-button'
@@ -117,4 +119,16 @@ function NavMenu(props) {
       </ul>
     </nav>
   );
+}
+
+
+function NameLogo(props) {
+  return (
+    <React.Fragment>
+      {props.currentPath === props.homePath ?
+        <h1 className='site-header__title'>Garyun Young</h1> :
+        <a className={`site-header__title-link ${props.currentPath === props.homePath ? '' : 'is-active'}`} href='/#'>Garyun Young</a>
+      }
+    </React.Fragment>
+  )
 }
