@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PrimaryButtonInternal } from './partials/PrimaryButtons'
+import { ButtonInternal } from './partials/Buttons'
 import Project from "./Projects";
 import About from "./About";
 
@@ -20,7 +20,7 @@ export default function Home() {
               A front-end developer passionate about building <u>inclusive</u> and <u>innovative</u> digital experiences.
             </p>
             <p className="home__text">Currently in Auckland, NZ</p>
-            <PrimaryButtonInternal
+            <ButtonInternal
               className="home__projects-cta"
               link="/#projects"
               title="See projects" />

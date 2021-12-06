@@ -1,6 +1,6 @@
 import React from "react";
 
-export function PrimaryButtonExternal(props) {
+export function ButtonExternal(props) {
   return (
     <a className={props.className}
       href={props.link}
@@ -10,7 +10,7 @@ export function PrimaryButtonExternal(props) {
   )
 }
 
-export function PrimaryButtonInternal(props) {
+export function ButtonInternal(props) {
   return (
     <a className={props.className}
       href={props.link}
