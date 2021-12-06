@@ -35,10 +35,10 @@
 
   @include element('text') {
     @include homepage-body-font;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 
     @include sm-desktop {
-      margin-bottom: 56px;
+      margin-bottom: 48px;
     }
   }
 
