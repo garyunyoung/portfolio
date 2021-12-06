@@ -1,19 +1,19 @@
 import React from "react";
 
-export function ButtonExternal(props) {
+export function PrimaryButtonExternal(props) {
   return (
     <a className={props.className}
       href={props.link}
       target='_blank'
       rel='noopener noreferrer'
-    >{props.linkName}</a>
+    >{props.title}</a>
   )
 }
 
-export function ButtonInternal(props) {
+export function PrimaryButtonInternal(props) {
   return (
     <a className={props.className}
       href={props.link}
-    >{props.linkName}</a>
+    >{props.title}</a>
   )
 }

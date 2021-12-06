@@ -1,4 +1,5 @@
 import React from "react";
+import { PrimaryButtonExternal, PrimaryButtonInternal } from './partials/PrimaryButtons'
 import "../styles/About.scss";
 
 export default function About() {
@@ -19,12 +20,15 @@ export default function About() {
         </div>
 
         <div className="about__links">
-          <a className="about__link"
-            href="https://res.cloudinary.com/garyou/image/upload/v1638130760/portfolio/Garyun-Young-Front-End-Developer-CV-2021.pdf"
-            target='_blank'
-            rel='noopener noreferrer'
-          >See resume</a>
-          <a className="about__link" href="mailto:garyunyoung@gmail.com">Email me</a>
+          <PrimaryButtonExternal
+            className="about__link"
+            link="https://res.cloudinary.com/garyou/image/upload/v1638130760/portfolio/Garyun-Young-Front-End-Developer-CV-2021.pdf"
+            title="See resume" />
+
+          <PrimaryButtonInternal
+            className="about__link"
+            link="mailto:garyunyoung@gmail.com"
+            title="Email me" />
         </div>
 
         <div className="about__resource-list-container">

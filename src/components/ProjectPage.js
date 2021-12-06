@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+
+import { PrimaryButtonExternal } from './partials/PrimaryButtons'
+
 import scrollToTop from "../utilities/scrollToTop";
 import "../styles/ProjectPage.scss";
 
@@ -91,15 +94,11 @@ export default function ProjectPage(props) {
             props.links !== "" ?
               props.links.map((link, index) => {
                 return (
-                  <a
+                  <PrimaryButtonExternal
                     key={index}
                     className="project__link"
-                    href={link.url}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {link.text}
-                  </a>
+                    link={link.url}
+                    title={link.text} />
                 )
               }) : null
           }

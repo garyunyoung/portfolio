@@ -1,7 +1,9 @@
 import React from "react";
 
+import { PrimaryButtonInternal } from './partials/PrimaryButtons'
 import Project from "./Projects";
 import About from "./About";
+
 
 import "../styles/Home.scss";
 
@@ -18,9 +20,10 @@ export default function Home() {
               A front-end developer passionate about building <u>inclusive</u> and <u>innovative</u> digital experiences.
             </p>
             <p className="home__text">Currently in Auckland, NZ</p>
-            <a className="home__projects-cta" href="/#projects">
-              See projects
-            </a>
+            <PrimaryButtonInternal
+              className="home__projects-cta"
+              link="/#projects"
+              title="See projects" />
           </div>
         </section>
         <Project />
