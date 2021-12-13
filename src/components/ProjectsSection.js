@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FILTER_ID_WEB, FILTER_ID_PR } from "../data/constants";
 import {
   stitchedProjectData,
   stitchedArProjectData,
@@ -9,23 +10,34 @@ import {
   sailCityJumpProjectData,
   nightAtTheSavoyProjectData
 } from "../data/projects";
-import ProjectPage from "./ProjectPage";
 import ProjectItems from "./ProjectItems";
+import ProjectPage from "./ProjectPage";
 import "../styles/Projects.scss";
 
-export default function ProjectsSection() {
-  const [projects, _setProjects] = useState([
-    stitchedProjectData,
-    stitchedArProjectData,
-    bethsProjectData,
-    waldourProjectData,
-    portfolioProjectData,
-    sploreProjectData,
-    sailCityJumpProjectData,
-    nightAtTheSavoyProjectData
-  ])
+const projectsData = {}
 
-  const [filter, setFilter] = useState('web')
+projectsData[FILTER_ID_WEB] = [
+  stitchedProjectData,
+  stitchedArProjectData,
+  bethsProjectData,
+  waldourProjectData,
+  portfolioProjectData
+]
+
+projectsData[FILTER_ID_PR] = [
+  sploreProjectData,
+  sailCityJumpProjectData,
+  nightAtTheSavoyProjectData
+]
+
+export default function ProjectsSection() {
+  const [filter, setFilter] = useState(FILTER_ID_WEB)
+  const [projects, setProjects] = useState(projectsData[FILTER_ID_WEB])
+
+  function setFilterAndProjects(category) {
+    setFilter(category)
+    setProjects(projectsData[category])
+  }
 
   return (
     <section id="projects" className="projects">
@@ -33,15 +45,12 @@ export default function ProjectsSection() {
         <div className="projects__filter-container">
           <h2 className="projects__title">Projects</h2>
           <Filter
-            setFilter={setFilter}
             selectedFilter={filter}
+            setFilterAndProjects={setFilterAndProjects}
           />
         </div>
         <ProjectItems
-          projects={projects.filter(
-            project =>
-              project.category === filter
-          )}
+          projects={projects}
         />
       </div>
     </section>
@@ -55,13 +64,13 @@ function Filter(props) {
       <div className="projects__filter-buttons">
         <FilterButton
           title="Web"
-          category='web'
+          category={FILTER_ID_WEB}
           {...props}
         />
 
         <FilterButton
           title="PR"
-          category='pr'
+          category={FILTER_ID_PR}
           {...props}
         />
       </div>
@@ -69,14 +78,14 @@ function Filter(props) {
   );
 };
 
-function FilterButton({ title, category, selectedFilter, setFilter }) {
+function FilterButton({ title, category, selectedFilter, setFilterAndProjects }) {
   return (
     <button
       className={`projects__filter-button ${selectedFilter === category
         ? "is-selected"
         : ""
         }`}
-      onClick={() => setFilter(category)}
+      onClick={() => setFilterAndProjects(category)}
     >
       {title}
     </button>
