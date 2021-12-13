@@ -38,7 +38,9 @@ export default function About() {
             <ListItemLink linkName="The Bike Shed" link="https://www.bikeshed.fm/" />
             <ListItemLink linkName="Syntax" link="https://syntax.fm/" />
             <ListItemLink linkName="Execute Program" link="https://www.executeprogram.com/" />
+            <ListItemLink linkName="Advent of Code" link="https://adventofcode.com/2021/about" />
             <ListItemLink linkName="The A11Y Project" link="https://www.a11yproject.com/" />
+            <ListItemLink linkName="The Coding Train" link="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" />
           </ul>
         </div>
       </div>
