@@ -1,8 +1,5 @@
 import React from "react";
-
 import { LinkExternal } from './partials/Links'
-import scrollToTop from "../utilities/scrollToTop";
-
 import "../styles/Footer.scss";
 
 export default function Footer() {
@@ -18,7 +15,7 @@ export default function Footer() {
             title="Web Content Accessibility Guidelines 2.1 (WCAG)" />
           AA compliant.
         </p>
-        <p className='footer__back-to-top' onClick={() => scrollToTop()}>Back to top</p>
+        <p className='footer__back-to-top' onClick={() => window.scrollTo(0, 0)}>Back to top</p>
       </div>
     </section>
   );
