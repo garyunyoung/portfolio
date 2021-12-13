@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   stitchedProjectData,
   stitchedArProjectData,
@@ -12,89 +12,78 @@ import {
 import ProjectPage from "./ProjectPage";
 import ProjectItems from "./ProjectItems";
 import "../styles/Projects.scss";
-export default class Project extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      projects: [
-        stitchedProjectData,
-        stitchedArProjectData,
-        bethsProjectData,
-        waldourProjectData,
-        portfolioProjectData,
-        sploreProjectData,
-        sailCityJumpProjectData,
-        nightAtTheSavoyProjectData
-      ],
-      filter: "web"
-    };
 
+export default function Project() {
+  const [projects, _setProjects] = useState([
+    stitchedProjectData,
+    stitchedArProjectData,
+    bethsProjectData,
+    waldourProjectData,
+    portfolioProjectData,
+    sploreProjectData,
+    sailCityJumpProjectData,
+    nightAtTheSavoyProjectData
+  ])
 
-  }
+  const [filter, setFilter] = useState('web')
 
-  setFilter(category) {
-    this.setState(() => ({
-      filter: category
-    }));
-  }
-
-
-  render() {
-    return (
-      <section id="projects" className="projects">
-        <div className="projects__content">
-          <div className="projects__filter-container">
-            <h2 className="projects__title">Projects</h2>
-            <ProjectFilter
-              setFilter={category => this.setFilter(category)}
-              selected={this.state.filter}
-            />
-          </div>
-          <ul className="projects__project-items">
-            <ProjectItems
-              list={this.state.projects.filter(
-                project =>
-                  project.category === this.state.filter
-              )}
-            />
-          </ul>
+  return (
+    <section id="projects" className="projects">
+      <div className="projects__content">
+        <div className="projects__filter-container">
+          <h2 className="projects__title">Projects</h2>
+          <Filter
+            setFilter={setFilter}
+            selectedFilter={filter}
+          />
         </div>
-      </section>
-    );
-  }
+        <ul className="projects__project-items">
+          <ProjectItems
+            list={projects.filter(
+              project =>
+                project.category === filter
+            )}
+          />
+        </ul>
+      </div>
+    </section>
+  );
 }
 
-const ProjectFilter = props => {
+function Filter(props) {
   return (
     <div className="projects__filter">
       <h4 className="projects__filter-title">Filter by:</h4>
       <div className="projects__filter-buttons">
-        <button
-          className={`projects__filter-button ${props.selected === "web"
-            ? "is-selected"
-            : ""
-            }`}
-          onClick={() => {
-            props.setFilter("web");
-          }}
-        >
-          Web
-        </button>
-        <button
-          className={`projects__filter-button ${props.selected === "pr"
-            ? "is-selected"
-            : ""
-            }`}
-          onClick={() => {
-            props.setFilter("pr");
-          }}
-        >
-          PR
-        </button>
+        <FilterButton
+          title="Web"
+          category='web'
+          {...props}
+        />
+
+        <FilterButton
+          title="PR"
+          category='pr'
+          {...props}
+        />
       </div>
     </div>
   );
 };
+
+function FilterButton({ title, category, selectedFilter, setFilter }) {
+  return (
+    <button
+      className={`projects__filter-button ${selectedFilter === category
+        ? "is-selected"
+        : ""
+        }`}
+      onClick={() => setFilter(category)}
+    >
+      {title}
+    </button>
+  )
+}
 
 
 export const StitchedPage = () => (
