@@ -5,13 +5,13 @@ import githubLogo from '../assets/logos/github.svg';
 import codewarsLogo from '../assets/logos/codewars.svg';
 import exercismLogo from '../assets/logos/exercism.svg';
 
-import elementInView from "../utilities/elementInView";
 
 import '../styles/Navigation.scss';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isSocialsOpen, setIsSocialsOpen] = useState(false)
+  const [isInScrollView, setIsInScrollView] = useState('home')
 
   const isHomePage = useLocation().pathname === '/'
 
@@ -29,7 +29,7 @@ export default function Navigation() {
 
   useEffect(() => {
     if (isHomePage) {
-      elementInView()
+      elementInView(setIsInScrollView)
     }
   })
 
@@ -54,7 +54,9 @@ export default function Navigation() {
         <NavigationMenu
           isSocialsOpen={isSocialsOpen}
           toggleSocials={() => toggleSocials()}
-          closeNav={() => closeNav()} />
+          closeNav={() => closeNav()}
+          isInScrollView={isInScrollView}
+        />
       </div>
     </header>
   );
@@ -66,12 +68,12 @@ function NavigationMenu(props) {
       <ul className='navigation-menu__nav-items'>
         <span className="navigation-menu__nav-main-items">
           <li className='navigation-menu__nav-item'>
-            <a className='navigation-menu__nav-item-link navigation-menu__nav-item-link--projects' href='/#projects' onClick={props.closeNav}>
+            <a className={`navigation-menu__nav-item-link ${props.isInScrollView === 'projects' ? 'is-active' : ""}`} href='/#projects' onClick={props.closeNav}>
               Projects
             </a>
           </li>
           <li className='navigation-menu__nav-item'>
-            <a className='navigation-menu__nav-item-link navigation-menu__nav-item-link--about' href='/#about' onClick={props.closeNav}>
+            <a className={`navigation-menu__nav-item-link ${props.isInScrollView === 'about' ? 'is-active' : ""}`} href='/#about' onClick={props.closeNav}>
               About
             </a>
           </li>
@@ -127,4 +129,27 @@ function NavItemLinkSocial(props) {
       <img src={props.image} alt='' />
     </a>
   )
+}
+
+
+function elementInView(setIsInScrollView) {
+  const projects = document.querySelector('#projects')
+  const about = document.querySelector('#about')
+
+  if (projects && about) {
+    const projectsPos = projects.getBoundingClientRect().top + window.scrollY
+    const aboutPos = about.getBoundingClientRect().top + window.scrollY
+
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY
+
+      if (scrolled < projectsPos) {
+        setIsInScrollView('home')
+      } else if (scrolled > aboutPos) {
+        setIsInScrollView('about')
+      } else {
+        setIsInScrollView('projects')
+      }
+    })
+  }
 }
