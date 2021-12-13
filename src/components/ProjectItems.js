@@ -4,50 +4,45 @@ import "../styles/Projects.scss";
 
 export default function ProjectItems(props) {
   return (
-    <React.Fragment>
-      {props.list.map((project, index) => (
+    <ul className="projects__project-items">
+      {props.projects.map((
+        project, index) => (
         <ProjectItem
-          id={index}
           key={index}
-          img={project.previewImage}
-          info={project.info}
-          category={project.category}
-          title={project.title}
-          path={project.path}
-          technologies={project.technologies}
-          excerpt={project.excerpt}
+          {...project}
         />
       ))}
-    </React.Fragment>
+    </ul>
   );
 }
 
-function ProjectItem(props) {
+
+function ProjectItem({ previewImage, category, title, path, technologies, excerpt }) {
   return (
     <li className="project-item">
       <div className="project-item__container">
         <div className="project-item__image-wrapper">
           <img
-            className={`project-item__image project-item__image--${props.path}`}
-            src={props.img.src}
-            alt={props.img.alt}
+            className={`project-item__image project-item__image--${path}`}
+            src={previewImage.src}
+            alt={previewImage.alt}
           />
-          <NavLink className="project-item__see-more project-item__see-more--desktop" to={`projects/${props.path}`}>
+          <NavLink className="project-item__see-more project-item__see-more--desktop" to={`projects/${path}`}>
             See project details
           </NavLink>
         </div>
         <div className="project-item__content">
-          <h3 className="project-item__title">{props.title}</h3>
+          <h3 className="project-item__title">{title}</h3>
           <p className="project-item__technologies-subtitle">
-            {props.category === "web" ? "Key Technologies:" : "Key Skills:"}
+            {category === "web" ? "Key Technologies:" : "Key Skills:"}
           </p>
           <ul className="project-item__technologies">
-            {props.technologies.map((technology, index) => {
+            {technologies.map((technology, index) => {
               return <li key={index} className="project-item__technology">{technology}</li>;
             })}
           </ul>
-          <p className="project-item__excerpt">{props.excerpt}</p>
-          <NavLink className="project-item__see-more" to={`projects/${props.path}`}>
+          <p className="project-item__excerpt">{excerpt}</p>
+          <NavLink className="project-item__see-more" to={`projects/${path}`}>
             See project details
           </NavLink>
         </div>

@@ -37,14 +37,12 @@ export default function Project() {
             selectedFilter={filter}
           />
         </div>
-        <ul className="projects__project-items">
-          <ProjectItems
-            list={projects.filter(
-              project =>
-                project.category === filter
-            )}
-          />
-        </ul>
+        <ProjectItems
+          projects={projects.filter(
+            project =>
+              project.category === filter
+          )}
+        />
       </div>
     </section>
   );
