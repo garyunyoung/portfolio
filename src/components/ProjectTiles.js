@@ -17,7 +17,13 @@ export default function ProjectTiles(props) {
 }
 
 
-function ProjectTile({ previewImage, category, title, path, technologies, excerpt }) {
+function ProjectTile({
+  previewImage,
+  category,
+  title,
+  path,
+  technologies,
+  excerpt }) {
   return (
     <li className="project-item">
       <div className="project-item__container">
@@ -34,7 +40,7 @@ function ProjectTile({ previewImage, category, title, path, technologies, excerp
         <div className="project-item__content">
           <h3 className="project-item__title">{title}</h3>
           <p className="project-item__technologies-subtitle">
-            {category === "web" ? "Key Technologies:" : "Key Skills:"}
+            {`Key ${category === "web" ? "Technologies:" : "Skills:"}`}
           </p>
           <ul className="project-item__technologies">
             {technologies.map((technology, index) => {

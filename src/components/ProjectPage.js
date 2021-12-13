@@ -4,32 +4,45 @@ import { LinkInternal } from './partials/Links'
 import scrollToTop from "../utilities/ScrollToTop";
 import "../styles/ProjectPage.scss";
 
-export default function ProjectPage(props) {
+export default function ProjectPage({
+  title,
+  modifier,
+  jobType,
+  jobYear,
+  technologies,
+  companyDescription,
+  info,
+  keyFeatures,
+  images,
+  mobileImages,
+  imageSets,
+  links
+}) {
   useEffect(() => scrollToTop())
   return (
     <section className="project">
       <div className="project__content">
         <div className="project__summary-container">
-          <h2 className="project__title">{props.title}</h2>
-          <p className="project__job-type-subtitle">{props.jobType}</p>
-          <p className="project__job-year">{props.jobYear}</p>
+          <h2 className="project__title">{title}</h2>
+          <p className="project__job-type-subtitle">{jobType}</p>
+          <p className="project__job-year">{jobYear}</p>
           <ul className="project__technologies">
-            {props.technologies.map((technology, index) => {
+            {technologies.map((technology, index) => {
               return <li key={index} className="project__technology">{technology}</li>;
             })}
           </ul>
         </div>
         <div className="project__info-container">
           <div className="project__description-container">
-            <p className="project__description project__description--company">{props.companyDescription}</p>
-            {props.info.map((info, index) => {
+            <p className="project__description project__description--company">{companyDescription}</p>
+            {info.map((info, index) => {
               return <p key={index} className="project__description" >{info}</p>
             })}
           </div>
           <div className="project__key-features-container">
             <p className="project__key-features-subtitle">My Role:</p>
             <ul className="project__key-features">
-              {props.keyFeatures.map((keyFeature, index) => {
+              {keyFeatures.map((keyFeature, index) => {
                 return <li key={index} className="project__key-feature">{keyFeature}</li>;
               })}
             </ul>
@@ -37,13 +50,13 @@ export default function ProjectPage(props) {
         </div>
 
         {
-          props.images ?
-            <div className={`project__desktop-images project__desktop-images--${props.mobileImages ? 'spacer' : ""}`}>
-              {props.images.map((image, index) => {
+          images ?
+            <div className={`project__desktop-images project__desktop-images--${mobileImages ? 'spacer' : ""}`}>
+              {images.map((image, index) => {
                 return (
                   <img
                     key={index}
-                    className={`project__image project__image--${props.modifier}`}
+                    className={`project__image project__image--${modifier}`}
                     src={image.src} alt={image.alt} />
                 );
               })}
@@ -52,13 +65,13 @@ export default function ProjectPage(props) {
 
 
         {
-          props.mobileImages ?
+          mobileImages ?
             <div className="project__mobile-images">
-              {props.mobileImages.map((image, index) => {
+              {mobileImages.map((image, index) => {
                 return (
                   <img
                     key={index}
-                    className={`project__mobile-image project__mobile-image--${props.modifier}`}
+                    className={`project__mobile-image project__mobile-image--${modifier}`}
                     src={image.src} alt={image.alt} />
                 );
               })}
@@ -66,9 +79,9 @@ export default function ProjectPage(props) {
         }
 
         {
-          props.imageSets ?
+          imageSets ?
             <React.Fragment>
-              {props.imageSets.map((imageSet, index) => {
+              {imageSets.map((imageSet, index) => {
                 return (
                   <div key={index} className={`project__image-set`}>
                     {
@@ -89,8 +102,8 @@ export default function ProjectPage(props) {
 
         <div className='project__cta-links'>
           {
-            props.links !== "" ?
-              props.links.map((link, index) => {
+            links !== "" ?
+              links.map((link, index) => {
                 return (
                   <ButtonExternal
                     key={index}

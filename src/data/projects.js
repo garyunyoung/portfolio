@@ -7,7 +7,6 @@ export const stitchedProjectData = {
   category: "web",
   jobType: "Front-end developer",
   jobYear: "2019 - 2021",
-  github: "n/a",
   previewImage: { src: Image.stitchedHomepageDesktop, alt: "Stitched Home Page" },
   excerpt:
     "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
@@ -96,7 +95,6 @@ export const stitchedArProjectData = {
   category: "web",
   jobType: "Front-end developer",
   jobYear: "2020",
-  github: "n/a",
   previewImage: { src: Image.stitchedArHomepage, alt: "Stitched Ar Home Page" },
   excerpt: "Stitched Ar is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
   mobileImages: [
@@ -147,7 +145,6 @@ export const bethsProjectData = {
   category: "web",
   jobType: "Freelance",
   jobYear: "2019",
-  github: "https://github.com/garyunyoung",
   previewImage: { src: Image.theBethsHomepageDesktop, alt: "The Beths Home Page" },
   excerpt:
     "The Beths are an award-winning indie pop band based in Auckland, New Zealand.",
@@ -198,7 +195,6 @@ export const waldourProjectData = {
   category: "web",
   jobType: "Freelance",
   jobYear: "2019",
-  github: "https://github.com/garyunyoung",
   previewImage: { src: Image.waldourHomepageDesktop, alt: "Waldour Studio Home Page" },
   excerpt:
     "Wardour Studios is a podcast recording studio and production company based in Central London.",
@@ -242,7 +238,6 @@ export const portfolioProjectData = {
   category: "web",
   jobType: "Project",
   jobYear: "2021",
-  github: "https://github.com/garyunyoung",
   previewImage: { src: Image.portfolioHomepageDesktop, alt: "Portfolio Home Page" },
   excerpt:
     "A bit meta, but I'm going to put my portfolio here as a project (an ongoing project).",
@@ -276,7 +271,6 @@ export const sploreProjectData = {
   category: "pr",
   jobType: "Intern",
   jobYear: "2018",
-  github: "n/a",
   previewImage: { src: Image.sploreBanner, alt: "splore 2018 festival banner" },
   excerpt:
     "Splore is a boutique music and arts festival situated on the shores of Tapapakanga Park.",
@@ -306,7 +300,6 @@ export const sailCityJumpProjectData = {
   category: "pr",
   jobType: "Freelance",
   jobYear: "2017",
-  github: "n/a",
   previewImage: {
     src: Image.sailCityJumpBanner,
     alt: "sail city jump 2017 festival banner"
@@ -342,7 +335,6 @@ export const nightAtTheSavoyProjectData = {
   category: "pr",
   jobType: "Freelance",
   jobYear: "2017",
-  github: "n/a",
   previewImage: {
     src: Image.nightAtTheSavoyBanner,
     alt: "Night at the Savoy 2017 festival banner"
