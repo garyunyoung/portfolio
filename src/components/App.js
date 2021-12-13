@@ -13,7 +13,7 @@ import {
   SplorePage,
   SailCityJumpPage,
   NightAtTheSavoyPage
-} from "./Projects";
+} from "./ProjectsSection";
 
 export default class App extends Component {
   render() {

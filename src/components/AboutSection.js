@@ -3,7 +3,7 @@ import { ButtonExternal, ButtonInternal } from './partials/Buttons'
 import { LinkExternal } from './partials/Links'
 import "../styles/About.scss";
 
-export default function About() {
+export default function AboutSection() {
   return (
     <section id="about" className="about">
       <div className="about__content">

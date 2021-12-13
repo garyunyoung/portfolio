@@ -13,7 +13,7 @@ import ProjectPage from "./ProjectPage";
 import ProjectItems from "./ProjectItems";
 import "../styles/Projects.scss";
 
-export default function Project() {
+export default function ProjectsSection() {
   const [projects, _setProjects] = useState([
     stitchedProjectData,
     stitchedArProjectData,
