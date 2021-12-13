@@ -2,12 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Projects.scss";
 
-export default function ProjectItems(props) {
+export default function ProjectTiles(props) {
   return (
     <ul className="projects__project-items">
       {props.projects.map((
         project, index) => (
-        <ProjectItem
+        <ProjectTile
           key={index}
           {...project}
         />
@@ -17,7 +17,7 @@ export default function ProjectItems(props) {
 }
 
 
-function ProjectItem({ previewImage, category, title, path, technologies, excerpt }) {
+function ProjectTile({ previewImage, category, title, path, technologies, excerpt }) {
   return (
     <li className="project-item">
       <div className="project-item__container">

@@ -10,7 +10,7 @@ import {
   sailCityJumpProjectData,
   nightAtTheSavoyProjectData
 } from "../data/projects";
-import ProjectItems from "./ProjectItems";
+import ProjectTiles from "./ProjectTiles";
 import ProjectPage from "./ProjectPage";
 import "../styles/Projects.scss";
 
@@ -49,7 +49,7 @@ export default function ProjectsSection() {
             setFilterAndProjects={setFilterAndProjects}
           />
         </div>
-        <ProjectItems
+        <ProjectTiles
           projects={projects}
         />
       </div>
