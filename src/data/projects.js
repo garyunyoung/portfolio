@@ -1,6 +1,6 @@
 import * as Image from "../utilities/Cloudinary";
 
-export const stitchedProject = {
+export const stitchedProjectData = {
   title: "Stitched",
   modifier: "stitched",
   path: "stitched",
@@ -89,31 +89,31 @@ export const stitchedProject = {
   ]
 };
 
-export const stitchedARProject = {
-  title: "Stitched AR",
+export const stitchedArProjectData = {
+  title: "Stitched Ar",
   modifier: "stitched-ar",
   path: "stitched-ar",
   category: "web",
   jobType: "Front-end developer",
   jobYear: "2020",
   github: "n/a",
-  previewImage: { src: Image.stitchedARHomepage, alt: "Stitched AR Home Page" },
-  excerpt: "Stitched AR is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
+  previewImage: { src: Image.stitchedArHomepage, alt: "Stitched Ar Home Page" },
+  excerpt: "Stitched Ar is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
   mobileImages: [
     {
-      src: Image.stitchedARMeasure,
+      src: Image.stitchedArMeasure,
       alt: ""
     },
     {
-      src: Image.stitchedARCurtain,
+      src: Image.stitchedArCurtain,
       alt: ""
     },
     {
-      src: Image.stitchedARConfirmMeasurements,
+      src: Image.stitchedArConfirmMeasurements,
       alt: ""
     },
     {
-      src: Image.stitchedARCheckout,
+      src: Image.stitchedArCheckout,
       alt: ""
     }
   ],
@@ -122,7 +122,7 @@ export const stitchedARProject = {
   info:
     [
       "While working for Stitched I helped develop the front-end of an augmented reality app.",
-      "The app allows users to visualise curtains in their home using AR.",
+      "The app allows users to visualise curtains in their home using Ar.",
       "Users are provided measurements based on the visualisation.",
       "The app also allows users to order curtains and sample fabrics using Apple Pay.",
       "* This app is only avaliable for download in the United Kingdom. See the demo links below the mobile images for an example of how the app works."
@@ -134,13 +134,13 @@ export const stitchedARProject = {
   technologies: ["Swift", "SwiftUI"],
   keyFeatures: [
     "Built the front-end of the app using Swift / SwiftUI based on design provided by the UI designer.",
-    "Worked closely with a senior developer while they implemented the AR capabilites.",
+    "Worked closely with a senior developer while they implemented the Ar capabilites.",
     "Tested on various iOS devices and screen sizes.",
     "Challenges: No prior experience with app development."
   ]
 };
 
-export const bethsProject = {
+export const bethsProjectData = {
   title: "The Beths",
   modifier: "the-beths",
   path: "the-beths",
@@ -191,7 +191,7 @@ export const bethsProject = {
   ]
 };
 
-export const waldourProject = {
+export const waldourProjectData = {
   title: "Waldour Studios",
   modifier: "waldour-studios",
   path: "waldour-studios",
@@ -235,7 +235,7 @@ export const waldourProject = {
   ]
 };
 
-export const portfolioProject = {
+export const portfolioProjectData = {
   title: "Portfolio",
   modifier: "portfolio",
   path: "portfolio",
@@ -269,7 +269,7 @@ export const portfolioProject = {
   ]
 };
 
-export const sploreProject = {
+export const sploreProjectData = {
   title: "Splore",
   modifier: "splore",
   path: "splore-2018",
@@ -299,7 +299,7 @@ export const sploreProject = {
   ]
 };
 
-export const sailCityJumpProject = {
+export const sailCityJumpProjectData = {
   title: "Sail City Jump",
   modifier: "sail-city-jump",
   path: "sail-city-jump-2017",
@@ -335,7 +335,7 @@ export const sailCityJumpProject = {
   ]
 };
 
-export const nightAtTheSavoyProject = {
+export const nightAtTheSavoyProjectData = {
   title: "Night at the Savoy",
   modifier: "night-at-the-savoy",
   path: "night-at-the-savoy-2017",

@@ -5,14 +5,14 @@ import Navigation from "./Navigation";
 import Home from "./Home";
 import Footer from "./Footer";
 import {
-  Stitched,
-  StitchedAR,
-  TheBeths,
-  WaldourStudios,
-  Portfolio,
-  Splore,
-  SailCityJump,
-  NightAtTheSavoy
+  StitchedPage,
+  StitchedArPage,
+  TheBethsPage,
+  WaldourStudiosPage,
+  PortfolioPage,
+  SplorePage,
+  SailCityJumpPage,
+  NightAtTheSavoyPage
 } from "./Projects";
 
 export default class App extends Component {
@@ -24,35 +24,35 @@ export default class App extends Component {
           <Route path="/" exact component={Home} />
           <Route
             path={`/projects/stitched`}
-            component={Stitched}
+            component={StitchedPage}
           />
           <Route
             path={`/projects/stitched-ar`}
-            component={StitchedAR}
+            component={StitchedArPage}
           />
           <Route
             path={`/projects/the-beths`}
-            component={TheBeths}
+            component={TheBethsPage}
           />
           <Route
             path={`/projects/waldour-studios`}
-            component={WaldourStudios}
+            component={WaldourStudiosPage}
           />
           <Route
             path={`/projects/portfolio`}
-            component={Portfolio}
+            component={PortfolioPage}
           />
           <Route
             path={`/projects/splore-2018`}
-            component={Splore}
+            component={SplorePage}
           />
           <Route
             path={`/projects/sail-city-jump-2017`}
-            component={SailCityJump}
+            component={SailCityJumpPage}
           />
           <Route
             path={`/projects/night-at-the-savoy-2017`}
-            component={NightAtTheSavoy}
+            component={NightAtTheSavoyPage}
           />
         </Switch>
         <Footer window={window} />

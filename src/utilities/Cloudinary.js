@@ -18,13 +18,13 @@ export const stitchedHomesTablet = `${cloudinary + stitched}homes-tablet.png`;
 export const stitchedHomesMobile = `${cloudinary + stitched}homes-mobile.png`;
 
 // Stitched AR
-const stitchedAR = "stitched-ar/"
+const stitchedAr = "stitched-ar/"
 
-export const stitchedARHomepage = `${cloudinary + stitchedAR}homepage.png`;
-export const stitchedARMeasure = `${cloudinary + stitchedAR}measure.png`;
-export const stitchedARCurtain = `${cloudinary + stitchedAR}curtain.png`;
-export const stitchedARConfirmMeasurements = `${cloudinary + stitchedAR}confirm-measurements.png`;
-export const stitchedARCheckout = `${cloudinary + stitchedAR}checkout.png`;
+export const stitchedArHomepage = `${cloudinary + stitchedAr}homepage.png`;
+export const stitchedArMeasure = `${cloudinary + stitchedAr}measure.png`;
+export const stitchedArCurtain = `${cloudinary + stitchedAr}curtain.png`;
+export const stitchedArConfirmMeasurements = `${cloudinary + stitchedAr}confirm-measurements.png`;
+export const stitchedArCheckout = `${cloudinary + stitchedAr}checkout.png`;
 
 // The Beths
 const theBeths = "the-beths/"

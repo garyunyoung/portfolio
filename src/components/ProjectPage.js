@@ -22,7 +22,6 @@ export default function ProjectPage(props) {
         <div className="project__info-container">
           <div className="project__description-container">
             <p className="project__description project__description--company">{props.companyDescription}</p>
-
             {props.info.map((info, index) => {
               return <p key={index} className="project__description" >{info}</p>
             })}
