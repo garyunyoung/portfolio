@@ -141,7 +141,7 @@
     }
   }
 
-  @include element('nav-socials-container') {
+  @include element('nav-code-container') {
     display: flex;
     flex-flow: column;
     justify-content: center;
