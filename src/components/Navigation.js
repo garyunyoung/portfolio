@@ -5,6 +5,8 @@ import githubLogo from '../assets/logos/github.svg';
 import codewarsLogo from '../assets/logos/codewars.svg';
 import exercismLogo from '../assets/logos/exercism.svg';
 
+import elementInView from '../utilities/ElementInView';
+
 import '../styles/Navigation.scss';
 
 export default function Navigation() {
@@ -142,24 +144,3 @@ function NavItemLinkSocial(props) {
   )
 }
 
-function elementInView(setIsInScrollView) {
-  const projects = document.querySelector('#projects')
-  const about = document.querySelector('#about')
-
-  if (projects && about) {
-    const projectsPos = projects.getBoundingClientRect().top + window.scrollY
-    const aboutPos = about.getBoundingClientRect().top + window.scrollY
-
-    window.addEventListener('scroll', () => {
-      const scrolled = window.scrollY
-
-      if (scrolled < projectsPos) {
-        setIsInScrollView('home')
-      } else if (scrolled > aboutPos) {
-        setIsInScrollView('about')
-      } else {
-        setIsInScrollView('projects')
-      }
-    })
-  }
-}
