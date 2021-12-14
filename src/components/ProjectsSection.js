@@ -59,7 +59,7 @@ export default function ProjectsSection() {
 
 function ProjectTiles({ projects }) {
   return (
-    <ul className="projects__project-items">
+    <ul className="projects__project-tiles">
       {projects.map((
         project, index) => (
         <ProjectTile

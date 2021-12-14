@@ -65,18 +65,18 @@
   }
 }
 
-@include block('project-item') {
+@include block('project-tile') {
   margin-bottom: 24vh;
 
   @include sm-desktop {
     margin-bottom: 33vh;
 
     &:nth-of-type(2n) {
-      .project-item__container {
+      .project-tile__container {
         flex-flow: row;
       }
 
-      .project-item__content {
+      .project-tile__content {
         padding-left: 56px;
         margin: 0 0 0 32px;
       }

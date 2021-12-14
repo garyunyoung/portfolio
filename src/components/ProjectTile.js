@@ -13,32 +13,32 @@ export default function ProjectTile({
   thumbnail
 }) {
   return (
-    <li className="project-item" >
-      <div className="project-item__container">
-        <div className="project-item__image-wrapper">
+    <li className="project-tile" >
+      <div className="project-tile__container">
+        <div className="project-tile__image-wrapper">
           <img
-            className={`project-item__image project-item__image--${modifier}`}
+            className={`project-tile__image project-tile__image--${modifier}`}
             src={thumbnail.src}
             alt={thumbnail.alt}
           />
-          <NavLink className="project-item__see-more project-item__see-more--desktop" to={path}>
+          <NavLink className="project-tile__see-more project-tile__see-more--desktop" to={path}>
             See project details
           </NavLink>
         </div>
-        <div className="project-item__content">
-          <h3 className="project-item__title">{title}</h3>
-          <p className="project-item__technologies-subtitle">
+        <div className="project-tile__content">
+          <h3 className="project-tile__title">{title}</h3>
+          <p className="project-tile__technologies-subtitle">
             {`Key ${category === FILTER_ID_WEB ? "Technologies:" : "Skills:"}`}
           </p>
-          <ul className="project-item__technologies">
+          <ul className="project-tile__technologies">
             {
               technologies.map((technology, index) => {
-                return <li key={index} className="project-item__technology">{technology}</li>
+                return <li key={index} className="project-tile__technology">{technology}</li>
               })
             }
           </ul>
-          <p className="project-item__excerpt">{excerpt}</p>
-          <NavLink className="project-item__see-more" to={path}>
+          <p className="project-tile__excerpt">{excerpt}</p>
+          <NavLink className="project-tile__see-more" to={path}>
             See project details
           </NavLink>
         </div>
