@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom'
 
-import githubLogo from '../assets/logos/github.svg';
-import codewarsLogo from '../assets/logos/codewars.svg';
-import exercismLogo from '../assets/logos/exercism.svg';
+import github from '../assets/logos/github.svg';
+import codewars from '../assets/logos/codewars.svg';
+import exercism from '../assets/logos/exercism.svg';
 
 import elementInView from '../utilities/ElementInView';
 
@@ -16,6 +16,12 @@ export default function Navigation() {
 
   const isHomePage = useLocation().pathname === '/'
 
+  useEffect(() => {
+    if (isHomePage) {
+      elementInView(setIsInScrollView)
+    }
+  })
+
   function toggleNav() {
     setIsOpen(prevState => !prevState)
   }
@@ -27,12 +33,6 @@ export default function Navigation() {
   function toggleSocials() {
     setIsSocialsOpen(prevState => !prevState)
   }
-
-  useEffect(() => {
-    if (isHomePage) {
-      elementInView(setIsInScrollView)
-    }
-  })
 
   return (
     <header className={`navigation ${isOpen ? 'is-open' : ''}`}>
@@ -54,8 +54,8 @@ export default function Navigation() {
         </button>
         <NavigationMenu
           isSocialsOpen={isSocialsOpen}
-          toggleSocials={() => toggleSocials()}
-          closeNav={() => closeNav()}
+          toggleSocials={toggleSocials}
+          closeNav={closeNav}
           isInScrollView={isInScrollView}
         />
       </div>
@@ -71,20 +71,20 @@ function NavigationMenu({ isSocialsOpen, toggleSocials, closeNav, isInScrollView
           <NavItemLink
             link="/#projects"
             title="Projects"
-            modifier='projects'
-            closeNav={closeNav}
+            sectionId='projects'
+            closeNav={() => closeNav()}
             isInScrollView={isInScrollView} />
 
           <NavItemLink
             link="/#about"
             title="About"
-            modifier='about'
-            closeNav={closeNav}
+            sectionId='about'
+            closeNav={() => closeNav()}
             isInScrollView={isInScrollView} />
         </span>
         <span className='navigation-menu__nav-code-container'>
           <li
-            onClick={toggleSocials}
+            onClick={() => toggleSocials()}
           >
             <button className={`
               navigation-menu__nav-item-link 
@@ -98,17 +98,17 @@ function NavigationMenu({ isSocialsOpen, toggleSocials, closeNav, isInScrollView
             <NavItemLinkSocial
               link="https://github.com/garyunyoung"
               title="Github"
-              image={githubLogo} />
+              logoSrc={github} />
 
             <NavItemLinkSocial
               link="https://exercism.org/profiles/garyunyoung"
               title="Exercism"
-              image={exercismLogo} />
+              logoSrc={exercism} />
 
             <NavItemLinkSocial
               link="https://www.codewars.com/users/garryunn"
               title="Codewars"
-              image={codewarsLogo} />
+              logoSrc={codewars} />
           </span>
         </span>
       </ul>
@@ -116,29 +116,29 @@ function NavigationMenu({ isSocialsOpen, toggleSocials, closeNav, isInScrollView
   );
 }
 
-function NavItemLink(props) {
+function NavItemLink({ sectionId, title, link, closeNav, isInScrollView }) {
   return (
     <li className='navigation-menu__nav-item'>
       <a
-        className={`navigation-menu__nav-item-link ${props.isInScrollView === props.modifier ? 'is-active' : ""}`}
-        href={props.link}
-        onClick={props.closeNav}>
-        {props.title}</a>
+        className={`navigation-menu__nav-item-link ${isInScrollView === sectionId ? 'is-active' : ""}`}
+        href={link}
+        onClick={() => closeNav()}
+      >{title}</a>
     </li>
   )
 }
 
-function NavItemLinkSocial(props) {
+function NavItemLinkSocial({ title, link, logoSrc }) {
   return (
     <li>
       <a
         className="navigation-menu__nav-item-link-social"
-        href={props.link}
+        href={link}
         target='_blank'
         rel='noopener noreferrer'
       >
-        <p className="navigation-menu__nav-item-text-social">{props.title}</p>
-        <img src={props.image} alt='' />
+        <p className="navigation-menu__nav-item-text-social">{title}</p>
+        <img src={logoSrc} alt="" />
       </a>
     </li>
   )

@@ -7,8 +7,7 @@ export default function elementInView(setIsInScrollView) {
     const aboutPos = about.getBoundingClientRect().top + window.scrollY
 
     window.addEventListener('scroll', () => {
-      // TO DO: investigate
-      const scrolled = window.scrollY + 1
+      const scrolled = window.scrollY
 
       if (scrolled < projectsPos) {
         setIsInScrollView('home')
