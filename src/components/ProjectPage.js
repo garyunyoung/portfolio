@@ -22,10 +22,10 @@ export default function ProjectPage({
   return (
     <section className="project">
       <div className="project__content">
-        <div className="project__summary-container">
+        <div className="project__content-top">
           <h2 className="project__title">{title}</h2>
-          <p className="project__job-type-subtitle">{type}</p>
-          <p className="project__job-year">{year}</p>
+          <p className="project__type">{type}</p>
+          <p className="project__year">{year}</p>
           <ul className="project__technologies">
             {
               technologies.map((technology, index) => {
@@ -34,20 +34,20 @@ export default function ProjectPage({
             }
           </ul>
         </div>
-        <div className="project__description-container">
-          <div className="project__description-container">
+        <div className="project__content-middle">
+          <div className="project__descriptions">
             {
               description.map((description, index) => {
                 return <p key={index} className="project__description" >{description}</p>
               })
             }
           </div>
-          <div className="project__key-features-container">
-            <p className="project__key-features-subtitle">My Role:</p>
-            <ul className="project__key-features">
+          <div>
+            <p className="project__my-role">My Role:</p>
+            <ul className="project__features">
               {
                 features.map((feature, index) => {
-                  return <li key={index} className="project__key-feature">{feature}</li>
+                  return <li key={index} className="project__feature">{feature}</li>
                 })
               }
             </ul>
@@ -56,18 +56,14 @@ export default function ProjectPage({
 
         {
           desktopImages ?
-            <DesktopImages
-              desktopImages={desktopImages}
-              modifier={modifier} /> :
+            <Images className='desktop-images' images={desktopImages} /> :
             null
         }
 
 
         {
           mobileImages ?
-            <MobileImages
-              mobileImages={mobileImages}
-              modifier={modifier} /> :
+            <Images className='mobile-images' images={mobileImages} /> :
             null
         }
 
@@ -101,15 +97,15 @@ export default function ProjectPage({
 }
 
 
-function DesktopImages({ desktopImages, modifier }) {
+function Images({ className, images }) {
   return (
-    <div className={`project__desktop-images project__desktop-images--${modifier ? 'spacer' : ""}`}>
+    <div className={className}>
       {
-        desktopImages.map(({ src, alt }, index) => {
+        images.map(({ src, alt }, index) => {
           return (
             <img
               key={index}
-              className={`project__image project__image--${modifier}`}
+              className={`${className}__image`}
               src={src}
               alt={alt} />
           )
@@ -119,37 +115,21 @@ function DesktopImages({ desktopImages, modifier }) {
   )
 }
 
-function MobileImages({ mobileImages, modifier }) {
-  return (
-    <div className="project__mobile-images">
-      {
-        mobileImages.map((image, index) => {
-          return (
-            <img
-              key={index}
-              className={`project__mobile-image project__mobile-image--${modifier}`}
-              src={image.src}
-              alt={image.alt} />
-          )
-        })
-      }
-    </div>
-  )
-}
-
 function ImageSets({ imageSets }) {
   return (
-    <div className="project__image-set-container">
+    <React.Fragment>
       {
         imageSets.map((imageSet, index) => {
           return (
-            <div key={index} className={`project__image-set`}>
+            <div
+              key={index}
+              className='image-set'>
               {
                 imageSet.map(({ src, alt, modifier }, index) => {
                   return (
                     <img
                       key={index}
-                      className={`project__image-set-image project__image-set-image--${modifier}`}
+                      className={`image-set__image image-set__image--${modifier}`}
                       src={src}
                       alt={alt} />
                   )
@@ -158,6 +138,6 @@ function ImageSets({ imageSets }) {
             </div>
           )
         })}
-    </div>
+    </React.Fragment>
   )
 }

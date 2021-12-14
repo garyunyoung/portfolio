@@ -15,7 +15,7 @@
     }
   }
 
-  @include element('summary-container') {
+  @include element('content-top') {
     text-align: center;
     margin: $spacer-small 0 $spacer-large 0;
 
@@ -33,7 +33,7 @@
     }
   }
 
-  @include element('job-type-subtitle') {
+  @include element('type') {
     @include subheading-font;
 
     @include sm-desktop {
@@ -41,7 +41,7 @@
     }
   }
 
-  @include element('job-year') {
+  @include element('year') {
     @include body-font;
     margin-bottom: 32px;
 
@@ -81,11 +81,21 @@
     }
   }
 
-  @include element('description-container') {
+  @include element('content-middle') {
     margin-bottom: $spacer-large;
 
     @include sm-desktop {
       display: flex;
+    }
+  }
+
+  @include element('descriptions') {
+    @include tablet {
+      display: flex;
+      flex-flow: column;
+
+      flex: 0 0 32%;
+      margin: 8px 64px 0;
     }
   }
 
@@ -98,23 +108,13 @@
     }
   }
 
-  @include element('description-container') {
-    @include tablet {
-      display: flex;
-      flex-flow: column;
-
-      flex: 0 0 32%;
-      margin: 8px 64px 0;
-    }
-  }
-
-  @include element('key-features-subtitle') {
+  @include element('my-role') {
     @include subheading-font;
 
     margin-bottom: 16px;
   }
 
-  @include element('key-features') {
+  @include element('features') {
     @include body-font;
 
     padding-left: 16px;
@@ -127,7 +127,7 @@
     }
   }
 
-  @include element('key-feature') {
+  @include element('feature') {
     margin: 0 8px 16px 16px;
 
     @include tablet {
@@ -135,20 +135,63 @@
     }
   }
 
-  @include element('image-set') {
+  @include element('cta-links') {
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    margin-top: $spacer-small;
-
-    @include sm-desktop {
-      margin-top: $spacer-large;
-    }
+    flex-flow: column;
+    margin: calc(#{$spacer-large} - 32px) auto $spacer-small
+      auto;
   }
 
-  @include element('image-set-image') {
+  @include element('link') {
+    @include cta-button;
+    margin: 0 auto;
+
+    margin-top: 32px;
+  }
+
+  @include element('back') {
+    @include cta-link-button;
+    margin: 0 auto $spacer-large auto;
+  }
+}
+
+@include block('desktop-images') {
+  @include element('image') {
+    filter: drop-shadow($drop-shadow);
+  }
+}
+
+@include block('mobile-images') {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin-bottom: -16px;
+  margin-top: $spacer-large;
+
+  @include element('image') {
+    width: calc(50% - 8px);
+    filter: drop-shadow($drop-shadow);
+    margin-bottom: 16px;
+
+    @include sm-desktop {
+      width: calc(25% - 16px);
+    }
+  }
+}
+
+@include block('image-set') {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-top: $spacer-small;
+
+  @include sm-desktop {
+    margin-top: $spacer-large;
+  }
+
+  @include element('image') {
     width: 100%;
     filter: drop-shadow($drop-shadow);
 
@@ -173,52 +216,5 @@
         width: calc(40% - #{$spacer-small});
       }
     }
-  }
-
-  @include element('desktop-images') {
-    @include modifier('spacer') {
-      margin-bottom: $spacer-large;
-    }
-  }
-
-  @include element('mobile-images') {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    margin-bottom: -16px;
-    margin-top: $spacer-large;
-  }
-
-  @include element('mobile-image') {
-    width: calc(50% - 8px);
-    filter: drop-shadow($drop-shadow);
-    margin-bottom: 16px;
-
-    @include sm-desktop {
-      width: calc(25% - 16px);
-    }
-  }
-
-  @include element('image') {
-    filter: drop-shadow($drop-shadow);
-  }
-
-  @include element('cta-links') {
-    display: flex;
-    flex-flow: column;
-    margin: calc(#{$spacer-large} - 32px) auto $spacer-small
-      auto;
-  }
-
-  @include element('link') {
-    @include cta-button;
-    margin: 0 auto;
-
-    margin-top: 32px;
-  }
-
-  @include element('back') {
-    @include cta-link-button;
-    margin: 0 auto $spacer-large auto;
   }
 }
