@@ -1,33 +1,32 @@
 import React, { useState } from "react";
 import { FILTER_ID_WEB, FILTER_ID_PR } from "../data/constants";
 import {
-  stitchedProjectData,
-  stitchedArProjectData,
-  bethsProjectData,
-  waldourProjectData,
-  portfolioProjectData,
-  sploreProjectData,
-  sailCityJumpProjectData,
-  nightAtTheSavoyProjectData
+  stitchedData,
+  stitchedArData,
+  theBethsData,
+  waldourStudiosData,
+  portfolioData,
+  sploreData,
+  sailCityJumpData,
+  nightAtTheSavoyData
 } from "../data/projects";
 import ProjectTile from "./ProjectTile";
-import ProjectPage from "./ProjectPage";
 import "../styles/Projects.scss";
 
 const projectsData = {}
 
 projectsData[FILTER_ID_WEB] = [
-  stitchedProjectData,
-  stitchedArProjectData,
-  bethsProjectData,
-  waldourProjectData,
-  portfolioProjectData
+  stitchedData,
+  stitchedArData,
+  theBethsData,
+  waldourStudiosData,
+  portfolioData
 ]
 
 projectsData[FILTER_ID_PR] = [
-  sploreProjectData,
-  sailCityJumpProjectData,
-  nightAtTheSavoyProjectData
+  sploreData,
+  sailCityJumpData,
+  nightAtTheSavoyData
 ]
 
 export default function ProjectsSection() {
@@ -68,6 +67,7 @@ function ProjectTiles({ projects }) {
           title={project.title}
           modifier={project.modifier}
           technologies={project.technologies}
+          path={project.path}
           {...project.tile}
         />
       ))}
@@ -110,66 +110,3 @@ function FilterButton({ title, category, selectedFilter, setFilterAndProjects })
   )
 }
 
-
-export const StitchedPage = () => (
-  <ProjectPage
-    title={stitchedProjectData.title}
-    technologies={stitchedProjectData.technologies}
-    {...stitchedProjectData.page}
-  />
-);
-
-export const StitchedArPage = () => (
-  <ProjectPage
-    title={stitchedArProjectData.title}
-    technologies={stitchedArProjectData.technologies}
-    {...stitchedArProjectData.page}
-  />
-);
-
-export const TheBethsPage = () => (
-  <ProjectPage
-    title={bethsProjectData.title}
-    technologies={bethsProjectData.technologies}
-    {...bethsProjectData.page}
-  />);
-
-export const WaldourStudiosPage = () => (
-  <ProjectPage
-    title={waldourProjectData.title}
-    technologies={waldourProjectData.technologies}
-    {...waldourProjectData.page}
-  />
-);
-
-export const PortfolioPage = () => (
-  <ProjectPage
-    title={portfolioProjectData.title}
-    technologies={portfolioProjectData.technologies}
-    {...portfolioProjectData.page}
-  />
-);
-
-export const SplorePage = () => (
-  <ProjectPage
-    title={sploreProjectData.title}
-    technologies={sploreProjectData.technologies}
-    {...sploreProjectData.page}
-  />
-);
-
-export const SailCityJumpPage = () => (
-  <ProjectPage
-    title={sailCityJumpProjectData.title}
-    technologies={sailCityJumpProjectData.technologies}
-    {...sailCityJumpProjectData.page}
-  />
-);
-
-export const NightAtTheSavoyPage = () => (
-  <ProjectPage
-    title={nightAtTheSavoyProjectData.title}
-    technologies={nightAtTheSavoyProjectData.technologies}
-    {...nightAtTheSavoyProjectData.page}
-  />
-);

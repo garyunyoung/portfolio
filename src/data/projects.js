@@ -1,14 +1,14 @@
 import * as Image from "../utilities/Cloudinary"
 import { FILTER_ID_WEB, FILTER_ID_PR } from "./constants"
 
-export const stitchedProjectData = {
+export const stitchedData = {
+  path: "/projects/stitched",
   modifier: "stitched",
   title: "Stitched",
   technologies: ["Elixir", "Phoenix LiveView", "JavaScript", "React", "SCSS", "HTML"],
 
   tile: {
     category: FILTER_ID_WEB,
-    path: "projects/stitched",
     excerpt:
       "Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.",
     thumbnail: { src: Image.stitchedHomepageDesktop, alt: "Stitched Home Page" }
@@ -90,14 +90,14 @@ export const stitchedProjectData = {
   }
 }
 
-export const stitchedArProjectData = {
+export const stitchedArData = {
+  path: "/projects/stitched-ar",
   modifier: "stitched-ar",
   title: "Stitched Ar",
   technologies: ["Swift", "SwiftUI"],
 
   tile: {
     category: FILTER_ID_WEB,
-    path: "projects/stitched-ar",
     excerpt: "Stitched Ar is an augmented reality mobile application that lets users visualise and measure curtains in their own home.",
     thumbnail: { src: Image.stitchedArHomepage, alt: "Stitched Ar Home Page" }
   },
@@ -143,14 +143,14 @@ export const stitchedArProjectData = {
   }
 }
 
-export const bethsProjectData = {
+export const theBethsData = {
+  path: "/projects/the-beths",
   modifier: "the-beths",
   title: "The Beths",
   technologies: ["Next.js", "React", "SCSS", "HTML"],
 
   tile: {
     category: FILTER_ID_WEB,
-    path: "projects/the-beths",
     thumbnail: { src: Image.theBethsHomepageDesktop, alt: "The Beths Home Page" },
     excerpt:
       "The Beths are an award-winning indie pop band based in Auckland, New Zealand.",
@@ -196,14 +196,14 @@ export const bethsProjectData = {
   }
 }
 
-export const waldourProjectData = {
+export const waldourStudiosData = {
+  path: "/projects/waldour-studios",
   modifier: "waldour-studios",
   title: "Waldour Studios",
   technologies: ["WordPress", "PHP", "SCSS", "HTML"],
 
   tile: {
     category: FILTER_ID_WEB,
-    path: "projects/waldour-studios",
     thumbnail: { src: Image.waldourHomepageDesktop, alt: "Waldour Studio Home Page" },
     excerpt:
       "Wardour Studios is a podcast recording studio and production company based in Central London.",
@@ -243,14 +243,14 @@ export const waldourProjectData = {
   }
 }
 
-export const portfolioProjectData = {
+export const portfolioData = {
+  path: "/projects/portfolio",
   modifier: "portfolio",
   title: "Portfolio",
   technologies: ["React", "JavaScript", "SCSS", "HTML"],
 
   tile: {
     category: FILTER_ID_WEB,
-    path: "projects/portfolio",
     thumbnail: { src: Image.portfolioHomepageDesktop, alt: "Portfolio Home Page" },
     excerpt:
       "A bit meta, but I'm going to put my portfolio here as a project (an ongoing project).",
@@ -278,14 +278,14 @@ export const portfolioProjectData = {
   }
 }
 
-export const sploreProjectData = {
+export const sploreData = {
+  path: "/projects/splore-2018",
   modifier: "splore",
   title: "Splore",
   technologies: ["Communications", "Press"],
 
   tile: {
     category: FILTER_ID_PR,
-    path: "projects/splore-2018",
     thumbnail: { src: Image.sploreBanner, alt: "splore 2018 festival banner" },
     excerpt:
       "Splore is a boutique music and arts festival situated on the shores of Tapapakanga Park.",
@@ -311,14 +311,14 @@ export const sploreProjectData = {
   }
 }
 
-export const sailCityJumpProjectData = {
+export const sailCityJumpData = {
+  path: "/projects/sail-city-jump-2017",
   modifier: "sail-city-jump",
   title: "Sail City Jump",
   technologies: ["Event Coordination", "Social Media"],
 
   tile: {
     category: FILTER_ID_PR,
-    path: "projects/sail-city-jump-2017",
     thumbnail: { src: Image.sailCityJumpBanner, alt: "sail city jump 2017 festival banner" },
     excerpt:
       "Sail City Jump is a multi-day dance event featuring Lindy Hop, Balboa and Solo Jazz workshops and dance socials.",
@@ -344,14 +344,14 @@ export const sailCityJumpProjectData = {
   }
 }
 
-export const nightAtTheSavoyProjectData = {
+export const nightAtTheSavoyData = {
+  path: "/projects/night-at-the-savoy-2017",
   modifier: "night-at-the-savoy",
   title: "Night at the Savoy",
   technologies: ["Event Coordination", "Social Media"],
 
   tile: {
     category: FILTER_ID_PR,
-    path: "projects/night-at-the-savoy-2017",
     thumbnail: { src: Image.nightAtTheSavoyBanner, alt: "Night at the Savoy 2017 festival banner" },
     excerpt:
       "Night at the Savoy was a dance event organised for Swing Out Central / Gin Mill Swing celebrating World Lindy Hop Day.",
