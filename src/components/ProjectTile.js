@@ -1,46 +1,34 @@
 import React from "react";
+import { FILTER_ID_WEB } from "../data/constants";
 import { NavLink } from "react-router-dom";
 import "../styles/Projects.scss";
 
-export default function ProjectTiles(props) {
-  return (
-    <ul className="projects__project-items">
-      {props.projects.map((
-        project, index) => (
-        <ProjectTile
-          key={index}
-          {...project}
-        />
-      ))}
-    </ul>
-  );
-}
-
-
-function ProjectTile({
-  previewImage,
-  category,
+export default function ProjectTile({
   title,
-  path,
+  modifier,
   technologies,
-  excerpt }) {
+  path,
+  filterCategory,
+  excerpt,
+  thumbnail
+}) {
   return (
-    <li className="project-item">
+    <li className="project-item" >
       <div className="project-item__container">
         <div className="project-item__image-wrapper">
           <img
-            className={`project-item__image project-item__image--${path}`}
-            src={previewImage.src}
-            alt={previewImage.alt}
+            className={`project-item__image project-item__image--${modifier}`}
+            src={thumbnail.src}
+            alt={thumbnail.alt}
           />
-          <NavLink className="project-item__see-more project-item__see-more--desktop" to={`projects/${path}`}>
+          <NavLink className="project-item__see-more project-item__see-more--desktop" to={path}>
             See project details
           </NavLink>
         </div>
         <div className="project-item__content">
           <h3 className="project-item__title">{title}</h3>
           <p className="project-item__technologies-subtitle">
-            {`Key ${category === "web" ? "Technologies:" : "Skills:"}`}
+            {`Key ${filterCategory === FILTER_ID_WEB ? "Technologies:" : "Skills:"}`}
           </p>
           <ul className="project-item__technologies">
             {technologies.map((technology, index) => {
@@ -48,11 +36,11 @@ function ProjectTile({
             })}
           </ul>
           <p className="project-item__excerpt">{excerpt}</p>
-          <NavLink className="project-item__see-more" to={`projects/${path}`}>
+          <NavLink className="project-item__see-more" to={path}>
             See project details
           </NavLink>
         </div>
       </div>
-    </li>
+    </li >
   );
 }

@@ -10,7 +10,7 @@ import {
   sailCityJumpProjectData,
   nightAtTheSavoyProjectData
 } from "../data/projects";
-import ProjectTiles from "./ProjectTiles";
+import ProjectTile from "./ProjectTile";
 import ProjectPage from "./ProjectPage";
 import "../styles/Projects.scss";
 
@@ -34,9 +34,9 @@ export default function ProjectsSection() {
   const [filter, setFilter] = useState(FILTER_ID_WEB)
   const [projects, setProjects] = useState(projectsData[FILTER_ID_WEB])
 
-  function setFilterAndProjects(category) {
-    setFilter(category)
-    setProjects(projectsData[category])
+  function setFilterAndProjects(filterCategory) {
+    setFilter(filterCategory)
+    setProjects(projectsData[filterCategory])
   }
 
   return (
@@ -57,6 +57,24 @@ export default function ProjectsSection() {
   );
 }
 
+
+function ProjectTiles({ projects }) {
+  return (
+    <ul className="projects__project-items">
+      {projects.map((
+        project, index) => (
+        <ProjectTile
+          key={index}
+          title={project.title}
+          modifier={project.modifier}
+          technologies={project.technologies}
+          {...project.projectTile}
+        />
+      ))}
+    </ul>
+  );
+}
+
 function Filter(props) {
   return (
     <div className="projects__filter">
@@ -64,13 +82,13 @@ function Filter(props) {
       <div className="projects__filter-buttons">
         <FilterButton
           title="Web"
-          category={FILTER_ID_WEB}
+          filterCategory={FILTER_ID_WEB}
           {...props}
         />
 
         <FilterButton
           title="PR"
-          category={FILTER_ID_PR}
+          filterCategory={FILTER_ID_PR}
           {...props}
         />
       </div>
@@ -78,14 +96,14 @@ function Filter(props) {
   );
 };
 
-function FilterButton({ title, category, selectedFilter, setFilterAndProjects }) {
+function FilterButton({ title, filterCategory, selectedFilter, setFilterAndProjects }) {
   return (
     <button
-      className={`projects__filter-button ${selectedFilter === category
+      className={`projects__filter-button ${selectedFilter === filterCategory
         ? "is-selected"
         : ""
         }`}
-      onClick={() => setFilterAndProjects(category)}
+      onClick={() => setFilterAndProjects(filterCategory)}
     >
       {title}
     </button>
@@ -94,33 +112,64 @@ function FilterButton({ title, category, selectedFilter, setFilterAndProjects })
 
 
 export const StitchedPage = () => (
-  <ProjectPage {...stitchedProjectData} />
+  <ProjectPage
+    title={stitchedProjectData.title}
+    technologies={stitchedProjectData.technologies}
+    {...stitchedProjectData.projectPage}
+  />
 );
 
 export const StitchedArPage = () => (
-  <ProjectPage {...stitchedArProjectData} />
+  <ProjectPage
+    title={stitchedArProjectData.title}
+    technologies={stitchedArProjectData.technologies}
+    {...stitchedArProjectData.projectPage}
+  />
 );
 
 export const TheBethsPage = () => (
-  <ProjectPage {...bethsProjectData} />
-);
+  <ProjectPage
+    title={bethsProjectData.title}
+    technologies={bethsProjectData.technologies}
+    {...bethsProjectData.projectPage}
+  />);
 
 export const WaldourStudiosPage = () => (
-  <ProjectPage {...waldourProjectData} />
+  <ProjectPage
+    title={waldourProjectData.title}
+    technologies={waldourProjectData.technologies}
+    {...waldourProjectData.projectPage}
+  />
 );
 
 export const PortfolioPage = () => (
-  <ProjectPage {...portfolioProjectData} />
+  <ProjectPage
+    title={portfolioProjectData.title}
+    technologies={portfolioProjectData.technologies}
+    {...portfolioProjectData.projectPage}
+  />
 );
 
 export const SplorePage = () => (
-  <ProjectPage {...sploreProjectData} />
+  <ProjectPage
+    title={sploreProjectData.title}
+    technologies={sploreProjectData.technologies}
+    {...sploreProjectData.projectPage}
+  />
 );
 
 export const SailCityJumpPage = () => (
-  <ProjectPage {...sailCityJumpProjectData} />
+  <ProjectPage
+    title={sailCityJumpProjectData.title}
+    technologies={sailCityJumpProjectData.technologies}
+    {...sailCityJumpProjectData.projectPage}
+  />
 );
 
 export const NightAtTheSavoyPage = () => (
-  <ProjectPage {...nightAtTheSavoyProjectData} />
+  <ProjectPage
+    title={nightAtTheSavoyProjectData.title}
+    technologies={nightAtTheSavoyProjectData.technologies}
+    {...nightAtTheSavoyProjectData.projectPage}
+  />
 );

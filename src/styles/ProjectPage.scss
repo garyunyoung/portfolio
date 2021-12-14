@@ -81,7 +81,7 @@
     }
   }
 
-  @include element('info-container') {
+  @include element('projectDescription-container') {
     margin-bottom: $spacer-large;
 
     @include sm-desktop {
@@ -95,10 +95,6 @@
 
     &:last-child {
       margin-bottom: $spacer-large;
-    }
-
-    @include modifier('company') {
-      display: none;
     }
   }
 

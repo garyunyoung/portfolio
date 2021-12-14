@@ -7,11 +7,10 @@ import "../styles/ProjectPage.scss";
 export default function ProjectPage({
   title,
   modifier,
-  jobType,
-  jobYear,
   technologies,
-  companyDescription,
-  info,
+  projectType,
+  projectYear,
+  projectDescription,
   keyFeatures,
   images,
   mobileImages,
@@ -24,19 +23,18 @@ export default function ProjectPage({
       <div className="project__content">
         <div className="project__summary-container">
           <h2 className="project__title">{title}</h2>
-          <p className="project__job-type-subtitle">{jobType}</p>
-          <p className="project__job-year">{jobYear}</p>
+          <p className="project__job-type-subtitle">{projectType}</p>
+          <p className="project__job-year">{projectYear}</p>
           <ul className="project__technologies">
             {technologies.map((technology, index) => {
               return <li key={index} className="project__technology">{technology}</li>;
             })}
           </ul>
         </div>
-        <div className="project__info-container">
+        <div className="project__projectDescription-container">
           <div className="project__description-container">
-            <p className="project__description project__description--company">{companyDescription}</p>
-            {info.map((info, index) => {
-              return <p key={index} className="project__description" >{info}</p>
+            {projectDescription.map((projectDescription, index) => {
+              return <p key={index} className="project__description" >{projectDescription}</p>
             })}
           </div>
           <div className="project__key-features-container">
