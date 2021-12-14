@@ -81,7 +81,7 @@
     }
   }
 
-  @include element('projectDescription-container') {
+  @include element('description-container') {
     margin-bottom: $spacer-large;
 
     @include sm-desktop {

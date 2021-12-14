@@ -34,9 +34,9 @@ export default function ProjectsSection() {
   const [filter, setFilter] = useState(FILTER_ID_WEB)
   const [projects, setProjects] = useState(projectsData[FILTER_ID_WEB])
 
-  function setFilterAndProjects(filterCategory) {
-    setFilter(filterCategory)
-    setProjects(projectsData[filterCategory])
+  function setFilterAndProjects(category) {
+    setFilter(category)
+    setProjects(projectsData[category])
   }
 
   return (
@@ -68,7 +68,7 @@ function ProjectTiles({ projects }) {
           title={project.title}
           modifier={project.modifier}
           technologies={project.technologies}
-          {...project.projectTile}
+          {...project.tile}
         />
       ))}
     </ul>
@@ -82,13 +82,13 @@ function Filter(props) {
       <div className="projects__filter-buttons">
         <FilterButton
           title="Web"
-          filterCategory={FILTER_ID_WEB}
+          category={FILTER_ID_WEB}
           {...props}
         />
 
         <FilterButton
           title="PR"
-          filterCategory={FILTER_ID_PR}
+          category={FILTER_ID_PR}
           {...props}
         />
       </div>
@@ -96,14 +96,14 @@ function Filter(props) {
   );
 };
 
-function FilterButton({ title, filterCategory, selectedFilter, setFilterAndProjects }) {
+function FilterButton({ title, category, selectedFilter, setFilterAndProjects }) {
   return (
     <button
-      className={`projects__filter-button ${selectedFilter === filterCategory
+      className={`projects__filter-button ${selectedFilter === category
         ? "is-selected"
         : ""
         }`}
-      onClick={() => setFilterAndProjects(filterCategory)}
+      onClick={() => setFilterAndProjects(category)}
     >
       {title}
     </button>
@@ -115,7 +115,7 @@ export const StitchedPage = () => (
   <ProjectPage
     title={stitchedProjectData.title}
     technologies={stitchedProjectData.technologies}
-    {...stitchedProjectData.projectPage}
+    {...stitchedProjectData.page}
   />
 );
 
@@ -123,7 +123,7 @@ export const StitchedArPage = () => (
   <ProjectPage
     title={stitchedArProjectData.title}
     technologies={stitchedArProjectData.technologies}
-    {...stitchedArProjectData.projectPage}
+    {...stitchedArProjectData.page}
   />
 );
 
@@ -131,14 +131,14 @@ export const TheBethsPage = () => (
   <ProjectPage
     title={bethsProjectData.title}
     technologies={bethsProjectData.technologies}
-    {...bethsProjectData.projectPage}
+    {...bethsProjectData.page}
   />);
 
 export const WaldourStudiosPage = () => (
   <ProjectPage
     title={waldourProjectData.title}
     technologies={waldourProjectData.technologies}
-    {...waldourProjectData.projectPage}
+    {...waldourProjectData.page}
   />
 );
 
@@ -146,7 +146,7 @@ export const PortfolioPage = () => (
   <ProjectPage
     title={portfolioProjectData.title}
     technologies={portfolioProjectData.technologies}
-    {...portfolioProjectData.projectPage}
+    {...portfolioProjectData.page}
   />
 );
 
@@ -154,7 +154,7 @@ export const SplorePage = () => (
   <ProjectPage
     title={sploreProjectData.title}
     technologies={sploreProjectData.technologies}
-    {...sploreProjectData.projectPage}
+    {...sploreProjectData.page}
   />
 );
 
@@ -162,7 +162,7 @@ export const SailCityJumpPage = () => (
   <ProjectPage
     title={sailCityJumpProjectData.title}
     technologies={sailCityJumpProjectData.technologies}
-    {...sailCityJumpProjectData.projectPage}
+    {...sailCityJumpProjectData.page}
   />
 );
 
@@ -170,6 +170,6 @@ export const NightAtTheSavoyPage = () => (
   <ProjectPage
     title={nightAtTheSavoyProjectData.title}
     technologies={nightAtTheSavoyProjectData.technologies}
-    {...nightAtTheSavoyProjectData.projectPage}
+    {...nightAtTheSavoyProjectData.page}
   />
 );

@@ -8,7 +8,7 @@ export default function ProjectTile({
   modifier,
   technologies,
   path,
-  filterCategory,
+  category,
   excerpt,
   thumbnail
 }) {
@@ -28,7 +28,7 @@ export default function ProjectTile({
         <div className="project-item__content">
           <h3 className="project-item__title">{title}</h3>
           <p className="project-item__technologies-subtitle">
-            {`Key ${filterCategory === FILTER_ID_WEB ? "Technologies:" : "Skills:"}`}
+            {`Key ${category === FILTER_ID_WEB ? "Technologies:" : "Skills:"}`}
           </p>
           <ul className="project-item__technologies">
             {technologies.map((technology, index) => {

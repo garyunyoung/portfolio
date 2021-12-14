@@ -8,10 +8,10 @@ export default function ProjectPage({
   title,
   modifier,
   technologies,
-  projectType,
-  projectYear,
-  projectDescription,
-  keyFeatures,
+  type,
+  year,
+  description,
+  features,
   images,
   mobileImages,
   imageSets,
@@ -23,24 +23,24 @@ export default function ProjectPage({
       <div className="project__content">
         <div className="project__summary-container">
           <h2 className="project__title">{title}</h2>
-          <p className="project__job-type-subtitle">{projectType}</p>
-          <p className="project__job-year">{projectYear}</p>
+          <p className="project__job-type-subtitle">{type}</p>
+          <p className="project__job-year">{year}</p>
           <ul className="project__technologies">
             {technologies.map((technology, index) => {
               return <li key={index} className="project__technology">{technology}</li>;
             })}
           </ul>
         </div>
-        <div className="project__projectDescription-container">
+        <div className="project__description-container">
           <div className="project__description-container">
-            {projectDescription.map((projectDescription, index) => {
-              return <p key={index} className="project__description" >{projectDescription}</p>
+            {description.map((description, index) => {
+              return <p key={index} className="project__description" >{description}</p>
             })}
           </div>
           <div className="project__key-features-container">
             <p className="project__key-features-subtitle">My Role:</p>
             <ul className="project__key-features">
-              {keyFeatures.map((keyFeature, index) => {
+              {features.map((keyFeature, index) => {
                 return <li key={index} className="project__key-feature">{keyFeature}</li>;
               })}
             </ul>
@@ -78,7 +78,7 @@ export default function ProjectPage({
 
         {
           imageSets ?
-            <React.Fragment>
+            <div className="project__image-set-container">
               {imageSets.map((imageSet, index) => {
                 return (
                   <div key={index} className={`project__image-set`}>
@@ -95,12 +95,12 @@ export default function ProjectPage({
                   </div>
                 )
               })}
-            </React.Fragment> : null
+            </div> : null
         }
 
         <div className='project__cta-links'>
           {
-            links !== "" ?
+            links ?
               links.map((link, index) => {
                 return (
                   <ButtonExternal
