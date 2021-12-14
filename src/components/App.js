@@ -64,63 +64,55 @@ export default class App extends Component {
 
 const StitchedPage = () => (
   <ProjectPage
-    title={stitchedData.title}
-    technologies={stitchedData.technologies}
+    {...stitchedData.shared}
     {...stitchedData.page}
   />
 );
 
 const StitchedArPage = () => (
   <ProjectPage
-    title={stitchedArData.title}
-    technologies={stitchedArData.technologies}
+    {...stitchedArData.shared}
     {...stitchedArData.page}
   />
 );
 
 const TheBethsPage = () => (
   <ProjectPage
-    title={theBethsData.title}
-    technologies={theBethsData.technologies}
+    {...theBethsData.shared}
     {...theBethsData.page}
   />);
 
 const WaldourStudiosPage = () => (
   <ProjectPage
-    title={waldourStudiosData.title}
-    technologies={waldourStudiosData.technologies}
+    {...waldourStudiosData.shared}
     {...waldourStudiosData.page}
   />
 );
 
 const PortfolioPage = () => (
   <ProjectPage
-    title={portfolioData.title}
-    technologies={portfolioData.technologies}
+    {...portfolioData.shared}
     {...portfolioData.page}
   />
 );
 
 const SplorePage = () => (
   <ProjectPage
-    title={sploreData.title}
-    technologies={sploreData.technologies}
+    {...sploreData.shared}
     {...sploreData.page}
   />
 );
 
 const SailCityJumpPage = () => (
   <ProjectPage
-    title={sailCityJumpData.title}
-    technologies={sailCityJumpData.technologies}
+    {...sailCityJumpData.shared}
     {...sailCityJumpData.page}
   />
 );
 
 const NightAtTheSavoyPage = () => (
   <ProjectPage
-    title={nightAtTheSavoyData.title}
-    technologies={nightAtTheSavoyData.technologies}
+    {...nightAtTheSavoyData.shared}
     {...nightAtTheSavoyData.page}
   />
 );

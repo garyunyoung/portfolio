@@ -6,14 +6,13 @@ import "../styles/ProjectPage.scss"
 
 export default function ProjectPage({
   title,
-  modifier,
-  technologies,
   type,
   year,
+  technologies,
   description,
   features,
-  mobileImages,
   desktopImages,
+  mobileImages,
   imageSets,
   links
 }) {

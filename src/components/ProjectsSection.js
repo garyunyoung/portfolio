@@ -64,10 +64,7 @@ function ProjectTiles({ projects }) {
         project, index) => (
         <ProjectTile
           key={index}
-          id={project.id}
-          title={project.title}
-          technologies={project.technologies}
-          path={project.path}
+          {...project.shared}
           {...project.tile}
         />
       ))}

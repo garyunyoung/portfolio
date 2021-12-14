@@ -2,10 +2,12 @@ import * as Image from "../utilities/Cloudinary"
 import { FILTER_ID_WEB, FILTER_ID_PR } from "./constants"
 
 export const stitchedData = {
-  id: "stitched",
-  path: "/projects/stitched",
-  title: "Stitched",
-  technologies: ["Elixir", "Phoenix LiveView", "JavaScript", "React", "SCSS", "HTML"],
+  shared: {
+    id: "stitched",
+    path: "/projects/stitched",
+    title: "Stitched",
+    technologies: ["Elixir", "Phoenix LiveView", "JavaScript", "React", "SCSS", "HTML"]
+  },
 
   tile: {
     category: FILTER_ID_WEB,
@@ -91,10 +93,12 @@ export const stitchedData = {
 }
 
 export const stitchedArData = {
-  id: "stitched-ar",
-  path: "/projects/stitched-ar",
-  title: "Stitched Ar",
-  technologies: ["Swift", "SwiftUI"],
+  shared: {
+    id: "stitched-ar",
+    path: "/projects/stitched-ar",
+    title: "Stitched Ar",
+    technologies: ["Swift", "SwiftUI"]
+  },
 
   tile: {
     category: FILTER_ID_WEB,
@@ -144,10 +148,12 @@ export const stitchedArData = {
 }
 
 export const theBethsData = {
-  id: "the-beths",
-  path: "/projects/the-beths",
-  title: "The Beths",
-  technologies: ["Next.js", "React", "SCSS", "HTML"],
+  shared: {
+    id: "the-beths",
+    path: "/projects/the-beths",
+    title: "The Beths",
+    technologies: ["Next.js", "React", "SCSS", "HTML"]
+  },
 
   tile: {
     category: FILTER_ID_WEB,
@@ -197,10 +203,12 @@ export const theBethsData = {
 }
 
 export const waldourStudiosData = {
-  id: "waldour-studios",
-  path: "/projects/waldour-studios",
-  title: "Waldour Studios",
-  technologies: ["WordPress", "PHP", "SCSS", "HTML"],
+  shared: {
+    id: "waldour-studios",
+    path: "/projects/waldour-studios",
+    title: "Waldour Studios",
+    technologies: ["WordPress", "PHP", "SCSS", "HTML"]
+  },
 
   tile: {
     category: FILTER_ID_WEB,
@@ -244,10 +252,12 @@ export const waldourStudiosData = {
 }
 
 export const portfolioData = {
-  id: "portfolio",
-  path: "/projects/portfolio",
-  title: "Portfolio",
-  technologies: ["React", "JavaScript", "SCSS", "HTML"],
+  shared: {
+    id: "portfolio",
+    path: "/projects/portfolio",
+    title: "Portfolio",
+    technologies: ["React", "JavaScript", "SCSS", "HTML"]
+  },
 
   tile: {
     category: FILTER_ID_WEB,
@@ -279,10 +289,12 @@ export const portfolioData = {
 }
 
 export const sploreData = {
-  id: "splore",
-  path: "/projects/splore-2018",
-  title: "Splore",
-  technologies: ["Communications", "Press"],
+  shared: {
+    id: "splore",
+    path: "/projects/splore-2018",
+    title: "Splore",
+    technologies: ["Communications", "Press"]
+  },
 
   tile: {
     category: FILTER_ID_PR,
@@ -312,10 +324,12 @@ export const sploreData = {
 }
 
 export const sailCityJumpData = {
-  id: "sail-city-jump",
-  path: "/projects/sail-city-jump-2017",
-  title: "Sail City Jump",
-  technologies: ["Event Coordination", "Social Media"],
+  shared: {
+    id: "sail-city-jump",
+    path: "/projects/sail-city-jump-2017",
+    title: "Sail City Jump",
+    technologies: ["Event Coordination", "Social Media"]
+  },
 
   tile: {
     category: FILTER_ID_PR,
@@ -345,10 +359,12 @@ export const sailCityJumpData = {
 }
 
 export const nightAtTheSavoyData = {
-  id: "night-at-the-savoy",
-  path: "/projects/night-at-the-savoy-2017",
-  title: "Night at the Savoy",
-  technologies: ["Event Coordination", "Social Media"],
+  shared: {
+    id: "night-at-the-savoy",
+    path: "/projects/night-at-the-savoy-2017",
+    title: "Night at the Savoy",
+    technologies: ["Event Coordination", "Social Media"]
+  },
 
   tile: {
     category: FILTER_ID_PR,
