@@ -17,6 +17,7 @@ export default function ProjectPage({
   links
 }) {
   useEffect(() => scrollToTop())
+  console.log(title)
 
   return (
     <section className="project">
@@ -72,19 +73,21 @@ export default function ProjectPage({
             null
         }
 
-        <div className='project__cta-links'>
-          {
-            links ?
-              links.map((link, index) => {
-                return (
-                  <ButtonExternal
-                    key={index}
-                    className="project__link"
-                    link={link.url}
-                    title={link.text} />
-                )
-              }) : null
-          }
+        <div className='project__buttons'>
+          <div className='project__primary-buttons'>
+            {
+              links ?
+                links.map((link, index) => {
+                  return (
+                    <ButtonExternal
+                      key={index}
+                      className="project__primary-button"
+                      link={link.url}
+                      title={link.text} />
+                  )
+                }) : null
+            }
+          </div>
         </div>
         <LinkInternal
           className="project__back is-active"

@@ -13,7 +13,6 @@ export default function ProjectTile({
   thumbnail
 }) {
 
-  console.log(id)
   return (
     <li className="project-tile" >
       <div className="project-tile__container">

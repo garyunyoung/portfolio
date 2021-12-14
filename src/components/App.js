@@ -24,35 +24,35 @@ export default class App extends Component {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route
-            path={stitchedData.path}
+            path={stitchedData.shared.path}
             component={StitchedPage}
           />
           <Route
-            path={stitchedArData.path}
+            path={stitchedArData.shared.path}
             component={StitchedArPage}
           />
           <Route
-            path={theBethsData.path}
+            path={theBethsData.shared.path}
             component={TheBethsPage}
           />
           <Route
-            path={waldourStudiosData.path}
+            path={waldourStudiosData.shared.path}
             component={WaldourStudiosPage}
           />
           <Route
-            path={portfolioData.path}
+            path={portfolioData.shared.path}
             component={PortfolioPage}
           />
           <Route
-            path={sploreData.path}
+            path={sploreData.shared.path}
             component={SplorePage}
           />
           <Route
-            path={sailCityJumpData.path}
+            path={sailCityJumpData.shared.path}
             component={SailCityJumpPage}
           />
           <Route
-            path={nightAtTheSavoyData.path}
+            path={nightAtTheSavoyData.shared.path}
             component={NightAtTheSavoyPage}
           />
         </Switch>

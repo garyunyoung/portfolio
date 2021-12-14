@@ -135,14 +135,14 @@
     }
   }
 
-  @include element('cta-links') {
+  @include element('primary-buttons') {
     display: flex;
     flex-flow: column;
     margin: calc(#{$spacer-large} - 32px) auto $spacer-small
       auto;
   }
 
-  @include element('link') {
+  @include element('primary-button') {
     @include cta-button;
     margin: 0 auto;
 
