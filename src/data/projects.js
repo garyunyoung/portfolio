@@ -122,7 +122,6 @@ export const stitchedArProjectData = {
       { url: "https://apps.apple.com/gb/app/stitched-ar/id1461104538", text: 'View in app store' },
       { url: "https://drive.google.com/file/d/1V79ak7lZGta91WAPVZhYcK4M8w3TOur3/view?usp=sharing", text: 'See demo' }
     ],
-
     mobileImages: [
       {
         src: Image.stitchedArMeasure,
@@ -175,7 +174,7 @@ export const bethsProjectData = {
       "Mobile first and responsive design."
     ],
     links: [{ url: "https://thebeths.com/", text: "Visit site" }],
-    images: [{ src: Image.theBethsHomepageDesktop, alt: "The Beths Home Page" }],
+    desktopImages: [{ src: Image.theBethsHomepageDesktop, alt: "The Beths Home Page" }],
     mobileImages: [
       {
         src: Image.theBethsHomepageMobile,
@@ -295,7 +294,6 @@ export const sploreProjectData = {
   page: {
     type: "Intern",
     year: "2018",
-    images: [{ src: Image.sploreBanner, alt: "splore 2018 festival banner" }],
     description: [
       "At the end of 2017 I was brought onboard as a press assistant for Splore - arguably the best music festival in New Zealand."],
     features: [
@@ -308,7 +306,8 @@ export const sploreProjectData = {
       "Researched media opportunities.",
       "General administrative tasks"
     ],
-    links: [{ url: "http://www.splore.net/", text: "Visit site" }]
+    links: [{ url: "http://www.splore.net/", text: "Visit site" }],
+    desktopImages: [{ src: Image.sploreBanner, alt: "splore 2018 festival banner" }]
   }
 }
 
@@ -341,7 +340,7 @@ export const sailCityJumpProjectData = {
       "Tracked registrations and ticket sales.",
     ],
     links: [{ url: "https://www.facebook.com/events/2039384882959969/?active_tab=discussion", text: "See event page" }],
-    images: [{ src: Image.sailCityJumpBanner, alt: "sail city jump 2017 festival banner" }]
+    desktopImages: [{ src: Image.sailCityJumpBanner, alt: "sail city jump 2017 festival banner" }]
   }
 }
 
@@ -373,7 +372,7 @@ export const nightAtTheSavoyProjectData = {
       "Curated and distributed marketing material.",
       "Tracked registrations and ticket sales."
     ],
-    images: [{ src: Image.nightAtTheSavoyBanner, alt: "Night at the Savoy 2017 festival banner" }],
-    links: [{ url: "https://www.facebook.com/events/220801418420563", text: 'See event page' }]
+    links: [{ url: "https://www.facebook.com/events/220801418420563", text: 'See event page' }],
+    desktopImages: [{ src: Image.nightAtTheSavoyBanner, alt: "Night at the Savoy 2017 festival banner" }]
   }
 }

@@ -31,9 +31,11 @@ export default function ProjectTile({
             {`Key ${category === FILTER_ID_WEB ? "Technologies:" : "Skills:"}`}
           </p>
           <ul className="project-item__technologies">
-            {technologies.map((technology, index) => {
-              return <li key={index} className="project-item__technology">{technology}</li>;
-            })}
+            {
+              technologies.map((technology, index) => {
+                return <li key={index} className="project-item__technology">{technology}</li>
+              })
+            }
           </ul>
           <p className="project-item__excerpt">{excerpt}</p>
           <NavLink className="project-item__see-more" to={path}>
