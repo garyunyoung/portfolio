@@ -1,0 +1,66 @@
+@import './_mixins.scss';
+@import './_variables.scss';
+
+@include block('projects') {
+  @include element('content') {
+    min-height: calc(100vh - #{$navigation-height-mobile});
+    padding: 0 $side-padding-mobile;
+    padding-top: $navigation-height-mobile;
+
+    @include tablet {
+      min-height: calc(
+        100vh - #{$navigation-height-tablet}
+      );
+      padding-top: $navigation-height-tablet;
+    }
+
+    @include sm-desktop {
+      max-width: $max-width-desktop;
+      margin: 0 auto;
+    }
+  }
+
+  @include element('title') {
+    @include subheading-font;
+    margin-bottom: 16px;
+  }
+
+  @include element('filter-container') {
+    @include sm-desktop {
+      width: max-content;
+      padding: 8px 24px 22px;
+      margin-bottom: 24px;
+    }
+  }
+
+  @include element('filter-title') {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: $light-grey;
+  }
+
+  @include element('filter-buttons') {
+    display: flex;
+    margin-bottom: 40px;
+
+    @include sm-desktop {
+      margin: 0;
+    }
+  }
+
+  @include element('filter-button') {
+    @include cta-button;
+
+    margin: 0 16px 40px 0;
+
+    @include state('selected') {
+      color: $black;
+      background-color: transparent;
+
+      &:focus,
+      &:focus-visible {
+        outline: 2px dotted $black;
+      }
+    }
+  }
+}

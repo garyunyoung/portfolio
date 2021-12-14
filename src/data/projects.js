@@ -2,8 +2,8 @@ import * as Image from "../utilities/Cloudinary"
 import { FILTER_ID_WEB, FILTER_ID_PR } from "./constants"
 
 export const stitchedData = {
+  id: "stitched",
   path: "/projects/stitched",
-  modifier: "stitched",
   title: "Stitched",
   technologies: ["Elixir", "Phoenix LiveView", "JavaScript", "React", "SCSS", "HTML"],
 
@@ -91,8 +91,8 @@ export const stitchedData = {
 }
 
 export const stitchedArData = {
+  id: "stitched-ar",
   path: "/projects/stitched-ar",
-  modifier: "stitched-ar",
   title: "Stitched Ar",
   technologies: ["Swift", "SwiftUI"],
 
@@ -144,8 +144,8 @@ export const stitchedArData = {
 }
 
 export const theBethsData = {
+  id: "the-beths",
   path: "/projects/the-beths",
-  modifier: "the-beths",
   title: "The Beths",
   technologies: ["Next.js", "React", "SCSS", "HTML"],
 
@@ -197,8 +197,8 @@ export const theBethsData = {
 }
 
 export const waldourStudiosData = {
+  id: "waldour-studios",
   path: "/projects/waldour-studios",
-  modifier: "waldour-studios",
   title: "Waldour Studios",
   technologies: ["WordPress", "PHP", "SCSS", "HTML"],
 
@@ -244,8 +244,8 @@ export const waldourStudiosData = {
 }
 
 export const portfolioData = {
+  id: "portfolio",
   path: "/projects/portfolio",
-  modifier: "portfolio",
   title: "Portfolio",
   technologies: ["React", "JavaScript", "SCSS", "HTML"],
 
@@ -279,8 +279,8 @@ export const portfolioData = {
 }
 
 export const sploreData = {
+  id: "splore",
   path: "/projects/splore-2018",
-  modifier: "splore",
   title: "Splore",
   technologies: ["Communications", "Press"],
 
@@ -312,8 +312,8 @@ export const sploreData = {
 }
 
 export const sailCityJumpData = {
+  id: "sail-city-jump",
   path: "/projects/sail-city-jump-2017",
-  modifier: "sail-city-jump",
   title: "Sail City Jump",
   technologies: ["Event Coordination", "Social Media"],
 
@@ -345,8 +345,8 @@ export const sailCityJumpData = {
 }
 
 export const nightAtTheSavoyData = {
+  id: "night-at-the-savoy",
   path: "/projects/night-at-the-savoy-2017",
-  modifier: "night-at-the-savoy",
   title: "Night at the Savoy",
   technologies: ["Event Coordination", "Social Media"],
 

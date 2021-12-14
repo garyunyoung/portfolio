@@ -11,7 +11,7 @@ import {
   nightAtTheSavoyData
 } from "../data/projects";
 import ProjectTile from "./ProjectTile";
-import "../styles/Projects.scss";
+import "../styles/ProjectsSection.scss";
 
 const projectsData = {}
 
@@ -64,8 +64,8 @@ function ProjectTiles({ projects }) {
         project, index) => (
         <ProjectTile
           key={index}
+          id={project.id}
           title={project.title}
-          modifier={project.modifier}
           technologies={project.technologies}
           path={project.path}
           {...project.tile}

@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonExternal, ButtonInternal } from './partials/Buttons'
 import { LinkExternal } from './partials/Links'
-import "../styles/About.scss";
+import "../styles/AboutSection.scss";
 
 export default function AboutSection() {
   return (

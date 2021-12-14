@@ -1,23 +1,25 @@
 import React from "react";
 import { FILTER_ID_WEB } from "../data/constants";
 import { NavLink } from "react-router-dom";
-import "../styles/Projects.scss";
+import "../styles/ProjectTile.scss";
 
 export default function ProjectTile({
+  id,
   title,
-  modifier,
   technologies,
   path,
   category,
   excerpt,
   thumbnail
 }) {
+
+  console.log(id)
   return (
     <li className="project-tile" >
       <div className="project-tile__container">
         <div className="project-tile__image-wrapper">
           <img
-            className={`project-tile__image project-tile__image--${modifier}`}
+            className={`project-tile__image project-tile__image--${id}`}
             src={thumbnail.src}
             alt={thumbnail.alt}
           />
