@@ -20,7 +20,7 @@ export default function Navigation() {
     if (isHomePage) {
       elementInView(setIsInScrollView)
     }
-  })
+  }, [isHomePage])
 
   function toggleNav() {
     setIsOpen(prevState => !prevState)
