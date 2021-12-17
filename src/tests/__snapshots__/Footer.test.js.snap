@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<section
+  className="footer"
+  id="footer"
+>
+  <div
+    className="footer__content"
+  >
+    <p
+      className="footer__text"
+    >
+      This site is an open work-in-progress while I continue to learn and apply relevant accessibility standards. This site aims to be
+      <a
+        className="footer__link"
+        href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Web Content Accessibility Guidelines 2.1 (WCAG)
+      </a>
+      AA compliant.
+    </p>
+    <p
+      className="footer__back-to-top"
+      onClick={[Function]}
+    >
+      Back to top
+    </p>
+  </div>
+</section>
+`;
