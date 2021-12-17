@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<header
+  className="navigation "
+>
+  <div
+    className="navigation__content"
+  >
+    <div
+      className="navigation__title-wrapper"
+    >
+      <h1
+        className="navigation__title"
+      >
+        Garyun Young
+      </h1>
+    </div>
+    <button
+      className="navigation__mobile-menu-button"
+      onClick={[Function]}
+    >
+      Menu
+    </button>
+    <nav
+      className="navigation-menu navigation__nav"
+    >
+      <ul
+        className="navigation-menu__nav-items"
+      >
+        <span
+          className="navigation-menu__nav-main-items"
+        >
+          <li
+            className="navigation-menu__nav-item"
+          >
+            <a
+              className="navigation-menu__nav-item-link "
+              href="/#projects"
+              onClick={[Function]}
+            >
+              Projects
+            </a>
+          </li>
+          <li
+            className="navigation-menu__nav-item"
+          >
+            <a
+              className="navigation-menu__nav-item-link "
+              href="/#about"
+              onClick={[Function]}
+            >
+              About
+            </a>
+          </li>
+        </span>
+        <span
+          className="navigation-menu__nav-code-container"
+        >
+          <li
+            onClick={[Function]}
+          >
+            <button
+              className="
+              navigation-menu__nav-item-link 
+              navigation-menu__nav-item-link--socials 
+              
+            "
+            >
+              Code
+            </button>
+          </li>
+          <span
+            className="navigation-menu__nav-socials "
+          >
+            <li>
+              <a
+                className="navigation-menu__nav-item-link-social"
+                href="https://github.com/garyunyoung"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <p
+                  className="navigation-menu__nav-item-text-social"
+                >
+                  Github
+                </p>
+                <img
+                  alt=""
+                  src="github.svg"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                className="navigation-menu__nav-item-link-social"
+                href="https://exercism.org/profiles/garyunyoung"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <p
+                  className="navigation-menu__nav-item-text-social"
+                >
+                  Exercism
+                </p>
+                <img
+                  alt=""
+                  src="exercism.svg"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                className="navigation-menu__nav-item-link-social"
+                href="https://www.codewars.com/users/garryunn"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <p
+                  className="navigation-menu__nav-item-text-social"
+                >
+                  Codewars
+                </p>
+                <img
+                  alt=""
+                  src="codewars.svg"
+                />
+              </a>
+            </li>
+          </span>
+        </span>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;
