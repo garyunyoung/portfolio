@@ -38,13 +38,7 @@ export default function Navigation() {
     <header className={`navigation ${isOpen ? 'is-open' : ''}`}>
       <div className='navigation__content'>
         <div className='navigation__title-wrapper'>
-          {isHomePage ?
-            <h1 className='navigation__title'>Garyun Young</h1> :
-            <a
-              className={`navigation__title-link ${isHomePage ? '' : 'is-active'}`}
-              href='/#'>
-              Garyun Young</a>
-          }
+          <Logo isHomePage={isHomePage} />
         </div>
         <button
           className='navigation__mobile-menu-button'
@@ -94,7 +88,7 @@ function NavigationMenu({ isSocialsOpen, toggleSocials, closeNav, isInScrollView
               Code
             </button>
           </li>
-          <span className={`navigation-menu__nav-socials ${isSocialsOpen ? 'is-visible' : ''}`}>
+          <span data-testid="nav-socials" className={`navigation-menu__nav-socials ${isSocialsOpen ? 'is-visible' : ''}`}>
             <NavItemLinkSocial
               link="https://github.com/garyunyoung"
               title="Github"
@@ -114,6 +108,17 @@ function NavigationMenu({ isSocialsOpen, toggleSocials, closeNav, isInScrollView
       </ul>
     </nav >
   );
+}
+
+export function Logo({ isHomePage }) {
+  return (
+    isHomePage ?
+      <h1 className='navigation__title'>Garyun Young</h1> :
+      <a
+        className={`navigation__title-link ${isHomePage ? '' : 'is-active'}`}
+        href='/#'>
+        Garyun Young</a>
+  )
 }
 
 function NavItemLink({ sectionId, title, link, closeNav, isInScrollView }) {

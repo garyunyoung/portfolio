@@ -1,8 +1,9 @@
 import React from 'react';
-import { render, unmountComponentAtNode } from 'react-dom';
+import ReactDOM from 'react-dom';
 import { create } from 'react-test-renderer'
-import Navigation from '../components/Navigation'
-import { getQueriesForElement } from '@testing-library/dom'
+import { fireEvent, render } from '@testing-library/react'
+import '@testing-library/jest-dom'
+import Navigation, { Logo } from '../components/Navigation'
 
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
@@ -13,23 +14,50 @@ jest.mock("react-router-dom", () => ({
 
 it('renders without crashing', () => {
   const root = document.createElement('div');
-  render(<Navigation />, root);
-  unmountComponentAtNode(root);
+  ReactDOM.render(<Navigation />, root);
+  ReactDOM.unmountComponentAtNode(root);
 });
 
-it('renders correct content', () => {
-  const root = document.createElement('div');
-  render(<Navigation />, root);
+it('renders correct nav item links', () => {
+  const { getByTestId, getByText } = render(<Navigation />)
+  const navSocials = getByTestId("nav-socials")
 
-  const { getByText } = getQueriesForElement(root)
-
+  getByText("Garyun Young")
   getByText("Projects")
   getByText("About")
   getByText("Code")
+
+  expect(navSocials).not.toHaveClass('is-visible')
+  getByText("Github")
+  getByText("Exercism")
+  getByText("Codewars")
 });
 
+it('opens code nav item dropdown when clicked', () => {
+  const { getByTestId, getByText } = render(<Navigation />)
+  const clickElement = getByText("Code")
+  const navSocials = getByTestId("nav-socials")
 
+  fireEvent.click(clickElement)
+  expect(navSocials).toHaveClass('is-visible')
 
+  fireEvent.click(clickElement)
+  expect(navSocials).not.toHaveClass('is-visible')
+})
+
+describe('Logo', () => {
+  it('show logo link when NOT on homepage', () => {
+    const { getByRole } = render(<Logo isHomePage={false} />)
+
+    expect(getByRole('link')).toBeInTheDocument()
+  })
+
+  it('show logo heading when on homepage', () => {
+    const { getByRole } = render(<Logo isHomePage={true} />)
+
+    expect(getByRole('heading')).toBeInTheDocument()
+  })
+})
 it('matches snapshot', () => {
   const tree = create(<Navigation />).toJSON()
   expect(tree).toMatchSnapshot()

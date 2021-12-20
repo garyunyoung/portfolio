@@ -72,6 +72,7 @@ exports[`matches snapshot 1`] = `
           </li>
           <span
             className="navigation-menu__nav-socials "
+            data-testid="nav-socials"
           >
             <li>
               <a
