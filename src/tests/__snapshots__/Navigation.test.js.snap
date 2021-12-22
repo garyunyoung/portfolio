@@ -8,10 +8,10 @@ exports[`matches snapshot 1`] = `
     className="navigation__content"
   >
     <div
-      className="navigation__title-wrapper"
+      className="navigation__logo-wrapper"
     >
       <h1
-        className="navigation__title"
+        className="navigation__logo"
       >
         Garyun Young
       </h1>

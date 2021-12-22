@@ -58,6 +58,7 @@ describe('Logo', () => {
     expect(getByRole('heading')).toBeInTheDocument()
   })
 })
+
 it('matches snapshot', () => {
   const tree = create(<Navigation />).toJSON()
   expect(tree).toMatchSnapshot()

@@ -43,14 +43,14 @@
     margin: 0 auto;
   }
 
-  @include element('title-wrapper') {
+  @include element('logo-wrapper') {
     display: flex;
     flex-grow: 1;
 
     margin-left: $side-padding-mobile;
   }
 
-  @include element('title') {
+  @include element('logo') {
     @include title-font;
 
     @include sm-desktop {
@@ -58,7 +58,7 @@
     }
   }
 
-  @include element('title-link') {
+  @include element('logo-link') {
     @include cta-link-button;
     @include title-font;
     padding: 0;

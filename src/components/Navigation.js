@@ -37,9 +37,7 @@ export default function Navigation() {
   return (
     <header className={`navigation ${isOpen ? 'is-open' : ''}`}>
       <div className='navigation__content'>
-        <div className='navigation__title-wrapper'>
-          <Logo isHomePage={isHomePage} />
-        </div>
+        <Logo isHomePage={isHomePage} />
         <button
           className='navigation__mobile-menu-button'
           onClick={() => toggleNav()}
@@ -112,15 +110,18 @@ function NavigationMenu({ isSocialsOpen, toggleSocials, closeNav, isInScrollView
 
 export function Logo({ isHomePage }) {
   return (
-    isHomePage ?
-      <h1 className='navigation__title'>Garyun Young</h1> :
-      <a
-        className={`navigation__title-link ${isHomePage ? '' : 'is-active'}`}
-        href='/#'>
-        Garyun Young</a>
+    <div className='navigation__logo-wrapper'>
+      {
+        isHomePage ?
+          <h1 className='navigation__logo'>Garyun Young</h1> :
+          <a
+            className={`navigation__logo-link ${isHomePage ? '' : 'is-active'}`}
+            href='/#'>
+            Garyun Young</a>
+      }
+    </div >
   )
 }
-
 function NavItemLink({ sectionId, title, link, closeNav, isInScrollView }) {
   return (
     <li className='navigation-menu__nav-item'>
