@@ -49,13 +49,13 @@ describe('Logo', () => {
   it('show logo link when NOT on homepage', () => {
     const { getByRole } = render(<Logo isHomePage={false} />)
 
-    expect(getByRole('link')).toBeInTheDocument()
+    getByRole('link')
   })
 
   it('show logo heading when on homepage', () => {
     const { getByRole } = render(<Logo isHomePage={true} />)
 
-    expect(getByRole('heading')).toBeInTheDocument()
+    getByRole('heading')
   })
 })
 
