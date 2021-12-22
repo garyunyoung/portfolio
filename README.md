@@ -1,12 +1,13 @@
 ## Portfolio
-Viewable at: https://www.garyunyoung.com
+
+View here: [garyunyoung.com](https://www.garyunyoung.com)
 
 ### Key Features:
 
 - Implemented with a focus on accessibliy.
-- See key features here: https://www.garyunyoung.com/projects/portfolio
+- See key features here: [garyunyoung.com/projects/portfolio](https://www.garyunyoung.com/projects/portfolio)
 
-**Created using:** React, React Router, HTML, and SCSS.
+**Created using:** React, JavaScript, HTML, and SCSS. Jest for testing.
 
 ### Task list:
 
@@ -21,19 +22,9 @@ Viewable at: https://www.garyunyoung.com
 - [ ] Fix state when returning to projects page from a pr project page
 - [ ] Remove p5.js or find another use for it
 
-#### Refactor
-
-- [ ] Project data: conditional rendering for project page prop data
-- [ ] Revise react router
-- [ ] Revise navbar placement
-- [ ] Revise about page elements
-- [ ] Revise navbar and footer placement in the HTML
-- [ ] Refactor project page images
-- [ ] Refactor navbar
-
 #### Accessibility
 
-Checklist: https://www.a11yproject.com/checklist/
+Checklist: [a11yproject.com/checklist](https://www.a11yproject.com/checklist/)
 
 - [ ] Add alt tags to images
 - [ ] Fix HTML heading levels
