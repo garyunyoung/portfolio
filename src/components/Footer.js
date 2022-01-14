@@ -12,8 +12,8 @@ export default function Footer() {
           This site aims to be
           <LinkExternal
             className="footer__link"
-            link="https://www.w3.org/WAI/standards-guidelines/wcag/"
-            title="Web Content Accessibility Guidelines 2.1 (WCAG)" />
+            href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+            text="Web Content Accessibility Guidelines 2.1 (WCAG)" />
           AA compliant.
         </p>
         <p className='footer__back-to-top' onClick={() => scrollToTop()}>Back to top</p>

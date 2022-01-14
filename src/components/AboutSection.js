@@ -53,8 +53,8 @@ function ListItemLink(props) {
     <li className="about__resource-list-item">
       <LinkExternal
         className="about__resource-list-item-link"
-        link={props.link}
-        title={props.linkName} />
+        href={props.link}
+        text={props.linkName} />
     </li>
   )
 }

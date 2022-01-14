@@ -91,8 +91,8 @@ export default function ProjectPage({
         </div>
         <LinkInternal
           className="project__back is-active"
-          link="/#projects"
-          title="Back to projects" />
+          href="/#projects"
+          text="Back to projects" />
       </div>
     </section >
   )
