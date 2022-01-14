@@ -143,14 +143,10 @@
   }
 
   @include element('primary-button') {
-    @include call-to-action-button;
-    margin: 0 auto;
-
-    margin-top: 32px;
+    margin: 32px auto 0 auto;
   }
 
   @include element('back') {
-    @include call-to-action-link-button;
     margin: 0 auto $spacer-large auto;
   }
 }

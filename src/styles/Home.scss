@@ -42,8 +42,7 @@
     }
   }
 
-  @include element('projects-call-to-action') {
-    @include call-to-action-button;
+  @include element('call-to-action') {
     width: fit-content;
     margin: $spacer-large auto 0 auto;
   }

@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom'
+
+import { LinkInternal } from './partials/Links'
 
 import github from '../assets/logos/github.svg';
 import codewars from '../assets/logos/codewars.svg';
@@ -114,10 +116,11 @@ export function Logo({ isHomePage }) {
       {
         isHomePage ?
           <h1 className='navigation__logo'>Garyun Young</h1> :
-          <a
+          <LinkInternal
             className={`navigation__logo-link ${isHomePage ? '' : 'is-active'}`}
-            href='/#'>
-            Garyun Young</a>
+            style="link-button"
+            href="/#"
+            text="Garyun Young" />
       }
     </div >
   )

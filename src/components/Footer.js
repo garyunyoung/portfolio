@@ -1,6 +1,6 @@
-import React from "react";
 import { LinkExternal } from './partials/Links'
 import scrollToTop from "../utilities/ScrollToTop";
+
 import "../styles/Footer.scss";
 
 export default function Footer() {
@@ -12,11 +12,12 @@ export default function Footer() {
           This site aims to be
           <LinkExternal
             className="footer__link"
+            style="link"
             href="https://www.w3.org/WAI/standards-guidelines/wcag/"
             text="Web Content Accessibility Guidelines 2.1 (WCAG)" />
           AA compliant.
         </p>
-        <p className='footer__back-to-top' onClick={() => scrollToTop()}>Back to top</p>
+        <button className='footer__back-to-top' onClick={() => scrollToTop()} role="link">Back to top</button>
       </div>
     </section>
   );

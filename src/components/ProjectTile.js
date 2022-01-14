@@ -1,6 +1,6 @@
-import React from "react";
 import { FILTER_ID_WEB } from "../data/constants";
 import { NavLink } from "react-router-dom";
+
 import "../styles/ProjectTile.scss";
 
 export default function ProjectTile({

@@ -33,9 +33,7 @@
   }
 
   @include element('link') {
-    @include call-to-action-link;
     display: inline;
-
     margin: 0 4px;
   }
 

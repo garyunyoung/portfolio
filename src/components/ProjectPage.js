@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import { LinkInternal, LinkExternal } from './partials/Links'
 import scrollToTop from "../utilities/ScrollToTop"
+
 import "../styles/ProjectPage.scss"
 
 export default function ProjectPage({
@@ -81,6 +82,7 @@ export default function ProjectPage({
                     <LinkExternal
                       key={index}
                       className="project__primary-button"
+                      style="button"
                       href={link.url}
                       text={link.text} />
                   )
@@ -90,6 +92,7 @@ export default function ProjectPage({
         </div>
         <LinkInternal
           className="project__back is-active"
+          style="link-button"
           href="/#projects"
           text="Back to projects" />
       </div>

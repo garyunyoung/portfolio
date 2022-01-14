@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FILTER_ID_WEB, FILTER_ID_PR } from "../data/constants";
 import {
   stitchedData,

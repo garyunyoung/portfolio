@@ -59,7 +59,6 @@
   }
 
   @include element('logo-link') {
-    @include call-to-action-link-button;
     @include title-font;
     padding: 0;
 

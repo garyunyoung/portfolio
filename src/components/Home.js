@@ -13,7 +13,8 @@ export default function Home() {
           <p className="home__text">A front-end developer passionate about building <u>inclusive</u> and <u>innovative</u> digital experiences.</p>
           <p className="home__text">Currently in Auckland, NZ</p>
           <LinkInternal
-            className="home__projects-call-to-action"
+            className="home__call-to-action"
+            style="button"
             href="/#projects"
             text="See projects" />
         </div>

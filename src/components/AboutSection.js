@@ -1,5 +1,5 @@
-import React from "react";
 import { LinkExternal, LinkInternal } from './partials/Links'
+
 import "../styles/AboutSection.scss";
 
 export default function AboutSection() {
@@ -22,11 +22,13 @@ export default function AboutSection() {
         <div className="about__call-to-actions">
           <LinkExternal
             className="about__call-to-action"
+            style="button"
             href="https://res.cloudinary.com/garyou/image/upload/v1638130760/portfolio/Garyun-Young-Front-End-Developer-CV-2021.pdf"
             text="See resume" />
 
           <LinkInternal
             className="about__call-to-action"
+            style="button"
             href="mailto:garyunyoung@gmail.com"
             text="Email me" />
         </div>
@@ -34,12 +36,12 @@ export default function AboutSection() {
         <div className="about__resource-list-container">
           <p className="about__list-header">Favourite learning resources:</p>
           <ul className="about__resource-list">
-            <ListItemLink linkName="The Bike Shed" link="https://www.bikeshed.fm/" />
-            <ListItemLink linkName="Syntax" link="https://syntax.fm/" />
-            <ListItemLink linkName="Execute Program" link="https://www.executeprogram.com/" />
-            <ListItemLink linkName="Advent of Code" link="https://adventofcode.com/2021/about" />
-            <ListItemLink linkName="The A11Y Project" link="https://www.a11yproject.com/" />
-            <ListItemLink linkName="The Coding Train" link="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" />
+            <ResourceListItem text="The Bike Shed" href="https://www.bikeshed.fm/" />
+            <ResourceListItem text="Syntax" href="https://syntax.fm/" />
+            <ResourceListItem text="Execute Program" href="https://www.executeprogram.com/" />
+            <ResourceListItem text="Advent of Code" href="https://adventofcode.com/2021/about" />
+            <ResourceListItem text="The A11Y Project" href="https://www.a11yproject.com/" />
+            <ResourceListItem text="The Coding Train" href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" />
           </ul>
         </div>
       </div>
@@ -47,13 +49,14 @@ export default function AboutSection() {
   );
 }
 
-function ListItemLink(props) {
+function ResourceListItem({ text, href }) {
   return (
     <li className="about__resource-list-item">
       <LinkExternal
         className="about__resource-list-item-link"
-        href={props.link}
-        text={props.linkName} />
+        style="link"
+        href={href}
+        text={text} />
     </li>
   )
 }

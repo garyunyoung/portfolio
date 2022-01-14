@@ -69,7 +69,7 @@
   }
 
   @include element('call-to-action') {
-    @include call-to-action-button;
+    // @include call-to-action-button;
     width: 100%;
 
     &:first-child {
@@ -106,9 +106,5 @@
         display: none;
       }
     }
-  }
-
-  @include element('resource-list-item-link') {
-    @include call-to-action-link;
   }
 }
