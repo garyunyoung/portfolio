@@ -82,8 +82,8 @@ export default function ProjectPage({
                     <ButtonExternal
                       key={index}
                       className="project__primary-button"
-                      link={link.url}
-                      title={link.text} />
+                      href={link.url}
+                      text={link.text} />
                   )
                 }) : null
             }

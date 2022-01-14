@@ -2,27 +2,35 @@ import { ReactElement } from 'react'
 
 interface Props {
   className: string
-  link: string
-  title: string
+  href: string
+  text: string
 }
 
-export function ButtonExternal(props: Props): ReactElement {
+export function ButtonExternal({
+  className,
+  href,
+  text
+}: Props): ReactElement {
   return (
     <a
-      className={props.className}
-      href={props.link}
+      className={className}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
     >
-      {props.title}
+      {text}
     </a>
   )
 }
 
-export function ButtonInternal(props: Props): ReactElement {
+export function ButtonInternal({
+  className,
+  href,
+  text
+}: Props): ReactElement {
   return (
-    <a className={props.className} href={props.link}>
-      {props.title}
+    <a className={className} href={href}>
+      {text}
     </a>
   )
 }

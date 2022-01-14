@@ -20,16 +20,16 @@ export default function AboutSection() {
           </ul>
         </div>
 
-        <div className="about__links">
+        <div className="about__buttons">
           <ButtonExternal
-            className="about__link"
-            link="https://res.cloudinary.com/garyou/image/upload/v1638130760/portfolio/Garyun-Young-Front-End-Developer-CV-2021.pdf"
-            title="See resume" />
+            className="about__button"
+            href="https://res.cloudinary.com/garyou/image/upload/v1638130760/portfolio/Garyun-Young-Front-End-Developer-CV-2021.pdf"
+            text="See resume" />
 
           <ButtonInternal
-            className="about__link"
-            link="mailto:garyunyoung@gmail.com"
-            title="Email me" />
+            className="about__button"
+            href="mailto:garyunyoung@gmail.com"
+            text="Email me" />
         </div>
 
         <div className="about__resource-list-container">

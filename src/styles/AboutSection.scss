@@ -51,7 +51,7 @@
     list-style: '- ' inside none;
   }
 
-  @include element('links') {
+  @include element('buttons') {
     display: flex;
     flex-flow: column;
 
@@ -68,7 +68,7 @@
     margin-bottom: 24px;
   }
 
-  @include element('link') {
+  @include element('button') {
     @include cta-button;
     width: 100%;
 

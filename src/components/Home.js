@@ -17,8 +17,8 @@ export default function Home() {
           <p className="home__text">Currently in Auckland, NZ</p>
           <ButtonInternal
             className="home__projects-cta"
-            link="/#projects"
-            title="See projects" />
+            href="/#projects"
+            text="See projects" />
         </div>
       </section>
       <ProjectsSection />
