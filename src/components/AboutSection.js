@@ -1,6 +1,5 @@
 import React from "react";
-import { ButtonExternal, ButtonInternal } from './partials/Buttons'
-import { LinkExternal } from './partials/Links'
+import { LinkExternal, LinkInternal } from './partials/Links'
 import "../styles/AboutSection.scss";
 
 export default function AboutSection() {
@@ -21,12 +20,12 @@ export default function AboutSection() {
         </div>
 
         <div className="about__buttons">
-          <ButtonExternal
+          <LinkExternal
             className="about__button"
             href="https://res.cloudinary.com/garyou/image/upload/v1638130760/portfolio/Garyun-Young-Front-End-Developer-CV-2021.pdf"
             text="See resume" />
 
-          <ButtonInternal
+          <LinkInternal
             className="about__button"
             href="mailto:garyunyoung@gmail.com"
             text="Email me" />

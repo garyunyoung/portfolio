@@ -1,9 +1,6 @@
-import React from "react";
-
-import { ButtonInternal } from './partials/Buttons'
+import { LinkInternal } from './partials/Links'
 import ProjectsSection from "./ProjectsSection";
 import AboutSection from "./AboutSection";
-
 
 import "../styles/Home.scss";
 
@@ -15,7 +12,7 @@ export default function Home() {
           <p className="home__text">Hi! I'm <u>Garyun</u>.</p>
           <p className="home__text">A front-end developer passionate about building <u>inclusive</u> and <u>innovative</u> digital experiences.</p>
           <p className="home__text">Currently in Auckland, NZ</p>
-          <ButtonInternal
+          <LinkInternal
             className="home__projects-cta"
             href="/#projects"
             text="See projects" />
