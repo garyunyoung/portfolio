@@ -51,7 +51,7 @@
     list-style: '- ' inside none;
   }
 
-  @include element('buttons') {
+  @include element('call-to-actions') {
     display: flex;
     flex-flow: column;
 
@@ -68,8 +68,8 @@
     margin-bottom: 24px;
   }
 
-  @include element('button') {
-    @include cta-button;
+  @include element('call-to-action') {
+    @include call-to-action-button;
     width: 100%;
 
     &:first-child {
@@ -109,6 +109,6 @@
   }
 
   @include element('resource-list-item-link') {
-    @include cta-link;
+    @include call-to-action-link;
   }
 }

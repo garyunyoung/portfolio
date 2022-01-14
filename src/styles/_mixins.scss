@@ -153,7 +153,7 @@
   }
 }
 
-@mixin cta-button {
+@mixin call-to-action-button {
   display: block;
 
   @include body-font;
@@ -182,7 +182,7 @@
   }
 }
 
-@mixin cta-link {
+@mixin call-to-action-link {
   display: block;
 
   @include body-font;
@@ -211,7 +211,7 @@
   }
 }
 
-@mixin cta-link-button {
+@mixin call-to-action-link-button {
   display: block;
 
   @include body-font;

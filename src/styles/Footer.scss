@@ -33,14 +33,14 @@
   }
 
   @include element('link') {
-    @include cta-link;
+    @include call-to-action-link;
     display: inline;
 
     margin: 0 4px;
   }
 
   @include element('back-to-top') {
-    @include cta-link;
+    @include call-to-action-link;
     height: fit-content;
     font-size: 18px;
 

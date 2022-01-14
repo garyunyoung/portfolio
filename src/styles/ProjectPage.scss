@@ -143,14 +143,14 @@
   }
 
   @include element('primary-button') {
-    @include cta-button;
+    @include call-to-action-button;
     margin: 0 auto;
 
     margin-top: 32px;
   }
 
   @include element('back') {
-    @include cta-link-button;
+    @include call-to-action-link-button;
     margin: 0 auto $spacer-large auto;
   }
 }

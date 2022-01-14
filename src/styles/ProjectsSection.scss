@@ -49,7 +49,7 @@
   }
 
   @include element('filter-button') {
-    @include cta-button;
+    @include call-to-action-button;
 
     margin: 0 16px 40px 0;
 

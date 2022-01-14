@@ -42,8 +42,8 @@
     }
   }
 
-  @include element('projects-cta') {
-    @include cta-button;
+  @include element('projects-call-to-action') {
+    @include call-to-action-button;
     width: fit-content;
     margin: $spacer-large auto 0 auto;
   }

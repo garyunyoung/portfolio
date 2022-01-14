@@ -118,7 +118,7 @@
   }
 
   @include element('see-more') {
-    @include cta-link;
+    @include call-to-action-link;
 
     @include sm-desktop {
       display: none;

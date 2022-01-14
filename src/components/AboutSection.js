@@ -19,14 +19,14 @@ export default function AboutSection() {
           </ul>
         </div>
 
-        <div className="about__buttons">
+        <div className="about__call-to-actions">
           <LinkExternal
-            className="about__button"
+            className="about__call-to-action"
             href="https://res.cloudinary.com/garyou/image/upload/v1638130760/portfolio/Garyun-Young-Front-End-Developer-CV-2021.pdf"
             text="See resume" />
 
           <LinkInternal
-            className="about__button"
+            className="about__call-to-action"
             href="mailto:garyunyoung@gmail.com"
             text="Email me" />
         </div>

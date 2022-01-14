@@ -59,7 +59,7 @@
   }
 
   @include element('logo-link') {
-    @include cta-link-button;
+    @include call-to-action-link-button;
     @include title-font;
     padding: 0;
 
@@ -165,7 +165,7 @@
   }
 
   @include element('nav-item-link-social') {
-    @include cta-link-button;
+    @include call-to-action-link-button;
     padding-right: 16px;
 
     display: flex;
@@ -197,7 +197,7 @@
   }
 
   @include element('nav-item-link') {
-    @include cta-link-button;
+    @include call-to-action-link-button;
     padding-right: 16px;
 
     @include modifier('socials') {

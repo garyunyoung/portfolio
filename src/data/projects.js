@@ -378,7 +378,7 @@ export const nightAtTheSavoyData = {
     year: "2017",
     description: [
       "Night at the Savoy was the first event I had organised for Swing Out Central / Gin Mill Swing - a Swing Dance school based in Auckland, New Zealand",
-      "The event itself brought in around 200 dancers and spectators.",
+      "The event itself brought in around 200 dancers and specall-to-actiontors.",
       "It featured a selection of Lindy Hop performances, fun competitions, social dancing and a talk about the history of Lindy Hop from one of the founding members of the New Zealand's Lindy Hop scene"
     ],
     features: [
