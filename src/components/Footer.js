@@ -17,7 +17,12 @@ export default function Footer() {
             text="Web Content Accessibility Guidelines 2.1 (WCAG)" />
           AA compliant.
         </p>
-        <button className='footer__back-to-top' onClick={() => scrollToTop()} role="link">Back to top</button>
+        <button
+          className='footer__back-to-top'
+          onClick={() => scrollToTop()}
+          role="link">
+          Back to top
+        </button>
       </div>
     </section>
   );

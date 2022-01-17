@@ -77,7 +77,6 @@ exports[`matches snapshot 1`] = `
             <li>
               <a
                 className="navigation-menu__nav-item-link-social"
-                href="https://github.com/garyunyoung"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -95,7 +94,6 @@ exports[`matches snapshot 1`] = `
             <li>
               <a
                 className="navigation-menu__nav-item-link-social"
-                href="https://exercism.org/profiles/garyunyoung"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -113,7 +111,6 @@ exports[`matches snapshot 1`] = `
             <li>
               <a
                 className="navigation-menu__nav-item-link-social"
-                href="https://www.codewars.com/users/garryunn"
                 rel="noopener noreferrer"
                 target="_blank"
               >

@@ -6,10 +6,10 @@ export default function AboutSection() {
   return (
     <section id="about" className="about">
       <div className="about__content">
-        <p className="about__header">Nice to meet you!</p>
+        <h2 className="about__header">Nice to meet you!</h2>
         <p className="about__description">I'm a front-end developer who is interested in contributing towards high-quality web and mobile experiences for anyone and everyone.</p>
         <div className="about__personality-list-container">
-          <p className="about__list-header">Things I like:</p>
+          <h4 className="about__list-header">Things I like:</h4>
           <ul className="about__personality-list">
             <li>User-centered design</li>
             <li>Testing, iterating, and collaboration</li>
@@ -34,7 +34,7 @@ export default function AboutSection() {
         </div>
 
         <div className="about__resource-list-container">
-          <p className="about__list-header">Favourite learning resources:</p>
+          <h4 className="about__list-header">Favourite learning resources:</h4>
           <ul className="about__resource-list">
             <ResourceListItem text="The Bike Shed" href="https://www.bikeshed.fm/" />
             <ResourceListItem text="Syntax" href="https://syntax.fm/" />

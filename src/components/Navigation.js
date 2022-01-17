@@ -14,7 +14,7 @@ import '../styles/Navigation.scss';
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isSocialsOpen, setIsSocialsOpen] = useState(false)
-  const [isInScrollView, setIsInScrollView] = useState('home')
+  const [isInView, setIsInScrollView] = useState('home')
 
   const isHomePage = useLocation().pathname === '/'
 
@@ -50,31 +50,31 @@ export default function Navigation() {
           isSocialsOpen={isSocialsOpen}
           toggleSocials={toggleSocials}
           closeNav={closeNav}
-          isInScrollView={isInScrollView}
+          isInView={isInView}
         />
       </div>
     </header>
   );
 }
 
-function NavigationMenu({ isSocialsOpen, toggleSocials, closeNav, isInScrollView }) {
+function NavigationMenu({ isSocialsOpen, toggleSocials, closeNav, isInView }) {
   return (
     <nav className='navigation-menu navigation__nav'>
       <ul className='navigation-menu__nav-items'>
         <span className="navigation-menu__nav-main-items">
           <NavItemLink
-            link="/#projects"
-            title="Projects"
-            sectionId='projects'
+            text="Projects"
+            href="/#projects"
+            id='projects'
             closeNav={() => closeNav()}
-            isInScrollView={isInScrollView} />
+            isInView={isInView} />
 
           <NavItemLink
-            link="/#about"
-            title="About"
-            sectionId='about'
+            text="About"
+            href="/#about"
+            id='about'
             closeNav={() => closeNav()}
-            isInScrollView={isInScrollView} />
+            isInView={isInView} />
         </span>
         <span className='navigation-menu__nav-code-container'>
           <li
@@ -91,17 +91,17 @@ function NavigationMenu({ isSocialsOpen, toggleSocials, closeNav, isInScrollView
           <span data-testid="nav-socials" className={`navigation-menu__nav-socials ${isSocialsOpen ? 'is-visible' : ''}`}>
             <NavItemLinkSocial
               link="https://github.com/garyunyoung"
-              title="Github"
+              text="Github"
               logoSrc={github} />
 
             <NavItemLinkSocial
               link="https://exercism.org/profiles/garyunyoung"
-              title="Exercism"
+              text="Exercism"
               logoSrc={exercism} />
 
             <NavItemLinkSocial
               link="https://www.codewars.com/users/garryunn"
-              title="Codewars"
+              text="Codewars"
               logoSrc={codewars} />
           </span>
         </span>
@@ -125,28 +125,28 @@ export function Logo({ isHomePage }) {
     </div >
   )
 }
-function NavItemLink({ sectionId, title, link, closeNav, isInScrollView }) {
+function NavItemLink({ id, text, href, closeNav, isInView }) {
   return (
     <li className='navigation-menu__nav-item'>
       <a
-        className={`navigation-menu__nav-item-link ${isInScrollView === sectionId ? 'is-active' : ""}`}
-        href={link}
+        className={`navigation-menu__nav-item-link ${isInView === id ? 'is-active' : ""}`}
+        href={href}
         onClick={() => closeNav()}
-      >{title}</a>
+      >{text}</a>
     </li>
   )
 }
 
-function NavItemLinkSocial({ title, link, logoSrc }) {
+function NavItemLinkSocial({ text, href, logoSrc }) {
   return (
     <li>
       <a
         className="navigation-menu__nav-item-link-social"
-        href={link}
+        href={href}
         target='_blank'
         rel='noopener noreferrer'
       >
-        <p className="navigation-menu__nav-item-text-social">{title}</p>
+        <p className="navigation-menu__nav-item-text-social">{text}</p>
         <img src={logoSrc} alt="" />
       </a>
     </li>
