@@ -42,7 +42,7 @@
     }
   }
 
-  @include element('call-to-action') {
+  @include element('link') {
     width: fit-content;
     margin: $spacer-large auto 0 auto;
   }

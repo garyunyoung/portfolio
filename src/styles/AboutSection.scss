@@ -51,7 +51,7 @@
     list-style: '- ' inside none;
   }
 
-  @include element('call-to-actions') {
+  @include element('links') {
     display: flex;
     flex-flow: column;
 
@@ -68,8 +68,7 @@
     margin-bottom: 24px;
   }
 
-  @include element('call-to-action') {
-    // @include call-to-action-button;
+  @include element('link') {
     width: 100%;
 
     &:first-child {

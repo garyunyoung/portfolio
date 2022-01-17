@@ -19,16 +19,16 @@ export default function AboutSection() {
           </ul>
         </div>
 
-        <div className="about__call-to-actions">
+        <div className="about__links">
           <LinkExternal
-            className="about__call-to-action"
-            style="button"
+            className="about__link"
+            type="button"
             href="https://res.cloudinary.com/garyou/image/upload/v1638130760/portfolio/Garyun-Young-Front-End-Developer-CV-2021.pdf"
             text="See resume" />
 
           <LinkInternal
-            className="about__call-to-action"
-            style="button"
+            className="about__link"
+            type="button"
             href="mailto:garyunyoung@gmail.com"
             text="Email me" />
         </div>
@@ -54,7 +54,7 @@ function ResourceListItem({ text, href }) {
     <li className="about__resource-list-item">
       <LinkExternal
         className="about__resource-list-item-link"
-        style="link"
+        type="link"
         href={href}
         text={text} />
     </li>

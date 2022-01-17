@@ -13,7 +13,7 @@ exports[`matches snapshot 1`] = `
     >
       This site is an open work-in-progress while I continue to learn and apply relevant accessibility standards. This site aims to be
       <a
-        className="link-style--link footer__link"
+        className="link--link footer__link"
         href="https://www.w3.org/WAI/standards-guidelines/wcag/"
         rel="noopener noreferrer"
         target="_blank"

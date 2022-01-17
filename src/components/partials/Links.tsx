@@ -3,19 +3,19 @@ import '../../styles/Links.scss'
 
 interface Props {
   className: string
-  style: 'link' | 'button' | 'link-button'
+  type: 'link' | 'button' | 'link-button'
   href: string
   text: string
 }
 export function LinkExternal({
   className,
-  style,
+  type,
   href,
   text
 }: Props): ReactElement {
   return (
     <a
-      className={`link-style--${style} ${className}`}
+      className={`link--${type} ${className}`}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -27,15 +27,12 @@ export function LinkExternal({
 
 export function LinkInternal({
   className,
-  style,
+  type,
   href,
   text
 }: Props): ReactElement {
   return (
-    <a
-      className={`link-style--${style} ${className}`}
-      href={href}
-    >
+    <a className={`link--${type} ${className}`} href={href}>
       {text}
     </a>
   )

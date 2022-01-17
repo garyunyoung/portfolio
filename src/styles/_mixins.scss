@@ -153,36 +153,7 @@
   }
 }
 
-@mixin call-to-action-button {
-  display: block;
-
-  @include body-font;
-  letter-spacing: 2px;
-  color: $page-background-colour;
-  text-align: center;
-  text-decoration: none;
-
-  background-color: $black;
-  border: 2px solid $black;
-
-  padding: 12px 24px;
-
-  &:hover,
-  &:active {
-    color: $black;
-    background-color: transparent;
-    text-decoration: none;
-
-    cursor: pointer;
-  }
-
-  &:focus {
-    outline: 2px dotted $focus-outline;
-    outline-offset: -6px;
-  }
-}
-
-@mixin call-to-action-link {
+@mixin link {
   display: block;
 
   @include body-font;
@@ -211,7 +182,36 @@
   }
 }
 
-@mixin call-to-action-link-button {
+@mixin button {
+  display: block;
+
+  @include body-font;
+  letter-spacing: 2px;
+  color: $page-background-colour;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: $black;
+  border: 2px solid $black;
+
+  padding: 12px 24px;
+
+  &:hover,
+  &:active {
+    color: $black;
+    background-color: transparent;
+    text-decoration: none;
+
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 2px dotted $focus-outline;
+    outline-offset: -6px;
+  }
+}
+
+@mixin link-button {
   display: block;
 
   @include body-font;

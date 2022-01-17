@@ -38,7 +38,7 @@
   }
 
   @include element('back-to-top') {
-    @include call-to-action-link;
+    @include link;
     height: fit-content;
     font-size: 18px;
 

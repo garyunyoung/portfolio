@@ -12,7 +12,7 @@ export default function Footer() {
           This site aims to be
           <LinkExternal
             className="footer__link"
-            style="link"
+            type="link"
             href="https://www.w3.org/WAI/standards-guidelines/wcag/"
             text="Web Content Accessibility Guidelines 2.1 (WCAG)" />
           AA compliant.

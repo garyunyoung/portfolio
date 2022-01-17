@@ -82,7 +82,7 @@ export default function ProjectPage({
                     <LinkExternal
                       key={index}
                       className="project__primary-button"
-                      style="button"
+                      type="button"
                       href={link.url}
                       text={link.text} />
                   )
@@ -92,7 +92,7 @@ export default function ProjectPage({
         </div>
         <LinkInternal
           className="project__back is-active"
-          style="link-button"
+          type="link-button"
           href="/#projects"
           text="Back to projects" />
       </div>

@@ -164,7 +164,7 @@
   }
 
   @include element('nav-item-link-social') {
-    @include call-to-action-link-button;
+    @include link-button;
     padding-right: 16px;
 
     display: flex;
@@ -196,7 +196,7 @@
   }
 
   @include element('nav-item-link') {
-    @include call-to-action-link-button;
+    @include link-button;
     padding-right: 16px;
 
     @include modifier('socials') {

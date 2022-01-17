@@ -118,7 +118,7 @@ export function Logo({ isHomePage }) {
           <h1 className='navigation__logo'>Garyun Young</h1> :
           <LinkInternal
             className={`navigation__logo-link ${isHomePage ? '' : 'is-active'}`}
-            style="link-button"
+            type="link-button"
             href="/#"
             text="Garyun Young" />
       }
