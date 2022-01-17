@@ -35,7 +35,7 @@ export const stitchedData = {
       "Approached designs with a mobile-first and responsive methodology.",
       "Approached features with a focus on maintainable and reusable code."
     ],
-    links: [{ url: "https://www.stitched.co.uk/", text: "Visit site" }],
+    links: [{ href: "https://www.stitched.co.uk/", text: "Visit site" }],
     imageSets: [
       [
         {
@@ -123,8 +123,8 @@ export const stitchedArData = {
       "Challenges: No prior experience with app development."
     ],
     links: [
-      { url: "https://apps.apple.com/gb/app/stitched-ar/id1461104538", text: 'View in app store' },
-      { url: "https://drive.google.com/file/d/1V79ak7lZGta91WAPVZhYcK4M8w3TOur3/view?usp=sharing", text: 'See demo' }
+      { href: "https://apps.apple.com/gb/app/stitched-ar/id1461104538", text: 'View in app store' },
+      { href: "https://drive.google.com/file/d/1V79ak7lZGta91WAPVZhYcK4M8w3TOur3/view?usp=sharing", text: 'See demo' }
     ],
     mobileImages: [
       {
@@ -179,7 +179,7 @@ export const theBethsData = {
       "Ongoing maintenance and design based on requests and feeback from band and management.",
       "Mobile first and responsive design."
     ],
-    links: [{ url: "https://thebeths.com/", text: "Visit site" }],
+    links: [{ href: "https://thebeths.com/", text: "Visit site" }],
     desktopImages: [{ src: Image.theBethsHomepageDesktop, alt: "The Beths Home Page" }],
     mobileImages: [
       {
@@ -284,7 +284,7 @@ export const portfolioData = {
       "Tools used: Axe DevTools for accessibility and Chrome's Lighthouse for performance.",
       "Key design features: readable font size, removed unnecessary capitalisation, styled focus states, font colour-contrast, uses plain language."
     ],
-    links: [{ url: "https://github.com/garyunyoung/portfolio", text: "See code" }]
+    links: [{ href: "https://github.com/garyunyoung/portfolio", text: "See code" }]
   }
 }
 
@@ -318,7 +318,7 @@ export const sploreData = {
       "Researched media opportunities.",
       "General administrative tasks"
     ],
-    links: [{ url: "http://www.splore.net/", text: "Visit site" }],
+    links: [{ href: "http://www.splore.net/", text: "Visit site" }],
     desktopImages: [{ src: Image.sploreBanner, alt: "splore 2018 festival banner" }]
   }
 }
@@ -353,7 +353,7 @@ export const sailCityJumpData = {
       "Curated and distributed marketing collateral both digital and physical.",
       "Tracked registrations and ticket sales.",
     ],
-    links: [{ url: "https://www.facebook.com/events/2039384882959969/?active_tab=discussion", text: "See event page" }],
+    links: [{ href: "https://www.facebook.com/events/2039384882959969/?active_tab=discussion", text: "See event page" }],
     desktopImages: [{ src: Image.sailCityJumpBanner, alt: "sail city jump 2017 festival banner" }]
   }
 }
@@ -388,7 +388,7 @@ export const nightAtTheSavoyData = {
       "Curated and distributed marketing material.",
       "Tracked registrations and ticket sales."
     ],
-    links: [{ url: "https://www.facebook.com/events/220801418420563", text: 'See event page' }],
+    links: [{ href: "https://www.facebook.com/events/220801418420563", text: 'See event page' }],
     desktopImages: [{ src: Image.nightAtTheSavoyBanner, alt: "Night at the Savoy 2017 festival banner" }]
   }
 }
