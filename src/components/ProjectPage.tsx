@@ -25,8 +25,8 @@ interface Images {
 
 interface ImageSet {
   src: string
-  modifier: 'mobile' | 'tablet' | 'desktop'
   alt: string
+  modifier: 'mobile' | 'tablet' | 'desktop'
 }
 
 interface Props {
@@ -154,7 +154,10 @@ export default function ProjectPage({
   )
 }
 
-function ProjectImages({ className, images }: Images) {
+function ProjectImages({
+  className,
+  images
+}: Images): ReactElement {
   return (
     <div className={className}>
       {images.map(({ src, alt }: Image, index: number) => {
@@ -172,7 +175,9 @@ function ProjectImages({ className, images }: Images) {
 }
 
 // TO DO: imagesets type
-function ProjectImageSets({ imageSets }: any) {
+function ProjectImageSets({
+  imageSets
+}: any): ReactElement {
   return (
     <React.Fragment>
       {imageSets.map(
