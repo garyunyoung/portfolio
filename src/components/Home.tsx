@@ -15,7 +15,7 @@ export default function Home(): ReactElement {
             Hi! I'm <u>Garyun</u>.
           </p>
           <p className="home__text">
-            A front-end developer passionate about building
+            A front-end developer passionate about building{' '}
             <u>inclusive</u> and <u>innovative</u> digital
             experiences.
           </p>
