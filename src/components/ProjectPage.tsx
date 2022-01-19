@@ -29,6 +29,10 @@ interface ImageSet {
   modifier: 'mobile' | 'tablet' | 'desktop'
 }
 
+interface ImageSets {
+  imageSet: ImageSet[][]
+}
+
 interface Props {
   title: string
   type: string
@@ -37,9 +41,9 @@ interface Props {
   description: string[]
   features: string[]
   links: Link[]
-  desktopImages: Image[]
-  mobileImages: Image[]
-  imageSets: ImageSet[]
+  imageSets?: ImageSet[][]
+  desktopImages?: Image[]
+  mobileImages?: Image[]
 }
 
 export default function ProjectPage({
@@ -121,7 +125,7 @@ export default function ProjectPage({
         ) : null}
 
         {imageSets ? (
-          <ProjectImageSets imageSets={imageSets} />
+          <ProjectImageSets imageSet={imageSets} />
         ) : null}
 
         <div className="project__buttons">
@@ -174,13 +178,12 @@ function ProjectImages({
   )
 }
 
-// TO DO: imagesets type
 function ProjectImageSets({
-  imageSets
-}: any): ReactElement {
+  imageSet
+}: ImageSets): ReactElement {
   return (
     <React.Fragment>
-      {imageSets.map(
+      {imageSet.map(
         (imageSet: ImageSet[], index: number) => {
           return (
             <div key={index} className="image-set">

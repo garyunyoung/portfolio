@@ -1,5 +1,10 @@
-import { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Component, ReactElement } from 'react'
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom'
 
 import {
   stitchedData,
@@ -10,13 +15,14 @@ import {
   sploreData,
   sailCityJumpData,
   nightAtTheSavoyData
-} from "../data/projects";
+} from '../data/projects'
 
-import Navigation from "./Navigation";
-import Home from "./Home";
-import ProjectPage from "./ProjectPage";
-import Footer from "./Footer";
-export default class App extends Component {
+import Navigation from './Navigation'
+import Home from './Home'
+import ProjectPage from './ProjectPage'
+import Footer from './Footer'
+
+export default class App extends Component<ReactElement> {
   render() {
     return (
       <Router>
@@ -58,7 +64,7 @@ export default class App extends Component {
         </Switch>
         <Footer />
       </Router>
-    );
+    )
   }
 }
 
@@ -67,52 +73,53 @@ const StitchedPage = () => (
     {...stitchedData.shared}
     {...stitchedData.page}
   />
-);
+)
 
 const StitchedArPage = () => (
   <ProjectPage
     {...stitchedArData.shared}
     {...stitchedArData.page}
   />
-);
+)
 
 const TheBethsPage = () => (
   <ProjectPage
     {...theBethsData.shared}
     {...theBethsData.page}
-  />);
+  />
+)
 
 const WaldourStudiosPage = () => (
   <ProjectPage
     {...waldourStudiosData.shared}
     {...waldourStudiosData.page}
   />
-);
+)
 
 const PortfolioPage = () => (
   <ProjectPage
     {...portfolioData.shared}
     {...portfolioData.page}
   />
-);
+)
 
 const SplorePage = () => (
   <ProjectPage
     {...sploreData.shared}
     {...sploreData.page}
   />
-);
+)
 
 const SailCityJumpPage = () => (
   <ProjectPage
     {...sailCityJumpData.shared}
     {...sailCityJumpData.page}
   />
-);
+)
 
 const NightAtTheSavoyPage = () => (
   <ProjectPage
     {...nightAtTheSavoyData.shared}
     {...nightAtTheSavoyData.page}
   />
-);
+)

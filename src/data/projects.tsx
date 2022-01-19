@@ -1,4 +1,4 @@
-import * as Image from '../utilities/Cloudinary'
+import * as ProjectImage from '../utilities/Cloudinary'
 import { FILTER_ID_WEB, FILTER_ID_PR } from './constants'
 
 interface Thumbnail {
@@ -14,7 +14,12 @@ interface Link {
 interface Image {
   src: string
   alt: string
-  modifier?: 'mobile' | 'tablet' | 'desktop'
+}
+
+interface ImageSet {
+  src: string
+  alt: string
+  modifier: 'mobile' | 'tablet' | 'desktop'
 }
 
 interface Shared {
@@ -36,7 +41,7 @@ interface Page {
   description: string[]
   features: string[]
   links: Link[]
-  imageSets?: Image[][]
+  imageSets?: ImageSet[][]
   mobileImages?: Image[]
   desktopImages?: Image[]
 }
@@ -67,7 +72,7 @@ export const stitchedData: Data = {
     excerpt:
       'Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.',
     thumbnail: {
-      src: Image.stitchedHomepageDesktop,
+      src: ProjectImage.stitchedHomepageDesktop,
       alt: 'Stitched Home Page'
     }
   },
@@ -100,51 +105,51 @@ export const stitchedData: Data = {
     imageSets: [
       [
         {
-          src: Image.stitchedFabricDesktop,
+          src: ProjectImage.stitchedFabricDesktop,
           modifier: 'desktop',
           alt: ''
         },
         {
-          src: Image.stitchedFabricTablet,
+          src: ProjectImage.stitchedFabricTablet,
           modifier: 'tablet',
           alt: ''
         },
         {
-          src: Image.stitchedFabricMobile,
+          src: ProjectImage.stitchedFabricMobile,
           modifier: 'mobile',
           alt: ''
         }
       ],
       [
         {
-          src: Image.stitchedCurtainsDesktop,
+          src: ProjectImage.stitchedCurtainsDesktop,
           modifier: 'desktop',
           alt: ''
         },
         {
-          src: Image.stitchedCurtainsTablet,
+          src: ProjectImage.stitchedCurtainsTablet,
           modifier: 'tablet',
           alt: ''
         },
         {
-          src: Image.stitchedCurtainsMobile,
+          src: ProjectImage.stitchedCurtainsMobile,
           modifier: 'mobile',
           alt: ''
         }
       ],
       [
         {
-          src: Image.stitchedHomesDesktop,
+          src: ProjectImage.stitchedHomesDesktop,
           modifier: 'desktop',
           alt: ''
         },
         {
-          src: Image.stitchedHomesTablet,
+          src: ProjectImage.stitchedHomesTablet,
           modifier: 'tablet',
           alt: ''
         },
         {
-          src: Image.stitchedHomesMobile,
+          src: ProjectImage.stitchedHomesMobile,
           modifier: 'mobile',
           alt: ''
         }
@@ -166,7 +171,7 @@ export const stitchedArData: Data = {
     excerpt:
       'Stitched Ar is an augmented reality mobile application that lets users visualise and measure curtains in their own home.',
     thumbnail: {
-      src: Image.stitchedArHomepage,
+      src: ProjectImage.stitchedArHomepage,
       alt: 'Stitched Ar Home Page'
     }
   },
@@ -199,19 +204,19 @@ export const stitchedArData: Data = {
     ],
     mobileImages: [
       {
-        src: Image.stitchedArMeasure,
+        src: ProjectImage.stitchedArMeasure,
         alt: ''
       },
       {
-        src: Image.stitchedArCurtain,
+        src: ProjectImage.stitchedArCurtain,
         alt: ''
       },
       {
-        src: Image.stitchedArConfirmMeasurements,
+        src: ProjectImage.stitchedArConfirmMeasurements,
         alt: ''
       },
       {
-        src: Image.stitchedArCheckout,
+        src: ProjectImage.stitchedArCheckout,
         alt: ''
       }
     ]
@@ -229,7 +234,7 @@ export const theBethsData: Data = {
   tile: {
     category: FILTER_ID_WEB,
     thumbnail: {
-      src: Image.theBethsHomepageDesktop,
+      src: ProjectImage.theBethsHomepageDesktop,
       alt: 'The Beths Home Page'
     },
     excerpt:
@@ -258,25 +263,25 @@ export const theBethsData: Data = {
     ],
     desktopImages: [
       {
-        src: Image.theBethsHomepageDesktop,
+        src: ProjectImage.theBethsHomepageDesktop,
         alt: 'The Beths Home Page'
       }
     ],
     mobileImages: [
       {
-        src: Image.theBethsHomepageMobile,
+        src: ProjectImage.theBethsHomepageMobile,
         alt: ''
       },
       {
-        src: Image.theBethsWatchMobile,
+        src: ProjectImage.theBethsWatchMobile,
         alt: ''
       },
       {
-        src: Image.theBethsMerchMobile,
+        src: ProjectImage.theBethsMerchMobile,
         alt: ''
       },
       {
-        src: Image.theBethsContactMobile,
+        src: ProjectImage.theBethsContactMobile,
         alt: ''
       }
     ]
@@ -294,7 +299,7 @@ export const waldourStudiosData: Data = {
   tile: {
     category: FILTER_ID_WEB,
     thumbnail: {
-      src: Image.waldourHomepageDesktop,
+      src: ProjectImage.waldourHomepageDesktop,
       alt: 'Waldour Studio Home Page'
     },
     excerpt:
@@ -323,17 +328,17 @@ export const waldourStudiosData: Data = {
     imageSets: [
       [
         {
-          src: Image.waldourWhatWeDoDesktop,
+          src: ProjectImage.waldourWhatWeDoDesktop,
           modifier: 'desktop',
           alt: ''
         },
         {
-          src: Image.waldourWhatWeDoTablet,
+          src: ProjectImage.waldourWhatWeDoTablet,
           modifier: 'tablet',
           alt: ''
         },
         {
-          src: Image.waldourWhatWeDoMobile,
+          src: ProjectImage.waldourWhatWeDoMobile,
           modifier: 'mobile',
           alt: ''
         }
@@ -353,7 +358,7 @@ export const portfolioData: Data = {
   tile: {
     category: FILTER_ID_WEB,
     thumbnail: {
-      src: Image.portfolioHomepageDesktop,
+      src: ProjectImage.portfolioHomepageDesktop,
       alt: 'Portfolio Home Page'
     },
     excerpt:
@@ -399,7 +404,7 @@ export const sploreData: Data = {
   tile: {
     category: FILTER_ID_PR,
     thumbnail: {
-      src: Image.sploreBanner,
+      src: ProjectImage.sploreBanner,
       alt: 'splore 2018 festival banner'
     },
     excerpt:
@@ -427,7 +432,7 @@ export const sploreData: Data = {
     ],
     desktopImages: [
       {
-        src: Image.sploreBanner,
+        src: ProjectImage.sploreBanner,
         alt: 'splore 2018 festival banner'
       }
     ]
@@ -445,7 +450,7 @@ export const sailCityJumpData: Data = {
   tile: {
     category: FILTER_ID_PR,
     thumbnail: {
-      src: Image.sailCityJumpBanner,
+      src: ProjectImage.sailCityJumpBanner,
       alt: 'sail city jump 2017 festival banner'
     },
     excerpt:
@@ -475,7 +480,7 @@ export const sailCityJumpData: Data = {
     ],
     desktopImages: [
       {
-        src: Image.sailCityJumpBanner,
+        src: ProjectImage.sailCityJumpBanner,
         alt: 'sail city jump 2017 festival banner'
       }
     ]
@@ -493,7 +498,7 @@ export const nightAtTheSavoyData: Data = {
   tile: {
     category: FILTER_ID_PR,
     thumbnail: {
-      src: Image.nightAtTheSavoyBanner,
+      src: ProjectImage.nightAtTheSavoyBanner,
       alt: 'Night at the Savoy 2017 festival banner'
     },
     excerpt:
@@ -523,7 +528,7 @@ export const nightAtTheSavoyData: Data = {
     ],
     desktopImages: [
       {
-        src: Image.nightAtTheSavoyBanner,
+        src: ProjectImage.nightAtTheSavoyBanner,
         alt: 'Night at the Savoy 2017 festival banner'
       }
     ]
