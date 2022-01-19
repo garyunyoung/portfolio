@@ -1,4 +1,4 @@
-import { Component, ReactElement } from 'react'
+import { Component } from 'react'
 
 import {
   BrowserRouter as Router,
@@ -22,7 +22,7 @@ import Home from './Home'
 import ProjectPage from './ProjectPage'
 import Footer from './Footer'
 
-export default class App extends Component<ReactElement> {
+export default class App extends Component {
   render() {
     return (
       <Router>
