@@ -1,10 +1,14 @@
-export default function elementInView(setIsInScrollView) {
+export default function elementInView(
+  setIsInScrollView: (arg: string) => any
+) {
   const projects = document.querySelector('#projects')
   const about = document.querySelector('#about')
 
   if (projects && about) {
-    const projectsPos = projects.getBoundingClientRect().top + window.scrollY
-    const aboutPos = about.getBoundingClientRect().top + window.scrollY
+    const projectsPos =
+      projects.getBoundingClientRect().top + window.scrollY
+    const aboutPos =
+      about.getBoundingClientRect().top + window.scrollY
 
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY
