@@ -7,7 +7,7 @@ View here: [garyunyoung.com](https://www.garyunyoung.com)
 - Implemented with a focus on accessibliy.
 - See key features here: [garyunyoung.com/projects/portfolio](https://www.garyunyoung.com/projects/portfolio)
 
-**Created using:** React, JavaScript, HTML, and SCSS. Jest for testing.
+**Created using:** React, TypeScript, HTML, and SCSS. Jest for testing.
 
 ### Task list:
 
