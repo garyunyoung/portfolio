@@ -29,7 +29,6 @@ export default function Footer(): ReactElement {
           Back to top
         </button>
       </div>
-      <p>testing deploy</p>
     </section>
   )
 }
