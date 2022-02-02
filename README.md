@@ -1,19 +1,24 @@
-## Portfolio
+# Portfolio
 
-View here: [garyunyoung.com](https://www.garyunyoung.com)
+Personal portfolio viewable at: [garyunyoung.com](https://www.garyunyoung.com)
 
-### Key Features:
+## Key Features
 
 - Implemented with a focus on accessibliy.
 - See key features here: [garyunyoung.com/projects/portfolio](https://www.garyunyoung.com/projects/portfolio)
 
-**Created using:** React, TypeScript, HTML, and SCSS. Jest for testing.
+## Tech Stack
+- React
+- TypeScript
+- SCSS
+- HTML
+- Jest
 
-### Task list:
+## Task list:
+**General**
 
-#### General
-
-- [ ] Investigate ANAME record/create a redirect
+- [ ] Integrate Netlify CMS
+- [ ] Move domain name to CloudFlare
 - [ ] Check site meta data is correct
 - [ ] Change socials logos to pseudo elements
 - [ ] Fix nav height on tablet and small desktop
@@ -22,9 +27,7 @@ View here: [garyunyoung.com](https://www.garyunyoung.com)
 - [ ] Fix state when returning to projects page from a pr project page
 - [ ] Remove p5.js or find another use for it
 
-#### Accessibility
-
-Checklist: [a11yproject.com/checklist](https://www.a11yproject.com/checklist/)
+**Accessibility**
 
 - [ ] Add alt tags to images
 - [ ] Fix HTML heading levels
@@ -32,6 +35,9 @@ Checklist: [a11yproject.com/checklist](https://www.a11yproject.com/checklist/)
 - [ ] Revise HTML nav elements
 - [ ] Add 'Skip to content'
 
-#### Optimisation
+Checklist: [a11yproject.com/checklist](https://www.a11yproject.com/checklist/)
+
+
+**Optimisation**
 
 - [x] Optimise images - move to Cloudinary
