@@ -256,8 +256,8 @@ export const theBethsData: Data = {
       'Integrated Google Analytics using Google Tag Manager.',
       'Integrated Mailchimp and Songkick widgets.',
       'Added a GDPR banner that enables/disables analytics.',
-      'Mobile first and responsive design.',
-      'Uses Block Element Modifier (BEM) naming convention.'
+      'Uses Block Element Modifier (BEM) naming convention.',
+      'Mobile first and responsive design.'
     ],
     links: [
       { href: 'https://thebeths.com/', text: 'Visit site' }
