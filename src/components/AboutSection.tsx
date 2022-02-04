@@ -36,7 +36,7 @@ export default function AboutSection(): ReactElement {
           <LinkExternal
             className="about__link"
             type="button"
-            href="https://res.cloudinary.com/garyou/image/upload/v1638130760/portfolio/Garyun-Young-Front-End-Developer-CV-2021.pdf"
+            href="https://res.cloudinary.com/garyou/image/upload/v1643929708/portfolio/Garyun_Young_Frontend_Developer_CV_2022.pdf"
             text="See resume"
           />
 
