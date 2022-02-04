@@ -247,7 +247,7 @@ export const theBethsData: Data = {
     description: [
       'This was the first website I took on early in my coding journey.',
       'I noticed that the band could do with a new website and thought it would be a good way to develop and test out my newly learned web development skills.',
-      '*Ongoing maintenance and design based on requests and feeback from band and management.'
+      '* Ongoing maintenance and design based on requests and feeback from band and management.'
     ],
     features: [
       'Designed UI/UX.',
