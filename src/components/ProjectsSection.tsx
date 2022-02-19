@@ -8,8 +8,8 @@ import {
   stitchedData,
   stitchedArData,
   theBethsData,
-  waldourStudiosData,
   portfolioData,
+  waldourStudiosData,
   sploreData,
   sailCityJumpData,
   nightAtTheSavoyData

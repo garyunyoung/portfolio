@@ -260,6 +260,10 @@ export const theBethsData: Data = {
       'Mobile first and responsive design.'
     ],
     links: [
+      {
+        href: 'https://github.com/garyunyoung/the-beths',
+        text: 'View code'
+      },
       { href: 'https://thebeths.com/', text: 'Visit site' }
     ],
     desktopImages: [
@@ -388,7 +392,7 @@ export const portfolioData: Data = {
     links: [
       {
         href: 'https://github.com/garyunyoung/portfolio',
-        text: 'See code'
+        text: 'View code'
       }
     ]
   }
