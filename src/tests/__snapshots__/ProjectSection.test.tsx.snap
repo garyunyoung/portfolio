@@ -1,0 +1,431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<section
+  className="projects"
+  id="projects"
+>
+  <div
+    className="projects__content"
+  >
+    <div
+      className="projects__filter-container"
+    >
+      <h2
+        className="projects__title"
+      >
+        Projects
+      </h2>
+      <div
+        className="projects__filter"
+      >
+        <h4
+          className="projects__filter-title"
+        >
+          Filter by:
+        </h4>
+        <div
+          className="projects__filter-buttons"
+        >
+          <button
+            className="projects__filter-button is-selected"
+            onClick={[Function]}
+          >
+            Web
+          </button>
+          <button
+            className="projects__filter-button "
+            onClick={[Function]}
+          >
+            PR
+          </button>
+        </div>
+      </div>
+    </div>
+    <ul
+      className="projects__project-tiles"
+    >
+      <li
+        className="project-tile"
+      >
+        <div
+          className="project-tile__container"
+        >
+          <div
+            className="project-tile__image-wrapper"
+          >
+            <img
+              alt="Stitched Home Page"
+              className="project-tile__image project-tile__image--stitched"
+              src="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/portfolio/stitched/homepage-desktop.png"
+            />
+            <a
+              aria-current={null}
+              className="project-tile__see-more project-tile__see-more--desktop"
+              href="/projects/stitched"
+              onClick={[Function]}
+            >
+              See project details
+            </a>
+          </div>
+          <div
+            className="project-tile__content"
+          >
+            <h3
+              className="project-tile__title"
+            >
+              Stitched
+            </h3>
+            <p
+              className="project-tile__technologies-subtitle"
+            >
+              Key Technologies:
+            </p>
+            <ul
+              className="project-tile__technologies"
+            >
+              <li
+                className="project-tile__technology"
+              >
+                Elixir
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                Phoenix LiveView
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                JavaScript
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                React
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                SCSS
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                HTML
+              </li>
+            </ul>
+            <p
+              className="project-tile__excerpt"
+            >
+              Stitched is an eco-friendly, made to measure, curtain + blind start-up focused on redefining home interiors by using 3D visualisation, augmented reality, and machine learning.
+            </p>
+            <a
+              aria-current={null}
+              className="project-tile__see-more"
+              href="/projects/stitched"
+              onClick={[Function]}
+            >
+              See project details
+            </a>
+          </div>
+        </div>
+      </li>
+      <li
+        className="project-tile"
+      >
+        <div
+          className="project-tile__container"
+        >
+          <div
+            className="project-tile__image-wrapper"
+          >
+            <img
+              alt="Stitched Ar Home Page"
+              className="project-tile__image project-tile__image--stitched-ar"
+              src="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/portfolio/stitched-ar/homepage.png"
+            />
+            <a
+              aria-current={null}
+              className="project-tile__see-more project-tile__see-more--desktop"
+              href="/projects/stitched-ar"
+              onClick={[Function]}
+            >
+              See project details
+            </a>
+          </div>
+          <div
+            className="project-tile__content"
+          >
+            <h3
+              className="project-tile__title"
+            >
+              Stitched Ar
+            </h3>
+            <p
+              className="project-tile__technologies-subtitle"
+            >
+              Key Technologies:
+            </p>
+            <ul
+              className="project-tile__technologies"
+            >
+              <li
+                className="project-tile__technology"
+              >
+                Swift
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                SwiftUI
+              </li>
+            </ul>
+            <p
+              className="project-tile__excerpt"
+            >
+              Stitched Ar is an augmented reality mobile application that lets users visualise and measure curtains in their own home.
+            </p>
+            <a
+              aria-current={null}
+              className="project-tile__see-more"
+              href="/projects/stitched-ar"
+              onClick={[Function]}
+            >
+              See project details
+            </a>
+          </div>
+        </div>
+      </li>
+      <li
+        className="project-tile"
+      >
+        <div
+          className="project-tile__container"
+        >
+          <div
+            className="project-tile__image-wrapper"
+          >
+            <img
+              alt="The Beths Home Page"
+              className="project-tile__image project-tile__image--the-beths"
+              src="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/portfolio/the-beths/homepage-desktop.png"
+            />
+            <a
+              aria-current={null}
+              className="project-tile__see-more project-tile__see-more--desktop"
+              href="/projects/the-beths"
+              onClick={[Function]}
+            >
+              See project details
+            </a>
+          </div>
+          <div
+            className="project-tile__content"
+          >
+            <h3
+              className="project-tile__title"
+            >
+              The Beths
+            </h3>
+            <p
+              className="project-tile__technologies-subtitle"
+            >
+              Key Technologies:
+            </p>
+            <ul
+              className="project-tile__technologies"
+            >
+              <li
+                className="project-tile__technology"
+              >
+                Next.js
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                React
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                SCSS
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                HTML
+              </li>
+            </ul>
+            <p
+              className="project-tile__excerpt"
+            >
+              The Beths are an award-winning indie pop band based in Auckland, New Zealand.
+            </p>
+            <a
+              aria-current={null}
+              className="project-tile__see-more"
+              href="/projects/the-beths"
+              onClick={[Function]}
+            >
+              See project details
+            </a>
+          </div>
+        </div>
+      </li>
+      <li
+        className="project-tile"
+      >
+        <div
+          className="project-tile__container"
+        >
+          <div
+            className="project-tile__image-wrapper"
+          >
+            <img
+              alt="Waldour Studio Home Page"
+              className="project-tile__image project-tile__image--waldour-studios"
+              src="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/portfolio/waldour-studios/homepage-desktop.png"
+            />
+            <a
+              aria-current={null}
+              className="project-tile__see-more project-tile__see-more--desktop"
+              href="/projects/waldour-studios"
+              onClick={[Function]}
+            >
+              See project details
+            </a>
+          </div>
+          <div
+            className="project-tile__content"
+          >
+            <h3
+              className="project-tile__title"
+            >
+              Waldour Studios
+            </h3>
+            <p
+              className="project-tile__technologies-subtitle"
+            >
+              Key Technologies:
+            </p>
+            <ul
+              className="project-tile__technologies"
+            >
+              <li
+                className="project-tile__technology"
+              >
+                WordPress
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                PHP
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                SCSS
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                HTML
+              </li>
+            </ul>
+            <p
+              className="project-tile__excerpt"
+            >
+              Wardour Studios is a podcast recording studio and production company based in Central London.
+            </p>
+            <a
+              aria-current={null}
+              className="project-tile__see-more"
+              href="/projects/waldour-studios"
+              onClick={[Function]}
+            >
+              See project details
+            </a>
+          </div>
+        </div>
+      </li>
+      <li
+        className="project-tile"
+      >
+        <div
+          className="project-tile__container"
+        >
+          <div
+            className="project-tile__image-wrapper"
+          >
+            <img
+              alt="Portfolio Home Page"
+              className="project-tile__image project-tile__image--portfolio"
+              src="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/portfolio/portfolio/homepage-desktop.png"
+            />
+            <a
+              aria-current={null}
+              className="project-tile__see-more project-tile__see-more--desktop"
+              href="/projects/portfolio"
+              onClick={[Function]}
+            >
+              See project details
+            </a>
+          </div>
+          <div
+            className="project-tile__content"
+          >
+            <h3
+              className="project-tile__title"
+            >
+              Portfolio
+            </h3>
+            <p
+              className="project-tile__technologies-subtitle"
+            >
+              Key Technologies:
+            </p>
+            <ul
+              className="project-tile__technologies"
+            >
+              <li
+                className="project-tile__technology"
+              >
+                React
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                JavaScript
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                SCSS
+              </li>
+              <li
+                className="project-tile__technology"
+              >
+                HTML
+              </li>
+            </ul>
+            <p
+              className="project-tile__excerpt"
+            >
+              A bit meta, but I'm going to put my portfolio here as a project (an ongoing project).
+            </p>
+            <a
+              aria-current={null}
+              className="project-tile__see-more"
+              href="/projects/portfolio"
+              onClick={[Function]}
+            >
+              See project details
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+`;
