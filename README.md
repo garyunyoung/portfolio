@@ -12,6 +12,7 @@ Personal portfolio viewable at: [garyunyoung.com](https://www.garyunyoung.com)
 - TypeScript
 - SCSS
 - HTML
+- React Testing Library
 - Jest
 
 ## Task list:
