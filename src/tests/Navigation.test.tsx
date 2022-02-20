@@ -18,23 +18,23 @@ it('renders without crashing', () => {
 })
 
 it('renders correct nav item links', () => {
-  const { getByTestId, getByText } = render(<Navigation />)
+  const { getByTestId, getByRole } = render(<Navigation />)
   const navSocials = getByTestId('nav-socials')
 
-  getByText('Garyun Young')
-  getByText('Projects')
-  getByText('About')
-  getByText('Code')
+  getByRole('heading', { level: 1, name: 'Garyun Young' })
+  getByRole('link', { name: 'Projects' })
+  getByRole('link', { name: 'About' })
+  getByRole('button', { name: 'Code' })
 
   expect(navSocials).not.toHaveClass('is-visible')
-  getByText('Github')
-  getByText('Exercism')
-  getByText('Codewars')
+  getByRole('link', { name: 'Github' })
+  getByRole('link', { name: 'Exercism' })
+  getByRole('link', { name: 'Codewars' })
 })
 
 it('opens code nav item dropdown when clicked', () => {
-  const { getByTestId, getByText } = render(<Navigation />)
-  const clickElement = getByText('Code')
+  const { getByTestId, getByRole } = render(<Navigation />)
+  const clickElement = getByRole('button', { name: 'Code' })
   const navSocials = getByTestId('nav-socials')
 
   fireEvent.click(clickElement)
@@ -50,13 +50,13 @@ describe('Logo', () => {
       <Logo isHomePage={false} />
     )
 
-    getByRole('link')
+    getByRole('link', { name: 'Garyun Young' })
   })
 
   it('show logo heading when on homepage', () => {
     const { getByRole } = render(<Logo isHomePage={true} />)
 
-    getByRole('heading')
+    getByRole('heading', { level: 1, name: 'Garyun Young' })
   })
 })
 
