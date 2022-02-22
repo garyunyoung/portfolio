@@ -9,7 +9,7 @@ import {
   stitchedArData,
   theBethsData,
   portfolioData,
-  waldourStudiosData,
+  // waldourStudiosData,
   sploreData,
   sailCityJumpData,
   nightAtTheSavoyData
@@ -54,7 +54,7 @@ const projectsData = {
     stitchedData,
     stitchedArData,
     theBethsData,
-    waldourStudiosData,
+    // waldourStudiosData,
     portfolioData
   ],
   [`${FILTER_ID_PR}`]: [

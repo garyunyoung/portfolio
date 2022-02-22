@@ -41,10 +41,10 @@ export default class App extends Component {
             path={theBethsData.shared.path}
             component={TheBethsPage}
           />
-          <Route
+          {/* <Route
             path={waldourStudiosData.shared.path}
             component={WaldourStudiosPage}
-          />
+          /> */}
           <Route
             path={portfolioData.shared.path}
             component={PortfolioPage}
@@ -89,12 +89,12 @@ const TheBethsPage = () => (
   />
 )
 
-const WaldourStudiosPage = () => (
-  <ProjectPage
-    {...waldourStudiosData.shared}
-    {...waldourStudiosData.page}
-  />
-)
+// const WaldourStudiosPage = () => (
+//   <ProjectPage
+//     {...waldourStudiosData.shared}
+//     {...waldourStudiosData.page}
+//   />
+// )
 
 const PortfolioPage = () => (
   <ProjectPage
