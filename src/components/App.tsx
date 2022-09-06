@@ -10,7 +10,7 @@ import {
   stitchedData,
   stitchedArData,
   theBethsData,
-  waldourStudiosData,
+  // waldourStudiosData,
   portfolioData,
   sploreData,
   sailCityJumpData,
